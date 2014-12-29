@@ -8,7 +8,7 @@ tags : [accomodation]
 
 ## Accomodation
 
-27.-29.12.2014
+27.-31.12.2014
 :   Yann Lellouche  
     49 Howe Street  
     1011 Auckland  
