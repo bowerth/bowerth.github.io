@@ -12,7 +12,8 @@ tags : [accomodation]
 :   Yann Lellouche  
     49 Howe Street  
     1011 Auckland  
-    +64 2 110 72221
+    Ph +64 2 110 72221
+    ASB 12-3427-0035652-00
 
 31.12.2014
 :   YHA Nelson Central  

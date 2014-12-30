@@ -6,6 +6,12 @@ tags : [flight]
 ---
 {% include JB/setup %}
 
+Uebergepaeck amelden
+:   Tel: +49 69 133 8930  
+    Eastern China Airlines NE652S  
+    Expedia Booking Reference: 26NQY6  
+    Ticket Number: 7814672839868
+
 ## Outbound 
 
 Frankfurt - Auckland, 40h 40min 
