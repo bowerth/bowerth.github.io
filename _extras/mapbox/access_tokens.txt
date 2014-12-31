@@ -1,0 +1,5 @@
+Default Public Token
+pk.eyJ1IjoiYm93ZXJ0aCIsImEiOiJZV0ZRREdBIn0.iKaRupQ3RsgzXdTzYszkPw
+
+Default Secret Token
+sk.eyJ1IjoiYm93ZXJ0aCIsImEiOiJoRVVyQ0o4In0.qnHtOap-2rXSngc4ZU0xaA

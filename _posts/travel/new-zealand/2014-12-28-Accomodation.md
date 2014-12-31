@@ -12,7 +12,7 @@ tags : [accomodation]
 :   Yann Lellouche  
     49 Howe Street  
     1011 Auckland  
-    Ph +64 2 110 72221
+    Ph +64 2 110 72221  
     ASB 12-3427-0035652-00
 
 31.12.2014
@@ -21,6 +21,7 @@ tags : [accomodation]
 	Nelson, New Zealand  
 	Tel: +64 3 545 9988  
 	[email](mailto:yha.nelson@yha.co.nz)  
+	door code: 3485  
 	[directions](http://www.hostelworld.com/hosteldetails.php/YHA-Nelson-Central/Nelson/12260/directions)  
 	![Map YHA Nelson Central](/assets/images/maps/map_yha_nelson_central.png)
 
