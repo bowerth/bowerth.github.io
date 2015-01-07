@@ -27,6 +27,10 @@ author :
 #
 production_url : http://bowerth.github.io
 
+# Mapbox static maps configuration
+mapbox_mapid : bowerth.kkgpe8cc
+mapbox_token : pk.eyJ1IjoiYm93ZXJ0aCIsImEiOiJZV0ZRREdBIn0.iKaRupQ3RsgzXdTzYszkPw
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

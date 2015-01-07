@@ -38,8 +38,12 @@ Nelson - Marahau
 	Transaction Reference: 724616724615
 
 Marahau - Nelson
-:   06.01.2014
-    15:38 - 17:49
+:   05.01.2014
+    12:30 - 14:30  
+    Booking number: 725588  
+    Check in time: 12:15  
+    Authorisation Code: 531547  
+    Transaction Reference: 725589725588
 
 ### To Wellington
 
