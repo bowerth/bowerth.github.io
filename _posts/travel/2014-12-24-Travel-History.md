@@ -6,9 +6,9 @@ tags     :
 ---
 {% include JB/setup %}
 
-# 2014
+## 2014
 
-## July
+### July
 
 - North America
   - USA
@@ -32,7 +32,7 @@ tags     :
 
 ![Map Colombia 2014](/assets/images/maps/map_colombia_2014.png)
 
-## December - January
+### December - January
 
 - Asia
   - China
@@ -46,9 +46,9 @@ tags     :
 
 ![Map New Zealand 2014](/assets/images/maps/map_new_zealand_2014.png)
 
-# 2013
+## 2013
 
-## December - January
+### December - January
 
 - Africa
   - South Africa
@@ -61,9 +61,9 @@ tags     :
 
 ![Map South Africa 2013](/assets/images/maps/map_south_africa_2013.png)
 
-# 2011 
+## 2011 
 
-## December - January
+### December - January
 
 - Asia
   - Malaysia
@@ -76,9 +76,9 @@ tags     :
 
 ![Map Malaysia 2011](/assets/images/maps/map_malaysia_2011.png)
 
-# 2010
+## 2010
 
-## January - April
+### January - April
 - South America
   - Brazil
     - Ribeirão Preto
@@ -89,9 +89,9 @@ tags     :
 
 ![Map Brazil 2010](/assets/images/maps/map_brazil_2010.png)
 
-# 2009
+## 2009
 
-## November
+### November
 
 - Africa
   - Morocco
@@ -117,9 +117,9 @@ tags     :
 
 ![Map Morocco MTB](/assets/images/maps/map_morocco_mtb.png)
 
-# 2007
+## 2007
 
-## September
+### September
 
 - Asia
   - Indonesia
@@ -130,9 +130,9 @@ tags     :
 
 ![Map Indonesia 2007](/assets/images/maps/map_indonesia_2007.png)
 
-# 2006
+## 2006
 
-## August
+### August
 
 - Asia
   - Taiwan
@@ -153,9 +153,9 @@ tags     :
 
 ![Map China 2006](/assets/images/maps/map_china_2006.png)
 
-# 2003
+## 2003
 
-## November
+### November
 
 - Asia
   - China
@@ -166,9 +166,9 @@ tags     :
 
 ![Map China 2003](/assets/images/maps/map_china_2003.png)
 
-# 2001
+## 2001
 
-## August
+### August
 
 - North America
   - USA
