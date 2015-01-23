@@ -2,20 +2,12 @@
 layout   : post
 category : travel
 tagline  : "since 2001"
-tags     : [mtb]
+tags     : 
 ---
 {% include JB/setup %}
 
 # 2014
 
-- Africa
-  - South Africa
-    - Stellenbosch
-    - Cape Town
-  - Namibia
-    - Windhoek
-    - Sossusvlei
-    - Walvis Bay
 - North America
   - USA
     - Los Angeles
@@ -28,13 +20,16 @@ tags     : [mtb]
     - Panama City
     - San Blas Islands
 
-    ![Map Panama](/assets/images/maps/map_panama.jpg)
+![Map Central America 2014](/assets/images/maps/map_central_america_2014.png)
 
 - South America
   - Colombia
     - Cartagena
     - Medellin
     - Bogota
+
+![Map Colombia 2014](/assets/images/maps/map_colombia_2014.png)
+
 - Asia
   - China
     - Shanghai
@@ -44,6 +39,21 @@ tags     : [mtb]
     - Nelson
     - Marahau
     - Wellington
+
+![Map New Zealand 2014](/assets/images/maps/map_new_zealand_2014.png)
+
+# 2013
+
+- Africa
+  - South Africa
+    - Stellenbosch
+    - Cape Town
+  - Namibia
+    - Windhoek
+    - Sossusvlei
+    - Walvis Bay
+
+![Map South Africa 2013](/assets/images/maps/map_south_africa_2013.png)
 
 # 2011 
 
@@ -55,6 +65,8 @@ tags     : [mtb]
     - Langkawi
   - Thailand
     - Koh Lipe
+
+![Map Malaysia 2011](/assets/images/maps/map_malaysia_2011.png)
 
 # 2010
 
@@ -68,7 +80,7 @@ University student exchange program
     - Ilha Boipeba
     - Florianopolis
 
-    ![Map Ilha Boipeba](/assets/images/maps/map_brazil_boipeba.gif)
+![Map Brazil 2010](/assets/images/maps/map_brazil_2010.png)
 
 # 2009
 
@@ -92,6 +104,10 @@ University student exchange program
 	- Fes فاس
 	- Tangier طنجة
 
+![Map Morocco 2009](/assets/images/maps/map_morocco_2009.png)
+
+![Map Morocco MTB](/assets/images/maps/map_morocco_mtb.png)
+
 # 2007
 
 - Asia
@@ -100,6 +116,8 @@ University student exchange program
 	  - Yogyakarta
     - Bali
     - Gili Islands
+
+![Map Indonesia 2007](/assets/images/maps/map_indonesia_2007.png)
 
 # 2006
 
@@ -110,7 +128,8 @@ University student exchange program
     - Taoyuan 桃園市
     - Kaohsiung 高雄
     - Kenting National Park 墾丁國家公園
-    ![Map Taiwan 2006](/assets/images/maps/map_taiwan_2006.png)
+
+![Map Taiwan 2006](/assets/images/maps/map_taiwan_2006.png)
 
   - China
     - Hong Kong 香港
@@ -140,3 +159,5 @@ University student exchange program
     - Los Angeles
     - Lake Tahoe
     - San Francisco
+
+![Map USA 2001](/assets/images/maps/map_usa_2001.png)
