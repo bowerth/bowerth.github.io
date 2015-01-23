@@ -1,7 +1,7 @@
 ---
 layout  : page
 title   : Notebook
-tagline : "life is about creating yourself"
+tagline : 
 ---
 {% include JB/setup %}
 

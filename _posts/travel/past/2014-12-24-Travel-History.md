@@ -1,12 +1,10 @@
 ---
 layout   : post
 category : travel
-tagline  : ""
+tagline  : "since 2001"
 tags     : [mountainbike]
 ---
 {% include JB/setup %}
-
-Travels outside Europe since 2001
 
 # 2014
 

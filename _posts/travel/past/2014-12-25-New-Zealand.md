@@ -1,7 +1,7 @@
 ---
 layout   : post
 category : travel
-tagline  : "You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to. - J.R.R. Tolkien"
+tagline  : "there's no knowing where you might be swept off to"
 tags     : [kitesurf, hangglide]
 ---
 {% include JB/setup %}
