@@ -2,7 +2,7 @@
 layout   : post
 category : travel
 tagline  : "since 2001"
-tags     : [mountainbike]
+tags     : [mtb]
 ---
 {% include JB/setup %}
 
@@ -10,15 +10,15 @@ tags     : [mountainbike]
 
 - Africa
   - South Africa
-    - Stellenbosch: meet friend from Germany
-    - Cape Town: kite surfing
+    - Stellenbosch
+    - Cape Town
   - Namibia
-    - Windhoek: rent 4x4
+    - Windhoek
     - Sossusvlei
     - Walvis Bay
 - North America
   - USA
-    - Los Angeles: R user conference at UCLA
+    - Los Angeles
   - Costa Rica
     - San José
     - Jacó
@@ -26,24 +26,24 @@ tags     : [mountainbike]
     - Bahía Drake
   - Panama
     - Panama City
-    - San Blas Islands: sailing boat trip to Cartagena
+    - San Blas Islands
 
     ![Map Panama](/assets/images/maps/map_panama.jpg)
 
 - South America
   - Colombia
     - Cartagena
-    - Medellin: meet former flatmates in Brazil and former colleague
-    - Bogota: meet former colleague
+    - Medellin
+    - Bogota
 - Asia
   - China
-    - Shanghai: meet former visitor
+    - Shanghai
 - Oceania
-  - New Zealand (with kite surfing gear)
+  - New Zealand
     - Auckland
-    - Nelson: NYE
+    - Nelson
     - Marahau
-    - Wellington: travel with friend from Germany
+    - Wellington
 
 # 2011 
 
@@ -51,10 +51,10 @@ tags     : [mountainbike]
   - Malaysia
     - Melaka
     - Cameron Highlands
-    - Penang: visit colleague, meet friend from France
-    - Langkawi: NYE
+    - Penang
+    - Langkawi
   - Thailand
-    - Koh Lipe: travel with friend from Germany
+    - Koh Lipe
 
 # 2010
 
@@ -66,13 +66,11 @@ University student exchange program
     - Chapada Diamantina
     - Salvador de Bahia
     - Ilha Boipeba
-    - Florianopolis: learn kite surfing
+    - Florianopolis
 
     ![Map Ilha Boipeba](/assets/images/maps/map_brazil_boipeba.gif)
 
 # 2009
-
-Travel with mountain bike (Rocky Mountain Slayer 70, 2004) and light gear (8kg)
 
 - Africa
   - Morocco
@@ -98,27 +96,22 @@ Travel with mountain bike (Rocky Mountain Slayer 70, 2004) and light gear (8kg)
 
 - Asia
   - Indonesia
-  	- Jakarta: stay with family friends
+  	- Jakarta
 	  - Yogyakarta
     - Bali
-      - Kuta: meet friend from Germany
-      - Ubud
-      - Nusa Dua
-      - Sanur: meet neighbors from hometown
-      - Singaraja
     - Gili Islands
 
 # 2006
-
-First part with university culture and language program
 
 - Asia
   - Taiwan
     - Taipei 臺北市
     - Taizhong 臺中市
     - Taoyuan 桃園市
-    - Kaohsiung 高雄 (Jap: Takau)
+    - Kaohsiung 高雄
     - Kenting National Park 墾丁國家公園
+    ![Map Taiwan 2006](/assets/images/maps/map_taiwan_2006.png)
+
   - China
     - Hong Kong 香港
     - Shenzhen 深圳市
@@ -130,20 +123,16 @@ First part with university culture and language program
 
 # 2003
 
-Travel with Lufthansa voucher
-
 - Asia
   - China
     - Beijing 北京市
-    - Xi'an 西安市: visit friend
+    - Xi'an 西安市
     - Shanghai 上海市
     - Hangzhou 杭州市
 
 ![Map China 2003](/assets/images/maps/map_china_2003.png)
 
 # 2001
-
-Travelled with rental car
 
 - North America
   - USA
