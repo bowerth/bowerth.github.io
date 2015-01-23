@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Travel Information
-tagline: Everything important
+layout  : page
+title   : Notebook
+tagline : "life is about creating yourself"
 ---
 {% include JB/setup %}
 

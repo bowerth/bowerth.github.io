@@ -1,13 +1,52 @@
 ---
-layout: post
-category : New Zealand
-tagline: "urbanize"
-tags : [city]
-coordinates :
- - -73.7236504,43.2294791
-locations : Moreau Lake State Park
+layout   : post
+category : travel
+tagline  : "You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to. - J.R.R. Tolkien"
+tags     : [kitesurf, hangglide]
 ---
 {% include JB/setup %}
+
+# Accomodation
+
+27.-31.12.2014
+:   Yann Lellouche  
+    49 Howe Street  
+    1011 Auckland  
+    Ph +64 2 110 72221  
+    ASB 12-3427-0035652-00
+
+31.12.2014
+:   YHA Nelson Central  
+	59 Rutherford Street  
+	Nelson, New Zealand  
+	Tel: +64 3 545 9988  
+	[email](mailto:yha.nelson@yha.co.nz)  
+	door code: 3485  
+	[directions](http://www.hostelworld.com/hosteldetails.php/YHA-Nelson-Central/Nelson/12260/directions)  
+	![Map YHA Nelson Central](/assets/images/maps/map_yha_nelson_central.png)
+
+01.-06.01.2015
+:   Ocean View Chalets
+	Marahau  
+	Konstanze  
+    +64 2 761 83633  
+
+06.01.2015
+:   Paradiso Backpackers  
+	42 Weka Street  
+	Nelson, New Zealand  
+    Tel: 0800269667  
+    [email](mailto:bookings.aptparadiso2806@siteminder.com.au)  
+    [directions](http://www.hostelworld.com/hosteldetails.php/Paradiso-Backpackers/Nelson/27995/directions)  
+    ![Map Paradiso Backpackers](/assets/images/maps/map_paradiso_backpackers.png)
+
+07.-15.01.2015
+:   Travelodge Wellington  
+	2 to 6 Gilmer Terrace  
+	Wellington 0601  
+	![Map Airport Express](/assets/images/maps/map_travelodge_wellington.png)
+
+# Cities
 
 ## Auckland
 
@@ -38,6 +77,20 @@ Kite Surfing
 	[www.kitescool.co.nz](www.kitescool.co.nz)
 
 ## Wellington
+
+### Hang Gliding
+
+Wellington Hang Gliding and Paragliding Club
+:   [http://whgpc.homestead.com/](http://whgpc.homestead.com/)  
+	4 Philip St Carterton 5713  
+	Grant Tatham  
+	Ph: +64 6 379 7322  
+	Ph 2: +64 4 938 6539
+
+Sites
+:   Bull Hill, Wairarapa  
+	[Bull Hill, 280 Meter on paragliding365.com](http://www.paragliding365.com/index-p-flightarea_details_3029.html)  
+	![Wellington Bull Hill](/assets/images/maps/map_wellington_bull_hill.png)
 
 ### Kite Surfing
 
@@ -73,6 +126,9 @@ Spots
 	![Wellington Seatoun](/assets/images/maps/map_wellington_seatoun.png)
 
 :   S, SW: Petone  
+	Bus Line 83 [timetable](http://www.metlink.org.nz/timetables/bus/083)  
+	Bus Line 91 [timetable](http://www.metlink.org.nz/timetables/bus/091)  
+	
 	[Details](https://sites.google.com/site/wellingtonkitesurf/home/petone)  
 	Setting up and Launch  
 	The launch site can be found at Hikoikoi Reserve. To get there follow the Esplanade east along the sea front until the road turns away from the beach just past the Mobil garage. Take the next right (Kircaldy St), next left (Marin Parade) and next right which takes you along a short road to the beach. There's plenty of beach here for launching. Also sports fields are directly behind the beach and act as safety net is things go wrong. Just watch out for the gorse and bushes between the beach and the fields. (The sports fields also make a great area for practicing kite flying skills)  
@@ -95,3 +151,129 @@ Hang-gliding
 :   Season: November - March  
     contacted Lisa in December 2014  
     [info@extremeair.co.nz](mailto:info@extremeair.co.nz)
+
+# International Transport
+
+Uebergepaeck amelden
+:   Tel: +49 69 133 8930  
+    Eastern China Airlines NE652S  
+    Expedia Booking Reference: 26NQY6  
+    Ticket Number: 7814672839868
+
+## Outbound 
+
+Frankfurt - Auckland, 40h 40min 
+
+Frankfurt - Shanghai, 10h 25min, 8841km, China Eastern Airlines 220
+
+25.12.2014
+:   FRA 13:35, Terminal 2
+
+26.12.2014
+:   PVG 07:00, Terminal 1
+   
+Attente: 17h 5min
+
+Shanghai - Auckland, 13h 10min, 9385km, China Eastern Airlines 779
+
+27.12.2014
+:   PVG 00:05, Terminal 1  
+  AKL 18:15, Terminal 1
+
+## Inbound
+
+Auckland - Frankfurt, 29h 45min
+
+Auckland - Shanghai, 12h 30min, 9385km, China Eastern Airlines 780
+
+15.01.2015
+:   AKL 22:00, Terminal 1
+
+16.01.2015
+:   PVG 05:30, Terminal 1
+   
+Attente: 5h 30min 
+
+Shanghai - Paris, 12h 45 min, 9245km, China Eastern Airlines 8663, Operated by Air France AF117
+
+16.01.2014
+:   PVG 11:00, Terminal 1  
+  CDG 16:45, Terminal 2E
+
+# National Transport
+
+### To Nelson
+
+[Air New Zealand](http://www.airnewzealand.co.nz/home)  
+[Buy tickets](https://flightbookings.airnewzealand.co.nz/vbook/actions/search)  
+
+Auckland - Nelson
+:   Wed 31 Dec 2014  
+    12:15 - 13:40  
+    Flight Number: NZ5269 ATR 72  
+    Booking Reference: U87ZBH  
+    Price: NZ$213
+
+
+### Nelson / Marahau
+
+[Abel Tasman Coachlines](http://www.abeltasmantravel.co.nz/)  
+[Buy tickets](https://tflite.com/takeflitepublicatc/Default.aspx) (NZ$20.00)
+
+Nelson - Marahau
+:   01.01.2014  
+	07:45 - 09:35  
+	Booking Reference: 724615  
+	Pickup: YHA 07:35  
+	Dropoff: Park cafe 09:35  
+	Info: Check in time is 07:30  
+	Price: NZ$20  
+	Authorisation Code: 210755  
+	Transaction Reference: 724616724615
+
+Marahau - Nelson
+:   05.01.2014
+    12:30 - 14:30  
+    Booking number: 725588  
+    Check in time: 12:15  
+    Authorisation Code: 531547  
+    Transaction Reference: 725589725588
+
+### To Wellington
+
+[Rail New Zealand tickets](http://www.railnewzealand.com/search/nelson/wellington/)
+
+Nelson - Wellington
+:   08:15 - 16:30  
+	RailBus NZ Booking Reference: AA07568  
+	InterCity Booking Reference: C4EE74  
+    NZ$114.00
+
+**Details**
+
+Nelson - Picton
+:   Wed 07 Jan 2015  
+	Service IC8701  
+	08:15 - 10:40  
+	Departure: Outside Travel Centre, 27 Bridge St  
+	Arrival: Outside Main Entrance of Interislander Ferry Terminal  
+	Train: InterCity IC8701  
+	Info: Please be at your stop at least 15 minutes before departure, and report to the driver before boarding
+
+Picton - Wellington
+:   Wed 07 Jan 2015  
+	Service II6524  
+	13:15 - 16:35  
+	Departer Picton Interislander Ferry Terminal, Auckland Street, in Central Picton  
+	Arrival: Wellington Interislander Ferry Terminal, Aotea Quay  
+	Ferry: II6524 Picton KAITAKI - 45min CHECK IN  
+	Info: Please Check in and Collect your Boarding Pass inside the Picton Ferry Terminal upon arrival in Picton
+
+### To Auckland
+
+Wellington - Auckland
+:   Thu 15 Jan 2015  
+	18:10 - 19:10  
+	Flight Number: NZ0460  
+	Booking Reference: NV8FJH  
+	Price: NZ$123
