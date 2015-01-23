@@ -8,6 +8,8 @@ tags     :
 
 # 2014
 
+## July
+
 - North America
   - USA
     - Los Angeles
@@ -30,6 +32,8 @@ tags     :
 
 ![Map Colombia 2014](/assets/images/maps/map_colombia_2014.png)
 
+## December - January
+
 - Asia
   - China
     - Shanghai
@@ -44,6 +48,8 @@ tags     :
 
 # 2013
 
+## December - January
+
 - Africa
   - South Africa
     - Stellenbosch
@@ -56,6 +62,8 @@ tags     :
 ![Map South Africa 2013](/assets/images/maps/map_south_africa_2013.png)
 
 # 2011 
+
+## December - January
 
 - Asia
   - Malaysia
@@ -70,8 +78,7 @@ tags     :
 
 # 2010
 
-University student exchange program
-
+## January - April
 - South America
   - Brazil
     - Ribeirão Preto
@@ -83,6 +90,8 @@ University student exchange program
 ![Map Brazil 2010](/assets/images/maps/map_brazil_2010.png)
 
 # 2009
+
+## November
 
 - Africa
   - Morocco
@@ -110,6 +119,8 @@ University student exchange program
 
 # 2007
 
+## September
+
 - Asia
   - Indonesia
   	- Jakarta
@@ -120,6 +131,8 @@ University student exchange program
 ![Map Indonesia 2007](/assets/images/maps/map_indonesia_2007.png)
 
 # 2006
+
+## August
 
 - Asia
   - Taiwan
@@ -142,6 +155,8 @@ University student exchange program
 
 # 2003
 
+## November
+
 - Asia
   - China
     - Beijing 北京市
@@ -152,6 +167,8 @@ University student exchange program
 ![Map China 2003](/assets/images/maps/map_china_2003.png)
 
 # 2001
+
+## August
 
 - North America
   - USA
