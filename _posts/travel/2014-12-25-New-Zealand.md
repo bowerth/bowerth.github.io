@@ -84,8 +84,12 @@ Wellington Hang Gliding and Paragliding Club
 :   [http://whgpc.homestead.com/](http://whgpc.homestead.com/)  
 	4 Philip St Carterton 5713  
 	Grant Tatham  
+	[tathams@xtra.co.nz](mailto:tathams@xtra.co.nz)  
 	Ph: +64 6 379 7322  
 	Ph 2: +64 4 938 6539
+
+Shane Morton
+:   [thathanggliderguy@gmail.com](mailto:thathanggliderguy@gmail.com)
 
 Sites
 :   Bull Hill, Wairarapa  
@@ -147,7 +151,7 @@ Spots
 
 ## Queenstown
 
-Hang-gliding
+Hang gliding
 :   Season: November - March  
     contacted Lisa in December 2014  
     [info@extremeair.co.nz](mailto:info@extremeair.co.nz)
