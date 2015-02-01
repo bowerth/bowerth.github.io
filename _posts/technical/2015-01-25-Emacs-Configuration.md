@@ -1,7 +1,7 @@
 ---
 layout   : post
-category : programming
-tagline  : "setup"
+category : technical
+tagline  : 
 tags     : 
 ---
 {% include JB/setup %}
