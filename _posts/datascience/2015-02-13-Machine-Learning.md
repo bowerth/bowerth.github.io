@@ -1,3 +1,4 @@
+---
 layout   : post
 category : datascience
 tagline  : 
@@ -71,7 +72,8 @@ LibSVM and LibLinear
 ## Learning Material
 
 Python scikit learn
-:   ENSAE course material by [Gaël Varoquaux](http://gael-varoquaux.info/) [sklearn_ensae_course](https://github.com/GaelVaroquaux/sklearn_ensae_course)
+:   ENSAE course material by [Gaël Varoquaux](http://gael-varoquaux.info/) [sklearn_ensae_course](https://github.com/GaelVaroquaux/sklearn_ensae_course)  
+    navigate to "rendered notebooks" folder and execute `ipython notebook`
 
 [scikit-learn](http://scikit-learn.org/stable/) homepage
 
