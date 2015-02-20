@@ -13,10 +13,12 @@ tags     :
 
 ### Links
 
+- [Deutsche Botschaft Frankreich](http://www.allemagne.diplo.de/Vertretung/frankreich/de/Startseite.html)
 - [Online Terminsystem](https://service2.diplo.de/rktermin/extern/choose_category.do?locationCode=pari&realmId=391&categoryId=637)
 - [Electronic ID card](https://www.bsi.bund.de/EN/Topics/ElectrIDDocuments/eIDcard/eIDcard_node.html;jsessionid=42A6CE37C996BF72FD4EE1B7404F38F3.2_cid368)
 - [Electronic passport](https://www.bsi.bund.de/EN/Topics/ElectrIDDocuments/EPassport/epassport_node.html)
 - [NIST Biometric Image Software](http://www.nist.gov/itl/iad/ig/nbis.cfm)
+- [Reisen mit abgelaufenem Reisepass](http://www.allemagne.diplo.de/contentblob/3916912/Daten/4142669/00passlinkabgelaufenerpassdatei.pdf)
 
 Permanence téléphonique
 :   du lundi au mercredi de 14h00 à 16h00,  
