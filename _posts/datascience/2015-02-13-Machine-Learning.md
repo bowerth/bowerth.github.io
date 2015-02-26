@@ -69,13 +69,6 @@ Shogun
 LibSVM and LibLinear
 :   these are C libraries for support vector machines; there are also bindings or implementations for many other languages. These are the libraries used for support vector machine learning in Scikit-learn.
 
-## Learning Material
-
-Python scikit learn
-:   ENSAE course material by [Gaël Varoquaux](http://gael-varoquaux.info/) [sklearn_ensae_course](https://github.com/GaelVaroquaux/sklearn_ensae_course)  
-    navigate to "rendered notebooks" folder and execute `ipython notebook`
-
-[scikit-learn](http://scikit-learn.org/stable/) homepage
 
 ## Misc
 
