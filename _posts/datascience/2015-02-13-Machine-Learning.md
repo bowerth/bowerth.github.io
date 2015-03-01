@@ -6,9 +6,9 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
-## Overview
+## 17 Great Machine Learning Libraries
 
-- [17 Great Machine Learning Libraries](http://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/)
+Source: [daoudclarke.github.io/machine-learning-libraries](http://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/)
 
 ### Python
 
@@ -69,7 +69,30 @@ Shogun
 LibSVM and LibLinear
 :   these are C libraries for support vector machines; there are also bindings or implementations for many other languages. These are the libraries used for support vector machine learning in Scikit-learn.
 
+## Books
 
-## Misc
+The Elements of Statistical Learning
+:   Author: Hastie, Tibshirani, and Friedman  
+	Content: formal specifications of basic machine learning techniques (mathematics, statistics, computer science)
+	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://www-stat.stanford.edu/~tibs/ElemStatLearn/)
+
+## Links
 
 - [Why becoming a data scientist is NOT actually easier than you think](https://medium.com/cs-math/why-becoming-a-data-scientist-is-not-actually-easier-than-you-think-5b65b548069b)
+
+## Models
+
+Generalized Linear Models (GLM)
+:   
+
+Probabilistic Graphical Models
+:   
+
+Latent Variable Models
+:   
+
+Time-Series Model
+:   
+
+Real-Time Learning
+:    

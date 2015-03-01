@@ -29,16 +29,46 @@ create new repo
 :   `git init [reponame]`
 
 create new file
-:   `touch [filename.ext]`
+:   `touch [filename]`
 
 status of repo
 :   `git status`
 
 add to staging area
-:   `git add [filename.ext]`
+:   `git add [filename]`
+
+add untracked files, e.g. after renaming
+:   `git add . -A`
+
+set file back to untracked state
+:   `git rm [filename]`
+
+ignore files permanently
+:   `touch .gitignore`  
+	edit contents:  
+	`*.log` ignore file extension in root folder  
+	`**/*.log` ignore file extension in all subfolders  
+	`target` ignore folder  
+	finally, `git add .gitignore`
+
+![git file workflow](/assets/graphics/git_file_workflow.svg)
 
 view repo file tree
 :   `tree`
+
+## Cloning Repositories
+
+supported cloning protocols
+:   - ssh: `git clone ssh://user@server:user/project.git` or `git clone user@server:user/project.git`  
+	- http: `git clone http://server/user/project.git` no authentication  
+	- https: `git clone https://user@server/user/project.git` can be made to work with firewall  
+	- git: `git clone git://server/user/project.git` running on port 9418  
+	- file: `git clone file:///myrepos/project` or `git clone /myrepos/project`. Convenient way to manage different versions of large repo  
+
+clone with different name
+:   `git clone [repo] [alias name]`
+
+## Command Composition, Storage And Hashesm04 Command Composition, Storage And Hashesmand Composition, Storage And Hashes
 
 Source: McCullough and Berglund on Matering Git, O'Reilly    
 
