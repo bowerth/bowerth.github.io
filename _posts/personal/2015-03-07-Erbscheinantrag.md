@@ -360,7 +360,7 @@ adoptierte und außerhalb der Ehe geborene):
 12. Zu welchen Bruchteilen sind die durch Verfügung von Todes wegen
     eingesetzten Erben oder die gesetzlichen Erben erbberechtigt? `unbekannt`
 
-13. Sonstiges:
+13. Sonstiges: 
 
     1. Gehört ein Grundstück in Deutschland zum Nachlass des
     Erblassers, wo liegt es (möglichst genaue Angaben erbeten,
