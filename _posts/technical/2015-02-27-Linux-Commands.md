@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+create simple http server
+:   `cd ~/Downloads/scipy-lectures.github.com-master/ \`
+	`&& python -m SimpleHTTPServer`
+
 return all files with a specific extension
 :   `ls -al | grep .git`
 

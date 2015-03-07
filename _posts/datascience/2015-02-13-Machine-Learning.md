@@ -6,6 +6,8 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+Torsten Hothorm (UZH) on [Big Data Science](http://user.math.uzh.ch/hothorn/talks/big_data_science_UZH_2014.pdf)
+
 ## 17 Great Machine Learning Libraries
 
 Source: [daoudclarke.github.io/machine-learning-libraries](http://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/)
@@ -71,12 +73,30 @@ LibSVM and LibLinear
 
 ## Books
 
-The Elements of Statistical Learning
+    The Elements of Statistical Learning
 :   Author: Hastie, Tibshirani, and Friedman  
 	Content: formal specifications of basic machine learning techniques (mathematics, statistics, computer science)
-	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://www-stat.stanford.edu/~tibs/ElemStatLearn/)
+	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
 
-## Links
+## Articles
+
+### ASA
+
+Statistics as a Science, Not an Art: The Way to Survive in Data Science
+:   2015-02  
+    [statscience_feb2015](http://magazine.amstat.org/blog/2015/02/01/statscience_feb2015/)
+
+Statistics Losing Ground to Computer Science
+:   2014-11  
+    [statistics-losing-ground-to-computer-science](http://magazine.amstat.org/blog/2014/11/01/statistics-losing-ground-to-computer-science/)
+
+Time to Embrace a New Identity?
+:   2014-10  
+    [statview-oct14](http://magazine.amstat.org/blog/2014/10/01/statview-oct14/)
+
+Statistics Training: A Big Role in Big Data?
+:   2014-05  
+    [statview-big-data](http://magazine.amstat.org/blog/2014/05/01/statview-big-data/)
 
 - [Why becoming a data scientist is NOT actually easier than you think](https://medium.com/cs-math/why-becoming-a-data-scientist-is-not-actually-easier-than-you-think-5b65b548069b)
 

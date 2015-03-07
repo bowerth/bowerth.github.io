@@ -40,6 +40,9 @@ add to staging area
 add untracked files, e.g. after renaming
 :   `git add . -A`
 
+add and commit together (only for tracked files)
+:   `git commit -a -m'[message]'`
+
 set file back to untracked state
 :   `git rm [filename]`
 
@@ -68,10 +71,48 @@ supported cloning protocols
 clone with different name
 :   `git clone [repo] [alias name]`
 
-## Command Composition, Storage And Hashesm04 Command Composition, Storage And Hashesmand Composition, Storage And Hashes
+## Command Composition, Storage, Log
 
-Source: McCullough and Berglund on Matering Git, O'Reilly    
+show recent commits
+:   `git log`
 
-Other resources:
+show last 3 commits
+:   `git log HEAD^^^..HEAD`
 
-Pro Git book by Scott Chacon and Ben Straub at Apress [http://git-scm.com/book/en/v2/](http://git-scm.com/book/en/v2/)
+show last 3 commits with details (patch)
+:   `git log HEAD^^^..HEAD -p`
+
+show specific previous commits with details (patch)
+:   `git log HEAD~6..HEAD~4 -p`
+
+show recent commits in compressed view
+:   `git log --pretty=oneline`
+
+show commits around specific hash
+:   `git log [hash]`
+
+show two commits before specific hash
+:   `git log [hash]^^..[hash]`
+
+show n commits before specific hash
+:   `git log [hash]~[n]..[hash]`
+
+show details for last commit
+:   `git show`
+
+## Branching
+
+when to branch
+:   - short lived  
+	- feature  
+	- release
+
+Source
+:   McCullough and Berglund on Matering Git, O'Reilly  
+	[matthewmccullough](`https://github.com/matthewmccullough`)  
+	[github-cheat-sheet](`https://github.com/matthewmccullough/github-cheat-sheet`)
+
+## Other resources
+
+- [GitHub Trainig Kit](`https://training.github.com/kit`) and [page source](https://github.com/matthewmccullough/slidedown`)
+- [Pro Git book by S. Chacon and B. Straub](http://git-scm.com/book/en/v2/)

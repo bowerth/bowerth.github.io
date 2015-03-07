@@ -6,7 +6,28 @@ tags     :
 ---
 {% include JB/setup %}
 
-## JavaScript
+## Commands
+
+### General
+
+convert buffer format `DOS` / `UNIX`
+:   `C-x RET f` or `M-x set-buffer-file-coding-system`  
+    format examples: `dos`, `unix`, `utf-8-unix`
+
+file conversion with iconv
+:   R command `iconvlist()` provides an alphabetical list of the supported encodings
+
+new folder in `dired` mode
+:   `+`
+
+### ESS
+
+extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/pipermail/ess-help/2009-July/005455.html)
+:   `ess-execute-screen-options` or `C-c w`
+
+## `.emacs` configuration
+
+### JavaScript
 
 install el-get
 :   copy/paste this code into your `scratch` buffer and evaluate using `M-x eval-print-last-exp`
