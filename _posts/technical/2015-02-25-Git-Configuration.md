@@ -104,8 +104,11 @@ show details for last commit
 
 when to branch
 :   - short lived  
-	- feature  
-	- release
+    - feature  
+    - release
+    
+list remote branches
+:   `git branch -a`
 
 Source
 :   McCullough and Berglund on Matering Git, O'Reilly  
