@@ -95,7 +95,7 @@ müssen mit einer von einem vereidigten Übersetzer gefertigten
        - ausgestellt am: `10.02.2015`
        - ausstellende Behörde: `Botschaft Paris`
     9. Verwandtschaftsverhältnis zum Erblasser: `Sohn`
-    10. Zweck, für den der Erbschein benötigt wird: `Kontenschliessung, Hausverkauf`
+    10. Zweck, für den der Erbschein benötigt wird: `Kontenschliessung, Hausverkauf im Ausland`
 
 2. Zum Erblasser (Verstorbener):
 
@@ -104,11 +104,11 @@ müssen mit einer von einem vereidigten Übersetzer gefertigten
     3. Geburtsdatum und -land: `09.09.1954`
     4. Wann und wo gestorben (Sterbeurkunde)?: `05.08.2014, Santa Cruz de la Sierra, Bolivien`
     
-    5. Wohnsitz zum Zeitpunkt des Todes: Santa Cruz de la Sierra, Bolivien
+    5. Wohnsitz zum Zeitpunkt des Todes: `Santa Cruz de la Sierra, Bolivien`
        
        Wie lange bestand der letzte Wohnsitz im Sterbeland? Angabe der
        verwaltungsmäßigen Zugehörigkeit (Verwaltungsbezirk, Provinz
-       etc. Bundesstaat). `Seit ca. 2008`
+       etc. Bundesstaat). `seit ca. 2007 in Santa Cruz de la Sierra, Bolivien`
 
        Letzter Wohnsitz im Land der Staatsangehörigkeit: `unbekannt`
     
@@ -161,7 +161,7 @@ müssen mit einer von einem vereidigten Übersetzer gefertigten
         - 1te Ehe: `Deutschland`
         - 2te Ehe:
 
-    12. Hat der Erblasser früher in Deutschland gewohnt, wann, wo? `Ja, Ort unbekannt`
+    12. Hat der Erblasser früher in Deutschland gewohnt, wann, wo? `ja, bis ca. 2007, Ort unbekannt`
 
     13. Rechtliche Zugehörigkeit oder Nichtzugehörigkeit zu einer Kirche,
     Religionsgemeinschaft oder Weltanschauungsgemeinschaft des Erblassers
@@ -441,7 +441,7 @@ adoptierte und außerhalb der Ehe geborene):
 
     15. Die Erbscheinsverhandlung soll nach Möglichkeit in deutscher
     Sprache geführt werden. Haben Sie ausreichende deutsche
-    Sprachkenntnisse?: `Ja`
+    Sprachkenntnisse?: `ja`
 
     16. Ich bitte um Anberaumung eines Termins für die Beurkundung der
     Erbscheinsverhandlung. Folgende Termine würden mir nicht passen:

@@ -19,6 +19,9 @@ remove all files with a specific pattern
 change theme for specific window
 :   `xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT dark`
 
+convert pdf to text
+:   `pdftotext [file]`
+
 ## Pandoc
 
 Navigate to containing folder
