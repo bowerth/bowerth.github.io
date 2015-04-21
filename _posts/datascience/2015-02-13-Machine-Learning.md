@@ -100,6 +100,12 @@ Statistics Training: A Big Role in Big Data?
 
 - [Why becoming a data scientist is NOT actually easier than you think](https://medium.com/cs-math/why-becoming-a-data-scientist-is-not-actually-easier-than-you-think-5b65b548069b)
 
+## Data Sources
+
+FLUENTD
+:   data collector for unified logging layer  
+	http://www.fluentd.org/
+
 ## Models
 
 Generalized Linear Models (GLM)

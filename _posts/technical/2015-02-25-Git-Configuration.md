@@ -8,12 +8,22 @@ tags     :
 
 ## Setup Git
 
+account
+:   http://github.com/cis-itn-oecd/  
+    alternative: bitbucket.com  
+    `git config --global http.proxy wsg-proxy.oecd.org:80`  
+    `git config --global https.proxy wsg-proxy.oecd.org:80`  
+    `git config --global http.sslverify false`
+
 attribution for commited content
 :   `git config --global user.name "bowerth"`  
     `git config --global user.email "bo.werth@gmail.com"`
 
 add colors to git console
 :   `git config --global color.ui auto`
+
+increase Git’s HTTP buffer
+:   `git config --global http.postBuffer 2M`
 
 ssh key pair for authenticating
 :   `ssh-keygen -t rsa -C "bo.werth@gmail.com"`  
@@ -42,6 +52,9 @@ add untracked files, e.g. after renaming
 
 add and commit together (only for tracked files)
 :   `git commit -a -m'[message]'`
+
+nuke last commit and never see it again
+:   `git reset --hard HEAD~1`
 
 set file back to untracked state
 :   `git rm [filename]`

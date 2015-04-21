@@ -29,6 +29,37 @@ Nachlassverwaltung
 - Wichtige Informationen zur Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059710/Daten/3722015/06erbrechterbausschlagungmbdatei.pdf)
 - Formular für eine Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059712/Daten/3722017/06erbrechterbausschlagungformdatei.pdf)
 
+### Honorarkonsulat des Plurinationalen Staates Bolivien in Frankfurt am Main
+
+Konsul: Herr Dipl. Ing. Stephanus van Bergerem
+Konsularbezirk: Hessen, Thüringen
+
+c/o Eco Terra GmbH
+Am Quarzitbruch 7
+65817 Eppstein
+Deutschland
+
+Mobil:  +49 160 535 1885     
+Tel.:   +49 (0) 6198 57736 120   
+Fax:    +49 (09) 6198 57736 108  
+
+E-Mail: frankfurt@konsulat-bolivien.eu
+
+Anruf 10. April 2015: 
+
+- Übersetzung von zertifiziertem Übersetzer (Liste bei Landgericht)
+- bei Landgericht beglaubigen lassen
+- Original und Fotokopien mit Rückumschlag zum Konsulat schicken
+- Problem: keine Wertmarken um Legalisierung zu bezahlen
+- Alternative: Frau Tolaba in der bolivianischen Botschaft in Berlin
+- Begründing: keine Verwandten in Bolivien um Gebühren zu bezahlen
+
+Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
+:   Ana Maria Tolaba  
+    E-Mail: consulado-berlin@bolivia.de  
+    Tel.: +49 (0)30 26391512  
+    Montag bis Freitag 09:00 – 14:00 Uhr
+
 ### Offizielle Links
 
 - Amtsgericht Kaiserslautern [Formular Erbscheinantrag](http://www.mjv.rlp.de/icc/justiz/nav/25f/binarywriterservlet%3FimgUid%3D3dd60b27-ff72-7f21-954e-a0a577fe9e30%26uBasVariant%3D11111111-1111-1111-1111-111111111111)
