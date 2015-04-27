@@ -53,6 +53,11 @@ add untracked files, e.g. after renaming
 add and commit together (only for tracked files)
 :   `git commit -a -m'[message]'`
 
+push repo to remote, e.g. github
+:   create repo on github  
+    `git remote add origin git@github.com:bowerth/sdmxBrowser.git`  
+    `git push -u origin master`
+    
 nuke last commit and never see it again
 :   `git reset --hard HEAD~1`
 
