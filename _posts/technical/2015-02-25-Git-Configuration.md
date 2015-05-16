@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## GUI
+
+http://sourceforge.net/projects/gitextensions/
+
 ## Setup Git
 
 account

@@ -5,6 +5,9 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
+# # This will require each of these gems automatically
+# gems: [/_plugins/font-awesome.rb]
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
