@@ -22,6 +22,9 @@ Floor
 Contact
 :   +33 6 95 34 65 36
 
+Reservation
+:   [823684 on airbnb](https://www.airbnb.com/rooms/823684)
+
 Directions from Airport 
 :   see [RATP website](http://www.ratp.fr/itineraires/fr/ratp/resultat-detaille/start/Aeroport+Charles+De+Gaulle+2+Tgv+%28RER%29%2C+Le+Mesnil-Amelot/end/Bir-Hakeim+%28Grenelle%29+%28METRO%29%2C+Paris/is_date_start/1/route_type/plus_rapide)
 
