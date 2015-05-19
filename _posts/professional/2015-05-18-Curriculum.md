@@ -49,9 +49,6 @@ International Studies
 2002 Gottlieb Daimler Gymnasium, Sindelfingen  
 :   Engineering, Computing Technology and Design
 
-1996-2002 Gymnasium Renningen
-:
-
 #### Massive Open Online Courses
 
 [Coursera](https://www.coursera.org)
