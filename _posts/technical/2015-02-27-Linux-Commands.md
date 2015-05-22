@@ -152,6 +152,6 @@ change theme for specific window
 convert pdf to text
 :   `pdftotext [file]`
 
-## ToDo
+### ToDo
 
 - create ruby module to pick up page source md file, generate pdf and trigger file download with default location and file name

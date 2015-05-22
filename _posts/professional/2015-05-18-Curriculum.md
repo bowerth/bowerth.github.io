@@ -22,7 +22,7 @@ tags :
 
 ### Education
 
-#### 2005-2010
+#### 2005-2009
 
 University
 :   [Eberhard Karls University Tuebingen](http://www.uni-tuebingen.de/en/faculties/wirtschafts-und-sozialwissenschaftliche-fakultaet/faecher/wirtschaftswissenschaft/fachbereich.html) (DE)
