@@ -6,6 +6,14 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Clean cache
+
+old releases
+:   `yum clean all --releasever=19`
+
+log files
+:   `rm -r /var/log/journal/*`
+
 ## Bulk copying SQL Server Data from Linux and UNIX
 
 - open source alternative: [freebcp](http://linux.die.net/man/1/freebcp)
