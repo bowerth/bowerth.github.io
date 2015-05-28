@@ -1,8 +1,8 @@
 ---
 layout : post
 category : professional
-tagline :
-tags :
+tagline : 
+tags : 
 ---
 {% include JB/setup %}
 
@@ -20,7 +20,7 @@ Um APIs zur externen Datenabfrage über das Internet effizient zu nutzen, werden
 
 Beispielsweise können die in der Produktion eingesetzten Maschinen eine solche API bereitstellen, Abfragen zu Sensoren und anderen Werten dezentral erfolgen und sich zu Überwachungszwecken in einer einzigen Oberfläche verdichten lassen.
 
-### Entwicklung von Graphischen Repräsentationen der Daten
+### Entwicklung von Graphischen Repraesentationen der Daten
 
 Sobald die erforderlichen Daten, sowohl von internen als auch externen Quellen, an einem Ort integriert wurden, besteht die Herausforderung in der Auswahl von geeigneten graphischen Darstellungen, um das Verständnis der Zusammenhänge zu vertiefen.
 

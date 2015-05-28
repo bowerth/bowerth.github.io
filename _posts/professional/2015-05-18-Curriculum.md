@@ -1,8 +1,8 @@
 ---
 layout : post
 category : professional
-tagline :
-tags :
+tagline : 
+tags : 
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ tags :
 >   75015 Paris, France  
 >   Mobile: +33 (0)6.95.34.65.36  
 >   Fixed: +33 (0)1.45.24.93.62  
->   Email: [bo.werth@oecd.org](mailto:bo.werth@oecd.org)
+>   Email: bo.werth@oecd.org
 
 ## Bo Werth, Data Scientist / Industry Statistics
 
@@ -25,10 +25,10 @@ tags :
 #### 2005-2009
 
 University
-:   [Eberhard Karls University Tuebingen](http://www.uni-tuebingen.de/en/faculties/wirtschafts-und-sozialwissenschaftliche-fakultaet/faecher/wirtschaftswissenschaft/fachbereich.html) (DE)
+:   [Eberhard Karls University Tuebingen](http://www.uni-tuebingen.de) (DE)
 
 Degree
-:   International Economics, East Asia (Diplom, MA equivalent) 2.1 honours equivalent  
+:   International Economics, East Asia (1.7 Diploma, MA honours equivalent)  
 
 Subjects
 :   - Corporate Finance : Options and Futures, Continuous Time Finance
@@ -66,9 +66,9 @@ International Studies
 
 since 07/2011 Statistician / Analyst at the OECD Directorate for Science, Technology and Industry
 :   - Shiny server management and application development for interactive data analysis
-    -	R data source compilation for Structural Analysis database [www.oecd.org/sti/stan](http://www.oecd.org/sti/stan)  
+    -	R data source compilation for [Structural Analysis database](http://www.oecd.org/sti/stan)  
     - Sectoral specialisation, mark-up calculation and competitiveness [Productivity Indicators](http://dx.doi.org/10.1787/pdtvy-2013-en)  
-    - Trade in Value-added Project [www.oecd.org/trade/valueadded](http://www.oecd.org/trade/valueadded)  
+    - [Trade in Value-added Project](http://www.oecd.org/trade/valueadded)  
     - Bibliometric analysis of large datasets using parallel computing [blog.scopus.com/about](http://blog.scopus.com/about)
 
 10/2010-6/2011 Consultant to the OECD Directorate for Science, Technology and Industry
@@ -135,7 +135,7 @@ Traveling
 :   India (2015), Costa Rica, Panama, Columbia, New Zealand (2014), South Africa, Namibia (2013), Malaysia, Thailand (2011), Brazil (2010), Morocco (2009), Indonesia (2007), Taiwan (2006), China (2003, 2006), USA (2001, 2014)
 
 Sports
-:  	Tennis, Running, Track Cycling, Mountainbiking, kite surfing, hanggliding
+:  	Cycling, Tennis, Running, Kite Surfing, Hang Gliding
 
 Arts
-:  	High Dynamic Range photography and digital video editing
+:  	High Dynamic Range Photography, Digital Video Editing, Computer Arts with [Processing](https://processing.org/)
