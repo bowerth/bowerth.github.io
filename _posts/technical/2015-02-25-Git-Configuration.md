@@ -132,6 +132,17 @@ when to branch
 list remote branches
 :   `git branch -a`
 
+## Merging
+
+open files with merge conflict in sublime
+:   `git diff --name-only | uniq | xargs sublime_text`
+
+accept own or foreign changes globally
+:   `git merge --strategy-option theirs`
+
+file-based accept own or foreign changes
+:   `git checkout --theirs path/to/the/conflicted_file`
+
 Source
 :   McCullough and Berglund on Matering Git, O'Reilly  
 	[matthewmccullough](`https://github.com/matthewmccullough`)  
