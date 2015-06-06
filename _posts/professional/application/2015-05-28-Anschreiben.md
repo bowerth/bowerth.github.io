@@ -20,13 +20,13 @@ Meine Affinitaet fuer Computer begann frueh. Bereits im Alter von sechs Jahren b
 
 Meine Leidenschaft fuer digitale Videobearbeitung im Alter von 15 Jahren veranlasste mich zum Wechsel auf ein technisches Gymnasium. Der Mangel an mathematischer Tiefe liess mich jedoch erneut die Schule wechseln. Zuletzt waren Physik und Mathematik neben Geschichte und Musik meine bevorzugten Schulfaecher. Vom Physikstudium wurde mir bei Abschluss leider abgeraten und keines der Faecher Informatik, Mathematik oder Maschinenbau konnte mich annaehernd interessieren. 
 
-Neben der Faszination fuer Chinesisch, die ich von einer selbststaendigen Reise in chinesische Grossstaedte im Alter von 18 Jahren mitbrachte, interessierten mich komplexe qualitative zusammenhaenge und deren quantitative Erfassung.
+Neben der Faszination fuer Chinesisch, die ich von einer selbststaendigen Reise in chinesische Grossstaedte im Alter von 18 Jahren mitbrachte, interessierten mich komplexe qualitative Zusammenhaenge und deren quantitative Erfassung.
 
 Im Studium der internationalen Volkswirtschaftslehre mit NC 1.6 fehlten mir leider die Anwendungsmoeglichkeiten von Computertechnologie. Diese fand sich lediglich im Bereich der betrieblichen Finanzwirtschaft, da dort ein Ingenieur, der spaetere Betreuer meiner Diplomarbeit, unterrichtete. Kurse in Physik ueber Hitzeausbreitungsfunktionen sowie Doktorandenkurse in partiellen und stochastischen Differentialgleichungen weckten mein Interesse. 
 
 Leider traf mein Studienabschluss mit der globalen Finanzkrise zusammen und als Berufseinsteiger gab es in diesem Bereich keine Moeglichkeiten. So erhielt ich die Moeglichkeit, mein erlerntes Wissen bei einem profilierten Think-Tank mit Erfahrungen anzureichern, sowohl inhaltlich als auch technisch. 
 
-In der Direktion Statistik konnte ich mich nach dem schnellen Abschluss eines Projekts, fuer das ich bereits in Brasilien die noetigen Kontakte herstellen konnte, in ein Datenintensives Projekt einbringen. In fuenf Monaten erlernte ich intensiv die Nutzung von Sequel Datenbank Technologie und mir wurde direkt im Anschluss die Moeglichkeit geboten, als Senior Statistiker eine komplexe Taetigkeit in der Programmiersprache SAS fortzusetzen. 
+In der Direktion Statistik konnte ich mich nach dem schnellen Abschluss eines Projekts, fuer das ich bereits in Brasilien die noetigen Kontakte herstellen konnte, in ein datenintensives Projekt einbringen. In fuenf Monaten erlernte ich intensiv die Nutzung von Sequel Datenbank Technologie und mir wurde direkt im Anschluss die Moeglichkeit geboten, als Senior Statistiker eine komplexe Taetigkeit in der Programmiersprache SAS fortzusetzen. 
 
 Die Uebernahme der Verantwortung fuer die unter Studenten und Professoren als gemeinhin "nuetzlichste Datenbank der OECD", die Strukturanalysedatenbank, stellte sich als eine sehr gute Moeglichkeit heraus. Nach nur eineinhalb Jahren wurde ich in ein sehr komplexes Projekt zur Schaetzung von globalen Wertschoepfungsketten eingebunden. Im Rahmen des Projekts entwickelte und implementierte ich die erste [Cloud-Sever Anwendung der OECD](http://oecd-icio.cloudapp.net:3838/industry). 
 

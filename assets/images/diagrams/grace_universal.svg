@@ -1,0 +1,408 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Ebene_1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="458px" height="370px" viewBox="0 0 235.616 197.945" enable-background="new 0 0 235.616 197.945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs xmlns="http://www.w3.org/1999/xhtml"><style type="text/css"><![CDATA[
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0px; }
+[hidden] { display: none; }
+html { color: rgb(68, 68, 68); font-size: 100%; background: rgb(255, 255, 255); }
+body { margin: 0px; }
+a:focus { outline: dotted thin; }
+a:active, a:hover { outline: 0px; }
+h1 { font-size: 2em; margin: 0.67em 0px; }
+h2 { font-size: 1.5em; margin: 0.83em 0px; }
+h3 { font-size: 1.17em; margin: 1em 0px; }
+h4 { font-size: 1em; margin: 1.33em 0px; }
+h5 { font-size: 0.83em; margin: 1.67em 0px; }
+h6 { font-size: 0.67em; margin: 2.33em 0px; }
+abbr[title] { border-bottom-width: 1px; border-bottom-style: dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { box-sizing: content-box; height: 0px; }
+mark { color: rgb(0, 0, 0); background: rgb(255, 255, 0); }
+p, pre { margin: 1em 0px; }
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q::before, q::after { content: none; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+dl, menu, ol, ul { margin: 1em 0px; }
+dd { margin: 0px 0px 0px 40px; }
+menu, ol, ul { padding: 0px 0px 0px 40px; }
+nav ul, nav ol { list-style: none none; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0px; }
+form { margin: 0px; }
+fieldset { border: 1px solid silver; margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0px; padding: 0px; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0px; vertical-align: baseline; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0px; }
+input[type="search"] { -webkit-appearance: textfield; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0px; }
+body { min-width: 960px; }
+.container_12 { margin-left: auto; margin-right: auto; width: 960px; position: relative; }
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 { display: inline; float: left; margin-left: 10px; margin-right: 10px; }
+.push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4, .push_5, .pull_5, .push_6, .pull_6, .push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11 { position: relative; }
+.alpha { margin-left: 0px; }
+.omega { margin-right: 0px; }
+.container_12 .grid_1 { width: 60px; }
+.container_12 .grid_2 { width: 140px; }
+.container_12 .grid_3 { width: 220px; }
+.container_12 .grid_4 { width: 300px; }
+.container_12 .grid_5 { width: 380px; }
+.container_12 .grid_6 { width: 460px; }
+.container_12 .grid_7 { width: 540px; }
+.container_12 .grid_8 { width: 620px; }
+.container_12 .grid_9 { width: 700px; }
+.container_12 .grid_10 { width: 780px; }
+.container_12 .grid_11 { width: 860px; }
+.container_12 .grid_12 { width: 940px; }
+.container_12 .prefix_1 { padding-left: 80px; }
+.container_12 .prefix_2 { padding-left: 160px; }
+.container_12 .prefix_3 { padding-left: 240px; }
+.container_12 .prefix_4 { padding-left: 320px; }
+.container_12 .prefix_5 { padding-left: 400px; }
+.container_12 .prefix_6 { padding-left: 480px; }
+.container_12 .prefix_7 { padding-left: 560px; }
+.container_12 .prefix_8 { padding-left: 640px; }
+.container_12 .prefix_9 { padding-left: 720px; }
+.container_12 .prefix_10 { padding-left: 800px; }
+.container_12 .prefix_11 { padding-left: 880px; }
+.container_12 .suffix_1 { padding-right: 80px; }
+.container_12 .suffix_2 { padding-right: 160px; }
+.container_12 .suffix_3 { padding-right: 240px; }
+.container_12 .suffix_4 { padding-right: 320px; }
+.container_12 .suffix_5 { padding-right: 400px; }
+.container_12 .suffix_6 { padding-right: 480px; }
+.container_12 .suffix_7 { padding-right: 560px; }
+.container_12 .suffix_8 { padding-right: 640px; }
+.container_12 .suffix_9 { padding-right: 720px; }
+.container_12 .suffix_10 { padding-right: 800px; }
+.container_12 .suffix_11 { padding-right: 880px; }
+.container_12 .push_1 { left: 80px; }
+.container_12 .push_2 { left: 160px; }
+.container_12 .push_3 { left: 240px; }
+.container_12 .push_4 { left: 320px; }
+.container_12 .push_5 { left: 400px; }
+.container_12 .push_6 { left: 480px; }
+.container_12 .push_7 { left: 560px; }
+.container_12 .push_8 { left: 640px; }
+.container_12 .push_9 { left: 720px; }
+.container_12 .push_10 { left: 800px; }
+.container_12 .push_11 { left: 880px; }
+.container_12 .pull_1 { left: -80px; }
+.container_12 .pull_2 { left: -160px; }
+.container_12 .pull_3 { left: -240px; }
+.container_12 .pull_4 { left: -320px; }
+.container_12 .pull_5 { left: -400px; }
+.container_12 .pull_6 { left: -480px; }
+.container_12 .pull_7 { left: -560px; }
+.container_12 .pull_8 { left: -640px; }
+.container_12 .pull_9 { left: -720px; }
+.container_12 .pull_10 { left: -800px; }
+.container_12 .pull_11 { left: -880px; }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0px; height: 0px; }
+.clearfix::before, .clearfix::after, .container_12::before, .container_12::after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0px; line-height: 0; width: 0px; height: 0px; }
+.clearfix::after, .container_12::after { clear: both; }
+.clearfix, .container_12 { zoom: 1; }
+.btn { display: inline-block; padding: 4px 12px; margin-bottom: 0px; color: rgb(51, 51, 51); text-align: center; text-shadow: rgba(255, 255, 255, 0.74902) 0px 1px 1px; font-family: brandon-grotesque; font-weight: 300; cursor: pointer; border-width: 1px; border-style: solid; border-color: rgba(0, 0, 0, 0.0980392) rgba(0, 0, 0, 0.0980392) rgb(179, 179, 179); border-radius: 4px; -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px; box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px; background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230)); background-color: rgb(245, 245, 245); background-repeat: repeat-x; }
+.btn:hover, .btn:focus { color: rgb(51, 51, 51); text-decoration: none; transition: background-position 0.1s linear; -webkit-transition: background-position 0.1s linear; background-color: rgb(230, 230, 230); background-position: 0px -15px; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { display: inline-block; height: 20px; padding: 4px 6px; margin-bottom: 10px; font-size: 14px; line-height: 20px; color: rgb(85, 85, 85); border-radius: 4px; border: 1px solid rgb(204, 204, 204); -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset; box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset; transition: border 0.2s linear, box-shadow 0.2s linear; -webkit-transition: border 0.2s linear, box-shadow 0.2s linear; background-color: rgb(255, 255, 255); }
+table { max-width: 100%; border-collapse: collapse; border-spacing: 0px; background-color: transparent; }
+.table { width: 100%; margin-bottom: 20px; }
+.table th, .table td { padding: 8px; line-height: 20px; text-align: left; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); }
+.table th { font-weight: bold; }
+.table thead th { vertical-align: bottom; }
+.table caption + thead tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td { border-top-width: 0px; }
+.table tbody + tbody { border-top-width: 2px; border-top-style: solid; border-top-color: rgb(221, 221, 221); }
+.table .table { background-color: rgb(255, 255, 255); }
+.table-condensed th, .table-condensed td { padding: 4px 5px; }
+table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="span"], .row-fluid table th[class*="span"] { display: table-cell; float: none; margin-left: 0px; }
+.table td.span1, .table th.span1 { float: none; width: 44px; margin-left: 0px; }
+.table td.span2, .table th.span2 { float: none; width: 124px; margin-left: 0px; }
+.table td.span3, .table th.span3 { float: none; width: 204px; margin-left: 0px; }
+.table td.span4, .table th.span4 { float: none; width: 284px; margin-left: 0px; }
+.table td.span5, .table th.span5 { float: none; width: 364px; margin-left: 0px; }
+.table td.span6, .table th.span6 { float: none; width: 444px; margin-left: 0px; }
+.table td.span7, .table th.span7 { float: none; width: 524px; margin-left: 0px; }
+.table td.span8, .table th.span8 { float: none; width: 604px; margin-left: 0px; }
+.table td.span9, .table th.span9 { float: none; width: 684px; margin-left: 0px; }
+.table td.span10, .table th.span10 { float: none; width: 764px; margin-left: 0px; }
+.table td.span11, .table th.span11 { float: none; width: 844px; margin-left: 0px; }
+.table td.span12, .table th.span12 { float: none; width: 924px; margin-left: 0px; }
+.table-bordered { border-width: 1px 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-collapse: separate; border-radius: 4px; }
+.table-bordered th, .table-bordered td { border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td { border-top-width: 0px; }
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child { border-bottom-left-radius: 0px; }
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child { border-bottom-right-radius: 0px; }
+.table-bordered caption + thead tr:first-child th:first-child, .table-bordered caption + tbody tr:first-child td:first-child, .table-bordered colgroup + thead tr:first-child th:first-child, .table-bordered colgroup + tbody tr:first-child td:first-child { border-top-left-radius: 4px; }
+.table-bordered caption + thead tr:first-child th:last-child, .table-bordered caption + tbody tr:first-child td:last-child, .table-bordered colgroup + thead tr:first-child th:last-child, .table-bordered colgroup + tbody tr:first-child td:last-child { border-top-right-radius: 4px; }
+.btn-group { position: relative; display: inline-block; font-size: 0px; white-space: nowrap; vertical-align: middle; }
+.btn-group:first-child { }
+.btn-group + .btn-group { margin-left: 5px; }
+.btn-toolbar { margin-top: 10px; margin-bottom: 10px; font-size: 0px; }
+.carousel { position: relative; margin-bottom: 20px; line-height: 1; }
+.carousel-inner { position: relative; width: 100%; overflow: hidden; }
+.carousel-control { position: absolute; top: 40%; left: 15px; width: 40px; height: 40px; margin-top: -20px; font-size: 60px; font-weight: 100; line-height: 30px; color: rgb(255, 255, 255); text-align: center; border: 3px solid rgb(255, 255, 255); border-radius: 23px; opacity: 0.5; background: rgb(34, 34, 34); }
+.carousel-control.right { right: 15px; left: auto; }
+.carousel-control:hover, .carousel-control:focus { color: rgb(255, 255, 255); text-decoration: none; opacity: 0.9; }
+.carousel-indicators { position: absolute; top: 15px; right: 15px; z-index: 5; margin: 0px; list-style: none; }
+.carousel-indicators li { display: block; float: left; width: 10px; height: 10px; margin-left: 5px; text-indent: -999px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.247059); }
+.carousel-indicators .active { background-color: rgb(255, 255, 255); }
+.carousel-caption { position: absolute; right: 0px; bottom: 0px; left: 0px; padding: 15px; background: rgba(0, 0, 0, 0.74902); }
+.carousel-caption h4, .carousel-caption p { line-height: 20px; color: rgb(255, 255, 255); }
+.carousel-caption h4 { margin: 0px 0px 5px; }
+.carousel-caption p { margin-bottom: 0px; }
+html, button, input, select, textarea { color: rgb(34, 34, 34); }
+body { font-size: 1em; line-height: 1.4; -webkit-font-feature-settings: 'liga' 1, 'dlig' 1; }
+::selection { text-shadow: none; background: rgb(179, 212, 252); }
+hr { display: block; height: 1px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(204, 204, 204); margin: 1em 0px; padding: 0px; }
+img { vertical-align: middle; }
+fieldset { border: 0px; margin: 0px; padding: 0px; }
+textarea { resize: vertical; }
+.chromeframe { margin: 0.2em 0px; color: rgb(0, 0, 0); padding: 0.2em 0px; background: rgb(204, 204, 204); }
+body { font-family: brandon-grotesque, sans-serif; font-size: 18px; background: rgb(255, 255, 255); }
+.Logo-Link { width: 270px; height: 47px; display: block; float: left; background: url(http://www.grace-bikes.com/Content/Logo-GRACE.png) no-repeat; }
+.svg .Logo-Link { background-image: url(http://www.grace-bikes.com/Content/logo.svg); }
+a.Logo-Link:link, a.Logo-Link:visited { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: transparent; }
+a:link, a:visited { color: rgb(100, 132, 186); text-decoration: none; transition: all 300ms ease; -webkit-transition: all 300ms ease; }
+a:hover { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); }
+.Global-Head { margin-top: 1em; }
+.MainHead { white-space: nowrap; text-align: center; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); margin-top: 1em; position: relative; }
+.MainHead .MasterNavigation { position: absolute; bottom: 0px; right: 0px; }
+.MainHead .MasterNavigation a.Active { border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); }
+.MainHead .MasterNavigation ul { padding: 0px; margin: 0px; }
+.MainHead .MasterNavigation li { display: inline; }
+.MainHead .MasterNavigation li.active a:link, .MainHead .MasterNavigation li.active a:visited { font-weight: 700; font-style: italic; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); }
+.MainHead .MasterNavigation a.Active { font-weight: 700; font-style: italic; }
+.MainHead .MasterNavigation a { display: inline-block; padding: 0.2em 1em; font-weight: 300; font-size: 1.5em; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: transparent; }
+.MainHead .MasterNavigation a:link, .MainHead .MasterNavigation a:visited { color: rgb(68, 68, 68); }
+.MainHead .MasterNavigation a:hover { border: 0px; background: rgb(221, 221, 221); }
+.Secondary-Nav { text-align: right; padding: 0px; margin: 0px; }
+.Secondary-Nav a { font-size: 1em; display: inline-block; padding: 0.5em 1em; font-weight: 300; text-transform: uppercase; border-top-width: 5px; border-top-style: solid; border-top-color: transparent; color: rgb(68, 68, 68); white-space: nowrap; }
+.Secondary-Nav a:hover { border: 0px; background: rgb(221, 221, 221); }
+.Secondary-Nav ul { margin: 0px; }
+.Secondary-Nav ul li { display: inline; }
+.Secondary-Nav li.active a:link, .Secondary-Nav li.active a:visited { color: rgb(68, 68, 68); border-top-width: 5px; border-top-style: solid; border-top-color: rgb(0, 0, 0); font-weight: 700; font-style: italic; }
+.LongText { width: 593px; float: right; border-top-width: 8px; border-top-style: solid; border-top-color: rgb(0, 0, 0); background: rgba(255, 255, 255, 0.901961); }
+.no-rgba .LongText { background: rgb(255, 255, 255); }
+.LongText::first-letter { float: left; font-size: 2.8em; margin-right: 0.1em; line-height: 1; font-weight: 700; }
+footer { text-align: center; margin-top: 3em; padding-top: 1em; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(170, 170, 170); }
+.LanguageChooser { margin: 0px 0px 1em; padding: 0px; font-size: 0.7em; font-style: italic; text-transform: uppercase; letter-spacing: 3px; }
+.LanguageChooser .LanguageChooser-Active { font-weight: 700; font-style: normal; }
+.LanguageChooser .LanguageChooser-Disabled { color: rgb(170, 170, 170) !important; }
+.LanguageChooser li { display: inline; }
+.LanguageChooser li a { margin: 0px 0.5em; }
+.Centered-Content { text-align: center; }
+h1 { font-weight: 300; font-size: 2.5em; }
+.Heading-Homepage { text-align: center; margin: 3em 0px; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; }
+h2 { font-weight: 300; font-size: 2.1em; }
+.Heading-Emphasize { font-weight: 700; font-style: normal; }
+.Featurette { position: relative; margin-bottom: 2em; }
+.Featurette .Heading-Emphasize { font-style: italic; }
+.LightText { font-weight: 300; }
+.Aside-Inner h2, .Aside-Inner p { margin: 0px; }
+.Aside-Inner h2 { line-height: 1.2; }
+.Aside-Inner p { margin: 0.5em 0px 0px; font-size: 1.1em; font-weight: 300; line-height: 1.25; }
+.Aside-Inner { padding: 1em 1em 1em 2.5em; background: rgba(255, 255, 255, 0.901961); }
+.no-rgba .Aside-Inner { background: rgb(255, 255, 255); }
+aside { position: absolute; }
+aside .Bar { position: absolute; border: 5px solid rgb(0, 0, 0); }
+.Featurette-Easy-UrbanCompanion aside { position: relative; top: 0px; }
+.Featurette-Easy-UrbanCompanion aside .Bar { height: 400px; left: 1em; }
+.Featurette-Easy-CarbonDrive aside { position: absolute; bottom: 0px; right: 0px; width: 465px; }
+.Featurette-Easy-CarbonDrive aside .Bar { height: 350px; left: 1em; bottom: 0px; }
+.Featurette-Easy-EleganceLevel aside { position: absolute; bottom: 0px; right: 0px; width: 380px; }
+.Featurette-Easy-EleganceLevel aside .Bar { height: 300px; left: 1em; bottom: 0px; }
+.Featurette-Easy-StylishDetails aside { position: absolute; top: 0px; left: 0px; width: 400px; text-align: right; }
+.Featurette-Easy-StylishDetails aside .Bar { height: 280px; right: 1em; top: 0px; }
+.Featurette-Easy-StylishDetails aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-Easy-Cynosure aside { position: absolute; top: 0px; left: 0px; width: 400px; text-align: right; }
+.Featurette-Easy-Cynosure aside .Bar { height: 300px; right: 1em; top: 0px; }
+.Featurette-Easy-Cynosure aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-Easy-BeatingMotor aside { position: absolute; top: 0px; left: 0px; width: 400px; text-align: right; }
+.Featurette-Easy-BeatingMotor aside .Bar { height: 300px; right: 1em; top: 0px; }
+.Featurette-Easy-BeatingMotor aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-Easy-StoppingPower aside { position: absolute; top: 0px; left: 0px; width: 400px; text-align: right; }
+.Featurette-Easy-StoppingPower aside .Bar { height: 300px; right: 1em; top: 0px; }
+.Featurette-Easy-StoppingPower aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-Easy-RedDot aside { position: relative; top: 0px; }
+.Featurette-Easy-RedDot aside .Bar { height: 400px; left: 1em; }
+.svg .Featurette-Easy-RedDot .Aside-Inner { padding-right: 300px; background: url(http://www.grace-bikes.com/Content/images/rdda_pd_4c-01-01.svg) 100% 20px no-repeat; }
+.Featurette-One-MotorbikeStyle aside { position: absolute; top: 0px; left: 0px; width: 908px; text-align: right; }
+.Featurette-One-MotorbikeStyle aside .Bar { height: 300px; right: 1em; top: 0px; }
+.Featurette-One-MotorbikeStyle aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-One-Display aside { position: absolute; top: 0px; right: 0px; width: 470px; }
+.Featurette-One-Display aside .Bar { height: 280px; left: 1em; top: 0px; }
+.Featurette-One-Brakes aside { position: absolute; bottom: 0px; left: 0px; width: 605px; text-align: right; }
+.Featurette-One-Brakes aside .Bar { height: 190px; right: 1em; bottom: 0px; }
+.Featurette-One-Brakes aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-One-Light aside { position: absolute; bottom: 0px; left: 0px; width: 605px; text-align: right; }
+.Featurette-One-Light aside .Bar { height: 230px; right: 1em; bottom: 0px; }
+.Featurette-One-Light aside .Aside-Inner { padding-left: 1em; padding-right: 2.5em; }
+.Featurette-One-Tame aside { position: relative; top: 0px; }
+.Featurette-One-Tame aside .Bar { height: 200px; left: 1em; }
+.Featurette-Mx-Brakes aside { position: absolute; bottom: 0px; right: 0px; width: 760px; text-align: left; }
+.Featurette-Mx-Brakes aside .Bar { height: 200px; left: 1em; bottom: 0px; }
+.Featurette-Mx-Brakes aside .Aside-Inner { padding-right: 1em; padding-left: 2.5em; }
+.Image-Caption { color: rgb(255, 255, 255); display: inline-block; padding: 0.5em 1em 1em; font-size: 1.6em; font-weight: 300; background: rgba(0, 0, 0, 0.4); }
+.Image-Caption p { margin: 0.5em 0px; }
+.Image-Caption a:link, .Image-Caption a:visited { color: rgb(188, 202, 225); border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); }
+.Image-Caption-Bottom-Left { position: absolute; bottom: 0px; left: 0px; }
+.dl-horizontal { width: 25em; margin: 0px auto; }
+.dl-horizontal dt { margin: 0px; text-align: right; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: 3px; font-size: 0.8em; }
+.dl-horizontal dd { margin: 0px 0px 1.5em; font-size: 1.2em; font-weight: 300; text-align: left; }
+.Specs-Table th { text-align: center; }
+.Specs-Table th:first-child { text-align: left; }
+.Specs-Table td { text-align: center; }
+.Specs-Table td:first-child { text-align: left; }
+.QuickSearch-Radius { width: 50px; margin-right: 20px; }
+.QuickSearch-Keyword { margin-right: 20px; }
+.Badge-2015 { display: block; color: rgb(255, 255, 255); width: 100px; height: 100px; border-radius: 50px; -webkit-transform: rotate(-8deg); transform: rotate(-8deg); position: absolute; top: 100px; right: 100px; background: rgb(0, 0, 0); }
+.Badge-2015 span { display: block; padding: 25px 0px 0px; margin: 0px; font-size: 20px; color: rgb(255, 255, 255); text-align: center; text-transform: uppercase; }
+.badge-15-small { position: relative; }
+.badge-15-small::after { display: block; color: rgb(255, 255, 255); width: 50px; height: 36px; padding-top: 14px; font-size: 15px; content: '2015'; font-weight: 300; text-align: center; border-radius: 30px; -webkit-transform: rotate(-8deg); transform: rotate(-8deg); position: absolute; top: 75px; right: 17px; background: rgb(0, 0, 0); }
+.ir { border: 0px; overflow: hidden; background-color: transparent; }
+.ir::before { content: ''; display: block; width: 0px; height: 150%; }
+.hidden { visibility: hidden; display: none !important; }
+.visuallyhidden { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0px; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix::before, .clearfix::after { content: ' '; display: table; }
+.clearfix::after { clear: both; }
+.clearfix { }
+.tk-brandon-grotesque { font-family: brandon-grotesque, sans-serif; }]]></style></defs>
+<path fill="#A8A8A7" d="M220.748,142.593c-0.215-0.086-0.361-0.335-0.361-0.611c0-0.212,0.031-0.283,0.191-0.445
+	c0.163-0.163,0.232-0.192,0.454-0.192c0.347,0,0.595,0.21,0.639,0.542C221.742,142.416,221.245,142.793,220.748,142.593
+	L220.748,142.593z M92.612,113.154c-18.423-19.278-38.691-40.49-45.039-47.14L36.032,53.927l1.188-3.163
+	c0.654-1.74,1.199-3.172,1.211-3.185c0.013-0.013,1.203,0.513,2.645,1.17c1.443,0.655,5.595,2.545,9.227,4.196
+	c3.633,1.653,11.019,5.015,16.414,7.469c5.394,2.453,11.057,5.032,12.586,5.724c1.528,0.695,7.332,3.335,12.898,5.869
+	c5.565,2.533,11.371,5.173,12.898,5.868c3.271,1.487,11.799,5.366,24.548,11.17c5.052,2.299,9.942,4.522,10.866,4.943l1.683,0.763
+	l-0.071,0.236c-0.04,0.13-3.678,12.031-8.086,26.446c-7.908,25.867-8.012,26.214-7.956,26.49c0.031,0.155,0.05,0.281,0.042,0.281
+	C126.116,148.204,111.036,132.431,92.612,113.154L92.612,113.154z M225.94,151.864c-0.158-0.28-0.075-0.52,0.159-0.716
+	c-0.024-0.104,0.299-0.174,0.493-0.108c0.475,0.165,0.638,0.715,0.314,1.064c-0.066,0.069-0.426,0.151-0.453,0.151
+	S226.099,152.144,225.94,151.864L225.94,151.864z M151.276,157.677c0-0.34,0.009-0.346,0.738-0.346h0.667l0.022,0.256l0.02,0.256
+	h-1.447V157.677L151.276,157.677z M136.309,157.819c0-0.012,0.652-1.154,1.451-2.538c0.798-1.381,1.487-2.602,1.529-2.711
+	c0.058-0.15,10.295-33.609,15.117-49.409c0.312-1.029,0.583-1.894,0.599-1.921c0.015-0.027,0.05-0.009,0.077,0.038
+	c0.027,0.048,1,0.894,2.162,1.877c1.65,1.399,2.443,2.026,3.63,2.869c0.837,0.592,1.544,1.078,1.57,1.078
+	c0.042,0,0.097-0.068,0.316-0.386c0.013-0.02,35.785,25.304,35.908,25.419c0.067,0.064,0.056,0.106-0.077,0.282
+	c-0.086,0.111-0.148,0.212-0.137,0.221c0.011,0.009,1.462,1.038,3.223,2.283c1.855,1.313,3.567,2.479,4.068,2.771l0.864,0.506v1.243
+	c0,0.685-0.04,1.858-0.09,2.609c-0.076,1.162-0.129,1.573-0.363,2.781c-0.347,1.789-0.91,3.534-1.51,4.673
+	c-0.436,0.831-0.427,0.816-1.233,1.838c-0.544,0.687-0.727,0.869-1.495,1.489c-0.787,0.638-0.974,0.756-1.882,1.211
+	c-0.656,0.327-1.242,0.576-1.681,0.711c-0.497,0.152-2.282,0.497-6.741,1.307c-3.336,0.605-6.125,1.114-6.194,1.131
+	c-0.113,0.027-0.128,0.065-0.128,0.341v0.311h-31.337l-0.004-0.488c-0.006-0.522-0.037-0.595-0.318-0.749
+	c-0.146-0.08-0.387-0.099-1.484-0.115c-1.452-0.02-1.699,0.015-1.964,0.279c-0.159,0.159-0.164,0.181-0.146,0.62l0.018,0.453h-6.874
+	C139.402,157.843,136.309,157.832,136.309,157.819L136.309,157.819z M128.287,165.728c-0.744-0.141-1.301-0.444-1.853-1.008
+	c-2.057-2.093-0.937-5.53,1.966-6.031c0.536-0.091,0.598-0.091,1.133,0c1.151,0.199,2.043,0.843,2.599,1.875
+	c0.219,0.409,0.274,0.577,0.354,1.087c0.088,0.561,0.088,0.642,0,1.153c-0.135,0.797-0.449,1.392-1.034,1.964
+	c-0.594,0.582-1.124,0.848-1.935,0.976C128.843,165.85,128.939,165.852,128.287,165.728L128.287,165.728z M151.311,166.994
+	c-0.019-0.05-0.035-0.164-0.035-0.256v-0.165h1.447l-0.02,0.254l-0.022,0.257h-0.667
+	C151.457,167.084,151.34,167.069,151.311,166.994L151.311,166.994z M200.14,166.153c5.04-1.134,9.303-2.079,9.475-2.101
+	c0.17-0.02,1.496-0.304,2.947-0.63c2.434-0.548,2.648-0.605,2.796-0.753c0.152-0.15,0.179-0.258,0.437-1.714
+	c0.149-0.855,0.316-1.692,0.369-1.862c0.214-0.696,0.749-1.407,1.383-1.837c0.572-0.389,2.511-1.427,2.998-1.606
+	c0.399-0.148,0.499-0.16,1.174-0.157c0.681,0.006,0.769,0.019,1.165,0.178c1.331,0.528,2.151,1.613,2.292,3.029
+	c0.02,0.208,0.007,0.735-0.029,1.171c-0.097,1.184-0.022,1.274,1.136,1.376c0.63,0.053,0.704,0.05,0.868-0.045
+	c0.205-0.121,1.573-1.996,1.849-2.538c0.212-0.415,0.309-0.912,0.26-1.329c-0.073-0.601-1.506-6.14-1.654-6.397
+	c-0.185-0.318-0.519-0.556-0.904-0.641c-0.298-0.068-0.459-0.052-0.905,0.089c-0.1,0.031-0.152-0.026-0.358-0.406
+	c-0.188-0.344-0.788-1.072-2.648-3.219c-1.323-1.526-2.386-2.792-2.362-2.814c0.023-0.023,0.358-0.214,0.743-0.428
+	c1.002-0.552,1.254-0.871,1.254-1.583c0.002-0.365-0.216-0.814-0.499-1.033c-0.115-0.09-2.483-1.482-5.263-3.096l-5.054-2.931
+	l-0.141-0.323c-0.358-0.823-1.825-2.047-5.975-4.985c-1.741-1.233-3.19-2.251-3.221-2.262c-0.031-0.013-0.119,0.069-0.194,0.179
+	c-0.075,0.11-0.157,0.192-0.184,0.184c-0.031-0.01-35.573-25.159-35.928-25.422c-0.011-0.007,0.035-0.09,0.101-0.183
+	c0.065-0.091,0.118-0.205,0.118-0.252c0-0.119-2.883-2.145-3.892-2.736l-0.855-0.498l0.128-0.287
+	c0.071-0.159,0.925-2.034,1.897-4.168l1.767-3.879l-0.161-0.427c-0.183-0.486-0.157-0.467-1.435-1.022
+	c-1.485-0.645-4.168-1.932-4.184-2.005c-0.009-0.046,0.698-2.414,1.57-5.262c0.871-2.851,1.651-5.409,1.736-5.683
+	c0.084-0.276,0.135-0.519,0.113-0.539c-0.046-0.048-13.429-4.145-13.456-4.119c-0.009,0.009-0.702,2.246-1.535,4.968
+	c-1.14,3.721-1.537,4.947-1.597,4.934C146.163,81.062,36.253,31.04,36.195,30.985c-0.013-0.01,0.084-0.284,0.216-0.61l0.237-0.59
+	l-0.179-0.424l-0.177-0.424l-12.67-5.12l-0.43,0.176l-0.427,0.173l-1.311,3.225l-1.31,3.224l-0.765,2.614l-0.764,2.617l-2.24,5.544
+	l-2.241,5.546l-1.276,2.43l-1.277,2.43l-1.276,3.189c-0.702,1.754-1.275,3.225-1.275,3.269c0,0.044,0.073,0.252,0.162,0.46
+	l0.163,0.382l6.229,2.52c3.427,1.385,6.306,2.531,6.401,2.543c0.115,0.017,0.289-0.034,0.538-0.161l0.369-0.182l0.224-0.554
+	c0.123-0.305,0.248-0.546,0.28-0.535c0.031,0.011,1.86,1.906,4.065,4.21l4.011,4.191l-0.521,0.512
+	c-0.284,0.284-0.99,0.963-1.568,1.512l-1.046,0.999l0.423,0.446c0.657,0.687,21.296,22.305,35.826,37.523
+	c2.947,3.086,7.248,7.588,9.555,10.006c2.307,2.415,5.801,6.077,7.766,8.135c1.962,2.057,3.851,4.021,4.195,4.365l0.626,0.624
+	l5.954,3.502l0.773,0.786c0.425,0.433,0.816,0.785,0.87,0.785c0.053,0,0.456-0.343,0.897-0.765c0.44-0.421,0.819-0.759,0.839-0.751
+	c0.021,0.007,1.476,1.52,3.232,3.36c21.788,22.828,19.709,20.664,20.047,20.845c0.256,0.139,6.161,2.257,6.287,2.257
+	c0.033,0,0.253,0.166,0.488,0.369c0.901,0.77,2.155,1.14,3.361,0.992c0.63-0.077,1.043-0.199,1.666-0.491
+	c0.921-0.43,1.442-0.455,2.227-0.104c0.26,0.117,0.689,0.277,0.954,0.36l0.483,0.146l7.625,0.018l7.625,0.017l-0.018,0.4
+	c-0.024,0.48,0.055,0.701,0.296,0.833c0.148,0.08,0.382,0.099,1.48,0.115c1.527,0.02,1.734,0,1.959-0.206
+	c0.157-0.145,0.166-0.178,0.173-0.649l0.008-0.496h31.332l0.016,0.326l0.018,0.323l2.665,0.492c1.465,0.27,2.739,0.493,2.828,0.497
+	C190.905,168.215,195.103,167.288,200.14,166.153L200.14,166.153z"/>
+<path fill="none" stroke="#000000" stroke-width="0.2807" d="M220.748,142.593c-0.215-0.086-0.361-0.335-0.361-0.611
+	c0-0.212,0.031-0.283,0.191-0.445c0.163-0.163,0.232-0.192,0.454-0.192c0.347,0,0.595,0.21,0.639,0.542
+	C221.742,142.416,221.245,142.793,220.748,142.593L220.748,142.593z M92.612,113.154c-18.423-19.278-38.691-40.49-45.039-47.14
+	L36.032,53.927l1.188-3.163c0.654-1.74,1.199-3.172,1.211-3.185c0.013-0.013,1.203,0.513,2.645,1.17
+	c1.443,0.655,5.595,2.545,9.227,4.196c3.633,1.653,11.019,5.015,16.414,7.469c5.394,2.453,11.057,5.032,12.586,5.724
+	c1.528,0.695,7.332,3.335,12.898,5.869c5.565,2.533,11.371,5.173,12.898,5.868c3.271,1.487,11.799,5.366,24.548,11.17
+	c5.052,2.299,9.942,4.522,10.866,4.943l1.683,0.763l-0.071,0.236c-0.04,0.13-3.678,12.031-8.086,26.446
+	c-7.908,25.867-8.012,26.214-7.956,26.49c0.031,0.155,0.05,0.281,0.042,0.281C126.116,148.204,111.036,132.431,92.612,113.154
+	L92.612,113.154z M225.94,151.864c-0.158-0.28-0.075-0.52,0.159-0.716c-0.024-0.104,0.299-0.174,0.493-0.108
+	c0.475,0.165,0.638,0.715,0.314,1.064c-0.066,0.069-0.426,0.151-0.453,0.151S226.099,152.144,225.94,151.864L225.94,151.864z
+	 M151.276,157.677c0-0.34,0.009-0.346,0.738-0.346h0.667l0.022,0.256l0.02,0.256h-1.447V157.677L151.276,157.677z M136.309,157.819
+	c0-0.012,0.652-1.154,1.451-2.538c0.798-1.381,1.487-2.602,1.529-2.711c0.058-0.15,10.295-33.609,15.117-49.409
+	c0.312-1.029,0.583-1.894,0.599-1.921c0.015-0.027,0.05-0.009,0.077,0.038c0.027,0.048,1,0.894,2.162,1.877
+	c1.65,1.399,2.443,2.026,3.63,2.869c0.837,0.592,1.544,1.078,1.57,1.078c0.042,0,0.097-0.068,0.316-0.386
+	c0.013-0.02,35.785,25.304,35.908,25.419c0.067,0.064,0.056,0.106-0.077,0.282c-0.086,0.111-0.148,0.212-0.137,0.221
+	c0.011,0.009,1.462,1.038,3.223,2.283c1.855,1.313,3.567,2.479,4.068,2.771l0.864,0.506v1.243c0,0.685-0.04,1.858-0.09,2.609
+	c-0.076,1.162-0.129,1.573-0.363,2.781c-0.347,1.789-0.91,3.534-1.51,4.673c-0.436,0.831-0.427,0.816-1.233,1.838
+	c-0.544,0.687-0.727,0.869-1.495,1.489c-0.787,0.638-0.974,0.756-1.882,1.211c-0.656,0.327-1.242,0.576-1.681,0.711
+	c-0.497,0.152-2.282,0.497-6.741,1.307c-3.336,0.605-6.125,1.114-6.194,1.131c-0.113,0.027-0.128,0.065-0.128,0.341v0.311h-31.337
+	l-0.004-0.488c-0.006-0.522-0.037-0.595-0.318-0.749c-0.146-0.08-0.387-0.099-1.484-0.115c-1.452-0.02-1.699,0.015-1.964,0.279
+	c-0.159,0.159-0.164,0.181-0.146,0.62l0.018,0.453h-6.874C139.402,157.843,136.309,157.832,136.309,157.819L136.309,157.819z
+	 M128.287,165.728c-0.744-0.141-1.301-0.444-1.853-1.008c-2.057-2.093-0.937-5.53,1.966-6.031c0.536-0.091,0.598-0.091,1.133,0
+	c1.151,0.199,2.043,0.843,2.599,1.875c0.219,0.409,0.274,0.577,0.354,1.087c0.088,0.561,0.088,0.642,0,1.153
+	c-0.135,0.797-0.449,1.392-1.034,1.964c-0.594,0.582-1.124,0.848-1.935,0.976C128.843,165.85,128.939,165.852,128.287,165.728
+	L128.287,165.728z M151.311,166.994c-0.019-0.05-0.035-0.164-0.035-0.256v-0.165h1.447l-0.02,0.254l-0.022,0.257h-0.667
+	C151.457,167.084,151.34,167.069,151.311,166.994L151.311,166.994z M200.14,166.153c5.04-1.134,9.303-2.079,9.475-2.101
+	c0.17-0.02,1.496-0.304,2.947-0.63c2.434-0.548,2.648-0.605,2.796-0.753c0.152-0.15,0.179-0.258,0.437-1.714
+	c0.149-0.855,0.316-1.692,0.369-1.862c0.214-0.696,0.749-1.407,1.383-1.837c0.572-0.389,2.511-1.427,2.998-1.606
+	c0.399-0.148,0.499-0.16,1.174-0.157c0.681,0.006,0.769,0.019,1.165,0.178c1.331,0.528,2.151,1.613,2.292,3.029
+	c0.02,0.208,0.007,0.735-0.029,1.171c-0.097,1.184-0.022,1.274,1.136,1.376c0.63,0.053,0.704,0.05,0.868-0.045
+	c0.205-0.121,1.573-1.996,1.849-2.538c0.212-0.415,0.309-0.912,0.26-1.329c-0.073-0.601-1.506-6.14-1.654-6.397
+	c-0.185-0.318-0.519-0.556-0.904-0.641c-0.298-0.068-0.459-0.052-0.905,0.089c-0.1,0.031-0.152-0.026-0.358-0.406
+	c-0.188-0.344-0.788-1.072-2.648-3.219c-1.323-1.526-2.386-2.792-2.362-2.814c0.023-0.023,0.358-0.214,0.743-0.428
+	c1.002-0.552,1.254-0.871,1.254-1.583c0.002-0.365-0.216-0.814-0.499-1.033c-0.115-0.09-2.483-1.482-5.263-3.096l-5.054-2.931
+	l-0.141-0.323c-0.358-0.823-1.825-2.047-5.975-4.985c-1.741-1.233-3.19-2.251-3.221-2.262c-0.031-0.013-0.119,0.069-0.194,0.179
+	c-0.075,0.11-0.157,0.192-0.184,0.184c-0.031-0.01-35.573-25.159-35.928-25.422c-0.011-0.007,0.035-0.09,0.101-0.183
+	c0.065-0.091,0.118-0.205,0.118-0.252c0-0.119-2.883-2.145-3.892-2.736l-0.855-0.498l0.128-0.287
+	c0.071-0.159,0.925-2.034,1.897-4.168l1.767-3.879l-0.161-0.427c-0.183-0.486-0.157-0.467-1.435-1.022
+	c-1.485-0.645-4.168-1.932-4.184-2.005c-0.009-0.046,0.698-2.414,1.57-5.262c0.871-2.851,1.651-5.409,1.736-5.683
+	c0.084-0.276,0.135-0.519,0.113-0.539c-0.046-0.048-13.429-4.145-13.456-4.119c-0.009,0.009-0.702,2.246-1.535,4.968
+	c-1.14,3.721-1.537,4.947-1.597,4.934C146.163,81.062,36.253,31.04,36.195,30.985c-0.013-0.01,0.084-0.284,0.216-0.61l0.237-0.59
+	l-0.179-0.424l-0.177-0.424l-12.67-5.12l-0.43,0.176l-0.427,0.173l-1.311,3.225l-1.31,3.224l-0.765,2.614l-0.764,2.617l-2.24,5.544
+	l-2.241,5.546l-1.276,2.43l-1.277,2.43l-1.276,3.189c-0.702,1.754-1.275,3.225-1.275,3.269c0,0.044,0.073,0.252,0.162,0.46
+	l0.163,0.382l6.229,2.52c3.427,1.385,6.306,2.531,6.401,2.543c0.115,0.017,0.289-0.034,0.538-0.161l0.369-0.182l0.224-0.554
+	c0.123-0.305,0.248-0.546,0.28-0.535c0.031,0.011,1.86,1.906,4.065,4.21l4.011,4.191l-0.521,0.512
+	c-0.284,0.284-0.99,0.963-1.568,1.512l-1.046,0.999l0.423,0.446c0.657,0.687,21.296,22.305,35.826,37.523
+	c2.947,3.086,7.248,7.588,9.555,10.006c2.307,2.415,5.801,6.077,7.766,8.135c1.962,2.057,3.851,4.021,4.195,4.365l0.626,0.624
+	l5.954,3.502l0.773,0.786c0.425,0.433,0.816,0.785,0.87,0.785c0.053,0,0.456-0.343,0.897-0.765c0.44-0.421,0.819-0.759,0.839-0.751
+	c0.021,0.007,1.476,1.52,3.232,3.36c21.788,22.828,19.709,20.664,20.047,20.845c0.256,0.139,6.161,2.257,6.287,2.257
+	c0.033,0,0.253,0.166,0.488,0.369c0.901,0.77,2.155,1.14,3.361,0.992c0.63-0.077,1.043-0.199,1.666-0.491
+	c0.921-0.43,1.442-0.455,2.227-0.104c0.26,0.117,0.689,0.277,0.954,0.36l0.483,0.146l7.625,0.018l7.625,0.017l-0.018,0.4
+	c-0.024,0.48,0.055,0.701,0.296,0.833c0.148,0.08,0.382,0.099,1.48,0.115c1.527,0.02,1.734,0,1.959-0.206
+	c0.157-0.145,0.166-0.178,0.173-0.649l0.008-0.496h31.332l0.016,0.326l0.018,0.323l2.665,0.492c1.465,0.27,2.739,0.493,2.828,0.497
+	C190.905,168.215,195.103,167.288,200.14,166.153L200.14,166.153z"/>
+<line fill="none" stroke="#878787" stroke-width="0.2139" x1="30.866" y1="18.115" x2="160.115" y2="18.115"/>
+<polyline fill="#878787" points="26.553,18.115 32.486,20.273 32.486,15.956 26.553,18.115 "/>
+<polyline fill="#878787" points="164.428,18.115 158.496,15.956 158.496,20.273 164.428,18.115 "/>
+<line fill="none" stroke="#878787" stroke-width="0.2139" x1="67.376" y1="188.617" x2="65.747" y2="27.684"/>
+<polyline fill="#878787" points="67.419,192.93 69.518,186.976 65.201,187.02 67.419,192.93 "/>
+<polyline fill="#878787" points="65.703,23.371 63.604,29.325 67.922,29.281 65.703,23.371 "/>
+<line fill="none" stroke="#878787" stroke-width="0.2139" x1="101.324" y1="188.77" x2="144.406" y2="52.223"/>
+<polyline fill="#878787" points="100.026,192.883 103.87,187.876 99.752,186.576 100.026,192.883 "/>
+<polyline fill="#878787" points="145.704,48.11 141.861,53.118 145.978,54.417 145.704,48.11 "/>
+<text transform="matrix(1 0 0 1 32.4859 132.9133)" fill="#7C7C7B" font-size="9.3">830 mm</text>
+<text transform="matrix(1 0 0 1 89.8242 14.4992)" fill="#7C7C7B" font-size="9.3">630 mm</text>
+<text transform="matrix(1 0 0 1 97.707 98.973)" fill="#7C7C7B" font-size="9.3">800 mm</text>
+<text transform="matrix(1 0 0 1 158.4959 136.8742)" fill="#7C7C7B" font-size="9.3">427 mm</text>
+<line fill="none" stroke="#878787" stroke-width="0.2139" x1="150.313" y1="151.641" x2="171.626" y2="80.91"/>
+<polyline fill="#878787" points="149.069,155.771 152.847,150.714 148.713,149.468 149.069,155.771 "/>
+<polyline fill="#878787" points="172.871,76.781 169.092,81.838 173.226,83.084 172.871,76.781 "/>
+</svg>
