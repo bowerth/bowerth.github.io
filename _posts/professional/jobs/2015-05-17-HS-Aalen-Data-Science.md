@@ -22,7 +22,7 @@ Profilschärfung des Studiengangs durch
     - national und international sichtbare, anwendungsorientierte Forschung sowie durch
     - Praxistransfer und -kooperationen erfolgen.
 
-umfangreiche Erfahrung im Lehrgebiet - grundsätzliche Themen:
+Umfangreiche Erfahrung im Lehrgebiet - grundsätzliche Themen:
 :   - Big Data,
     - Business Analytics,
     - Business Intelligence und

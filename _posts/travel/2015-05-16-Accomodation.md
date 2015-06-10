@@ -53,3 +53,20 @@ Chateau de Versailles
 
 Disney Land
 :   [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
+
+### Services
+
+Salon Mac Rayan
+:   10 rue Dr. Finlay  
+    Tel: +33145773716  
+    E-Mail: [macrayanparis@gmail.com](mailto:macrayanparis@gmail.com)
+
+### Technical
+
+#### eRDF
+
+No PDL Electricité: 074 641099598 94
+
+| Date       | Index |
+|------------|-------|
+| 2015-06-06 | 67869 |

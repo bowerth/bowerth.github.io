@@ -25,6 +25,11 @@ M Milward Michael
 64, rue de la tour  
 75016 Paris
 
+### Protection Juridique
+
+Tel
+:   +33130099090
+
 ### Habitation / Détails de votre contrat au 06 juin 2015
 
 N° de contrat
