@@ -8,6 +8,18 @@ tags     : [BSD]
 
 ## Licenses
 
+### EUPL
+
+EUPL license is simple and meaningful and has been created for the EC public institutions
+
+http://ec.europa.eu/idabc/servlets/Doc5b9a.pdf?id=32429
+
+- internal rules about OSS development and collaboration
+- clarifying the position of developed software
+- there is not a set of guidelines that can be followed
+- even if there is a work in progress about that
+- intention to constitute a OSS expert group
+
 ### BSD 3
 
 You can do whatever you want with BSD-licensed code as long as you give the original author credit. Specifically:

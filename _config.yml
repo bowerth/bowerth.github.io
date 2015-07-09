@@ -2,11 +2,18 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
+# markdown: redcarpet::Markdown.new(redcarpet::Render::HTML, :tables => true)
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 # # This will require each of these gems automatically
 # gems: [/_plugins/font-awesome.rb]
+# gems: [font-awesome-less]
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.

@@ -10,35 +10,117 @@ tags     :
 
 - [CRAN Task View: Web Technologies and Services](http://cran.r-project.org/web/views/WebTechnologies.html)
 - [ropensci/webservices ToDo](https://github.com/ropensci/webservices/wiki/ToDo)
- 
-## GBR Office for National Statistics
+
+## Tools
+
+- [postman](https://www.getpostman.com)
+- [advanced REST client](http://restforchrome.blogspot.fr)
+
+## Standards
+
+### OData
+
+- [GitHub Simple.OData.Client](https://github.com/object/Simple.OData.Client/wiki)
+
+### SOAP
+
+#### RCurl example
+
+```r
+library(RCurl)
+
+headerFields =
+  c(Accept = "text/xml",
+    Accept = "multipart/*",
+    'Content-Type' = "text/xml; charset=utf-8")
+
+body = '<?xml version="1.0" encoding="utf-8"?>
+ <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hs="http://www.holidaywebservice.com/HolidayService_v2/">
+ <soapenv:Body>
+ <hs:GetHolidaysAvailable>
+ <hs:countryCode>UnitedStates</hs:countryCode>
+ </hs:GetHolidaysAvailable>
+ </soapenv:Body>
+ </soapenv:Envelope>'
+url <- "http://www.holidaywebservice.com/HolidayService_v2/HolidayService2.asmx?wsdl"
+
+curlPerform(url = url,
+            httpheader = headerFields,
+            postfields = body,
+            verbose = TRUE)            
+```
+
+## International Organisations
+
+UNdata
+:   [data.un.org](http://data.un.org/WS/)
+
+### UNIDO
+
+- "Tools", "UNIDO Data API" at [stat.unido.org](http://stat.unido.org/)
+- see: `stanApi/R/unido_vt.R`
+
+### OECD
+
+API
+:   SDMX-JSON
+
+- [Programmable Web: OECD Open Data API](http://www.programmableweb.com/api/oecd-open-data)  
+- [OECD SDMX-JSON-Documentation](https://data.oecd.org/api/sdmx-json-documentation/)
+    
+## National Providers
+
+### NLD Statistics Netherlands (CBS)
+
+API
+:   OData
+
+- [General information](http://www.cbs.nl/opendata)
+- [User manual](http://www.cbs.nl/NR/rdonlyres/2561A2B7-CE51-47B9-A838-9968EF67FFB0/0/2014handleidingcbsopendataservices.pdf)
+- [Open data StatLine](http://opendata.cbs.nl/dataportaal/portal.html#_la=en)
+- [Available Tables (PDF)](http://www.cbs.nl/NR/rdonlyres/E50FBCD8-EFFA-4E30-8D9B-DE68FEA89B8C/0/StatlineContentsEnglish.pdf)
+- [Contact](mailto:infoservice@cbs.nl)
+
+#### API
+
+- [Main](http://opendata.cbs.nl/ODataCatalog/)
+- [XML API (ODataFeed)](http://opendata.cbs.nl/ODataFeed/)
+
+### USA Bereau of Economic Analysis (BEA)
+
+- [BEA API](http://www.bea.gov/api/data/?)
+
+### GBR Office for National Statistics (ONS)
 
 - [How-to-guides](https://www.ons.gov.uk/ons/apiservice/how-to-guides)
 - [HTML output for humans](http://data.ons.gov.uk/ons/api/data/.html?context=Census&apikey=xPuqnMzZ01)
 
-## CAN
+### CAN
+
+- [WSDL](http://www8.statcan.gc.ca/CANSIMWebService/cansimWSService?wsdl)
+- [Documentation](http://www8.statcan.gc.ca/documentation/wds-documentation-eng.html)
 
 Web Data Service, Beth.Chepita@statcan.gc.ca
 
 CANSIM Web Data Service (WDS)
 
-### WHAT IS IT?
+#### WHAT IS IT?
 
 This web service provides access to CANSIM data via "calls" or "methods" that harvest the data in its raw form and return it to the caller.
 
 We have published a web service WSDL which outlines the methods available for use. Newly released data is available beginning at 8:30 a.m. on the day of release. This web service is an efficient alternative to the electronic file transfer system (EFT), which will be terminated when the CANSIM web service pilot project ends and is replaced by our future CODR (Common Output Database Repository) Web Data Service. The CODR database and web service is scheduled to be publically available in November 2015 at which point all CANSIM data and
 web service will be discontinued. The CANSIM time series data will continue to be available in the CODR database.
 
-### AVAILABILITY
+#### AVAILABILITY
 
 - Any existing EFT service you have will continue to run in parallel for the duration of the CANSIM WDS pilot which will finish when CODR WDS is launched in Nov 2015.
 - The CANSIM WDS service can be used to obtain newly released data at 8:30 a.m. EST on the day of release, as well as any already-published data. . The web service operates 24 hours a day every week.
 
-### WEB SERVICE API
+#### WEB SERVICE API
 
 Description: The CANSIM web service provides methods for retrieving both Metadata and Data. Information can be retrieved by using either Vectors, or Arrays with Coordinates.
 
-#### Scalar and Decimal Information
+##### Scalar and Decimal Information
 
 It should be noted that decimals and scalars do not automatically appear in any data returned by the Web Data Service. To extract decimal and scalar info which may be applied to vector data points, any of the following WSDL calls may be used:
 
@@ -65,9 +147,9 @@ The following scalar factor codes equal the following scalar multipliers:
 
 Note that the scalar value being returned will be the code and not the actual multiplier value. The actual data value will not contain the decimal point. In the "getseries" calls, the decimal value is returned. For example, if 8 is being returned as the decimal value in the "getseries" call, and 212345678 is the data value from the "getdata" call, then you would need to ensure you apply the decimal value to reflect "2.12345678" as the data value (which is what you would see in the output on the CANSIM website).
 
-#### Data Quality, Symbols and Security Parameters
+##### Data Quality, Symbols and Security Parameters
 
-##### Display Status
+###### Display Status
 
 | code | status                                   |
 |------|------------------------------------------|
@@ -89,7 +171,7 @@ Notes:
 - E: represented by superscript letter E beside the data on output
 - F: data will be suppressed and will be represented by symbol F on output
 
-##### Display Symbol
+###### Display Symbol
 
 | code | value       |
 |------|-------------|
@@ -97,7 +179,7 @@ Notes:
 | 1    | Preliminary |
 | 3    | Revised     |
 
-##### Security
+###### Security
 
 | code | value                    |
 |------|--------------------------|
@@ -128,7 +210,7 @@ For data points which are represented by an "F" on the CANSIM web GUI, the web s
 </code>
 </pre>
 
-#### Suggested API Usage
+##### Suggested API Usage
 
 1.   Call the getCansimTableReleaseInfoForPeriod to see what tables have changed.
 2.   Call the getSeriesInfo method to retrieve the metadata supporting the data series.
@@ -136,7 +218,7 @@ For data points which are represented by an "F" on the CANSIM web GUI, the web s
 4.   Call the getData method to retrieve the actual data points.
 5.   Within your program, using the scalar and decimal metadata, calculate the actual value of the data point(s) retrieved.
 
-### REQUEST FOR METADATA INFORMATION
+#### REQUEST FOR METADATA INFORMATION
 
 - Service Method: getSeriesInfoForVectors
 - Description: Get metadata information at series level given a collection of requests containing vector in formation
@@ -379,7 +461,7 @@ Soap Response:
 </code>
 </pre>
 
-### REQUEST FOR DATA INFORMATION
+#### REQUEST FOR DATA INFORMATION
 
 - Service Method: getDataFromVectorRange
 - Description: Get a series of datapoints given a collection of requests containing vector information
@@ -811,7 +893,7 @@ SOAP Response:
 
 To access the WSDL: http://www8.statcan.gc.ca/CANSIMWebService/cansimWSService?wsdl
 
-### INFORMATION MODEL
+#### INFORMATION MODEL
 
 Outputs
 
@@ -872,7 +954,7 @@ eg: Canada; Total employed, all hours; Main job; Males; 15 years and over
 | releaseDate                        | date   | release date for given date range |
 | arrayID                            | number | arrayID for given date range      |
 
-### Inputs
+#### Inputs
 
 | SeriesVectorRequest |        |                                    |
 |---------------------|--------|------------------------------------|

@@ -62,6 +62,9 @@ push repo to remote, e.g. github
     `git remote add origin git@github.com:bowerth/sdmxBrowser.git`  
     `git push -u origin master`
     
+change remote URI
+:   `git remote set-url origin https://github.com/bowerth/stanApi.git`
+
 nuke last commit and never see it again
 :   `git reset --hard HEAD~1`
 
@@ -152,3 +155,6 @@ Source
 
 - [GitHub Trainig Kit](`https://training.github.com/kit`) and [page source](https://github.com/matthewmccullough/slidedown`)
 - [Pro Git book by S. Chacon and B. Straub](http://git-scm.com/book/en/v2/)
+- [Become a git guru](https://www.atlassian.com/git/tutorials/)
+- [Ry's Git Tutorial](http://rypress.com/tutorials/git/index)
+- [GitHub Pages Workflow](http://oli.jp/2011/github-pages-workflow/)

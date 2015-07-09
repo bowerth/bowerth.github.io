@@ -10,7 +10,7 @@ Sehr geehrte Damen und Herren,
 
 hiermit möchte ich mich für die Stelle als Professor im Studienbereich Wirtschaftsinformatik in der Fakultät Wirtschaftswissenschaften bewerben.
 
-*Profilschaerfung des Studiengangs*  
+<!-- *Profilschaerfung des Studiengangs*   -->
 <!--- ### Profilschaerfung des Studiengangs --->
 <!--- 
    - exzellente Lehre,
@@ -18,13 +18,13 @@ hiermit möchte ich mich für die Stelle als Professor im Studienbereich Wirtsch
    - Praxistransfer und -kooperationen erfolgen.
 --->
 
-Mit meiner fünfjährigen Berufserfahrung in den Direktionen Statistik sowie Wissenschaft, Technologie und Industrie habe ich umfangreiche Erfahrung im Umgang mit Daten gesammelt und mir moderne Technologien zu deren effizienter Auswertung angeeignet. Ich habe für mich entschieden, dass ich das im Laufe der letzten fünf Jahre täglicher Arbeit mit Daten in komplexen Infrastrukturen erarbeitete Wissen an andere weitergeben möchte. Studenten der Wirtschaftsinformatikum möchte ich Konzepte und Methoden vermitteln, die eine systematische Herangehensweise an die Organisierung von Projekten über den gesamten Wertschöpfungsprozess von Rohdatenerfassung bis zur Kommunikation von Analyseergebnissen ermöglichen.
+Mit meiner fünfjährigen Berufserfahrung in den Direktionen "Statistik" sowie "Wissenschaft, Technologie und Industrie" der Organisation für Ökonomische Entwicklung und Zusammenarbeit habe ich umfangreiche Erfahrung im Umgang mit Daten gesammelt und mir moderne Technologien zu deren effizienter Auswertung angeeignet. Ich habe für mich entschieden, dass ich das im Laufe der letzten fünf Jahre täglicher Arbeit mit Daten in komplexen Infrastrukturen erarbeitete Wissen an andere weitergeben möchte. Studenten der Wirtschaftsinformatikum möchte ich Konzepte und Methoden vermitteln, die eine systematische Herangehensweise an die Organisierung von Projekten über den gesamten Wertschöpfungsprozess von Rohdatenerfassung bis zur Kommunikation von Analyseergebnissen ermöglichen.
 
 Das Anforderungsprofil erfordert technische Kenntnisse im Umgang mit Kommandozeilen, objektorientierter Programmierung sowie verschiedenen Betriebssystemem. Desweiteren Verständnis von statistischen Methoden um die Fragestellung zu formulieren, geeignete Modelle zu identifizieren und Resultate korrekt zu interpretieren. Darüber hinaus erfordern grosse Datenmengen Kompetenz in der Gestaltung von Systemarchitektur verteilt auf interne und externe Resourcen.
 
 Für experimentelle Anwendungen eignet sich die kostenlos verfügbare statistische Programmiersprache R in Kombination mit anderen interpretierten und kompilierten Sprachen. Zum Einen sind bereits viele Entwicklungen verfügbar und müssen lediglich identifiziert werden. Zum Anderen ist die Gruppe der Anwender sehr aktiv und vertraut mit statistischen Konzepten. Für Anwendungen im Produktionsbetrieb eignet sich generell Python, da die Mehrzahl der Anwender und Entwickler fundierte Kenntnisse in systematischer Programmierung haben und somit die verfügbaren Module eine höhere Leistungsfähigkeit aufweisen.
 
-*Erfahrung im Lehrgebiet*  
+<!-- *Erfahrung im Lehrgebiet*   -->
 <!-- #### Erfahrung im Lehrgebiet -->
 <!--- 
    - Big Data,
@@ -39,7 +39,7 @@ Für meine eigene Arbeit habe ich die Entwicklung von Vincent Nijs, Professor f�
 
 In den Bereichen Business Analytics und Business Intelligence sind Datenmengen zumeist überschaubar und interne Server zur Gewährleistung von Datensicherheit bevorzugt. Der Bereich Big Data hingegen lässt sich kaum ohne Zurückgreifen auf externe Rechenkapazitäten ("cloud computing") behandeln. Hierbei ist die Grundvoraussetzung, Linux-basierte Betriebssysteme per Kommandozeile verwenden zu können, die Funktionsweise der Map-Reduce Methode zu verstehen und die Ausfallwahrscheinlichkeit von verteilten Speicherkapazitäten und parallelen Prozessen einzuschätzen. Programme wie z.B. Apache Pig, Hive und RHadoop stellen produktive Möglichkeiten im andernfalls recht umständlichen Umgang mit Java und Hadoop bereit.
 
-*Nachweise der Erfahrung*  
+<!-- *Nachweise der Erfahrung*   -->
 <!-- #### Nachweise der Erfahrung -->
 <!---
    - einschlägige Be­rufs­er­fah­rung,
@@ -62,8 +62,8 @@ In den engen Kreisen, in denen neue Technologien mit professionellen Anbietern d
 
 An der Pariser Ecole Nationale Superieure d'Economie et Administration unterrichtete ich im Studienjahr 2012/13 eine Gruppe von Masterstudenten im zweiten Jahr in der Anwendung von empirischen Methoden auf makroökonomische Daten mit dem Ziel, die Wettbewerbssituation in den unterschiedlichen Sektoren der Volkswirtschaft zu quantifizieren. Die Studenten schlossen das Projekt als beste Gruppe mit 18 von 20 Punkten ab. Das Memoire wurde in Französisch verfasst und lässt sich abrufen unter diesem [Dropbox link](https://www.dropbox.com/s/q2qx7xh5s1nt6dh/M%C3%A9moire_statap%20%283%29.pdf?dl=0).
 
-*Ziele*  
-<!-- #### Ziele -->
+<!-- *Ziele*   -->
+<!-- #### ziele -->
 <!---
    - anwendungsorientierte For­schung der Fakultät ausbauen
    - Mitwirkung an Forschungsprojekten
@@ -79,7 +79,7 @@ Ich möchte mich mit neuen Ideen in existierende Forschungsprojekte des Bereichs
 
 Die Projekte umfassen idealerweise Gruppen von mehreren Studenten, in der unabhängige Module mit gemeinsamen Spezifikationen (z.B. eine einheitliche API) entwickelt werden und die später in Unternehmen Anwendung finden, etwa in Bereichen wie Marktforschung, Absatzplanung oder Risikomanagement - jedoch auch intelligente Frühwarnsysteme in der Produktionsplanung oder mobile Anwendungen mit statistischer Funktionalität sind denkbar.
 
-*Einstellungsvoraussetzungen*  
+<!-- *Einstellungsvoraussetzungen*   -->
 
 <!-- #### Einstellungsvoraussetzungen (vgl. § 47 LHG) -->
 <!---

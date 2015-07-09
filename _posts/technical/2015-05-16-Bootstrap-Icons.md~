@@ -1,0 +1,27 @@
+---
+layout   : post
+category : technical
+tagline  : 
+tags     : 
+---
+{% include JB/setup %}
+
+## Icons
+
+### Font Awesome
+
+http://fontawesome.io/icons/
+
+#### Include in Jekyll
+
+https://gist.githubusercontent.com/23maverick23/8532525/raw/889b323d8049638b65cf21d4ceb699f18014f96e/font_awesome.rb
+
+<!-- {% icon fa-camera-retro %} -->
+
+### Glyphicons
+
+http://getbootstrap.com/components/#glyphicons
+
+### Octicons
+
+https://octicons.github.com/
