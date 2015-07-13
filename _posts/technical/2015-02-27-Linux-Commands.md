@@ -8,6 +8,44 @@ tags     :
 
 ## Fedora
 
+### screen brightness Toshiba
+
+[jamielinux: adjust screen brightness](https://jamielinux.com/blog/cannot-adjust-screen-brightness-on-fedora/)
+[forums.fedoraforum.org: Fix for Toshiba laptops with no control of brightness after suspend](http://forums.fedoraforum.org/showthread.php?t=290976)
+
+#### add `acpi_backlight=vendor` in the kernel command line
+
+append to edit grub `GRUB_CMDLINE_LINUX="rd.md=0 [...] rhgb quiet acpi_backlight=vendor"`
+:   `sudo nano /etc/default/grub`
+
+backup `grub.cfg`
+:   `sudo cp /boot/grub2/grub.cfg /boot/grub2/grub.cfg.backup`
+
+update `grub.cfg`
+:   `sudo grub2-mkconfig -o /boot/grub2/grub.cf`
+
+check contents of new `grub.cfg` in editor without root permission
+:   `sudo cat /boot/grub2/grub.cfg > ~/Downloads/grub.cfg`
+
+#### place the quoted 99toshiba script (below) in `/etc/pm/sleep.d/` where the content of the script for /etc/pm/sleep.d/99toshiba is:
+
+```
+#!/usr/bin/env sh
+# /etc/pm/sleep.d/99toshiba
+
+if [ $1 == suspend ]
+then
+cat /sys/class/backlight/intel_backlight/brightness > /var/run/brightness
+elif [ $1 == resume ]
+then
+echo 3 > /sys/class/backlight/toshiba/brightness
+cat /var/run/brightness > /sys/class/backlight/intel_backlight/brightness
+fi
+```
+
+Also remember to make it runnable to root
+:   `chmod 744 /etc/pm/sleep.d/99toshiba`
+
 ### update Fedora using FedUp
 
 Using a network source is the easiest method of upgrading and will pull in updates while upgrading - eliminating the potential issue if your current system has a newer kernel version than the Fedora release to which you are upgrading.
@@ -49,7 +87,34 @@ install or update Adobe Flash Player
     `/etc/profile` global environment
     `/etc/bashrc` global functions and aliases
 
-### Bash startup files
+### Bash
+
+#### string operations
+
+##### `sed`
+
+- not working [Grymoire: `sed` Introduction](http://www.grymoire.com/Unix/Sed.html)
+- [http://web.eecs.utk.edu: Sed/Ed lecture](http://web.eecs.utk.edu/~cs300/Sed/lecture.html)
+- [nixCraft: Linux/Unix: Shell Remove Empty Lines](http://www.cyberciti.biz/faq/unix-linux-shell-remove-delete-empty-lines/)
+
+global replace
+:   `sed -e 's:\\(:(:g' $path/${file}_temp.md > $path/${file}_temp2.md`
+
+complex expression to replace multiple blank lines with two blank lines, see [stackexchange: How to remove multiple blank lines from a file?](http://unix.stackexchange.com/questions/72739/how-to-remove-multiple-blank-lines-from-a-file)
+:   `sed -r ':a; /^\s*$/ {N;ba}; s/( *\n *){2,}/\n\n/'`
+
+combine with `printf`
+:   `printf "line one\\nline two\\n" | sed -e 's/.*/( & )/'`
+
+##### `tr`
+
+remove newline
+:   `tr '\n' ' ' < input_filename`
+
+remove newline
+:   `tr -d '\n' < file`
+
+#### startup files
 
 `~/` home directory
 :   `ls -a` show all files in directory

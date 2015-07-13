@@ -13,7 +13,22 @@ Nachlassgericht
     10823 Berlin  
     Tel.: +49(0)30 90186-247 (-224)
 
-### Telefongespraech 03.03.2015
+### Telefongespräch 13.07.2015
+
+- Betreff: Schreiben Schlebusch
+- Formular NLS17: Angaben zum Wert des Nachlasses (für die Kostenberechnung bei Gericht)
+- Frage: im Inland oder Ausland?
+- Nachlassmasse
+  - Grundstück
+  - Haus
+  - Wertgegenstände
+  - Wertpapiere
+- Verbindlichkeiten (Schulden)
+  - Vermächtnisse (im Testatment: Gärtner)
+  - Schulden (Grundsteuer, Sozialabgaben Gärtner)
+  - Beerdigungskosten
+
+### Telefongespräch 03.03.2015
 
 Teilerbschein
 :   Eidesstattliche Versicherung bei Notar oder Deutscher Botschaft  
@@ -28,6 +43,12 @@ Nachlassverwaltung
 - Fragebogen zur Vorbereitung der Beurkundung eines Antrags zur Erlangung eines Erbscheins [pdf](http://www.allemagne.diplo.de/contentblob/3420938/Daten/1074764/05erbrechterbscheinantragfragebogendatei.pdf)
 - Wichtige Informationen zur Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059710/Daten/3722015/06erbrechterbausschlagungmbdatei.pdf)
 - Formular für eine Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059712/Daten/3722017/06erbrechterbausschlagungformdatei.pdf)
+
+#### Kontakt
+
+Tel. +33 (0) 1 53 83 45 00 (Mo-Mi 14-16 Uhr, Fr 12-14 Uhr)
+
+
 
 ### Honorarkonsulat des Plurinationalen Staates Bolivien in Frankfurt am Main
 
@@ -60,6 +81,31 @@ Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
     Tel.: +49 (0)30 26391512  
     Montag bis Freitag 09:00 – 14:00 Uhr
 
+### Deutsche Botschaft in La Paz
+
+Ronald Golan, [ronald_golan@hotmail.com](mailto:ronald_golan@hotmail.com)
+
+Art. 1294 Codigo Civil
+
+> 1. Los documentos públicos oorgados en país extranjero, según las formas alli establecidas, tendran el mismo valor que los extendidos en  Bolivia, si se hallan debidamente leglizados.
+
+The German certificate of inheritance can be accepted by the Bolivian authorities provided that it is legalised.
+
+Art. 1543 Codigo Civil
+ 
+> 1. Los docuentos celebrados en país extranjero sobre bienes sujetos a registro podrán ser inscritos si se hallan debidamente legalizados.
+> 2. Si se trata de resoluciones judiciales, serán inscritas una vez homologadas legalmente y con la respectiva orden judicial.
+
+The German certificate of inheritance, provided that it is legalised, can be used in Bolivia to register the house as your property.
+
+how to legalise the German certificate of inheritance
+:   Bolivian Consulate in Frankfurt (http://konsulat-bolivien.eu/legalisierungen.html)
+
+how to make a power of attorney outside Bolivia
+:   normally Consuls hold powers of attorney abroad so this should be an easy question for the Bolivian Consulate.  
+
+check whether the property registration can be done from distance. In the worst case, if there is a need to go in person and sign at the property register, it is important to know in advance to include in the power of attorney to delegate to legal agent for doing this. The consulate should be able to provide information on this.
+
 ### Offizielle Links
 
 - Amtsgericht Kaiserslautern [Formular Erbscheinantrag](http://www.mjv.rlp.de/icc/justiz/nav/25f/binarywriterservlet%3FimgUid%3D3dd60b27-ff72-7f21-954e-a0a577fe9e30%26uBasVariant%3D11111111-1111-1111-1111-111111111111)
@@ -72,9 +118,13 @@ Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
 
 - IWW Institut für Wissen in der Wirtschaft [Erbscheinverfahren](http://www.iww.de/index.cfm?pid=1314&pk=154842&spid=1296&spk=1288&sfk=26)
 
+### Literatur
+
+- [Walter Zimmermann - Rechtsfragen bei einem Todesfall, Kapitel 7]({% post_url personal/heritage/2015-07-13-Zimmermann-Rechtsfragen %})
+
 ### Angaben
 
-§ 2354 BGB - Angaben des gesetzlichen Erben im Antrag
+[§ 2354 BGB](http://dejure.org/gesetze/BGB/2354.html) - Angaben des gesetzlichen Erben im Antrag
 :   - Personalien des Antragstellers (Name, Anschrift und Geburtsdatum)  
     - Personalien des Erblassers (mit Staatsangehörigkeit und letztem Wohnsitz), Todeszeitpunkt und Sterbeort)  
     - Angabe, dass das Erbrecht auf gesetzlicher Erbfolge beruht  
@@ -94,11 +144,12 @@ Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
 
 ### Rechtsgrundlage
 
-- § 2353 BGB - Zuständigkeit des Nachlassgerichts
-- § 2355 BGB - Angaben des gewillkürten Erben im Antrag
-- § 2356 BGB - Nachweis der Richtigkeit der Angaben
-- § 2357 BGB - Gemeinschaftlicher Erbschein
+- [§ 2353 BGB](http://dejure.org/gesetze/BGB/2353.html) - Zuständigkeit des Nachlassgerichts
+- [§ 2355 BGB](http://dejure.org/gesetze/BGB/2355.html) - Angaben des gewillkürten Erben im Antrag
+- [§ 2356 BGB](http://dejure.org/gesetze/BGB/2356.html) - Nachweis der Richtigkeit der Angaben
+- [§ 2357 BGB](http://dejure.org/gesetze/BGB/2357.html) - Gemeinschaftlicher Erbschein
 - ...
-- § 2370 BGB - ...
-- [Gesetz über Kosten der freiwilligen Gerichtsbarkeit für Gerichte und Notare (Gerichts- und Notarkostengesetz - GNotKG), Anlage 1 (zu § 3 Abs. 2) Kostenverzeichnis](http://www.gesetze-im-internet.de/gnotkg/anlage_1_173.html), Nr. 12210 (Erbschein) und Vorbemerkung 1 Abs. 2 in Verbindung mit Nr. 23300 (eidesstattliche Versicherung)
+- [§ 2370 BGB](http://dejure.org/gesetze/BGB/2370.html) - ...
+- [Gesetz über Kosten der freiwilligen Gerichtsbarkeit für Gerichte und Notare (Gerichts- und Notarkostengesetz - GNotKG), Anlage 1 (zu § 3 Abs. 2) Kostenverzeichnis](https://de.wikipedia.org/wiki/Gesetz_%C3%BCber_Kosten_der_freiwilligen_Gerichtsbarkeit_f%C3%BCr_Gerichte_und_Notare), Nr. 12210 (Erbschein) und Vorbemerkung 1 Abs. 2 in Verbindung mit Nr. 23300 (eidesstattliche Versicherung)
 
+- http://www.gesetze-im-internet.de/gnotkg/anlage_1_173.html
