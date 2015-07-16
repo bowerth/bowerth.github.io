@@ -6,6 +6,15 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Ubuntu
+
+### Flash player
+
+- download .deb file from ppa launchpad
+- remove existing flash installations (`flashplayer-installer`, `flash-plugin`)
+- close browser
+- install using `sudo dpkg -i [package name]`
+
 ## Fedora
 
 ### screen brightness Toshiba
