@@ -8,6 +8,43 @@ tags     :
 
 ## Commands
 
+- [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+
+### Major Modes
+
+#### `Shell` Mode
+
+execute region
+:   `C-M-x`
+
+execute script
+:   `C-c C-x`
+
+### Mail
+
+#### SMTP account configuration
+
+edit user mail address
+:   `(custom-set-variables '(user-mail-address "bo.werth@gmail.com") )`
+
+#### Edit modes
+
+- [github: gmail-mode](https://github.com/Malabarba/gmail-mode)
+- [github: ham-mode](https://github.com/Malabarba/ham-mode)
+- [gmail-mode browser integration](http://www.widecodes.com/CSVjeqVeVq/composing-gmail-messages-in-text-editor-complete-with-gmail-links.html)
+- [chrome extension: Edit with Emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?hl=en)
+
+edit Gmail message with Emacs (after installing Edit with Emacs and editing the Chrome shortcuts)
+:   `Ctrl + Shift + E`
+
+when done editing, export back to Gmail
+:   `C-x #`
+
+#### Secure authentication
+
+- [emacswiki: safe email authentication](http://www.emacswiki.org/emacs/GnusEncryptedAuthInfo)
+- [emacswiki: EasyPG](http://www.emacswiki.org/emacs/EasyPG)
+
 ### General
 
 convert buffer format `DOS` / `UNIX`

@@ -6,14 +6,16 @@ tags     :
 ---
 {% include JB/setup %}
 
-Nachlassgericht
-:   Wendt
+## Nachlassgericht Berlin-Schöneberg
+
+Kontakt
+:   Fr. Wendt  
     Nachlassgericht Berlin  
     Grunewaldstr. 66-67  
     10823 Berlin  
     Tel.: +49(0)30 90186-247 (-224)
 
-### Telefongespräch 13.07.2015
+### Telefongespräch 14.07.2015
 
 - Betreff: Schreiben Schlebusch
 - Formular NLS17: Angaben zum Wert des Nachlasses (für die Kostenberechnung bei Gericht)
@@ -37,6 +39,8 @@ Teilerbschein
 Nachlassverwaltung
 :   Antrag durch Erbe
 
+## Erbscheinsantrag
+
 ### Deutsche Botschaft in Frankreich
 
 - [Erbrecht](http://www.allemagne.diplo.de/Vertretung/frankreich/de/08-konsularisches/erbrecht/00-erbrecht-seite.html)
@@ -44,11 +48,53 @@ Nachlassverwaltung
 - Wichtige Informationen zur Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059710/Daten/3722015/06erbrechterbausschlagungmbdatei.pdf)
 - Formular für eine Erbausschlagung [pdf](http://www.allemagne.diplo.de/contentblob/4059712/Daten/3722017/06erbrechterbausschlagungformdatei.pdf)
 
-#### Kontakt
+Kontakt
+:   Tel. +33 (0) 1 53 83 45 00  
+    (Mo-Mi 14-16 Uhr, Fr 12-14 Uhr)
 
-Tel. +33 (0) 1 53 83 45 00 (Mo-Mi 14-16 Uhr, Fr 12-14 Uhr)
+## Gerichtskosten nach GNotKG KV
 
+- [erbschein-antrage.de: Gebührentabelle (01.08.2013)](http://www.erbschein-antrag.de/files/gebuhren-erbschein-ab182013.pdf)
 
+[iww.de: GNotKG: Kostenreform bringt Gebührenerhöhung](http://www.iww.de/ee/schnittstellennebengebiete/aktuelle-gesetzgebung-gnotkg-kostenreform-bringt-gebuehrenerhoehung-f69169)
+
+ Mit der Kostenreform durch das 2. Kostenrechtsmodernisierungsgesetz ist ein neues Gerichts- und Notarkostengesetz (GNotKG) eingeführt worden. Das GNotKG gilt seit dem 1.8.2013 und reformiert die Kostenordnung (KostO) von 1936. Für vor dem 1.8.13 eingeleitete Verfahren gilt weiter die KostO. Durch strukturelle Änderungen werden nun etwa die Kostenregelungen für die Freiwillige Gerichtsbarkeit einfacher gestaltet. Im Folgenden geht es um die für die Anwaltstätigkeit relevanten Gerichtskosten im Erbscheinsverfahren und bei der Erteilung eines Testamentsvollstreckerzeugnisses.
+
+### 1. Gesetzesaufbau
+
+Das GNotKG gliedert sich in vier Kapitel, nämlich in
+- Kapitel 1: Vorschriften für Gerichte und Notare (§§ 1-54 GNotKG),Kapitel 2: Gerichtskosten (§§ 55-84 GNotKG),
+- Kapitel 3: Notarkosten (§§ 85-131 GNotKG) und
+- Kapitel 4: Schluss- und Übergangsvorschriften (§§ 132-136 GNotKG).
+ 
+Es folgen Anlage 1 mit dem Kostenverzeichnis zu § 3 Abs. 2 GNotKG und Anlage 2 mit der Gebührentabelle zu § 34 Abs. 3 GNotKG. Die in Nachlass- und Teilungssachen nach dem GKostG anfallenden Gerichtsgebühren sind in Hauptabschnitt 2 des Kostenverzeichnisses (KV, Anlage 1) im Einzelnen dargestellt. Herausgegriffen werden nachfolgend die gerichtlichen Kosten im Erbscheinsverfahren und bei der Testamentsvollstreckung (TV).
+
+### 2. Erbschein 
+
+Für die nach § 2356 Abs. 2 BGB in der Regel erforderliche eidesstattliche Versicherung wird eine Gebühr erhoben, Nr. 12210 Abs. 2 KV in Verbindung mit Vorbemerkung 1 Abs. 2 in Verbindung mit Nr. 23300 KV. Bislang war diese Gebühr in § 107 Abs. 1 S. 2, § 49 KostO geregelt. Der anzusetzende Geschäftswert für die eidesstattliche Versicherung bemisst sich nach § 40 Abs. 1 Nr. 1 GNotKG (vormals § 107, § 49 Abs. 2 KostO). Maßgeblich ist der Wert des Nachlasses im Zeitpunkt des Erbfalls.
+ 
+> Neu im GNotKG ist, dass nun nur noch die reinen Erblasserschulden in Abzug gebracht werden können. Nicht mehr abzugsfähig sind die sogenannten Erbfallschulden (Vermächtnisse, Pflichtteilsrechte, Auflagen), was nach altem Recht gemäß § 107 Abs. 2 S. 1 KostO möglich war.
+ 
+Für die Erteilung eines Erbscheins wird eine volle Gebühr nach Nr. 12210 Abs. 1 KV erhoben. Auch nach dem früheren § 107 Abs. 1 S. 1 KostO war der Ansatz einer vollen Gebühr vorgesehen. Der maßgebliche Geschäftswert ergibt sich aus § 40 Abs. 1 Nr. 2 GNotKG.
+ 
+> Wie bei der eidesstattlichen Versicherung ist neu, dass nur noch die Erblasser-, nicht mehr jedoch die Erbfallschulden abgezogen werden können.
+ 
+#### a) Gegenständlich beschränkter Erbschein 
+Der Geschäftswert eines gegenständlich beschränkten Erbscheins nach § 2369 BGB ist in § 40 Abs. 3 GNotKG geregelt (vormals § 107 Abs. 2 S. 3 KostO).
+ 
+> Neu ist, dass Nachlassverbindlichkeiten zur Gänze nicht mehr abgezogen werden dürfen (§ 40 Abs. 3 S. 1 GNotKG). Anders als beim normalen Erbschein, bei dem zumindest die Erblasserschulden noch Berücksichtigung finden (§ 40 Abs. 1 S. 2 GNotKG).
+ 
+Der gegenständlich beschränkte Erbschein soll jedoch nicht teurer werden als der normale Erbschein. Wenn der Wert des gesamten Nachlasses nach Abzug der vom Erblasser hinterlassenen Verbindlichkeiten niedriger ist, findet dieser geringere Wertansatz (nur) auf Antrag Berücksichtigung, § 40 Abs. 3 S. 2 GNotKG.
+ 
+#### b) Erbschein für Grundbuchzwecke
+
+Für den Geschäftswert ergibt sich eine Änderung. Früher beschränkte sich der Wert eines Erbscheins, der für Grundbuchzwecke gebraucht wurde, nur auf den Wert des eingetragenen Grundstücks, § 107 Abs. 3 KostO. Diese Regelung wurde im GNotKG nicht übernommen. Eine wertmäßige Reduzierung auf den Grundstückswert gibt es nach dem GNotKG nicht mehr.
+
+## Recht der Beschwerde [justiz.nrw.de: Rechtsmittel im Erbscheinsverfahren](https://www.justiz.nrw.de/Gerichte_Behoerden/ordentliche_gerichte/FGG/Einzelverfahren/Nachlassverfahren/erbschein_ausschlagung/index.php#7)
+
+Die Entscheidung über die Erteilung des Erbscheines erfolgt durch Beschluss des Nachlassgerichtes. Wird die Erteilung des Erbscheins zurückgewiesen, so steht gem. § 58 Abs. 2 FamFG nur dem Antragsteller das Recht der Beschwerde gegen den zurückweisenden Beschluss zu. In diesem Fall ist der Beschluss des Gerichts mit einer Begründung und Rechtsbehelfsbelehrung zu versehen (§§ 38 Abs. 3, 39 FamFG). Die Beschwerde ist binnen eines Monats ab der Bekanntgabe bei dem Nachlassgericht schriftlich oder zu Protokoll einzulegen, § 63 FamFG. Das Nachlassgericht kann seinen Beschluss ändern (Abhilfebefugnis gem. § 68 Abs. 1 FamFG), andernfalls entscheidet über die Beschwerde das Oberlandesgericht. Wird geltend gemacht, dass die Beschwerdeentscheidung auf einer Gesetzesverletzung beruht, kann gegen diese Entscheidung wiederum die Rechtsbeschwerde beim Bundesgerichtshof eingelegt werden (vgl. §§ 72 ff. FamFG).
+
+## Legalisierung
 
 ### Honorarkonsulat des Plurinationalen Staates Bolivien in Frankfurt am Main
 
@@ -83,15 +129,18 @@ Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
 
 ### Deutsche Botschaft in La Paz
 
-Ronald Golan, [ronald_golan@hotmail.com](mailto:ronald_golan@hotmail.com)
+Kontakt
+:   Ronald Golan, [ronald_golan@hotmail.com](mailto:ronald_golan@hotmail.com)
 
-Art. 1294 Codigo Civil
+#### Bolivianisches Recht
+
+##### Art. 1294 Codigo Civil
 
 > 1. Los documentos públicos oorgados en país extranjero, según las formas alli establecidas, tendran el mismo valor que los extendidos en  Bolivia, si se hallan debidamente leglizados.
 
 The German certificate of inheritance can be accepted by the Bolivian authorities provided that it is legalised.
 
-Art. 1543 Codigo Civil
+###### Art. 1543 Codigo Civil
  
 > 1. Los docuentos celebrados en país extranjero sobre bienes sujetos a registro podrán ser inscritos si se hallan debidamente legalizados.
 > 2. Si se trata de resoluciones judiciales, serán inscritas una vez homologadas legalmente y con la respectiva orden judicial.
@@ -106,10 +155,12 @@ how to make a power of attorney outside Bolivia
 
 check whether the property registration can be done from distance. In the worst case, if there is a need to go in person and sign at the property register, it is important to know in advance to include in the power of attorney to delegate to legal agent for doing this. The consulate should be able to provide information on this.
 
+## Weitere Links
+
 ### Offizielle Links
 
+- Justizportal Nordrhein-Wesfalen [justiz.nrw.de: Erbschein oder Ausschlagung](https://www.justiz.nrw.de/Gerichte_Behoerden/ordentliche_gerichte/FGG/Einzelverfahren/Nachlassverfahren/erbschein_ausschlagung/index.php)
 - Amtsgericht Kaiserslautern [Formular Erbscheinantrag](http://www.mjv.rlp.de/icc/justiz/nav/25f/binarywriterservlet%3FimgUid%3D3dd60b27-ff72-7f21-954e-a0a577fe9e30%26uBasVariant%3D11111111-1111-1111-1111-111111111111)
-
 - Land Sachsen - Amt24 [Erteilung des Erbscheins](http://amt24.sachsen.de/ZFinder/verfahren.do?action=showdetail&modul=VB&id=34766!0)
 - Saarland - Amtsgericht Lebach [Nachlasssachen](http://www.saarland.de/79408.htm)
 - Saarland [Formular Wertermittlung](http://www.saarland.de/dokumente/projekt_amtsgerichte/Nachlassverzeichnis.pdf)
@@ -118,9 +169,17 @@ check whether the property registration can be done from distance. In the worst 
 
 - IWW Institut für Wissen in der Wirtschaft [Erbscheinverfahren](http://www.iww.de/index.cfm?pid=1314&pk=154842&spid=1296&spk=1288&sfk=26)
 
-### Literatur
+## Literatur
 
 - [Walter Zimmermann - Rechtsfragen bei einem Todesfall, Kapitel 7]({% post_url personal/heritage/2015-07-13-Zimmermann-Rechtsfragen %})
+- [Andrea Tiedemann - Internationales Erbrecht in Deutschland und Lateinamerika: kollisionsrechtliche Regelungen zwischen Nachlasseinheit und Nachlassspaltung](https://books.google.fr/books?id=iX8aTzp-a0AC)
+
+## Institute
+
+- [Max-Planck-Institut für ausländisches und internationales Privatrecht, Hamburg](http://www.mpipriv.de/de/pub/aktuelles.cfm)
+- [MPG: Katalog](http://aleph.mpg.de/F?func=file&file_name=find-b&local_base=ipr01)
+
+## Gesetze
 
 ### Angaben
 
@@ -134,13 +193,6 @@ check whether the property registration can be done from distance. In the worst 
     - Angabe, ob ein Rechtsstreit über das das Erbrecht anhängig ist (§ 2354 Nr. 5 BGB)  
     - Angabe, dass ein Teilerbschein beantragt wird  
     - Angabe, welche anderen Personen vorhanden sind, durch die sein Erbteil gemindert sein könnte (§ 2354 Abs. 2 BGB)
-
-### Unterlagen
-
-- Abgabe einer Versicherung an Eides statt über die Richtigkeit bestimmter im Gesetz vorgesehener Angaben
-- gesetzliche Erbfolge: Nachweis des Verwandtschaftsverhältnisses: *beglaubigter* Ausdruck aus dem Geburtenregister `Original ausreichend?`
-- Scheidungsurteil, wenn der Erblasser geschieden war (Angabe des Gerichts, das die Scheidung ausgesprochen hat, Datum des Scheidungsurteils und Aktenzeichen)
-- schriftliche Mitteilung über evtl. vorhandene nichteheliche oder einzeladoptierte Kinder von Standesamt am Geburtsort des Erblassers
 
 ### Rechtsgrundlage
 

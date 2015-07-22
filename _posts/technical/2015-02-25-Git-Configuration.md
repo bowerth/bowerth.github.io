@@ -77,7 +77,8 @@ ignore files permanently
 	`*.log` ignore file extension in root folder  
 	`**/*.log` ignore file extension in all subfolders  
 	`target` ignore folder  
-	finally, `git add .gitignore`
+    `*.*~` ignore Emacs backup files  
+    finally, `git add .gitignore`
 
 ![git file workflow](/assets/graphics/git_file_workflow.svg)
 
@@ -150,6 +151,11 @@ Source
 :   McCullough and Berglund on Matering Git, O'Reilly  
 	[matthewmccullough](`https://github.com/matthewmccullough`)  
 	[github-cheat-sheet](`https://github.com/matthewmccullough/github-cheat-sheet`)
+
+## Submodules
+
+add submodule
+:   `git submodule add https://github.com/bowerth/nsoApiBrowser.git inst/nsoApiBrowser`
 
 ## Other resources
 

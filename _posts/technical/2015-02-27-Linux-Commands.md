@@ -6,7 +6,50 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Encryption
+
+### Passwords
+
+- [keepassx](https://www.keepassx.org/)
+
+install keepassx on Fedora 22
+:   `sudo dnf install keepassx`
+
+### GPG
+
+- [gpg cheat sheet](http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html)
+
+list keys
+:   `gpg --list-keys`
+
+to export a public key into file `public.key`
+:   `gpg --export -a "User Name" > public.key`
+
+delete a public key (from your public key ring)
+:   `gpg --delete-key "User Name"`
+
+to import a public key
+:   `gpg --import [public key file]`
+
+to export a private key
+:   `gpg --export-secret-key -a "User Name" > private.key`
+
+to import a private key
+:   `gpg --allow-secret-key-import --import private.key`
+
 ## Fedora
+
+### install or update Adobe Flash Player
+
+#### Fedora 21
+
+- `$ yum install flash-plugin`
+
+#### Fedora 22
+
+- download .rpm version from https://get.adobe.com/flashplayer/
+- `$ sudo dnf remove flash-plugin`
+- `$ sudo rpm -i ~/Downloads/flash-plugin-[version]-release.x86_64.rpm`
 
 ### screen brightness Toshiba
 
@@ -76,9 +119,6 @@ old releases
 log files
 :   `rm -r /var/log/journal/*`
 
-install or update Adobe Flash Player
-:   `yum install flash-plugin`
-
 ## Environment variables
 
 `/etc` directory
@@ -88,6 +128,11 @@ install or update Adobe Flash Player
     `/etc/bashrc` global functions and aliases
 
 ### Bash
+
+#### executable script files
+
+make file executable
+:   `sudo chmod +x file`
 
 #### string operations
 
