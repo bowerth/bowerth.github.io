@@ -37,6 +37,15 @@ to export a private key
 to import a private key
 :   `gpg --allow-secret-key-import --import private.key`
 
+## Ubuntu
+
+### Flash player
+
+- download .deb file from ppa launchpad
+- remove existing flash installations (`flashplayer-installer`, `flash-plugin`)
+- close browser
+- install using `sudo dpkg -i [package name]`
+
 ## Fedora
 
 ### install or update Adobe Flash Player
