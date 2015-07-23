@@ -45,17 +45,24 @@ when done editing, export back to Gmail
 - [emacswiki: safe email authentication](http://www.emacswiki.org/emacs/GnusEncryptedAuthInfo)
 - [emacswiki: EasyPG](http://www.emacswiki.org/emacs/EasyPG)
 
-### General
+### Buffer
 
 convert buffer format `DOS` / `UNIX`
 :   `C-x RET f` or `M-x set-buffer-file-coding-system`  
     format examples: `dos`, `unix`, `utf-8-unix`
 
-file conversion with iconv
-:   R command `iconvlist()` provides an alphabetical list of the supported encodings
+### Dired
 
 new folder in `dired` mode
 :   `+`
+
+### File encoding
+
+save file with new encoding, e.g. `utf-8`
+:   `C-x C-m c <encoding> RET C-x C-w RET`
+
+file conversion with iconv
+:   R command `iconvlist()` provides an alphabetical list of the supported encodings
 
 ### ESS
 
