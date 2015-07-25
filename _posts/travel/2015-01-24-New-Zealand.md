@@ -1,8 +1,9 @@
 ---
 layout   : post
 category : travel
-tagline  : "there's no knowing where you might be swept off to"
-tags     : [kitesurf, hangglide]
+tagline  : 
+tags     : 
+draft    : true
 ---
 {% include JB/setup %}
 

@@ -1,8 +1,9 @@
 ---
-layout : post
+layout   : post
 category : professional
-tagline : 
-tags : 
+tagline  : 
+tags     : 
+draft    : true
 ---
 {% include JB/setup %}
 

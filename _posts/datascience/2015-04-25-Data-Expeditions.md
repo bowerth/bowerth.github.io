@@ -2,7 +2,8 @@
 layout   : post
 category : datascience
 tagline  : 
-tags     : [BSD]
+tags     : 
+draft    : true
 ---
 {% include JB/setup %}
 
