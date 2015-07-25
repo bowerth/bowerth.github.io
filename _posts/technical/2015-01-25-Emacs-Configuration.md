@@ -6,6 +6,12 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Installation
+
+### Fedora 22
+
+- `sudo dnf install emacs emacs-ess`
+
 ## Commands
 
 - [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
