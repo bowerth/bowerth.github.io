@@ -8,7 +8,7 @@ tags     :
 <!-- do not edit by hand - created with jekyllr -->
 
 
-## ECB SDMX Flows
+## European Central Bank (ECB) SDMX Flows
 
 |ID           |Label                                                                                                |
 |:------------|:----------------------------------------------------------------------------------------------------|

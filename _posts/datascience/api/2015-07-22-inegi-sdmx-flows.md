@@ -8,7 +8,7 @@ tags     :
 <!-- do not edit by hand - created with jekyllr -->
 
 
-## SDMX Flows INEGI
+## Instituto Nacional de Estadistica y Geografia (INEGI) SDMX Flows
 
 |ID                               |Label                                           |
 |:--------------------------------|:-----------------------------------------------|
