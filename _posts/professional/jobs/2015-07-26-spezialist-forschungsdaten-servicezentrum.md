@@ -37,14 +37,14 @@ Hauptsächlich erstellen Sie hochwertige Forschungs- und Analysedatensätze aus 
 Ihr Profil
 
 - Universitätsdiplom, akkreditierter Master- oder gleichwertiger Abschluss der Wirtschaftswissenschaften, Sozialwissenschaften, Mathematik oder Statistik mit überdurchschnittlichem Ergebnis
-− Praxiserprobte Kenntnisse in der deskriptiven Auswertung und der analytischen Arbeit mit Mikrodaten
-− Umfangreiche Kenntnisse in der Aufbereitung und der Dokumentation von Mikrodaten (insbesondere Wirtschaftsdaten)
-− Erfahrungen im Umgang mit und der Programmierung von statistischer Spezialsoftware (insbesondere SAS, Stata oder Matlab)
-− Strukturierte und eigenverantwortliche Arbeitsweise
-− Sehr gute konzeptionelle Fähigkeiten
-− Ausgeprägte Teamfähigkeit sowie Kunden- und Serviceorientierung
-− Sehr gute Deutsch- und gute Englischkenntnisse
-− Belegbare Forschungserfahrung und Arbeitserfahrung im Bereich eines Forschungsdatenzentrums sind von Vorteil
+- Praxiserprobte Kenntnisse in der deskriptiven Auswertung und der analytischen Arbeit mit Mikrodaten
+- Umfangreiche Kenntnisse in der Aufbereitung und der Dokumentation von Mikrodaten (insbesondere Wirtschaftsdaten)
+- Erfahrungen im Umgang mit und der Programmierung von statistischer Spezialsoftware (insbesondere SAS, Stata oder Matlab)
+- Strukturierte und eigenverantwortliche Arbeitsweise
+- Sehr gute konzeptionelle Fähigkeiten
+- Ausgeprägte Teamfähigkeit sowie Kunden- und Serviceorientierung
+- Sehr gute Deutsch- und gute Englischkenntnisse
+- Belegbare Forschungserfahrung und Arbeitserfahrung im Bereich eines Forschungsdatenzentrums sind von Vorteil
 
 #### Unser Angebot
 

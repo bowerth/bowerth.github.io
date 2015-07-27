@@ -6,6 +6,14 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Fedora 22
+
+basic installation
+:   `sudo dnf -y install ruby ruby-devel nodejs`
+
+install Jekyll gem
+:   `gem install jekyll`
+
 ## Windows
 
 ### Install Jekyll gem

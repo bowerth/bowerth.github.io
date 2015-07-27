@@ -136,7 +136,7 @@ log files
     `/etc/profile` global environment
     `/etc/bashrc` global functions and aliases
 
-### Bash
+### Bash commands
 
 #### executable script files
 

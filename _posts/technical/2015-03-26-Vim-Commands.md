@@ -6,6 +6,8 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Use
+
 ### Navigate
 
 up
@@ -48,4 +50,29 @@ suspend the process and get back to shell
 
 resume (bring to foreground) suspended vim
 :   `fg`
+
+## Installation
+
+### Vim pathogen
+
+Manage plugins for vim in `~/.vimrc/bundle` directory
+
+- [github: tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
+
+```bash
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+
+if new `~/.vimrc`: `$ vim ~/.vimrc` and paste in the following super-minimal example:
+
+```vim
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+```
+
+add `vim-addon-manager`
+:   `cd ~/.vim/bundle && \`  
+    `git clone https://github.com/MarcWeber/vim-addon-manager.git`
 
