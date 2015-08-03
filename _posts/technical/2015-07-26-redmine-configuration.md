@@ -9,7 +9,8 @@ tags     :
 ## Usage
 
 start session
-:   `bundle exec rails server webrick -e production`
+:   `cd ~/Dropbox/GitHub/redmine/src`  
+    `bundle exec rails server webrick -e production`
 
 login
 :   user: `admin`, password: `admin`

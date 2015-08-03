@@ -16,6 +16,9 @@ tags     :
 
 - [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
 
+check emacs version
+:   `M-x emacs-version`
+
 ### Major Modes
 
 #### `Shell` Mode
@@ -96,3 +99,9 @@ install js-comint
 :   `el-get-install js-comint`
 
 Source: [livecode nodejs apps on coderwall](https://coderwall.com/p/qvqhkg/livecode-node-js-apps)
+
+### Java
+
+- [Java Development Environment for Emacs (JDEE)](http://emacswiki.org/emacs/JavaDevelopmentEnvironment)
+- [Installation](http://jdee.sourceforge.net/install.html#install-binary)
+- [JDEE user guide](http://jdee.sourceforge.net/jdedoc/html/jde-ug/jde-ug.html)

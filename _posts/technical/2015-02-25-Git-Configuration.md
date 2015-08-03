@@ -126,6 +126,9 @@ show n commits before specific hash
 show details for last commit
 :   `git show`
 
+rewrite the most recent commit message
+:   `git commit --amend`
+
 ## Branching
 
 when to branch

@@ -11,3 +11,6 @@ tags     :
 
 40 Useful Google Chrome Extensions for Web Designers
 :   [www.hongkiat.com](http://www.hongkiat.com/blog/google-chrome-extensions-designers/)
+
+Kyle Walker - Teaching with Interactive Data Visualization
+:   [walkerke.github.io](http://walkerke.github.io/)
