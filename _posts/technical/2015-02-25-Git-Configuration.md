@@ -167,3 +167,4 @@ add submodule
 - [Become a git guru](https://www.atlassian.com/git/tutorials/)
 - [Ry's Git Tutorial](http://rypress.com/tutorials/git/index)
 - [GitHub Pages Workflow](http://oli.jp/2011/github-pages-workflow/)
+- [A Case of Computational Thinking: The Subtle Effect of Hidden Dependencies on the User Experience of Version Control](http://static.googleusercontent.com/media/research.google.com/en/pubs/archive/42942.pdf)
