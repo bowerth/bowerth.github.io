@@ -48,7 +48,7 @@ install ditaa
 place the `ditaa.rb` plugin in your sites `_plugins` directory
 :   [github: matze: jekyll-ditaa/ditaa.rb](https://raw.githubusercontent.com/matze/jekyll-ditaa/master/ditaa.rb)
 
-{% ditaa %}
+{{ {% ditaa }}%}
 /----+  DAAP /-----+-----+ Audio  /--------+
 | PC |<------| RPi | MPD |------->| Stereo |
 +----+       +-----+-----+        +--------+
@@ -56,7 +56,7 @@ place the `ditaa.rb` plugin in your sites `_plugins` directory
    |     ncmpcpp     | | mpdroid /---------+
    +--------=--------+ +----=----| Nexus S |
                                  +---------+
-{% endditaa %}
+{{ {% endditaa }}%}
 
 ## PHP Markdown integration
 
