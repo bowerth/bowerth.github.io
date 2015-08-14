@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+### [slides.com](http://slides.com/)
+
+using `reveal.js` (see JavaScript)
+
 ### io-2012 slides
 
 - [io-2012 slides on google code](https://code.google.com/p/io-2012-slides/)

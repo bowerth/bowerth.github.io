@@ -19,15 +19,165 @@ tags     :
 check emacs version
 :   `M-x emacs-version`
 
-### Major Modes
+highlight phrase (`hi-black-hb` works well)
+:   `M-x highlight-phrase`
 
-#### `Shell` Mode
+## Major Modes
+
+### Buffer Mode
+
+convert buffer format `DOS` / `UNIX`
+:   `C-x RET f` or `M-x set-buffer-file-coding-system`  
+    format examples: `dos`, `unix`, `utf-8-unix`
+
+### Dired Mode
+
+new folder in `dired` mode
+:   `+`
+
+### File encoding
+
+save file with new encoding, e.g. `utf-8`
+:   `C-x C-m c <encoding> RET C-x C-w RET`
+
+file conversion with iconv
+:   R command `iconvlist()` provides an alphabetical list of the supported encodings
+
+### ESS Mode
+
+extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/pipermail/ess-help/2009-July/005455.html)
+:   `ess-execute-screen-options` or `C-c w`
+
+## `.emacs` configuration
+
+### JavaScript Mode
+
+install el-get
+:   copy/paste this code into your `scratch` buffer and evaluate using `M-x eval-print-last-exp`
+
+```
+(url-retrieve  
+ "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el"  
+ (lambda (s)  
+   (goto-char (point-max))  
+   (eval-print-last-sexp)))
+```
+
+Source: [github.com:dimitri/el-get.git](https://github.com/dimitri/el-get/)
+
+install js-comint
+:   `el-get-install js-comint`
+
+Source: [livecode nodejs apps on coderwall](https://coderwall.com/p/qvqhkg/livecode-node-js-apps)
+
+### Java Mode
+
+- [Java Development Environment for Emacs (JDEE)](http://emacswiki.org/emacs/JavaDevelopmentEnvironment)
+- [Installation](http://jdee.sourceforge.net/install.html#install-binary)
+- [JDEE user guide](http://jdee.sourceforge.net/jdedoc/html/jde-ug/jde-ug.html)
+
+### Ruby REPL
+
+- [github: nonsqeuitur: inf-ruby](https://github.com/nonsequitur/inf-ruby)
+
+#### Usage
+
+start inf-ruby
+:   `M-x inf-ruby`
+
+set minor mode for buffer
+:   `M-x inf-ruby-minor-mode`
+
+send region from buffer to inf-ruby
+:   `C-c C-r`
+
+#### inf-ruby minor mode keybindings
+
+`M-x describe-function [RET] inf-ruby-minor-mode [RET]`
+
+| key     | binding                    |
+| ------- | -------------------------- |
+| C-c     | Prefix Command             |
+| C-x     | Prefix Command             |
+| ESC     | Prefix Command             |
+|         |                            |
+| C-c C-b | ruby-send-block            |
+| C-c C-l | ruby-load-file             |
+| C-c C-r | ruby-send-region           |
+| C-c C-s | inf-ruby                   |
+| C-c C-x | ruby-send-definition       |
+| C-c C-z | ruby-switch-to-inf         |
+| C-c ESC | Prefix Command             |
+|         |                            |
+| C-x C-e | ruby-send-last-sexp        |
+|         |                            |
+| C-M-x   | ruby-send-definition       |
+|         |                            |
+| C-c M-b | ruby-send-block-and-go     |
+| C-c M-r | ruby-send-region-and-go    |
+| C-c M-x | ruby-send-definition-and-go|
+
+### Org Mode
+
+- [orgmode.org](http://orgmode.org/org.html)
+
+#### ditaa
+
+- [orgmode.org: ditaa](http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ditaa.html)
+
+Activate evaluation of `ditaa` source code blocks by adding ditaa to org-babel-load-languages.
+
+```lisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((ditaa . t))) ; this line activates ditaa
+```
+
+#### Links
+
+- [orgmode manual: External Links](orgmode.org/manual/External-links.html)
+
+### CSV Mode `csv-mode.el`
+
+- [emacswiki.org: Csv Mode](http://emacswiki.org/emacs/CsvMode)
+- [elpa.gnu.org: csv-mode](https://elpa.gnu.org/packages/csv-mode.html)
+
+In CSV mode, the following commands are available:
+
+sort lexicographically and numerically on a specified field or column
+:   `C-c C-s ('csv-sort-fields')` and `C-c C-n ('csv-sort-numeric-fields')`
+
+reverse the order
+:   `C-c C-r ('csv-reverse-region')`
+
+kill and yank fields or columns
+:   `C-c C-k ('csv-kill-fields')` and `C-c C-y ('csv-yank-fields')`
+
+aligns fields into columns
+:   `C-c C-a ('csv-align-fields')`
+
+unalign previously aligned fields
+:   `C-c C-u ('csv-unalign-fields')`
+
+interchange rows and columns
+:   `C-c C-t ('csv-transpose')`
+
+### `Shell` Mode
 
 execute region
 :   `C-M-x`
 
 execute script
 :   `C-c C-x`
+
+toggle auto-fill-mode
+:   `M-x auto-fill-mode`
+
+### W3M web browser
+
+- [w3 Manual](http://w3m.sourceforge.net/MANUAL)
+- [Beat of the Geek: The Awesome of Web Browsing With Emacs](http://beatofthegeek.com/2014/02/the-awesome-of-web-browsing-with-emacs.html)
+- [Beat of the Geek: My Setup for Using Emacs as Web Browser](http://beatofthegeek.com/2014/02/my-setup-for-using-emacs-as-web-browser.html)
 
 ### Mail
 
@@ -54,54 +204,9 @@ when done editing, export back to Gmail
 - [emacswiki: safe email authentication](http://www.emacswiki.org/emacs/GnusEncryptedAuthInfo)
 - [emacswiki: EasyPG](http://www.emacswiki.org/emacs/EasyPG)
 
-### Buffer
+### Processing
 
-convert buffer format `DOS` / `UNIX`
-:   `C-x RET f` or `M-x set-buffer-file-coding-system`  
-    format examples: `dos`, `unix`, `utf-8-unix`
+installation
+:   `M-x package-install RET processing-mode`
 
-### Dired
-
-new folder in `dired` mode
-:   `+`
-
-### File encoding
-
-save file with new encoding, e.g. `utf-8`
-:   `C-x C-m c <encoding> RET C-x C-w RET`
-
-file conversion with iconv
-:   R command `iconvlist()` provides an alphabetical list of the supported encodings
-
-### ESS
-
-extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/pipermail/ess-help/2009-July/005455.html)
-:   `ess-execute-screen-options` or `C-c w`
-
-## `.emacs` configuration
-
-### JavaScript
-
-install el-get
-:   copy/paste this code into your `scratch` buffer and evaluate using `M-x eval-print-last-exp`
-
-```
-(url-retrieve  
- "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el"  
- (lambda (s)  
-   (goto-char (point-max))  
-   (eval-print-last-sexp)))
-```
-
-Source: [github.com:dimitri/el-get.git](https://github.com/dimitri/el-get/)
-
-install js-comint
-:   `el-get-install js-comint`
-
-Source: [livecode nodejs apps on coderwall](https://coderwall.com/p/qvqhkg/livecode-node-js-apps)
-
-### Java
-
-- [Java Development Environment for Emacs (JDEE)](http://emacswiki.org/emacs/JavaDevelopmentEnvironment)
-- [Installation](http://jdee.sourceforge.net/install.html#install-binary)
-- [JDEE user guide](http://jdee.sourceforge.net/jdedoc/html/jde-ug/jde-ug.html)
+- [github: ptrv: processing2-emacs](https://github.com/ptrv/processing2-emacs)

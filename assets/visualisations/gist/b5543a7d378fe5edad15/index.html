@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- Adapted from http://bost.ocks.org/mike/uberdata/ -->
+<meta charset="utf-8">
+<title>Divvy Trips in Hyde Park</title>
+<style>
+
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
+</style>
+
+<body>
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+
+var width = 720,
+    height = 720,
+    outerRadius = Math.min(width, height) / 2 - 10,
+    innerRadius = outerRadius - 24;
+
+var format = d3.format('f.0');
+
+var color = d3.scale.category20()
+
+var arc = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
+
+var layout = d3.layout.chord()
+    .padding(.04)
+    .sortSubgroups(d3.descending)
+    .sortChords(d3.ascending);
+
+var path = d3.svg.chord()
+    .radius(innerRadius);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("id", "circle")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+svg.append("circle")
+    .attr("r", outerRadius);
+
+stations = ["Blackstone Ave & Hyde Park Blvd", "King Dr & 47th St", "Shore Drive & 55th St", "Woodlawn Ave & 55th St", "Greenwood Ave & 47th St", "Lake Park Ave & 47th St", "Cottage Grove Ave & 43rd St", "Kimbark Ave & 53rd St", "Ellis Ave & 58th St", "Cottage Grove Ave & 47th St", "Lake Park Ave & 56th St", "Cottage Grove Ave & 51st St", "other"]
+
+function getMatrix(data) {
+
+    var zeros = stations.map(function() { return 0 });
+    var matrix = stations.map(function() { return zeros.slice(0); }); // .slice(0) is like cloning
+    data.forEach(function (d) {
+        var i = stations.indexOf(d.source)
+        var j = stations.indexOf(d.target)
+        if ((i == -1 && j == -1) || (d.value == 0))
+            return
+        if (i == -1)
+            i = stations.indexOf("other")
+        if (j == -1)
+            j = stations.indexOf('other')
+        matrix[i][j] = +d.value
+    });
+    return matrix
+}
+
+d3.csv("divvy_trips.csv", function(data) {
+
+    var matrix = getMatrix(data)
+    console.log(JSON.stringify(matrix))
+    // Compute the chord layout.
+    layout.matrix(matrix);
+
+    // Add a group per neighborhood.
+    var group = svg.selectAll(".group")
+        .data(layout.groups)
+      .enter().append("g")
+        .attr("class", "group")
+        .on("mouseover", mouseover);
+
+    // Add a mouseover title.
+    group.append("title").text(function(d, i) {
+      return stations[i] + ": " + format(d.value) + " origins";
+    });
+
+    // Add the group arc.
+    var groupPath = group.append("path")
+        .attr("id", function(d, i) { return "group" + i; })
+        .attr("d", arc)
+        .style("fill", function(d, i) { return color(stations[i]); });
+
+    // Add a text label.
+    var groupText = group.append("text")
+        .attr("x", 6)
+        .attr("dy", 15);
+
+    groupText.append("textPath")
+        .attr("xlink:href", function(d, i) { return "#group" + i; })
+        .text(function(d, i) { return stations[i]; });
+
+    // Remove the labels that don't fit. :(
+    groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
+        .remove();
+
+    // Add the chords.
+    var chord = svg.selectAll(".chord")
+        .data(layout.chords)
+      .enter().append("path")
+        .attr("class", "chord")
+        .style("fill", function(d) { return color(stations[d.source.index]); })
+        .attr("d", path);
+
+    // Add an elaborate mouseover title for each chord.
+    chord.append("title").text(function(d) {
+      return stations[d.source.index]
+          + " → " + stations[d.target.index]
+          + ": " + format(d.source.value)
+          + "\n" + stations[d.target.index]
+          + " → " + stations[d.source.index]
+          + ": " + format(d.target.value);
+    });
+
+    function mouseover(d, i) {
+      chord.classed("fade", function(p) {
+        return p.source.index != i
+            && p.target.index != i;
+      });
+    }
+});
+
+</script>
+

@@ -6,6 +6,28 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Git workflow
+
+<!-- ![git file workflow](/assets/graphics/git_file_workflow.svg) -->
+
+{% ditaa %}
++---------+        +-----------+     +------------+      +----------+     +--------+
+|         |        |           |     |            |      |          |     |        |
+| Ignored |        | Untracked |     | Unmodified |      | Modified |     | Staged |
+|         |        |           |     |            |      |          |     |        |
+|         | ignore |           | add |            | edit |          | add |        |
+|       <----------+-+       +-+------->        +-+-------->      +-+------->      |
+|         |        |           |     |            |      |          |     |        |
+|         |        |           |     |            |      |          |     |        |
+|         |        |           | rm  |            |      |  commit  |     |        |
+|         |        |         <-------+-+        <-------------------------+-+      |
+|         |        |           |     |            |      |          |     |        |
+|         |        |           |     |            |      |          |     |        |
+|         |        |           |     |            |      |          |     |        |
+|         |        |           |     |            |      |          |     |        |
++---------+        +-----------+     +------------+      +----------+     +--------+
+{% endditaa %}
+
 ## GUI
 
 http://sourceforge.net/projects/gitextensions/
@@ -79,8 +101,6 @@ ignore files permanently
 	`target` ignore folder  
     `*.*~` ignore Emacs backup files  
     finally, `git add .gitignore`
-
-![git file workflow](/assets/graphics/git_file_workflow.svg)
 
 view repo file tree
 :   `tree`
@@ -162,6 +182,7 @@ add submodule
 
 ## Other resources
 
+- [try.github.io: Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1)
 - [GitHub Trainig Kit](`https://training.github.com/kit`) and [page source](https://github.com/matthewmccullough/slidedown`)
 - [Pro Git book by S. Chacon and B. Straub](http://git-scm.com/book/en/v2/)
 - [Become a git guru](https://www.atlassian.com/git/tutorials/)

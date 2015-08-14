@@ -32,7 +32,7 @@ Degree
 
 Subjects
 :   - Corporate Finance : Options and Futures, Continuous Time Finance
-    -	Diploma Thesis: "Can Swing-Options Hedge Price and Volumetric Risks in Liberalized Electricity Markets?" Simulation assessment of a control-theory based valuation formula (M. Wilhelm, Modeling, Pricing and Risk Management of Power Derivatives (2007), ETH Zurich)  
+    - Diploma Thesis: "Can Swing-Options Hedge Price and Volumetric Risks in Liberalized Electricity Markets?" Simulation assessment of a control-theory based valuation formula (M. Wilhelm, Modeling, Pricing and Risk Management of Power Derivatives (2007), ETH Zurich)  
     - Chinese Studies : Mandarin Chinese, Productivity and Capitalism in Economic History, Traditional Environmental Challenges
     - Economic Theory: Japan's Dynamics of Innovation Processes under Heckscher-Ohlin
     - Economics of International Trade and Factor Flows: Task Content of International Trade and Offshoring
