@@ -8,25 +8,7 @@ tags     :
 
 ## Git workflow
 
-<!-- ![git file workflow](/assets/graphics/git_file_workflow.svg) -->
-
-<!-- {{{% ditaa }}%} -->
-+---------+        +-----------+     +------------+      +----------+     +--------+
-|         |        |           |     |            |      |          |     |        |
-| Ignored |        | Untracked |     | Unmodified |      | Modified |     | Staged |
-|         |        |           |     |            |      |          |     |        |
-|         | ignore |           | add |            | edit |          | add |        |
-|       <----------+-+       +-+------->        +-+-------->      +-+------->      |
-|         |        |           |     |            |      |          |     |        |
-|         |        |           |     |            |      |          |     |        |
-|         |        |           | rm  |            |      |  commit  |     |        |
-|         |        |         <-------+-+        <-------------------------+-+      |
-|         |        |           |     |            |      |          |     |        |
-|         |        |           |     |            |      |          |     |        |
-|         |        |           |     |            |      |          |     |        |
-|         |        |           |     |            |      |          |     |        |
-+---------+        +-----------+     +------------+      +----------+     +--------+
-<!-- {{{% endditaa }}%} -->
+![git file workflow](/assets/graphics/git_file_workflow.svg)
 
 ## GUI
 
