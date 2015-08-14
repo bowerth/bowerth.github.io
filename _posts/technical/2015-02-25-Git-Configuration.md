@@ -10,7 +10,7 @@ tags     :
 
 <!-- ![git file workflow](/assets/graphics/git_file_workflow.svg) -->
 
-{{ {% ditaa }}%}
+<!-- {{{% ditaa }}%} -->
 +---------+        +-----------+     +------------+      +----------+     +--------+
 |         |        |           |     |            |      |          |     |        |
 | Ignored |        | Untracked |     | Unmodified |      | Modified |     | Staged |
@@ -26,7 +26,7 @@ tags     :
 |         |        |           |     |            |      |          |     |        |
 |         |        |           |     |            |      |          |     |        |
 +---------+        +-----------+     +------------+      +----------+     +--------+
-{{ {% endditaa }}%}
+<!-- {{{% endditaa }}%} -->
 
 ## GUI
 
