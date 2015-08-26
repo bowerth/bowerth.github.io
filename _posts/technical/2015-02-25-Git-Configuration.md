@@ -175,6 +175,13 @@ Source
 	[matthewmccullough](`https://github.com/matthewmccullough`)  
 	[github-cheat-sheet](`https://github.com/matthewmccullough/github-cheat-sheet`)
 
+## Resetting
+
+Reset the staging area and the working directory to match the most recent commit
+:   `git reset --hard`
+
+In addition to unstaging changes, the --hard flag tells Git to overwrite all changes in the working directory, too. Put another way: this obliterates all uncommitted changes, so make sure you really want to throw away your local developments before using it.
+
 ## Submodules
 
 add submodule
@@ -189,3 +196,5 @@ add submodule
 - [Ry's Git Tutorial](http://rypress.com/tutorials/git/index)
 - [GitHub Pages Workflow](http://oli.jp/2011/github-pages-workflow/)
 - [A Case of Computational Thinking: The Subtle Effect of Hidden Dependencies on the User Experience of Version Control](http://static.googleusercontent.com/media/research.google.com/en/pubs/archive/42942.pdf)
+- [git-annex](https://git-annex.branchable.com/)
+- [buildamodule.com: git workflow training video](http://buildamodule.com/video/change-management-and-version-control-deploying-releases-features-and-fixes-with-git-how-to-use-a-scalable-git-branching-model-called-gitflow)

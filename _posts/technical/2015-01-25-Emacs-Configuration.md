@@ -6,23 +6,44 @@ tags     :
 ---
 {% include JB/setup %}
 
-## Installation
+## Debug
 
-### Fedora 22
+The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide variety of symbolic debuggers. It can run the GNU Debugger (GDB), as well as DBX, SDB, XDB, Perl’s debugging mode, the Python debugger PDB, and the Java Debugger JDB.
 
-- `sudo dnf install emacs emacs-ess`
+- [gnu.org: Running Debuggers Under Emacs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
 
-## Commands
+`M-x gdb`
+:   Run GDB as a subprocess, and interact with it via an IDE-like Emacs interface
 
-- [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+`M-x jdb`
+:   Run the Java debugger
 
-check emacs version
-:   `M-x emacs-version`
+## MELPA
 
-highlight phrase (`hi-black-hb` works well)
-:   `M-x highlight-phrase`
+- [How to use Emacs package manager](http://tuhdo.github.io/emacs-tutor3.html)
 
 ## Major Modes
+
+### Scala
+
+#### scala-mode2
+
+- [github: hvesalai: scala-mode2](https://github.com/hvesalai/scala-mode2)
+
+install `scala-mode2`
+:   `M-x package-install RET scala-mode2`
+
+#### sbt-mode
+
+An emacs mode for interacting with sbt, scala console (aka REPL) and sbt projects.
+
+- [github: hvesalai: sbt-mode](https://github.com/hvesalai/sbt-mode)
+
+install `sbt-mode`
+:   `M-x package-install RET scala-mode2`
+
+start sbt
+:   `M-x sbt-start`
 
 ### Buffer Mode
 
@@ -31,6 +52,9 @@ convert buffer format `DOS` / `UNIX`
     format examples: `dos`, `unix`, `utf-8-unix`
 
 ### Dired Mode
+
+- [gnu.org: Dired Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html)
+- [ergoemacs.org: Dired Tutorial](http://ergoemacs.org/emacs/file_management.html)
 
 new folder in `dired` mode
 :   `+`
@@ -121,6 +145,18 @@ send region from buffer to inf-ruby
 
 - [orgmode.org](http://orgmode.org/org.html)
 
+#### HTML export commands
+
+org-html-export-to-html
+:   `C-c C-e h h`
+
+Export as an HTML file. For an Org file myfile.org, the HTML file will be myfile.html. The file will be overwritten without warning. C-c C-e h o Export as an HTML file and immediately open it with a browser.
+
+org-html-export-as-html
+:    `C-c C-e h H`
+
+Export to a temporary buffer. Do not create a file.
+
 #### ditaa
 
 - [orgmode.org: ditaa](http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ditaa.html)
@@ -136,6 +172,55 @@ Activate evaluation of `ditaa` source code blocks by adding ditaa to org-babel-l
 #### Links
 
 - [orgmode manual: External Links](orgmode.org/manual/External-links.html)
+
+### Android Mode
+
+- [github: remvee: android-mode](https://github.com/remvee/android-mode)
+- [Tips on Android Development Using Emacs](http://gregorygrubbs.com/development/tips-on-android-development-using-emacs/)
+
+#### modify `~/.emacs`
+
+set path to Android SDK
+:   `(setq android-mode-sdk-dir "~/android-sdk-linux/")`
+
+specify default AVD (after creation)
+:   `(setq android-mode-avd "my_android6.0")`
+
+| Key binding | Function               |
+| ----------- | ---------------------- |
+| C-c C-c c   | android-ant-compile    |
+| C-c C-c d   | android-start-ddms     |
+| C-c C-c e   | android-start-emulator |
+| C-c C-c i   | android-ant-install    |
+| C-c C-c l   | android-logcat         |
+| C-c C-c r   | android-ant-reinstall  |
+| C-c C-c u   | android-ant-uninstall  |
+
+`android-ant-debug`
+:   creates `/bin/<your_project_name>-debug.apk`
+
+`android-build-install`
+:   install to device previously started from external shell using `emulator -avd my_android6.0`
+
+#### C/C++
+
+- [C/C++ Development Environment for Emacs](http://tuhdo.github.io/c-ide.html)
+
+#### CC Mode
+
+- [emacswiki.org: CC Mode](http://www.emacswiki.org/emacs/CcMode)
+
+CC Mode is a powerful package that provides modes for editing C and C-like (C++, Java, Objective C, CORBA IDL, etc.) files. For much more information (including an InfoMode manual), see the CC Mode homepage: [cc-mode.sourceforge.net](http://cc-mode.sourceforge.net/)
+
+- [sourceforge Download](http://cc-mode.sourceforge.net/release.php)
+
+compile CC Mode from a running Emacs session
+:   `M-0 M-x byte-recompile-directory RET /path/to/cc-mode RET`
+
+To test that you have things set up correctly, visit a C file and then type
+:   `M-x c-version RET`
+
+- [C Plus Plus Mode](http://www.emacswiki.org/emacs/CPlusPlusMode)
 
 ### CSV Mode `csv-mode.el`
 
@@ -181,6 +266,63 @@ toggle auto-fill-mode
 
 ### Mail
 
+#### Wanderlust
+
+- [wanderlust manual](http://www.gohome.org/wl/doc/wl_toc.html)
+- [github: wanderlust: wanderlust install](https://github.com/wanderlust/wanderlust/blob/master/INSTALL)
+
+Waderlust requires the following three configuration files:
+
+- `~/.wl` Wanderlust Configuration (loaded at startup)
+- `~/.folders` Folder Book
+- `~/.addresses` Address Book (optional)
+
+Each sample file (dot.addresses, dot.folders, dot.wl) exists on `samples/en/` directory. Please refer to them. To get full information, please read Info file.
+
+##### Folder Definition
+
+###### IMAP Folder
+
+A folder to access e-mails via IMAP4rev1 protocol (RFC 2060).
+
+Format
+:   ``%' mailbox [`:' username [`/' authenticate-type]][`@' hostname][`:' port][`!']`
+
+
+- [wanderlust.github.io: wl-docs](http://wanderlust.github.io/wl-docs/wl.html#Folder-Definition)
+
+format for `~/.folders`
+
+```lisp
+#
+# Lines begin with ‘#’ are comment.
+# Empty lines are ignored
+#
+# folder name  "folder nickname"
+# (nicknames are not necessary)
+#
+%inbox  "Inbox"
++trash  "Trash"
++draft  "Drafts"
+%#mh/Backup@my.imap.example.com "Sent"
+# Folder Group
+Emacsen{
+    %#mh/spool/wl            "Wanderlust ML"
+    %#mh/spool/elips         "ELIPS ML"
+    %#mh/spool/apel-ja       "APEL Japanese ML"
+    %#mh/spool/xemacs-beta   "XEmacs beta"
+    -fj.news.reader.gnus@other.nntp.example.com "Gnus Net news"
+    *-fj.editor.xemacs,-fj.editor.mule,-fj.editor.emacs "fj's Emacsen"
+}
+#
+# If folder name ends with ‘/’, that means an ‘access group’,
+# all subfolders automatically included in one folder group.
+#
+%#mh/expire@localhost /
+# All MH folders are included in one folder group.
++ /
+```
+
 #### SMTP account configuration
 
 edit user mail address
@@ -210,3 +352,19 @@ installation
 :   `M-x package-install RET processing-mode`
 
 - [github: ptrv: processing2-emacs](https://github.com/ptrv/processing2-emacs)
+
+## Emacs installation
+
+### Fedora 22
+
+- `sudo dnf install emacs emacs-ess`
+
+## Commands
+
+- [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+
+check emacs version
+:   `M-x emacs-version`
+
+highlight phrase (`hi-black-hb` works well)
+:   `M-x highlight-phrase`

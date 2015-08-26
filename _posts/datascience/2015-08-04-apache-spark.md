@@ -6,6 +6,18 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Spark Summit
+
+- [2015](https://spark-summit.org/eu-2015)
+
+## databricks
+
+- [databricks.com](https://databricks.com)
+
+## Hadoop Installation
+
+`NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
+
 ## Documentation
 
 - [spark.apache.org: Spark Standalone Mode](http://spark.apache.org/docs/latest/spark-standalone.html)
@@ -17,6 +29,7 @@ tags     :
 ## Links
 
 - [cloudera: Why Apache Spark is a Crossover Hit for Data Scientists](http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists)
+- [databricks.com: ML Pipelines: A New High-Level API for MLlib](https://databricks.com/blog/2015/01/07/ml-pipelines-a-new-high-level-api-for-mllib.html)
 
 ## Books
 
@@ -25,3 +38,4 @@ tags     :
 - [Holden Karau et al. - Learning Spark: Lightning-Fast Big Data Analysis (2015)](https://books.google.fr/books?id=tOptBgAAQBAJ)
 - [Holden Karau - Fast Data Processing With Spark (2013)](https://books.google.fr/books?id=PdqcAQAAQBAJ)
 - [Sandy Ryza et al. - Advanced Analytics with Spark: Patterns for Learning from Data at Scale](https://books.google.fr/books?id=M0_GBwAAQBAJ)
+	

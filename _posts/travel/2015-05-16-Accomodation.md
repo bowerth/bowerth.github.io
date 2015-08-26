@@ -54,6 +54,11 @@ Chateau de Versailles
 Disney Land
 :   [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
 
+### Taxes
+
+- [Impôt sur le revenu : revenus locatifs à déclarer (locaux meublés)](http://vosdroits.service-public.fr/particuliers/F32744.xhtml)
+- [Code général des impôts - Article 35 bis](http://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006307529&cidTexte=LEGITEXT000006069577&dateTexte=20130603&fastPos=1&fastReqId=1074984921&oldAction=rechCodeArticle.)
+
 ### Services
 
 Salon Mac Rayan

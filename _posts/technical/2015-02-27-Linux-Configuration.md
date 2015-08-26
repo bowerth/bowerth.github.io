@@ -89,6 +89,10 @@ to import a private key
 
 ## Fedora
 
+### Differences to Redhat and CentOS
+
+- [danielmiessler.com: The Difference Between Fedora, Redhat, and CentOS](https://danielmiessler.com/study/fedora_redhat_centos)
+
 ### install or update Adobe Flash Player
 
 #### Fedora 21
@@ -209,9 +213,15 @@ log files
 
 `/etc` directory
 :   global settings (used for `sudo`), otherwise overwritten by files in home directory
-    `/etc/environment` define `PATH` variable, e.g. texlive path or `http_proxy` for `curl`
-    `/etc/profile` global environment
-    `/etc/bashrc` global functions and aliases
+
+`/etc/environment`
+:   define `PATH` variable, e.g. texlive path or `http_proxy` for `curl`
+
+`/etc/profile`
+:   global environment
+
+`/etc/bashrc`
+:   global functions and aliases
 
 ### make files
 
