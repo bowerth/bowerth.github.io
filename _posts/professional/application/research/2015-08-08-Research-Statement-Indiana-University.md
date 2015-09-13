@@ -7,8 +7,12 @@ draft    : true
 ---
 {% include JB/setup %}
 
-### Daten Integration
+### Current Projects
 
-Text research statement
+#### MarkLogic and SCOPUS for Scientometrics
 
-### Interaktive Grafiken basierend auf JavaScript 
+#### Interactive Graphics for Online Publications
+
+#### Cloud Computing, Source Code Sharing and User Collaboration
+
+#### Open Data Application Programming Interfaces

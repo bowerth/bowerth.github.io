@@ -198,3 +198,4 @@ add submodule
 - [A Case of Computational Thinking: The Subtle Effect of Hidden Dependencies on the User Experience of Version Control](http://static.googleusercontent.com/media/research.google.com/en/pubs/archive/42942.pdf)
 - [git-annex](https://git-annex.branchable.com/)
 - [buildamodule.com: git workflow training video](http://buildamodule.com/video/change-management-and-version-control-deploying-releases-features-and-fixes-with-git-how-to-use-a-scalable-git-branching-model-called-gitflow)
+- [evrignaud.github.io: File Integrity Manager](http://evrignaud.github.io/fim/)

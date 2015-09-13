@@ -15,7 +15,8 @@ after download and extract SDK tools (approx 17 GB)
 install 32bit libraries
 :   `sudo dnf install zlib.i686 libstdc++.i686 libstdc++-devel.i686`
 
-
+set SDK dir environment variable
+:   edit `ANDROID_HOME` in `~/.profile`
 
 ### AVDs
 
@@ -34,10 +35,39 @@ start AVD (takes 100% of one of four cores)
 
 - [developer.android.com: Emulator](http://developer.android.com/tools/devices/emulator.html)
 
-### Projects
+### Create new project
 
 create `ant` build file in project directory (name and target are optional)
 :   `android create project --name test_project --target 1 --path /home/xps13/Dropbox/GitHub/android-project --package home.xps13.HelloAndroid --activity HelloAndroid`
 
 run if `build.xml` file missing (e.g. created from Eclipse) or `local.properties` file missing
 :   `android update project --path . --target android-23 --subprojects`
+
+### Contents of new project
+
+| -- res
+| ---- main.xml
+| ...
+| -- src
+| ---- home/xps13/HelloAndroid/HelloAndroid.java
+
+#### `HelloAndroid.java`
+
+- `setContentView(R.layout.main);`
+
+#### `main.xml`
+
+```java
+<LinearLayout ...>  
+  <TextView ... android:text="Hello World, HelloAndroid"  
+  />  
+</LinearLayout>
+```
+
+### Example applications
+
+#### Flashlight
+
+location
+:   `~/android-sdk-linux/samples/android-23/wearable/Flashlight`
+

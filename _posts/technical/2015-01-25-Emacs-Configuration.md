@@ -145,6 +145,9 @@ send region from buffer to inf-ruby
 
 - [orgmode.org](http://orgmode.org/org.html)
 
+use css stylesheet
+:   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
+
 #### HTML export commands
 
 org-html-export-to-html
@@ -196,6 +199,14 @@ specify default AVD (after creation)
 | C-c C-c r   | android-ant-reinstall  |
 | C-c C-c u   | android-ant-uninstall  |
 
+#### example "android-project" 
+
+activate `android-mode`
+:   `M-x android-mode`
+
+open project `build.xml`
+:   `C-f ~/Dropbox/GitHub/android-project/build.xml`
+
 `android-ant-debug`
 :   creates `/bin/<your_project_name>-debug.apk`
 
@@ -221,6 +232,43 @@ To test that you have things set up correctly, visit a C file and then type
 :   `M-x c-version RET`
 
 - [C Plus Plus Mode](http://www.emacswiki.org/emacs/CPlusPlusMode)
+
+### Rectangles
+
+- [gnu.org: emacs manual: Rectangles](http://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html)
+
+`C-x r k`
+Kill the text of the region-rectangle, saving its contents as the “last killed rectangle” (kill-rectangle).
+
+`C-x r M-w`
+Save the text of the region-rectangle as the “last killed rectangle” (copy-rectangle-as-kill).
+
+`C-x r d`
+Delete the text of the region-rectangle (delete-rectangle).
+
+`C-x r y`
+Yank the last killed rectangle with its upper left corner at point (yank-rectangle).
+
+`C-x r o`
+Insert blank space to fill the space of the region-rectangle (open-rectangle). This pushes the previous contents of the region-rectangle to the right.
+
+`C-x r N`
+Insert line numbers along the left edge of the region-rectangle (rectangle-number-lines). This pushes the previous contents of the region-rectangle to the right.
+
+`C-x r c`
+Clear the region-rectangle by replacing all of its contents with spaces (clear-rectangle).
+
+`M-x delete-whitespace-rectangle`
+Delete whitespace in each of the lines on the specified rectangle, starting from the left edge column of the rectangle.
+
+`C-x r t string RET`
+Replace rectangle contents with string on each line (string-rectangle).
+
+`M-x string-insert-rectangle RET string RET`
+Insert string on each line of the rectangle.
+
+`C-x SPC`
+Toggle Rectangle Mark mode (rectangle-mark-mode). When this mode is active, the region-rectangle is highlighted and can be shrunk/grown, and the standard kill and yank commands operate on it.
 
 ### CSV Mode `csv-mode.el`
 

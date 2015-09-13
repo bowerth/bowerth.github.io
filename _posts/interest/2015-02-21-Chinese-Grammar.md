@@ -6,6 +6,8 @@ tags     : [Chinese]
 ---
 {% include JB/setup %}
 
+## Grammar Connections I + II
+
 ### Lesson 6
 
 unnamed
@@ -516,6 +518,11 @@ Expressing an actual reality behind a superficial appearance
 :   表面上...实际上...  
     It appears... in fact...  
     表面上，两边的制度、语言有些距离，实际上，有很多共同的地方......  
+
+## Learning sources
+
+- [web.csulb.edu: Learning materials, textbooks](http://web.csulb.edu/~txie/materials.htm)
+- [purpleculture.net: Chinese with Me: An Integrated Course Book II](http://www.purpleculture.net/chinese-with-me-an-integrated-course-book-ii-with-cd-p-3212/?zenid=gv3656v9ghv5fuq72cq65juje2)
 
 ## Online tools
 
