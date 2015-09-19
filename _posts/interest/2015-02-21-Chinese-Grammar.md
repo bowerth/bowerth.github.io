@@ -524,6 +524,14 @@ Expressing an actual reality behind a superficial appearance
 - [web.csulb.edu: Learning materials, textbooks](http://web.csulb.edu/~txie/materials.htm)
 - [purpleculture.net: Chinese with Me: An Integrated Course Book II](http://www.purpleculture.net/chinese-with-me-an-integrated-course-book-ii-with-cd-p-3212/?zenid=gv3656v9ghv5fuq72cq65juje2)
 
+## Software
+
+- [eastasiastudent.net: chinese-learning-tools](https://eastasiastudent.net/china/mandarin/chinese-learning-tools)
+
+### [Anki](http://ankisrs.net)
+
+- [chinesemusings.com: 5 ways youre using anki wrong](http://chinesemusings.com/5-ways-youre-using-anki-wrong)
+
 ## Online tools
 
 search characters with possibility to mouse-draw

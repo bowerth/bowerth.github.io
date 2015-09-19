@@ -162,6 +162,8 @@ time used for loading
 size in database after loading
 :   6529 MB
 
+- [developer.marklogic.com: Requirements 8.0](http://developer.marklogic.com/products/marklogic-server/requirements-8.0)
+
 ### Configuration
 
 #### `ml-modules`
