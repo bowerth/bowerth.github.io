@@ -1,3 +1,12 @@
+---
+layout   : post
+category : professional
+tagline  : 
+tags     : 
+draft    : true
+---
+{% include JB/setup %}
+
 Dear Sir or Madame,
 
 Please find my CV online at http://bowerth.github.io/cv for the post advertised at indeed.com on 12 October.

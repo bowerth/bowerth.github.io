@@ -1,3 +1,12 @@
+---
+layout   : post
+category : professional
+tagline  : 
+tags     : 
+draft    : true
+---
+{% include JB/setup %}
+
 Dear Sir or Madame, dear Mrs. Rommel,
 
 I herewith address you in English to match the job description. 

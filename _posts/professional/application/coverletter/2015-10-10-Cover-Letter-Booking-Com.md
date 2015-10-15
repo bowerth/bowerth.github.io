@@ -1,3 +1,12 @@
+---
+layout   : post
+category : professional
+tagline  : 
+tags     : 
+draft    : true
+---
+{% include JB/setup %}
+
 Dear Sir or Madame,
 
 I am attending the Spark Summit Europe in Amsterdam during October 27-29.10.2015.
