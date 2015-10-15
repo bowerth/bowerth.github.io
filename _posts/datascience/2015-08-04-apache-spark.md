@@ -6,9 +6,26 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Spark Packages
+
+- [spark-packages.org](http://spark-packages.org)
+
+- [github: drubbo: SparkGIS](https://github.com/drubbo/SparkGIS): adds GIS functionalities to SparkSQL
+- [github: databricks: spark-redshift](https://github.com/databricks/spark-redshift): Spark and Redshift integration
+- [github: databricks: spark-sbt-package](https://github.com/databricks/sbt-spark-package): SBT plugin that simplifies the development process of Spark Packages and their use in applications
+- [github: zinniasystems: spark-ml-class](https://github.com/zinniasystems/spark-ml-class)
+- [github: harsha2010: magellan](https://github.com/harsha2010/magellan): Geospatial Analytics Using Spark
+
+### Apache
+
+- [github: apache: Spark SQL](https://github.com/apache/spark/tree/master/sql)
+
 ## Spark Summit
 
-- [2015](https://spark-summit.org/eu-2015)
+- 27-29 October 2015
+- [Spark Summit Europe 2015](https://spark-summit.org/eu-2015)
+
+### Speakers
 
 ## databricks
 

@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## IDEs
+
+- [PyCharm](https://www.jetbrains.com/pycharm)
+
 ## Programs
 
 ### Google Chrome
@@ -23,6 +27,13 @@ tags     :
 
 install thunderbird
 :   `sudo dnf install thunderbird`
+
+### Skype
+
+- [ask.fedoraproject.org: sticky-how-do-i-install-skype-on-fedora](https://ask.fedoraproject.org/en/question/8738/sticky-how-do-i-install-skype-on-fedora)
+- install dependencies `sudo dnf -y install libXv.i686 libXScrnSaver.i686 qt.i686 qt-x11.i686 pulseaudio-libs.i686 pulseaudio-libs-glib2.i686 alsa-plugins-pulseaudio.i686`
+- download Fedora RPM from [skype.com/download-skype](http://www.skype.com/en/download-skype/skype-for-linux)
+- navigate to download folder and execute `sudo dnf install skype-*.rpm`
 
 #### Add-ons
 
@@ -86,6 +97,10 @@ to import a private key
 - remove existing flash installations (`flashplayer-installer`, `flash-plugin`)
 - close browser
 - install using `sudo dpkg -i [package name]`
+
+## Fedora Server
+
+- [getfedora.org: server](https://getfedora.org/server/)
 
 ## Fedora
 
@@ -159,6 +174,11 @@ If you are upgrading from Fedora 21 to Fedora 22 or above, run the following com
 Once the preparations have completed, check the `/var/log/fedup.log` file if any errors show up in the output from fedup
 
 Source: [FedUp](https://fedoraproject.org/wiki/FedUp)
+
+## Language Support
+
+simplified chinese (non-Unicode)
+:   `sudo dnf groupinstall simplifided-chinese-support`
 
 ## GNOME
 

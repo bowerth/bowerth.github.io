@@ -8,14 +8,36 @@ tags     :
 
 ## Nachlassgericht Berlin-Schöneberg
 
-Kontakt
-:   Fr. Wendt  
-    Nachlassgericht Berlin  
-    Grunewaldstr. 66-67  
-    10823 Berlin  
-    Tel.: +49(0)30 90186-247 (-224)
+### Geschäftszeichen: AZ 65 VI 289/15
 
-### Telefongespräch 14.07.2015
+Kontakt Sachbearbeitung
+:   Fr. Schlebusch (ehem.: Wendt)  
+    Tel.: +49(0)30 90186-247  
+
+Kontakt Richter
+:   Fr. Herrmann  
+    Tel.: +49(0)30 90186-237  
+
+Postanschrift
+:   Nachlassgericht Berlin  
+    Grunewaldstr. 66-67  
+    10823 Berlin
+
+## Nachlassgericht / Notariat Stuttgart
+
+Notarin Noz
+:   Tel.:  +49(0)711 23900-25
+
+### Telefonat 2015-09-25
+
+Das Verfahren werde angenommen sofern es keine Bedenken im Zusammenhang mit der aktuellen Rechtsprechung gibt. Die schlichte Existenz eines Bankkontos ist in vielen Fällen nicht ausreichend, um das Erbscheinsverfahren an den Standort der Bank zu verweisen. Sofern kein anderer Nachlass im Inland vorhanden ist, könnte dem Antrag allerdings stattgegeben werden.
+
+### Telefongespräch Richterin Hermann 23.09.2015, 11h04-11h30
+
+- Verweisung an Gericht in Stuttgart beantragen
+- falls Verweisung abgelehnt, Erbscheinantrag mit Testamentsvollstreckervermerk falls Nachlass im Inland gering ansonsten Nachlasspfleger einsetzen
+
+### Telefongespräch Schlebusch 14.07.2015
 
 - Betreff: Schreiben Schlebusch
 - Formular NLS17: Angaben zum Wert des Nachlasses (für die Kostenberechnung bei Gericht)
@@ -38,6 +60,10 @@ Teilerbschein
 
 Nachlassverwaltung
 :   Antrag durch Erbe
+
+## Sparda Bank eG
+
+Ruggaber (Filiale Freiburg) - durchstellen von +49 711 2006 3802
 
 ## Erbscheinsantrag
 

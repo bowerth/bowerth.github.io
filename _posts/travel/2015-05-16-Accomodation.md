@@ -56,6 +56,9 @@ Disney Land
 
 ### Services
 
+Lebara configuration Internet
+:   [lebara.fr: Configuration internet ](http://www.lebara.fr/view/content/pl_helparticle?portId=9&catId=70&articleId=2206)
+
 Velib
 :   [parisavelo.net](http://www.parisavelo.net/)
 

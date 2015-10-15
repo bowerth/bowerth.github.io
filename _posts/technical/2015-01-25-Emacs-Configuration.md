@@ -6,6 +6,12 @@ tags     :
 ---
 {% include JB/setup %}
 
+## External IDE Integration
+
+### JetBrains
+
+- [confluence.jetbrains.com: Using Emacs as an external editor](https://confluence.jetbrains.com/display/PYH/Using+Emacs+as+an+external+editor)
+
 ## Debug
 
 The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide variety of symbolic debuggers. It can run the GNU Debugger (GDB), as well as DBX, SDB, XDB, Perl’s debugging mode, the Python debugger PDB, and the Java Debugger JDB.
@@ -24,6 +30,9 @@ The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide v
 
 ## Major Modes
 
+list keybindings for a certain mode
+:   `C-h m` or `M-x describe-mode` (minor modes: `M-x describe-minor-mode`)
+
 ### Scala
 
 #### scala-mode2
@@ -40,10 +49,22 @@ An emacs mode for interacting with sbt, scala console (aka REPL) and sbt project
 - [github: hvesalai: sbt-mode](https://github.com/hvesalai/sbt-mode)
 
 install `sbt-mode`
-:   `M-x package-install RET scala-mode2`
+:   `M-x package-install RET sbt-mode`
 
 start sbt
 :   `M-x sbt-start`
+
+sbt command history
+:   `M-x comint-previous-input` or `M-p`
+
+jump back to the last line
+:   `M->`
+
+start scala console from within sbt
+:   `console`
+
+send region from other buffer
+:   `M-x sbt-send-region`
 
 ### Buffer Mode
 
@@ -59,6 +80,18 @@ convert buffer format `DOS` / `UNIX`
 new folder in `dired` mode
 :   `+`
 
+flag file for deletion (dired-flag-file-deletion).
+:   `d`
+
+remove the deletion flag (dired-unmark).
+:   `u`
+
+move point to previous line and remove the deletion flag on that line (dired-unmark-backward).
+:   `DEL`
+
+Delete files flagged for deletion (dired-do-flagged-delete).
+:   `x`
+
 ### File encoding
 
 save file with new encoding, e.g. `utf-8`
@@ -73,6 +106,26 @@ extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/piperm
 :   `ess-execute-screen-options` or `C-c w`
 
 ## `.emacs` configuration
+
+### Skewer Mode
+
+- [github: skeeto: skewer-mode](https://github.com/skeeto/skewer-mode)
+- [nullprogram.com: Skewer -- Emacs Live Browser Interaction](http://nullprogram.com/blog/2012/10/31)
+- [emacs.stackexchange.com: how-to-use-skewer-mode](http://emacs.stackexchange.com/questions/2376/how-to-use-skewer-mode)
+- [github: skeeto: emacs-web-server](https://github.com/skeeto/emacs-web-server)
+
+#### Usage
+
+- open javascript file
+- `M-x js2-mode`
+- `M-x skewer-mode`
+- `M-x run-skewer`
+- open browser at `http://127.0.0.1:8080/skewer/demo`
+- select blocks of JS buffer and evaluate with `C-x C-e`
+
+#### Passing external files using `simple-httpd`
+
+- [libraries.io: emacs: simple-httpd](https://libraries.io/emacs/simple-httpd/1.4.2)
 
 ### JavaScript Mode
 
