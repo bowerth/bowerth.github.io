@@ -21,6 +21,16 @@ tags     :
 
 - [devsaran: 10 Best Node.js Frameworks For Developers](http://www.devsaran.com/blog/10-best-nodejs-frameworks-developers)
 
+## Rhino
+
+- [developer.mozilla.org: Rhino](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
+
+## [PhantomJS](http://phantomjs.org)
+
+- Full web stack, no browser required
+- PhantomJS is a headless WebKit scriptable with a JavaScript API
+- it has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG
+
 ## [Mean.js](http://meanjs.org/)
 
 Mean.js is a full-fledged JavaScript framework to build web applications using NoSQL database, MongoDB as well as Angular.js for the front-end and Express.js/Node.js for the backend (server). It also leverages the Grunt tool to enable automated testing. Mean.js and Mean.io are both considered a part of Mean stack. Mean stands for MongoDB, Express.js, Angular.js and Node.js. Ziploop is one example of a popular mobile application used for shopping which is designed using Mean stack.
