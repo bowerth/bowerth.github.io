@@ -1,0 +1,187 @@
+---
+title: "PrismFP Project"
+author: ""
+date: "2015-10-16"
+# output:
+#   rmarkdown::html_vignette:
+output:
+  rmarkdown::html_fragment:
+    self_contained: false
+    lib_dir: libs
+    fig_width: 8
+    fig_height: 4.5
+---
+
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+## setwd(file.path(dbpath, "GitHub", "jekyll", "bowerth.github.io", "rmarkdown", "prismfp"))
+
+## rmarkdown::render(file.path(dbpath, "GitHub", "jekyll", "bowerth.github.io", "rmarkdown", "prismfp", "prismfp_libor_3m.Rmd"))
+## file.copy(from=file.path(dbpath, "GitHub", "jekyll", "bowerth.github.io", "rmarkdown", "prismfp", "prismfp_libor_3m.html"), to=file.path(dbpath, "GitHub", "jekyll", "bowerth.github.io", "_includes", "rmarkdown_fragment", "prismfp_libor_3m.html"), overwrite=TRUE)
+## browseURL(file.path("file:/", Sys.getenv("HOME"), "Dropbox", "GitHub", "jekyll", "bowerth.github.io", "rmarkdown", "prismfp_libor_3m.html"))
+
+library(dygraphs)
+library(xts)
+library(plyr)
+library(dplyr)
+library(XML)
+library(rcdimple)
+library(dyn)
+
+dateWindow <- c("2005-01-01", "2015-12-31")
+
+```
+
+## Project
+
+Take the history of USD 3 month LIBOR https://www.quandl.com/data/FRED/USD3MTD156N-3-Month-London-Interbank-Offered-Rate-LIBOR-based-on-U-S-Dollar
+And history of 10 year Treasury yield curve rate from here http://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldYear&year=2015.
+10 years of history is enough.
+
+Based on these data, build a data visualization, which displays the beta from a linear regression between these two series, by month and by year, and makes it easy to see when the value of beta was highest.
+
+We would like to see in your project:
+
+- The code which you used to extract the data from the above sources
+- The code which you used to create the visualization
+- The visualization itself.
+
+You can use any programming language and data visualization method you find appropriate for this task. Any creativity is welcome.
+
+```{r retrieve_data_libor, eval=FALSE, echo=TRUE}
+## https://www.quandl.com/data/FRED/USD3MTD156N-3-Month-London-Interbank-Offered-Rate-LIBOR-based-on-U-S-Dollar
+quandlurl2xts <- function(url) {
+    data_list <-
+        url %>%
+            RCurl::getURL() %>%
+                jsonlite::fromJSON()
+    data_mat <- data_list[[1]][["data"]]
+    data_df <- as.data.frame(data_mat)
+    names(data_df) <- c("DATE", "LIBOR")
+    data_df$LIBOR <- as.numeric(data_df$LIBOR)
+    rownames(data_df) <- as.Date(as.character(data_df$DATE))
+    xts <-
+        data_df %>%
+            select(-DATE) %>%
+                as.xts()
+    return(xts)
+}
+url_usdliborqtr <- "https://www.quandl.com/api/v3/datasets/FRED/USD3MTD156N.json"
+usdliborqtr_xts <- quandlurl2xts(url_usdliborqtr)
+save(usdliborqtr_xts, file = "usdliborqtr_xts.rda")
+```
+
+### 3-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar
+
+
+```{r plot_data_libor, eval=TRUE, echo=TRUE}
+load("usdliborqtr_xts.rda")
+dygraph(data = usdliborqtr_xts) %>%
+    dyRangeSelector(dateWindow = dateWindow)
+```
+
+```{r retrieve_data_treasury, eval=FALSE, echo=TRUE}
+## http://data.treasury.gov/feed.svc/DailyTreasuryYieldCurveRateData?$filter=year(NEW_DATE)%20ge%202005
+## https://github.com/mrbcuda/ustyc
+getYieldCurve <- function (year = NULL, month = NULL, base = "http://data.treasury.gov/feed.svc/DailyTreasuryYieldCurveRateData",
+    allowParallel = FALSE)
+{
+    location <- base
+    yloc <- mloc <- doc <- NULL
+    yloc <- if (is.null(year) == FALSE)
+        paste("year(NEW_DATE)%20eq%20", year, sep = "")
+    mloc <- if (is.null(month) == FALSE)
+        paste("month(NEW_DATE)%20eq%20", month, sep = "")
+    parameters <- ""
+    if (is.null(yloc) == FALSE && is.null(mloc) == FALSE) {
+        parameters = paste("?$filter=", mloc, "%20and%20", yloc,
+            sep = "")
+    }
+    else {
+        if (is.null(yloc) == FALSE)
+            parameters = paste("?$filter=", yloc, sep = "")
+        if (is.null(mloc) == FALSE)
+            parameters = paste("?$filter=", mloc, sep = "")
+    }
+    ## doc <- xmlParse(paste(location, parameters, sep = ""))
+    tt <- RCurl::getURL(paste(location, parameters, sep = ""))
+    doc <- xmlParse(tt)
+    if (is.null(doc)) {
+        warning(paste("Could not parse the location", location))
+        return(NULL)
+    }
+    message("Download and parse complete.  Converting to list...")
+    x <- xmlToList(doc)
+    message("List conversion complete.  Converting to frame...")
+    updated = x[[3]]
+    x[1:4] <- NULL
+    x[[length(x)]] <- NULL
+    cy <- function(t, p) {
+        if ("text" %in% names(p[[t]]))
+            p[[t]]$text
+        else NA
+    }
+    y <- ldply(x, function(e) {
+        p <- e$content$properties
+        q = sapply(names(p), cy, p)
+    }, .id = "NEW_DATE", .parallel = allowParallel)
+    y$NEW_DATE <- substring(y$NEW_DATE, 1, 10)
+    y <- y[with(y, order(NEW_DATE)), ]
+    dates <- y$NEW_DATE
+    y <- data.frame(apply(y[, 3:14], 2, function(x) as.double(x)))
+    rownames(y) <- dates
+    message("Frame conversion complete.")
+    rv <- list(updated = updated, df = y, month = month, year = year,
+        query = location)
+    class(rv) <- "ustyc"
+    rv
+}
+
+yc <- getYieldCurve()
+yc_xts = xts(yc$df, order.by=as.Date(rownames(yc$df)))
+save(yc_xts, file = "yc_xts.rda")
+```
+
+### Daily Treasury Yield Curve Rates
+
+```{r plot_data_treasury, eval=TRUE, echo=TRUE}
+load("yc_xts.rda")
+yc_xts %>%
+    subset(select = "BC_10YEAR") %>%
+        dygraph() %>%
+            dyRangeSelector(dateWindow = dateWindow)
+```
+
+```{r regression_dyn, eval=TRUE, echo=TRUE}
+usdliborqtr_xts_use <- usdliborqtr_xts["2005/2015-01-01"]
+yc_xts_use <- yc_xts["2005/2015-01-01", "BC_10YEAR"]
+## change time zone from "UTC" to "CET"
+yc_xts_use_df <- as.data.frame(yc_xts_use)
+rownames(yc_xts_use_df) <- as.Date(as.character(rownames(yc_xts_use_df)), tz = "CET")
+yc_xts_use_2 <- as.xts(yc_xts_use_df)
+
+data_xts <- merge.xts(usdliborqtr_xts_use, yc_xts_use_2)
+data_xts <- data_xts[!is.na(data_xts$LIBOR) & !is.na(data_xts$BC_10YEAR)]
+
+res_month <- apply.monthly(data_xts, function(x) coef(dyn$lm(x[,2] ~ x[,1]))[2])
+names(res_month) <- "monthly_beta"
+res_year <- apply.yearly(data_xts, function(x) coef(dyn$lm(x[,2] ~ x[,1]))[2])
+names(res_year) <- "yearly_beta"
+
+data_res <- merge(res_month, res_year)
+
+data_xts %>%
+    dygraph() %>%
+        dySeries("BC_10YEAR", axis='y2')
+
+data_res_df <- as.data.frame(data_res)
+data_res_df$date <- rownames(data_res_df)
+data_res_df$month <- format(as.Date(data_res_df$date), "%b-%y")
+data_res_df$year <- format(as.Date(data_res_df$date), "%Y")
+
+data_res_df %>% dimple(x = "year", y = "yearly_beta", type = "bar") %>%
+    xAxis(orderRule = "date") %>% add_title(text = "Yearly beta")
+data_res_df %>% dimple(x = "month", y = "monthly_beta", type = "bar") %>%
+    xAxis(orderRule = "date") %>% add_title(text = "Monthly beta")
+
+```

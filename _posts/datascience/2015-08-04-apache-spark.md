@@ -6,6 +6,93 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Configuration
+
+- define `$SPARK_HOME` as `/home/xps13/spark/spark-1.4.1-bin-hadoop2.6`
+
+## Usage
+
+- [spark.apache.org: quick-start](http://spark.apache.org/docs/latest/quick-start.html)
+
+see page 9ff. of Learning Spark: Lightning-Fast Big Data Analysis
+
+start scala shell
+:   `$ cd /home/xps13/spark/spark-1.4.1-bin-hadoop2.6`  
+	`$ bin/spark-shell`
+
+- to exit the shell, press `Ctrl-D`
+- to shut down Spark, you can either call the `stop()` method on your Spark‐Context
+- or simply exit the application (e.g., with `System.exit(0)` or `sys.exit()`)
+
+### Example 2-2. Scala line count
+
+```
+scala> val lines = sc.textFile("README.md") // Create an RDD called lines
+lines: spark.RDD[String] = MappedRDD[...]
+scala> lines.count() // Count the number of items in this RDD
+res0: Long = 127
+scala> lines.first() // First item in this RDD, i.e. first line of README.md
+res1: String = # Apache Spark
+```
+
+### Example 2-5. Scala filtering example
+
+```
+scala> val lines = sc.textFile("README.md") // Create an RDD called lines
+lines: spark.RDD[String] = MappedRDD[...]
+scala> val pythonLines = lines.filter(line => line.contains("Python"))
+pythonLines: spark.RDD[String] = FilteredRDD[...]
+scala> pythonLines.first()
+res0: String = ## Interactive Python Shell
+```
+
+### Example 2-8. Initializing Spark in Scala
+
+```
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+val conf = new SparkConf().setMaster("local").setAppName("My App")
+val sc = new SparkContext(conf)
+```
+
+### Example 2-11. Word count Scala application - don't worry about the details yet
+
+```
+// Create a Scala Spark Context.
+val conf = new SparkConf().setAppName("wordCount")
+val sc = new SparkContext(conf)
+// Load our input data.
+val input = sc.textFile(inputFile)
+// Split it up into words.
+val words = input.flatMap(line => line.split(" "))
+// Transform into pairs and count.
+val counts = words.map(word => (word, 1)).reduceByKey{case (x, y) => x + y}
+// Save the word count back out to a text file, causing evaluation.
+counts.saveAsTextFile(outputFile)
+```
+#### Scala build and run
+
+```
+sbt clean package
+$SPARK_HOME/bin/spark-submit \
+--class com.oreilly.learningsparkexamples.mini.scala.WordCount \
+./target/...(as above) \
+./README.md ./wordcounts
+```
+
+`README.md`
+:   Contains short instructions for getting started with Spark.
+
+bin
+:   Contains executable files that can be used to interact with Spark in various ways (e.g., the Spark shell, which we will cover later in this chapter). 
+
+core, streaming, python, ...
+:   Contains the source code of major components of the Spark project.
+
+examples
+:   Contains some helpful Spark standalone jobs that you can look at and run to learn about the Spark API.
+
 ## Spark Packages
 
 - [spark-packages.org](http://spark-packages.org)
@@ -19,6 +106,10 @@ tags     :
 ### Apache
 
 - [github: apache: Spark SQL](https://github.com/apache/spark/tree/master/sql)
+
+## Java 8
+
+- [databricks: spark-with-java-8](https://databricks.com/blog/2014/04/14/spark-with-java-8.html)
 
 ## Spark Summit
 
@@ -50,9 +141,11 @@ tags     :
 
 ## Books
 
+- [Sandy Ryza et al. - Advanced Analytics with Spark: Patterns for Learning from Data at Scale](https://books.google.fr/books?id=M0_GBwAAQBAJ)
 - [Nick Pentreath - Machine Learning with Spark - Tackle Big Data with Powerful Spark Machine Learning Algorithms (2015)](https://books.google.fr/books?id=syPHBgAAQBAJ)
 - [github: robertzk: Machine Learning with Spark](https://github.com/robertzk/machine-learning-with-spark)
-- [Holden Karau et al. - Learning Spark: Lightning-Fast Big Data Analysis (2015)](https://books.google.fr/books?id=tOptBgAAQBAJ)
 - [Holden Karau - Fast Data Processing With Spark (2013)](https://books.google.fr/books?id=PdqcAQAAQBAJ)
-- [Sandy Ryza et al. - Advanced Analytics with Spark: Patterns for Learning from Data at Scale](https://books.google.fr/books?id=M0_GBwAAQBAJ)
+
+### [Learning Spark: Lightning-Fast Big Data Analysis]
 	
+- [github: databricks: learning-spark](https://github.com/databricks/learning-spark)

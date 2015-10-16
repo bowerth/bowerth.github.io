@@ -108,6 +108,18 @@ FLUENTD
 
 ## Models
 
+Logistic regression
+:
+
+Support vector machines
+:
+
+(Deep) neural networks
+:
+
+Markov models
+:
+
 Generalized Linear Models (GLM)
 :   
 
