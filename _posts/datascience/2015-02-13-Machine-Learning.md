@@ -21,7 +21,7 @@ PyBrain
 :   Neural networks are one thing that are missing from SciKit-learn, but this module makes up for it.
 
 nltk
-:   really useful if you’re doing anything NLP or text mining related.
+:   really useful if you're doing anything NLP or text mining related.
 
 Theano
 :   efficient computation of mathematical expressions using GPU. Excellent for deep learning.
@@ -34,17 +34,20 @@ MDP (Modular toolkit for Data Processing)
 
 ### Java
 
+[SystemML](https://github.com/sparktc/systemml)
+:   SystemML is a flexible, scalable machine learning (ML) language written in Java. SystemML's distinguishing characteristics are: (1) algorithm customizability, (2) multiple execution modes, including Standalone, Hadoop Batch, and Spark Batch, and (3) automatic optimization.
+
 Spark
-:   Apache’s new upstart, supposedly up to a hundred times faster than Hadoop, now includes MLLib, which contains a good selection of machine learning algorithms, including classification, clustering and recommendation generation. Currently undergoing rapid development. Development can be in Python as well as JVM languages.
+:   Apache's new upstart, supposedly up to a hundred times faster than Hadoop, now includes MLLib, which contains a good selection of machine learning algorithms, including classification, clustering and recommendation generation. Currently undergoing rapid development. Development can be in Python as well as JVM languages.
 
 Mahout
-:   Apache’s machine learning framework built on top of Hadoop, this looks promising, but comes with all the baggage and overhead of Hadoop.
+:   Apache's machine learning framework built on top of Hadoop, this looks promising, but comes with all the baggage and overhead of Hadoop.
 
 Weka
 :   this is a Java based library with a graphical user interface that allows you to run experiments on small datasets. This is great if you restrict yourself to playing around to get a feel for what is possible with machine learning. However, I would avoid using this in production code at all costs: the API is very poorly designed, the algorithms are not optimised for production use and the documentation is often lacking.
 
 Mallet
-:   another Java based library with an emphasis on document classification. I’m not so familiar with this one, but if you have to use Java this is bound to be better than Weka.
+:   another Java based library with an emphasis on document classification. I'm not so familiar with this one, but if you have to use Java this is bound to be better than Weka.
 
 JSAT
 :   stands for “Java Statistical Analysis Tool” - created by Edward Raff and was born out of his frustation with Weka (I know the feeling). Looks pretty cool.
@@ -61,7 +64,7 @@ Vowpal Wabbit
 :   designed for very fast learning and released under a BSD license, this comes recommended by terath on Reddit.
 
 MultiBoost
-:   a fast C++ framework implementing some boosting algorithms as well as some cascades (like the Viola-Jones cascades). It’s mainly focused on AdaBoost.MH so it is multi-class/multi-label.
+:   a fast C++ framework implementing some boosting algorithms as well as some cascades (like the Viola-Jones cascades). It's mainly focused on AdaBoost.MH so it is multi-class/multi-label.
 
 Shogun
 :   large machine learning library with a focus on kernel methods and support vector machines. Bindings to Matlab, R, Octave and Python.

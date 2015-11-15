@@ -2,14 +2,27 @@
 layout   : post
 category : technical
 tagline  : 
-tags     : 
+tags     : [blog, survey]
 ---
 {% include JB/setup %}
 
-## Fedora 22
+## Install Ruby
+
+### Install on Fedora 22
 
 basic installation
 :   `sudo dnf -y install ruby ruby-devel nodejs`
+
+## Gems
+
+### survey
+
+- [github: NUBIC: surveyor](https://github.com/NUBIC/surveyor)
+
+- [github: runtimerevolution: survey](https://github.com/runtimerevolution/survey)
+- [survey-demo.herokuapp.com: surveys](http://survey-demo.herokuapp.com/surveys)
+
+### Jekyll
 
 install Jekyll gem
 :   `gem install jekyll`

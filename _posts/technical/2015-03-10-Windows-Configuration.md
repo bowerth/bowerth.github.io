@@ -18,3 +18,8 @@ list members of Windows group
 - Verify that the path is accurate, correct it if it is not. Exit regedit.
 - Open task manager via Ctrl+Alt+Del (or Ctrl+Shift+Esc for later versions of Windows), kill explorer.exe, go to run (Win+R) and type "explorer.exe" (or skip this step and simply reboot).
 - Now attempt the same thing, right click a text file, open with, navigate to sublime, and it should now appear in the list of available applications.
+
+## Python webserver
+
+SimpleHTTPServer
+:   `python -m SimpleHTTPServer 8000`

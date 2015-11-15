@@ -54,6 +54,10 @@ Chateau de Versailles
 Disney Land
 :   [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
 
+### Eat
+
+- [Balls, 47 rue saint-maur 75011 paris, 27 rue de douai 75009 paris, Tuesday-Saturday](http://www.ballsrestaurant.com)
+
 ### Services
 
 Lebara configuration Internet

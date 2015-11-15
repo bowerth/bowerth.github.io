@@ -6,6 +6,14 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Platforms
+
+- [Gilab](https://about.gitlab.com)
+
+### Github
+
+- [kbroman.org: github_tutorial](http://kbroman.org/github_tutorial)
+
 ## Git workflow
 
 ![git file workflow](/assets/graphics/git_file_workflow.svg)
@@ -122,6 +130,9 @@ clone with different name
 show recent commits
 :   `git log`
 
+quit log view
+:   `q`
+
 show last 3 commits
 :   `git log HEAD^^^..HEAD`
 
@@ -186,6 +197,18 @@ In addition to unstaging changes, the --hard flag tells Git to overwrite all cha
 
 add submodule
 :   `git submodule add https://github.com/bowerth/nsoApiBrowser.git inst/nsoApiBrowser`
+
+## Maintenance
+
+- [naleid.com: Finding and Purging Big Files From Git History](http://naleid.com/blog/2012/01/17/finding-and-purging-big-files-from-git-history)
+
+### BFG repo cleaner
+
+- [rtyley.github.io: bfg-repo-cleaner](https://rtyley.github.io/bfg-repo-cleaner)
+- [github: rtyley: bfg-repo-cleaner](https://github.com/rtyley/bfg-repo-cleaner)
+
+usage
+:   `$ java -jar /home/xps13/Dropbox/Programming/Scala/bfg-1.12.6.jar --strip-blobs-bigger-than 100M ./.git`
 
 ## Other resources
 

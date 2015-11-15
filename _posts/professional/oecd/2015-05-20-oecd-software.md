@@ -7,6 +7,7 @@ draft    : true
 ---
 {% include JB/setup %}
 
+
 ### Tools
 
 Microsoft SQL Server: 5 months full-time, complex joins as preparation for data analysis, shift-share transformation across classifications, pivoting, in-database regressions

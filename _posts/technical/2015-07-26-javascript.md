@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+# History
+
+- [Crockford on JavaScript - Volume 1: The Early Years](https://www.youtube.com/watch?v=JxAXlJEmNMg)
+
 # Tools
 
 - [github: remy: jsconsole](https://github.com/remy/jsconsole)

@@ -77,6 +77,9 @@ convert buffer format `DOS` / `UNIX`
 - [gnu.org: Dired Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html)
 - [ergoemacs.org: Dired Tutorial](http://ergoemacs.org/emacs/file_management.html)
 
+copy names of marked files
+:   `w`
+
 new folder in `dired` mode
 :   `+`
 

@@ -6,6 +6,11 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Reusable Charts
+
+- [bost.ocks.org: Towards Reusable Charts](http://bost.ocks.org/mike/chart)
+- [C3.js: D3-based reusable chart library](http://c3js.org)
+
 ## Chord diagram
 
 ### Hierarchical Edge Bundling
@@ -32,7 +37,21 @@ tags     :
 
 <iframe src="/assets/visualisations/gist/6846156/index.html" marginwidth="0" marginheight="0" scrolling="no" width="850" height = "400" frameborder="0"></iframe>
 
+### GIS Maps
+
+- [Using d3.js to visualize GIS](http://www.smartjava.org/content/using-d3js-visualize-gis)
+
+## Learn
+
+### Scott Murray
+
+- [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
+- [D3 Tutorials](http://alignedleft.com/tutorials/d3)
+
 ## Links
+
+Datavisualization.ch
+:   [selection.datavisualization.ch](http://selection.datavisualization.ch)
 
 38 Tools For Beautiful Data Visualisations
 :   [www.dbi.io](http://www.dbi.io/uk/blog/38-tools-for-beautiful-data-visualisations/)

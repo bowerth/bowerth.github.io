@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+/*
+#research {
+	page-break-before: always;
+}
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -130,8 +136,8 @@ h1+p {
 
 h2 {
 	font-size: 1.1em;
-	/*color: #a00;*/
-	color: #333333;
+	color: #a00;
+	/*color: #333333;*/
 	margin-top: 1em;
 	position: relative;
 	top: 1.5em;
