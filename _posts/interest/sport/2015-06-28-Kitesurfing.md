@@ -7,6 +7,8 @@ draft    : true
 ---
 {% include JB/setup %}
 
+[windy months](http://www.destinationkiteboarding.com/windy-kiteboarding-months.html)
+
 ## France
 
 ### Events

@@ -15,3 +15,7 @@ tags     :
 ## Jenkins
 
 - [jenkins-ci.org](https://jenkins-ci.org)
+
+## Buddy
+
+- [Buddy.works](https://buddy.works)

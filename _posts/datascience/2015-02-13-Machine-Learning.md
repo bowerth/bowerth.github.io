@@ -6,6 +6,10 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+## Deep Learning
+
+- [deeplearning.net](http://deeplearning.net)
+
 Torsten Hothorm (UZH) on [Big Data Science](http://user.math.uzh.ch/hothorn/talks/big_data_science_UZH_2014.pdf)
 
 ## 17 Great Machine Learning Libraries
@@ -13,6 +17,9 @@ Torsten Hothorm (UZH) on [Big Data Science](http://user.math.uzh.ch/hothorn/talk
 Source: [daoudclarke.github.io/machine-learning-libraries](http://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/)
 
 ### Python
+
+[Tensorflow](http://www.tensorflow.org)
+:   open source software library for numerical computation using data flow graphs
 
 Scikit-learn
 :   comprehensive and easy to use, I wrote a whole article on why I like this library.

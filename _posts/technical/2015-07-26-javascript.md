@@ -17,6 +17,10 @@ tags     :
 
 # Libraries
 
+## timeline.js
+
+- [timeline.knightlab.com: Timeline.js](http://timeline.knightlab.com)
+
 ## three.js
 
 - [aerotwist.com: tutorials: getting started](https://aerotwist.com/tutorials/getting-started-with-three-js)

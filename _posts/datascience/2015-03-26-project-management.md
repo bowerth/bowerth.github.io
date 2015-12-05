@@ -6,6 +6,12 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Programming Techniques
+
+### "Structure and Interpretation of Computer Programs" by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+
+- [github: sarabander: sicp-pdf](https://github.com/sarabander/sicp-pdf)
+
 ## Workflow of Data Analysis
 
  - [stat-press.com: Scott Long (2009) - The Workflow of Data Analysis Using Stata](http://www.stata-press.com/books/workflow-data-analysis-stata/)

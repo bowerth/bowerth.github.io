@@ -50,6 +50,8 @@ tags     :
 
 ## Links
 
+- [Evolution of the Web](http://www.evolutionoftheweb.com) (using [SVG Animation](http://www.hongkiat.com/blog/scalable-vector-graphics-animation))
+
 Datavisualization.ch
 :   [selection.datavisualization.ch](http://selection.datavisualization.ch)
 

@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Docker Cloud Images
+
+- [Download Fedora 23 Cloud: Docker Image](https://getfedora.org/en/cloud/download/docker.html)
+
 ## IDEs
 
 - [PyCharm](https://www.jetbrains.com/pycharm)
@@ -27,13 +31,6 @@ tags     :
 
 install thunderbird
 :   `sudo dnf install thunderbird`
-
-### Skype
-
-- [ask.fedoraproject.org: sticky-how-do-i-install-skype-on-fedora](https://ask.fedoraproject.org/en/question/8738/sticky-how-do-i-install-skype-on-fedora)
-- install dependencies `sudo dnf -y install libXv.i686 libXScrnSaver.i686 qt.i686 qt-x11.i686 pulseaudio-libs.i686 pulseaudio-libs-glib2.i686 alsa-plugins-pulseaudio.i686`
-- download Fedora RPM from [skype.com/download-skype](http://www.skype.com/en/download-skype/skype-for-linux)
-- navigate to download folder and execute `sudo dnf install skype-*.rpm`
 
 #### Add-ons
 
@@ -57,6 +54,15 @@ display of plain text messages
 
 edit `userChrome.css` in profile folder (create `chrome` folder if doesn't exist)
 :   `~/.thunderbird/[userprofile].default/chrome/userChrome.css`
+
+### Skype
+
+- [ask.fedoraproject.org: sticky-how-do-i-install-skype-on-fedora](https://ask.fedoraproject.org/en/question/8738/sticky-how-do-i-install-skype-on-fedora)
+- install dependencies `sudo dnf -y install libXv.i686 libXScrnSaver.i686 qt.i686 qt-x11.i686 pulseaudio-libs.i686 pulseaudio-libs-glib2.i686 alsa-plugins-pulseaudio.i686`
+- download Fedora RPM from [skype.com/download-skype](http://www.skype.com/en/download-skype/skype-for-linux)
+- navigate to download folder and execute `sudo dnf install skype-*.rpm`
+
+- GNOME integration [github.com: chrisss404: gnome-shell-ext-SkypeNotification](https://github.com/chrisss404/gnome-shell-ext-SkypeNotification)
 
 ## Encryption
 
@@ -158,7 +164,23 @@ fi
 Also remember to make it runnable to root
 :   `chmod 744 /etc/pm/sleep.d/99toshiba`
 
-### update Fedora using FedUp
+### update Fedora 22 to 23 using DNF system upgrade
+
+- [fedoraproject.org: DNF system upgrade](https://fedoraproject.org/wiki/DNF_system_upgrade)
+
+update your system using the standard updater for your desktop or pkcon or dnf
+:   `$ sudo dnf update --refresh`
+
+install Package-x-generic-16.pngdnf-plugin-system-upgrade package:
+:   `$ sudo dnf install dnf-plugin-system-upgrade`
+
+download the updated packages
+:   `$ sudo dnf system-upgrade download --releasever=23`
+
+trigger the upgrade process
+:   `$ sudo dnf system-upgrade reboot`
+
+### update Fedora 21 to 22 using FedUp
 
 Using a network source is the easiest method of upgrading and will pull in updates while upgrading - eliminating the potential issue if your current system has a newer kernel version than the Fedora release to which you are upgrading.
 
@@ -184,6 +206,8 @@ simplified chinese (non-Unicode)
 
 log out via the terminal
 :   `gnome-session-quit`
+
+- GNOME Tweak Tool: install via package manager
 
 ### CSS
 

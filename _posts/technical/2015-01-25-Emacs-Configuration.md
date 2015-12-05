@@ -6,6 +6,45 @@ tags     :
 ---
 {% include JB/setup %}
 
+## helm
+
+- [tuhdo.github.io: helm-intro](http://tuhdo.github.io/helm-intro.html)
+- [github: emacs-helm: helm](https://github.com/emacs-helm/helm)
+- [github: emacs-helm: helm wiki](https://github.com/emacs-helm/helm/wiki)
+
+install
+:   `M-x list-packages` and select **helm** 
+
+### helm-ls-git
+
+- [github: emacs-helm: helm-ls-git](https://github.com/emacs-helm/helm-ls-git)
+
+## god-mode
+
+- [github: chrisdone: god-mode](https://github.com/chrisdone/god-mode)
+
+helm integration
+:   `M-x package-install RET helm-projectile`
+
+usage
+:   `M-x helm-projectile` or `C-c p h`
+
+helm-projectile is capable of opening multiple files by marking the files with `C-SPC` or mark all files with `M-a`. Then, press `RET`, all the selected files will be opened.
+
+## Run in terminal
+
+no window mode
+:   `emacs -nw` or `emacs --no-window-system`
+
+close
+:   `C-x C-c`
+
+start as daemon - 
+:   `emacs --daemon` and then using `emacsclient -t`
+
+try to connect to a runnning emacs daemon - if none is running, it will startup a new one, and then connect using the current terminal window
+:   `emacsclient -nw -c -a ""` or ``emacsclient -nw --create-frame --alternate-editor ""`
+
 ## External IDE Integration
 
 ### JetBrains

@@ -30,6 +30,25 @@ Directions from Airport
 
 <img src="http://maps.googleapis.com/maps/api/staticmap?center=14,+rue+nelaton,+paris,+france&zoom=16&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=icon:https://www.airbnb.com/rooms/823684%7Cshadow:true%7C14,+rue+nelaton,+paris,+france" alt="Google Map of 14, rue nelaton, paris, france">
 
+### Internet
+
+Orange
+
+email
+:   `werth.bo@orange.fr`
+
+commande
+:   `09/11/2015`
+
+ligne
+:   `0147540037`
+
+n° client
+:   `0307712820`
+
+n° compte internet
+:   `718027300` 
+
 ### Sights
 
 ![Eiffel Tower](/assets/images/photographs/france_paris_eiffel_tower.png)
@@ -65,6 +84,13 @@ Lebara configuration Internet
 
 Velib
 :   [parisavelo.net](http://www.parisavelo.net/)
+
+Electrician
+:   impact Elec  
+    impactelec75@gmail.com  
+    +33 6 69 95 15 10  
+    Nassim Raho  
+    (or www.allomarcel.com)
 
 Salon Mac Rayan
 :   10 rue Dr. Finlay  

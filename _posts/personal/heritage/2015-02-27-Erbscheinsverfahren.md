@@ -28,6 +28,10 @@ Postanschrift
 Notarin Noz
 :   Tel.:  +49(0)711 23900-25
 
+### Telefonat 2015-11-19
+
+Verfahren noch nicht angenommen, möglicherweise weitere Dokumente im Lauf der nächsten Woche angefragt.
+
 ### Telefonat 2015-09-25
 
 Das Verfahren werde angenommen sofern es keine Bedenken im Zusammenhang mit der aktuellen Rechtsprechung gibt. Die schlichte Existenz eines Bankkontos ist in vielen Fällen nicht ausreichend, um das Erbscheinsverfahren an den Standort der Bank zu verweisen. Sofern kein anderer Nachlass im Inland vorhanden ist, könnte dem Antrag allerdings stattgegeben werden.

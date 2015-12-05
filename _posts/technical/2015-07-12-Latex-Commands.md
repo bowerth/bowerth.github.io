@@ -23,6 +23,6 @@ tags     :
 install German support for Babel
 :   `sudo dnf install exlive-babel-german`
 
-### `.sty` files
+### `.sty` and `.cls` files
 
 can be added to `~/texmf/tex/latex/`
