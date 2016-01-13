@@ -243,6 +243,38 @@ send region from buffer to inf-ruby
 use css stylesheet
 :   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
 
+#### Org Spreadsheet
+
+- [orgmode.org: Org as a spreadsheet system: a short introduction](http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
+- [orgmode.org: orgcard](http://orgmode.org/orgcard.txt)
+
+show grid
+:   `C-c }`
+
+activate formula debugging mode
+:   `C-c {`
+
+add column left
+:   `M-S <right>` (`M-S` = `Alt` + `Shift`)
+
+remove column
+:   `M-S <left>`
+
+add row above
+:   `M-S <down>`
+
+delete current row
+:   `M-S <up>`
+
+insert a horizontal line below current row
+:  `C-c -` or `org-table-insert-hline`
+
+permanently calculate column sum
+:   e.g. `:=vsum(@2..@-1)` where `@` is the last line or `:=vsum(@I..@II)` making use of horizontal lines
+
+re-apply all stored equations to entire table
+:   `C-u C-c *`
+
 #### HTML export commands
 
 org-html-export-to-html

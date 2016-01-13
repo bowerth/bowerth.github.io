@@ -6,6 +6,13 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Dropbox
+
+[ask.fedoraproject.org: dropbox failed synchronize cache for repo](https://ask.fedoraproject.org/en/question/78130/dropbox-failed-synchronize-cache-for-repo)
+
+modify repo file
+:   `/etc/yum.repos.d/dropbox.repo` from `baseurl=http://linux.dropbox.com/fedora/$releasever/` to `baseurl=http://linux.dropbox.com/fedora/22/`
+
 ## Docker Cloud Images
 
 - [Download Fedora 23 Cloud: Docker Image](https://getfedora.org/en/cloud/download/docker.html)

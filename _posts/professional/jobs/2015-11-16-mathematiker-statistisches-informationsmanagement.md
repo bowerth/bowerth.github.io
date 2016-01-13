@@ -45,3 +45,20 @@ Ihre Fragen beantworten Ihnen gerne Frau Dr. Staab, Telefon 069 9566-8781 oder d
 
 Wir freuen uns auf Ihre Online-Bewerbung mit den üblichen Unterlagen (Anschreiben, Lebenslauf und Zeugnisse) bis zum 
 8. Dezember 2015 unter Angabe der Kennziffer 2015_0767_02.
+
+## Links
+
+- [Informationen für Beamtinnen und Beamte bei der Bundesbank](http://www.bundesbankbeamte.de/)
+
+Als Tarifbeschäftigte/-r erhalten Sie ein Gehalt, das sich am Tarifvertrag für den öffentlichen Dienst (TVöD) und den ergänzenden Regelungen orientiert. Darüber hinaus zahlen wir eine Bankzulage. Deren Höhe hängt davon ab, ob Sie für unsere Zentrale oder eine unserer Hauptverwaltungen arbeiten. Übernehmen Sie bei uns als Direkteinsteiger/-in oder nach Abschluss des Trainee-Programms beispielsweise eine Stelle in der Zentrale, so liegt Ihr Einstiegsjahresgehalt bei ca. 41.329,- EUR (brutto). Nach einem Jahr erhalten Sie eine 11-prozentige tarifliche Gehaltssteigerung. *Direkteinsteiger/-innen mit einschlägiger Berufserfahrung können ggf. bereits bei ihrer Einstellung einer höheren Entgeltstufe zugeordnet werden.* Im Verlauf Ihrer weiteren Karriere entwickeln sich Ihre Bezüge dann in Abhängigkeit von Ihrer Tätigkeit sowie von Ihrer individuellen Leistung.
+
+- [oeffentlicher-dienst.info: TVöD - Stufen](http://oeffentlicher-dienst.info/tvoed/bund/stufen.html)
+
+|   | Zeitpunkt                |
+|---|--------------------------|
+| 1 | bei Einstellung          |
+| 2 | nach 1 Jahr in Stufe 1   |
+| 3 | nach 2 Jahren in Stufe 2 |
+| 4 | nach 3 Jahren in Stufe 3 |
+| 5 | nach 4 Jahren in Stufe 4 |
+| 6 | nach 5 Jahren in Stufe 5 |
