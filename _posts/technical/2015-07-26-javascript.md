@@ -6,16 +6,43 @@ tags     :
 ---
 {% include JB/setup %}
 
-# History
+## Supersets compiling to JavaScript
+
+### [TypeScript](http://www.typescriptlang.org)
+
+TypeScript is a superset of JavaScript that compiles to clean JavaScript output
+
+- [github: Microsoft: TypeScript](https://github.com/Microsoft/TypeScript)
+
+### Dart
+
+Dart is an open-source, scalable programming language, with robust libraries and runtimes, for building web, server, and mobile apps.
+
+- [dartlang.org](https://www.dartlang.org)
+
+## Content Delivery Network (CDN)
+
+- [jsdelivr.com](http://www.jsdelivr.com)
+
+## JavaScript package manager (JSPM)
+
+Registry and format agnostic 
+
+- [npmjs.com: package: jspm](https://www.npmjs.com/package/jspm)
+
+install jspm CLI
+:   `$ sudo npm install jspm -g`
+
+`$ jspm dl-loader --latest
+
+## History
 
 - [Crockford on JavaScript - Volume 1: The Early Years](https://www.youtube.com/watch?v=JxAXlJEmNMg)
 
-# Tools
+## Tools
 
 - [github: remy: jsconsole](https://github.com/remy/jsconsole)
 - [jsconsole.com](http://jsconsole.com)
-
-# Libraries
 
 ## timeline.js
 
@@ -28,6 +55,13 @@ tags     :
 ## Node.js
 
 - [devsaran: 10 Best Node.js Frameworks For Developers](http://www.devsaran.com/blog/10-best-nodejs-frameworks-developers)
+
+check Node version
+:   `$ node -v`
+
+update Node.js using [`n`](https://github.com/tj/n) (Node version management)
+:   `$ sudo npm install -g n`  
+	`$ sudo n stable`
 
 ## Rhino
 
@@ -86,6 +120,8 @@ mean-4.0.0 > MEAN
 - [angularjs.org](https://angularjs.org/)
 - [w3schools.com: AngularJS Tutorial](http://www.w3schools.com/angular/)
 - [angular.io](https://angular.io/)
+
+- [angular 2](https://angular.io)
 
 ## reveal.js
 

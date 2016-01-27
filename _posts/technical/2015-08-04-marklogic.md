@@ -64,7 +64,7 @@ client.release();
 
 - [github: rjrudin: ml-gradle](https://github.com/rjrudin/ml-gradle)
 
-### sample-project
+### execute gradle tasks in subfolder `sample-project`
 
 deploy (can run twice - different things happen, check details using `gradle -i mlDeploy`)
 :   `gradle mlDeploy`
@@ -213,6 +213,18 @@ start ML server (will autostart after reboot)
 
 compared to RHEL, Fedora provides `libsasl2.so.3` instead of `libsas2.so.2`
 :   `sudo ln -s /lib64/libsasl2.so.3.0.0 /lib64/libsasl2.so.2`
+
+### Removing
+
+- [Removing MarkLogic Server](https://docs.marklogic.com/guide/installation/procedures#id_53295)
+
+stop marklogic
+:   `$ sudo /etc/init.d/marklogic stop`
+
+uninstall MarkLogic package
+:   `$ sudo rpm -e MarkLogic`
+
+Using this procedure to remove MarkLogic from your system will not remove user data (configuration information, XQuery files used by HTTP or XDBC servers, or forest content). This data is left in place to simplify the software upgrade process. If you wish to remove the user data, you must do so manually using standard operating system commands.
 
 #### JavaScript setup
 

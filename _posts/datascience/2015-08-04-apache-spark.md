@@ -32,6 +32,12 @@ R interface to Apache Spark
 
 - [Hossein Falaki: Unifying Data Sources and Data Processing with Apache Spark](https://vimeo.com/143883002)
 
+### Examples
+
+- [spark.apache.org: SparkR (R on Spark)](https://spark.apache.org/docs/1.5.2/sparkr.html)
+- [rpubs.com: tcosta: SparkR 1.5 MLlib Logistic Regression Example](https://rpubs.com/tcosta/sparkr-glm)
+- [zeppelinhub: SparkR, MLlib and SparkSQL for predictions over the NYC flight data](https://www.zeppelinhub.com/viewer/notebooks/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZlbGl4Y2hldW5nL3NwYXJrLW5vdGVib29rLWV4YW1wbGVzL21hc3Rlci9aZXBwZWxpbl9ub3RlYm9vay8yQVo5NTg0R0Uvbm90ZS5qc29u)
+
 ## IBM
 
 - [spark.tc](http://www.spark.tc)

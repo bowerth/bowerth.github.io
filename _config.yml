@@ -1,6 +1,13 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+# permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title.html
+
+# Gems
+# gems: [jekyll-paginate, jekyll-assets, sass]
+# gems: ["classifier-reborn"]
+# gems: [jekyll-paginate]
+relative_permalinks: false
 
 markdown: redcarpet
 redcarpet:
@@ -50,6 +57,7 @@ mapbox_token : pk.eyJ1IjoiYm93ZXJ0aCIsImEiOiJZV0ZRREdBIn0.iKaRupQ3RsgzXdTzYszkPw
 #
 JB :
   version : 0.3.0
+  # THEME-NAME: twitter
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
@@ -83,7 +91,10 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  # ASSET_PATH : false
+  # ASSET_PATH : /assets/themes/twitter
+  # ASSET_PATH : /assets/themes/bootstrap-3
+  ASSET_PATH : /assets/themes/hooligan
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
