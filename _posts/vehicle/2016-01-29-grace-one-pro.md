@@ -39,7 +39,7 @@ Frame
 :   Universal (M)
 
 Frame
-:   AL 6061 - T6
+:   AL 6061 - Nicolai
 
 Weight
 :   ca. 33,5 kg
