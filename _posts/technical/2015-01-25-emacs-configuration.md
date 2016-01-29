@@ -72,6 +72,10 @@ The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide v
 list keybindings for a certain mode
 :   `C-h m` or `M-x describe-mode` (minor modes: `M-x describe-minor-mode`)
 
+### Yaml
+
+- [github: yoshiki: yaml-mode](https://github.com/yoshiki/yaml-mode)
+
 ### Scala
 
 #### scala-mode2

@@ -6,6 +6,11 @@ tags     :
 ---
 {% include JB/setup %}
 
+## DNS
+
+check CNAME using `dig`
+:   `$ dig bowerth.github.io +nocmd +nostats +noquestion`
+
 ## System information
 
 ### Battery status
