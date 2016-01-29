@@ -66,6 +66,13 @@ ssh key pair for authenticating
     `id_rsa`: private part of the key (secret)  
     `id_rsa.pub`: public part of the key (share)
 
+start `ssh-agent`
+:   `$ eval "$(ssh-agent -s)"`
+
+add keypair to `ssh-agent`
+:   `$ ssh-add` for keys in standard location `/home/xps13/.ssh/id_rsa`  
+    enter passphrase
+
 version of git
 :   `git --version`
 
@@ -116,10 +123,9 @@ view repo file tree
 ## Cloning Repositories
 
 supported cloning protocols
-:   - ssh: `git clone ssh://user@server:user/project.git` or `git clone user@server:user/project.git`  
-	- http: `git clone http://server/user/project.git` no authentication  
+:   - http: `git clone http://server/user/project.git` no authentication  
 	- https: `git clone https://user@server/user/project.git` can be made to work with firewall  
-	- git: `git clone git://server/user/project.git` running on port 9418  
+	- ssh: `git clone git://server/user/project.git` running on port 9418  
 	- file: `git clone file:///myrepos/project` or `git clone /myrepos/project`. Convenient way to manage different versions of large repo  
 
 clone with different name
