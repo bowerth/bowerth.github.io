@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## About
+
+- [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
+
 ## helm
 
 - [tuhdo.github.io: helm-intro](http://tuhdo.github.io/helm-intro.html)
@@ -77,6 +81,15 @@ list keybindings for a certain mode
 - [github: yoshiki: yaml-mode](https://github.com/yoshiki/yaml-mode)
 
 ### Scala
+
+#### ENSIME
+
+- [ensime.github.io: emacs](http://ensime.github.io/editors/emacs/)
+- [github: ensime: ensime-emacs](https://github.com/ensime/ensime-emacs)
+
+##### [Editing](http://ensime.github.io/editors/emacs/editing)
+
+##### [Navigating](http://ensime.github.io/editors/emacs/navigating)
 
 #### scala-mode2
 
