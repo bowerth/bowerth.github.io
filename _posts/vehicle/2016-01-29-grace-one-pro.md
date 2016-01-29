@@ -84,4 +84,4 @@ Range max.
 :   40 km* (Range extender: 60 km*)
 
 Price
-:   Starting at 8,499,-€
+:   Starting at 8.499,-€
