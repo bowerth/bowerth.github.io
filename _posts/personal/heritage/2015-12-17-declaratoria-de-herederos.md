@@ -93,6 +93,19 @@ York Malta
 
 ## Bolivianische Botschaft Deutschland
 
+### Legalisierung
+
+- [bolivia.de: Legalisierung von Dokumenten](http://www.bolivia.de/konsularabteilung/legalisierungen)
+
+Die Konsularabteilung der Botschaft oder die Honorarkonsulate legalisieren die vorgelegten Dokumente sofern folgende Anforderungen erfüllt sind:
+
+- [Antragsformular](http://www.bolivia.de/fileadmin/Dokumente/Carta-de-solicitud.pdf)
+- Die Dokumente müssen als Original (keine Fotokopien) in der Sprache des Herkunftslandes vorliegen (in Deutschland: Deutsch; in der Schweiz: Deutsch, Französisch, Italienisch; Polen: Polnisch).
+- Die Originaldokumente müssen legalisiert sein: a) Deutschland: durch ein Landgericht, Amtsgericht oder durch ähnliche akkreditierte Institutionen; b) Schweiz: durch die entsprechenden, bei den bolivianischen Konsulaten akkreditierte Behörden der Kantone; c) Polen: durch das Außenministerium.
+- Diese Dokumente müssen durch einen offiziellen Übersetzer der spanischen Sprache übersetzt, und anschließend ebenfalls bei den im jeweiligen Land bevollmächtigten Behörden legalisiert werden. In a) Deutschland: durch ein Landgericht, Amtsgericht oder durch ähnliche akkreditierte Institutionen; b) Schweiz: durch die entsprechenden bei den bolivianischen Konsulaten akkreditierte Behörden der Kantone; c) Polen: durch das Außenministerium.
+- Einsendung eines Umschlags mit Rückporto für Einschreiben versehen. Für die Schweiz und Polen gilt: wenden Sie sich an die nächstgelegene Postfiliale und erwerben Sie dort Internationale Antwortscheine (IAS bzw. IRC) im Wert der Portokosten eines Einschreibens von Deutschland in Ihr Land.
+-Jeweils eine Kopie der zu legalisierenden Dokumente zum Zweck der Archivierung in den Konsulararchiven beilegen.
+
 ### Visum
 
 [bolivia.de: Visa](http://www.bolivia.de/konsularabteilung/visalegalisierung-von-reiseerlaubnis-fuer-minderjaehrige/#c158)

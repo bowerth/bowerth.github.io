@@ -86,17 +86,32 @@ list keybindings for a certain mode
 
 - [ensime.github.io: emacs](http://ensime.github.io/editors/emacs/)
 - [github: ensime: ensime-emacs](https://github.com/ensime/ensime-emacs)
+- [troikatech.com: ENSIME and Emacs as a Scala IDE](http://www.troikatech.com/blog/2014/11/26/ensime-and-emacs-as-a-scala-ide)
 
 ##### [Editing](http://ensime.github.io/editors/emacs/editing)
 
 ##### [Navigating](http://ensime.github.io/editors/emacs/navigating)
 
+cycle through code completion
+:   `M-/`
+
+check inferenced type
+:   `C-c C-v i`  
+    for symbols use `C-c C-v r`
+
+move inside project
+:   `M-.` and `M-*`
+
+launche `sbt` console
+:   `C-c C-v s`
+
+run tests
+:   all tests `C-c C-b T`  
+    testQuick `C-c C-b t`
+
 #### scala-mode2
 
 - [github: hvesalai: scala-mode2](https://github.com/hvesalai/scala-mode2)
-
-install `scala-mode2`
-:   `M-x package-install RET scala-mode2`
 
 #### sbt-mode
 

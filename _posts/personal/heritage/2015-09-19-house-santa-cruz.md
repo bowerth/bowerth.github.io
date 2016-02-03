@@ -8,6 +8,20 @@ tags     :
 
 ## Cataluña k. 7.5 Norte
 
+![House](/assets/images/photographs/santacruz_house.jpg)
+
+![Dining Area](/assets/images/photographs/santacruz_dining.jpg)
+
+![Salon1](/assets/images/photographs/santacruz_salon1.jpg)
+
+![Salon2](/assets/images/photographs/santacruz_salon2.jpg)
+
+![Kitchen](/assets/images/photographs/santacruz_kitchen1.jpg)
+
+![Garden1](/assets/images/photographs/santacruz_garden.jpg)
+
+![Garden2](/assets/images/photographs/santacruz_car.jpg)
+
 denominando lugar
 :   Clara Cuta
 
@@ -37,26 +51,56 @@ documento privada
 
 Calle Antonio Ardaya, entre calles 8 y 9, Antonio Vicente Ardaya 4190, Santa Cruz de la Sierra, Bolivie
 
-### Accounts
+### Wasser ([SAGUAPAC](http://www.saguapac.com.bo))
 
-Wasser
-:   Saguapac code no. 178608410 (z.Zt. 20,- ausstehend)
+[Saguapac cuenta on line](http://www.saguapac.com.bo/aplicacion/vista/cuentaonline.php)
+:   code no. 178608410 (z.Zt. 20,- ausstehend)    
 
-Strom
+![saguapac 2016-01](/assets/images/screenshots/bolivia-saguapac-2016-01.png)
+
+Histórico 12 Meses
+
+| MES     | Consumo |   Bs. | CA |
+| ------- |:-------:| -----:|:--:|
+| 2016-01 |       0 | 10.00 | NO |
+| 2015-12 |       0 | 10.00 | SI |
+| 2015-11 |       0 | 10.00 | SI |
+| 2015-10 |       0 | 10.00 | SI |
+| 2015-09 |       1 | 30.00 | SI |
+| 2015-08 |       2 | 30.00 | SI |
+| 2015-07 |       0 | 10.00 | SI |
+| 2015-06 |       0 | 10.00 | SI |
+| 2015-05 |       0 | 20.00 | SI |
+| 2015-04 |       0 | 10.00 | SI |
+| 2015-03 |       0 |  8.00 | SI |
+| 2015-02 |       0 |  8.00 | SI |
+
+### Strom ([CRE](https://www.cre.com.bo))
+
+Account
 :   CRE no. 576832 (nichts ausstehendes)
 
-## Pictures
+### Maintenance
 
-![House](/assets/images/photographs/santacruz_house.jpg)
+#### Painting
 
-![Dining Area](/assets/images/photographs/santacruz_dining.jpg)
+surface
+:   inside: 960 sqm  
+    outside: 143 sqm
 
-![Salon1](/assets/images/photographs/santacruz_salon1.jpg)
+price including material
+:   12.727 BOB
 
-![Salon2](/assets/images/photographs/santacruz_salon2.jpg)
+#### Gardening
 
-![Kitchen](/assets/images/photographs/santacruz_kitchen1.jpg)
+work time
+:   2 weeks of one person (1.800 BOB)
 
-![Garden1](/assets/images/photographs/santacruz_garden.jpg)
+transport
+:   2 trucks (2.000 BOB)
 
-![Garden2](/assets/images/photographs/santacruz_car.jpg)
+### Inventory
+
+#### Library
+
+#### Furniture

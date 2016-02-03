@@ -248,6 +248,11 @@ log out via the terminal
 :   `gnome-session-quit`
 
 - GNOME Tweak Tool: install via package manager
+- [makeuseof.com: Make Gnome Shell Usable With These 12 Extensions](http://www.makeuseof.com/tag/make-gnome-shell-usable-12-extensions)
+
+### Drop-down Terminal
+
+- [github: zzrough: gs-extensions-drop-down-terminal](https://github.com/zzrough/gs-extensions-drop-down-terminal)
 
 ### CSS
 
@@ -284,7 +289,16 @@ Create `~/.config/gtk-3.0/gtk.css` with the following content and restart the sh
     padding-bottom: 2px;
 }
 ```
-	
+
+## GNU
+
+### [Screen](http://www.gnu.org/software/screen) 
+
+Screen is a full-screen window manager that multiplexes a physical terminal between several processes, typically interactive shells.
+
+open help
+:   `$ C-a ?`
+
 ## Cache
 
 old releases

@@ -6,23 +6,13 @@ tags     :
 ---
 {% include JB/setup %}
 
-![grace one pro side 2](/assets/images/photographs/grace-one-pro-side-2.jpg)
+![grace one pro city front](/assets/images/photographs/grace-one-pro-city-front.jpg)
 
-![grace one pro front](/assets/images/photographs/grace-one-pro-front.jpg)
-
-![grace one pro rear](/assets/images/photographs/grace-one-pro-rear.jpg)
-
-![grace one pro display](/assets/images/photographs/grace-one-pro-display.jpg)
-
-![grace one pro side](/assets/images/photographs/grace-one-pro-side.jpg)
+![grace one pro city side](/assets/images/photographs/grace-one-pro-city-side.jpg)
 
 ## Technical Details
 
 - [grace-bikes.com: Grace One Pro](http://www.grace-bikes.com/en/bikes/one-pro)
-
-### Frame Size Universal
-
-![grace one universal](/assets/images/diagrams/grace-one-universal.svg)
 
 ### Frame Size City
 
@@ -66,7 +56,7 @@ Drive
 :   Chain
 
 Braking system
-:   Magura MT 4
+:   Magura __MT 8__ (value: 1.000 EUR)
 
 Tires
 :   Schwalbe Crazy Bob
