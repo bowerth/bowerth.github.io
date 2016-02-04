@@ -133,67 +133,6 @@ Für den Geschäftswert ergibt sich eine Änderung. Früher beschränkte sich de
 
 Die Entscheidung über die Erteilung des Erbscheines erfolgt durch Beschluss des Nachlassgerichtes. Wird die Erteilung des Erbscheins zurückgewiesen, so steht gem. § 58 Abs. 2 FamFG nur dem Antragsteller das Recht der Beschwerde gegen den zurückweisenden Beschluss zu. In diesem Fall ist der Beschluss des Gerichts mit einer Begründung und Rechtsbehelfsbelehrung zu versehen (§§ 38 Abs. 3, 39 FamFG). Die Beschwerde ist binnen eines Monats ab der Bekanntgabe bei dem Nachlassgericht schriftlich oder zu Protokoll einzulegen, § 63 FamFG. Das Nachlassgericht kann seinen Beschluss ändern (Abhilfebefugnis gem. § 68 Abs. 1 FamFG), andernfalls entscheidet über die Beschwerde das Oberlandesgericht. Wird geltend gemacht, dass die Beschwerdeentscheidung auf einer Gesetzesverletzung beruht, kann gegen diese Entscheidung wiederum die Rechtsbeschwerde beim Bundesgerichtshof eingelegt werden (vgl. §§ 72 ff. FamFG).
 
-## Legalisierung
-
-### Honorarkonsulat des Plurinationalen Staates Bolivien in Frankfurt am Main
-
-Konsul: Herr Dipl. Ing. Stephanus van Bergerem
-Konsularbezirk: Hessen, Thüringen
-
-c/o Eco Terra GmbH
-Am Quarzitbruch 7
-65817 Eppstein
-Deutschland
-
-Mobil:  +49 160 535 1885     
-Tel.:   +49 (0) 6198 57736 120   
-Fax:    +49 (09) 6198 57736 108  
-
-E-Mail: frankfurt@konsulat-bolivien.eu
-
-Anruf 10. April 2015: 
-
-- Übersetzung von zertifiziertem Übersetzer (Liste bei Landgericht)
-- bei Landgericht beglaubigen lassen
-- Original und Fotokopien mit Rückumschlag zum Konsulat schicken
-- Problem: keine Wertmarken um Legalisierung zu bezahlen
-- Alternative: Frau Tolaba in der bolivianischen Botschaft in Berlin
-- Begründing: keine Verwandten in Bolivien um Gebühren zu bezahlen
-
-Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
-:   Ana Maria Tolaba  
-    E-Mail: consulado-berlin@bolivia.de  
-    Tel.: +49 (0)30 26391512  
-    Montag bis Freitag 09:00 – 14:00 Uhr
-
-### Deutsche Botschaft in La Paz
-
-Kontakt
-:   Ronald Golan, [ronald_golan@hotmail.com](mailto:ronald_golan@hotmail.com)
-
-#### Bolivianisches Recht
-
-##### Art. 1294 Codigo Civil
-
-> 1. Los documentos públicos oorgados en país extranjero, según las formas alli establecidas, tendran el mismo valor que los extendidos en  Bolivia, si se hallan debidamente leglizados.
-
-The German certificate of inheritance can be accepted by the Bolivian authorities provided that it is legalised.
-
-###### Art. 1543 Codigo Civil
- 
-> 1. Los docuentos celebrados en país extranjero sobre bienes sujetos a registro podrán ser inscritos si se hallan debidamente legalizados.
-> 2. Si se trata de resoluciones judiciales, serán inscritas una vez homologadas legalmente y con la respectiva orden judicial.
-
-The German certificate of inheritance, provided that it is legalised, can be used in Bolivia to register the house as your property.
-
-how to legalise the German certificate of inheritance
-:   Bolivian Consulate in Frankfurt (http://konsulat-bolivien.eu/legalisierungen.html)
-
-how to make a power of attorney outside Bolivia
-:   normally Consuls hold powers of attorney abroad so this should be an easy question for the Bolivian Consulate.  
-
-check whether the property registration can be done from distance. In the worst case, if there is a need to go in person and sign at the property register, it is important to know in advance to include in the power of attorney to delegate to legal agent for doing this. The consulate should be able to provide information on this.
-
 ## Weitere Links
 
 ### Offizielle Links

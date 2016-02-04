@@ -9,6 +9,7 @@ tags     :
 ## Org Mode
 
 - [Jekyll with org-mode and twitter bootstrap](http://cinsk.github.io/jekyll-org/articles/jekyll-org.html)
+- [github: cinsk: jekyll-org](https://github.com/cinsk/jekyll-org)
 
 ## Themes
 
