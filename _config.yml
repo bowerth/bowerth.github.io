@@ -7,7 +7,7 @@ permalink: /:categories/:year/:month/:day/:title.html
 # gems: [jekyll-paginate, jekyll-assets, sass]
 # gems: ["classifier-reborn"]
 # gems: [jekyll-paginate]
-gems: [pygments.rb, org-ruby]
+# gems: [pygments.rb, org-ruby]
 # gems : [rouge]
 relative_permalinks: false
 
@@ -23,8 +23,8 @@ redcarpet:
 #   extensions: ["fenced_code_blocks"]
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
-# highlighter: rouge
+# highlighter: pygments
+highlighter: rouge
 
 # # This will require each of these gems automatically
 # gems: [/_plugins/font-awesome.rb]

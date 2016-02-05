@@ -149,7 +149,7 @@ Die Entscheidung über die Erteilung des Erbscheines erfolgt durch Beschluss des
 
 ## Literatur
 
-- [Walter Zimmermann - Rechtsfragen bei einem Todesfall, Kapitel 7]({% post_url personal/heritage/2015-07-13-zimmermann-rechtsfragen %})
+- [Walter Zimmermann - Rechtsfragen bei einem Todesfall, Kapitel 7]({% post_url 2015-07-13-zimmermann-rechtsfragen %})
 - [Andrea Tiedemann - Internationales Erbrecht in Deutschland und Lateinamerika: kollisionsrechtliche Regelungen zwischen Nachlasseinheit und Nachlassspaltung](https://books.google.fr/books?id=iX8aTzp-a0AC)
 
 ## Institute
