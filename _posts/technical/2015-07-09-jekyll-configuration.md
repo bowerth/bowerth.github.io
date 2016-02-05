@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Github Pages
+
+- [jekyll 3.0](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0)
+
 ## Org Mode
 
 - [Jekyll with org-mode and twitter bootstrap](http://cinsk.github.io/jekyll-org/articles/jekyll-org.html)
