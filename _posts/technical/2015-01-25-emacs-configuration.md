@@ -6,6 +6,14 @@ tags     :
 ---
 {% include JB/setup %}
 
+## frequently used commands
+
+count words
+:   `M-=`
+
+toggle auto-fill-mode
+:   `M-x auto-fill-mode`
+
 ## About
 
 - [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
@@ -467,9 +475,6 @@ execute region
 
 execute script
 :   `C-c C-x`
-
-toggle auto-fill-mode
-:   `M-x auto-fill-mode`
 
 ### W3M web browser
 

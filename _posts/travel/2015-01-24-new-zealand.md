@@ -7,6 +7,10 @@ draft    : true
 ---
 {% include JB/setup %}
 
+# Links
+
+- [4 Of The Most Epic Lodges In New Zealand](http://www.bosshunting.com.au/4-of-the-most-epic-lodges-in-new-zealand)
+
 # Accomodation
 
 27.-31.12.2014

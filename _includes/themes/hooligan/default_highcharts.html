@@ -32,7 +32,28 @@
     -->
 
     <link rel="shortcut icon" href="/favicon.ico">
-    
+      
+    <!-- highcharts libraries -->
+    <script src="/assets/libs/htmlwidgets-0.5.1/htmlwidgets.js"></script>
+    <script src="/assets/libs/jquery-1.11.1/jquery.min.js"></script>
+ <!-- 
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+  -->
+    <script src="/assets/libs/underscore-1.8.3/underscore-min.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/highstock.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/highcharts-more.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/highcharts-3d.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/exporting.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/drilldown.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/heatmap.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/map.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/treemap.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/modules/reset.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/plugins/draggable-points.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/plugins/draggable-legend.js"></script>
+    <script src="/assets/libs/highcharts-4.2.1/plugins/pattern-fill-v2.js"></script>
+    <script src="/assets/libs/highchart-binding-0.1.0.9000/highchart.js"></script>
+
   </head>
 
   <body>
@@ -123,10 +144,10 @@
       </div>
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script> -->
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script> 
+    
     {% include JB/analytics %}
   </body>
 </html>
