@@ -6,6 +6,11 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Documentation
+
+links to all HTML and PDF files for packages and guides contained in TeX Live
+:   `/usr/local/texlive/2015/doc.html`
+
 ### Install
 
 - [tug.org/texlive Quickinstall](https://www.tug.org/texlive/quickinstall.html)

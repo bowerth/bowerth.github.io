@@ -13,6 +13,11 @@ check CNAME using `dig`
 
 ## System information
 
+### Fan speed
+
+use `sensors` command of `Lm_sensors` to monitor
+:   `$ sensors`
+
 ### Battery status
 
 display location of `upower`
@@ -38,6 +43,26 @@ using `acpi`
 set root password
 :   log in as root `$ sudo -s`  
     set password `$ passwd`
+
+## aMule
+
+### aMule CMD
+
+- [wiki.amule.org: FAQ amulecmd](http://wiki.amule.org/wiki/FAQ_amulecmd)
+
+modify parameters in `~/.aMule/amule.conf`
+
+```
+[ExternalConnect]
+AcceptExternalConnections=1
+ECPassword=
+```
+
+create password
+:   `$ echo -n yourpasswordhere | md5sum | cut -d ' ' -f 1`
+
+start aMule and connect using `amulecmd`
+:   `$ amulecmd` (type password)
 
 ## Dropbox
 
@@ -299,7 +324,15 @@ Screen is a full-screen window manager that multiplexes a physical terminal betw
 open help
 :   `$ C-a ?`
 
+## Disk usage
+
+list directories by size
+:   `$ sudo du /|sort -gr|more`
+
 ## Cache
+
+clean `/var/cache`
+:   `sudo dnf clean all`
 
 old releases
 :   `yum clean all --releasever=19`

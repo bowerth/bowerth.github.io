@@ -6,6 +6,32 @@ tags     :
 ---
 {% include JB/setup %}
 
+## JS Commands
+
+test `NaN`
+:   `isNaN(NaN)` -> `true`
+
+## jQuery
+
+### DataTables
+
+- [datatables: DataTables - Table plug-in for jQuery](https://www.datatables.net)
+- [github: DataTables: DataTables](https://github.com/DataTables/DataTables)
+
+### load jQuery into browser console
+
+```
+var script = document.createElement("script");
+  script.setAttribute("src", "//code.jquery.com/jquery-1.11.3.min.js");
+  script.addEventListener('load', function() {
+    var script = document.createElement("script");
+    document.body.appendChild(script);
+  }, false);
+  document.body.appendChild(script);
+  // ... give time for script to load, then type.
+jQuery.noConflict();
+```
+
 ## Supersets compiling to JavaScript
 
 ### [TypeScript](http://www.typescriptlang.org)
@@ -43,6 +69,15 @@ install jspm CLI
 
 - [github: remy: jsconsole](https://github.com/remy/jsconsole)
 - [jsconsole.com](http://jsconsole.com)
+
+## dygraphs.js
+
+- [dygraphs.com: data format](http://dygraphs.com/data.html)
+
+## plotly.js
+
+- [plot.ly: javascript](https://plot.ly/javascript)
+- [scattergl](http://stack.gl)
 
 ## timeline.js
 
@@ -122,6 +157,15 @@ mean-4.0.0 > MEAN
 - [angular.io](https://angular.io/)
 
 - [angular 2](https://angular.io)
+
+## Knockout.js
+
+- [knockoutjs.com](http://knockoutjs.com)
+
+## React.js
+
+- [facebook.github.io: react](https://facebook.github.io/react)
+- [github: reactjs](https://github.com/reactjs)
 
 ## reveal.js
 

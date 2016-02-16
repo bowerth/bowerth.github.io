@@ -14,6 +14,9 @@ count words
 toggle auto-fill-mode
 :   `M-x auto-fill-mode`
 
+type latex characters such as `⇒` using`\Rightarrow`
+:   `M-x set-input-method RET tex` or use [latex-input](https://github.com/clarkgrubb/latex-input)
+
 ## About
 
 - [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
@@ -88,17 +91,18 @@ list keybindings for a certain mode
 
 - [github: yoshiki: yaml-mode](https://github.com/yoshiki/yaml-mode)
 
-### Scala
-
-#### ENSIME
+### ENSIME
 
 - [ensime.github.io: emacs](http://ensime.github.io/editors/emacs/)
 - [github: ensime: ensime-emacs](https://github.com/ensime/ensime-emacs)
 - [troikatech.com: ENSIME and Emacs as a Scala IDE](http://www.troikatech.com/blog/2014/11/26/ensime-and-emacs-as-a-scala-ide)
+- [youtube: ENSIME debugger preview](https://youtu.be/v7-G6vD42z8)
 
-##### [Editing](http://ensime.github.io/editors/emacs/editing)
+remove stored classpath snapshots after update of activator distribution (e.g. from 1.3.6 to 1.3.7)
+:   `$ ~/.emacs.d/ensime`
 
-##### [Navigating](http://ensime.github.io/editors/emacs/navigating)
+- [Editing](http://ensime.github.io/editors/emacs/editing)
+- [Navigating](http://ensime.github.io/editors/emacs/navigating)
 
 cycle through code completion
 :   `M-/`
@@ -481,6 +485,43 @@ execute script
 - [w3 Manual](http://w3m.sourceforge.net/MANUAL)
 - [Beat of the Geek: The Awesome of Web Browsing With Emacs](http://beatofthegeek.com/2014/02/the-awesome-of-web-browsing-with-emacs.html)
 - [Beat of the Geek: My Setup for Using Emacs as Web Browser](http://beatofthegeek.com/2014/02/my-setup-for-using-emacs-as-web-browser.html)
+
+Navigation
+:   We can use standard Emacs controls for moving cursor (C-n, C-p, C-f, C-b) as well as Vim’s (g,h,j,k). Vim’s controls are really handy when you need to move cursor with one hand.
+
+Jumping to links
+:   Tab will go you to next link. `Shift-Tab` to previous
+
+Visiting different tabs
+:   w3m has tabs like system. You can easily change tabs (buffers) with Emacs’ standard `C-x b` or use `C-c C-n` for next tab and `C-c C-p` for previous tab.
+
+Open link in new tab
+:   Just entering `G` will do the job. It will prompt for a url with the url under cursor as default.
+
+Open link in same tab/buffer
+:   `g` works similar to `G` but opens url in current tab only.
+
+Go to previous page
+:   `B` will act as ‘Back’ button of standard browsers
+
+Toggle visibility of image under cursor
+:   `t` shows or hides an image under cursor
+
+Toggle visibility of all images on page
+:   `T`
+
+Download url under point
+:   `d`
+
+Move to next form field
+:   `]`
+
+Move to previous form field
+:   `[`
+
+access the help buffer
+:   `C-h m`
+
 
 ### Mail
 

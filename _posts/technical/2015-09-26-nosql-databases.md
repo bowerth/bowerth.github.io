@@ -17,10 +17,17 @@ installation on Fedora 22
 start service
 :   `service mongod start`
 
-## Apache CoucdDB
+### time series
+
+- [mongodb.com: MongoDB for Time Series Data Part 1: Setting the Stage for Sensor Management](https://www.mongodb.com/presentations/mongodb-time-series-data-part-1-setting-stage-sensor-management)
+- [learnmongodbthehardway.com: Time Series](http://learnmongodbthehardway.com/schema/chapter6)
+
+## Apache CouchDB
 
 - [couchdb.apache.org](http://couchdb.apache.org)
 
 ## Apache Cassandra
 
 - [learn.datastax.com: DataStax DBAs Guide to NoSQL](http://learn.datastax.com/rs/datastax/images/DataStax-DBAs-Guide-to-NoSQL.pdf)
+
+## Kafka

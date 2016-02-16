@@ -63,32 +63,27 @@ Der beglaubigte Ausdruck aus dem Geburtenregister ersetzt die frühere Abstammun
 
 ## Uebersetzung
 
-Alonso Riebel, Christine  
+Christine Alonso Riebel
+:   64625 Bensheim  
+	Wilhelminenstraße 11  
+	Telefon: +49 6251 72355  
+	weitere Telefonnummer: +49 6251 304365  
+	E-Mail: alonsoriebel@hotmail.com
+	Bundesland: Hessen  
+	Gericht/Behörde: Landgericht Darmstadt  
+	Aktenzeichen: 316 E 3 6/00  
 
-64625 Bensheim  
-Wilhelminenstraße 11  
+## Beglaubigung der Übersetzung 
 
-Telefon: +49 6251 72355  
-weitere Telefonnummer: +49 6251 304365  
-E-Mail: alonsoriebel@hotmail.com
+- [Landgericht Darmstadt](https://lg-darmstadt-justiz.hessen.de/irj/LG_Darmstadt_Internet)
 
-Bundesland: Hessen  
-Gericht/Behörde: Landgericht Darmstadt  
-Aktenzeichen: 316 E 3 6/00  
-
-## [Landgericht Darmstadt](https://lg-darmstadt-justiz.hessen.de/irj/LG_Darmstadt_Internet)
-
-Sprechzeiten: Montag - Freitag 9:00 Uhr bis 12:00 Uhr
-
-Anschrift: Der Präsident, Mathildenplatz 13, 64283 Darmstadt
-Apostille / Legalisation
-
-Tel. 06151 / 992-0
-Fax 06151 / 992-3927
-
-Service > Wer hilft Ihnen weiter?
-Durchwahl "Dolmetscher und Übersetzer" -2410
-Für Land: Bolivien
+Alexandra Prowald
+:   Dolmetscher und Übersetzer  
+	Tel: +49 6151 992 2410  
+	E-Mail: alexandra.prowald@lg-darmstadt.justiz.hessen.de  
+	Sprechzeiten: Montag - Freitag 9:00 Uhr bis 12:00 Uhr  
+	Anschrift: Der Präsident, Mathildenplatz 13, 64283 Darmstadt  
+	Apostille / Legalisation für Land: Bolivien
 
 ## Bolivianische Botschaft Deutschland
 

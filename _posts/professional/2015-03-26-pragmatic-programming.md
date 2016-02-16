@@ -1,6 +1,6 @@
 ---
 layout   : post
-category : datascience
+category : professional
 tagline  : 
 tags     : 
 ---
@@ -11,22 +11,6 @@ tags     :
 ### "Structure and Interpretation of Computer Programs" by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 
 - [github: sarabander: sicp-pdf](https://github.com/sarabander/sicp-pdf)
-
-## Workflow of Data Analysis
-
- - [stat-press.com: Scott Long (2009) - The Workflow of Data Analysis Using Stata](http://www.stata-press.com/books/workflow-data-analysis-stata/)
-
-### Pete Baker's Dryworkflow
-
-- [useR 2015: dry tutorial](http://user2015.math.aau.dk/docs/tutorials/dry.pdf)
-- [github: petebaker: dryworkflow](https://github.com/petebaker/dryworkflow)
-
-## Agile
-
-### Atlassian
-
-- [A brief introduction to kanban](https://www.atlassian.com/agile/kanban)
-- [Git branching for agile teams](https://www.atlassian.com/agile/git-branching-video)
 
 ## Pragmatic Programming from `stan`
 

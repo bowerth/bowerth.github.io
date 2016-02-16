@@ -14,6 +14,9 @@ tags     :
 
 - [kbroman.org: github_tutorial](http://kbroman.org/github_tutorial)
 
+get user email address
+:   https://api.github.com/users/`[username]`/events/public
+
 ## Git workflow
 
 ![git file workflow](/assets/graphics/git_file_workflow.svg)

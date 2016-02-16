@@ -1,8 +1,8 @@
 ---
 layout   : post
-category : datascience
+category : professional
 tagline  : 
-tags     : [machine learning]
+tags     : 
 ---
 {% include JB/setup %}
 
