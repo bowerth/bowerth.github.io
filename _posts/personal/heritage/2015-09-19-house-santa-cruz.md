@@ -8,6 +8,9 @@ tags     :
 
 ## Cataluña k. 7.5 Norte
 
+- [airbnb: 11619462](https://www.airbnb.com/rooms/11619462)
+- [facebook: House for rent in Santa Cruz de la Sierra](https://www.facebook.com/groups/Expatsinbolivia/permalink/1040880465968772/)
+
 ![House](/assets/images/photographs/santacruz_house.jpg)
 
 ![Dining Area](/assets/images/photographs/santacruz_dining.jpg)
@@ -50,6 +53,11 @@ documento privada
 :   07 de Febrero de 2008; saldo a pagar del precio de compra venta por el monto de $us. 3.000.- (tres mil 00/100 Dolares Americanos), monto que está sujeto a la inscription de la minuta en Derechos Reales
 
 Calle Antonio Ardaya, entre calles 8 y 9, Antonio Vicente Ardaya 4190, Santa Cruz de la Sierra, Bolivie
+
+- Bis zur Tankstelle Totaitu fahren (km 7 1/2 nach Norden)
+- Gleich hinter der Tankstelle geht ein nicht asphaltierter Weg ab. Fahren Sie diesen ca. 800 Meter bis zu einem größeren Eingang wo ein Schild aus Holz steht "Urbanización Cataluña"
+- Fahren Sie an diesem Eingang vorbei und in den zweiten schmalen Weg nach Eingang Cataluña, rechts rein (da steht auch ein großer Korb wo die Anwohner ihren Müll reingeben)
+- Da kommen Sie dann an verschiedenen Häusern vorbei die links liegen. Fahren Sie durch das Tor, wo auf der rechten Seite dann ein Haus liegt. Dann kommt ein 2. und das dritte Haus ist das von Ruth. Im Garten sehen Sie eine Fernsehschüssel.
 
 ### Wasser ([SAGUAPAC](http://www.saguapac.com.bo))
 
@@ -98,6 +106,10 @@ work time
 
 transport
 :   2 trucks (2.000 BOB)
+
+### Cleaning
+
+- Urrutibehety
 
 ### Inventory
 

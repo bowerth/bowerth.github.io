@@ -10,6 +10,24 @@ tags     :
 
 ## Add-ons
 
+### EPUB Reader
+
+Keyboard shortcuts
+
+| key       | function                        |
+|:---------:|:-------------------------------:|
+| ←→        | Pagewise scrolling              |
+| ↓↑        | Linewise scrolling              |
+| Page up   | Pagewise scrolling              |
+| Page down | Pagewise scrolling              |
+| ←→        | Chapterwise scrolling           |
+| C         | Open the ePub-Catalog           |
+| S         | Save a copy of the ePub         |
+| D         | Set a bookmark                  |
+| +/-       | Increase/decrease font-size     |
+| Del       | Hide/Show the Table of Contents |
+| F11       | Fullscreen on/off               |
+
 ### Stylish
 
 #### Firebug Themes

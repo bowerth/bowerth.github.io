@@ -27,3 +27,8 @@ Each year when we settle down to go through the many applications we receive it 
 So, if you love technology and programming and you feel the Guardian stands for something that matters, then please do apply and take the opportunity to become one of our next generation of Fellows.
 
 Full credit for the new name must go to my colleague Jenny Sivapalan who based it on the career plan of doctors rather than the slightly more famous alliance formed in Rivendell.
+
+## Links
+
+- [Guardian Frontend](https://github.com/guardian/frontend)
+- [www.theguardian.com: Revealed: the 30-year economic betrayal dragging down Generation Y’s income ](http://www.theguardian.com/world/2016/mar/07/revealed-30-year-economic-betrayal-dragging-down-generation-y-income)

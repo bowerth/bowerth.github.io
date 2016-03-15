@@ -6,7 +6,21 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Emacs Server
+
+start daemon
+:   `$ emacs --daemon`
+
+open file in client
+:   `$ emacsclient /path/to/file`
+
+exit client
+:   `C-x C-c`
+
 ## frequently used commands
+
+delete Emacs backup files
+:   `$ rm $(find . -name '*.*~')`
 
 count words
 :   `M-=`
@@ -121,11 +135,14 @@ run tests
 :   all tests `C-c C-b T`  
     testQuick `C-c C-b t`
 
-#### scala-mode2
+interrupting `~compile`
+:   `M-x send-invisible RET C-q j RET`
+
+### scala-mode2
 
 - [github: hvesalai: scala-mode2](https://github.com/hvesalai/scala-mode2)
 
-#### sbt-mode
+### sbt-mode
 
 An emacs mode for interacting with sbt, scala console (aka REPL) and sbt projects.
 
@@ -154,6 +171,16 @@ send region from other buffer
 convert buffer format `DOS` / `UNIX`
 :   `C-x RET f` or `M-x set-buffer-file-coding-system`  
     format examples: `dos`, `unix`, `utf-8-unix`
+
+#### using giter8 templates
+
+- [github: AmirHooshangi: Template](https://github.com/AmirHooshangi/Template)
+
+install `template` package
+:   `M-x package-install RET template RET`
+
+add line to `.emacs`
+:   `(require 'template)`
 
 ### Dired Mode
 
@@ -208,6 +235,12 @@ extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/piperm
 - `M-x run-skewer`
 - open browser at `http://127.0.0.1:8080/skewer/demo`
 - select blocks of JS buffer and evaluate with `C-x C-e`
+- `M-x skewer-repl` or `C-c C-z` to open REPL into the browser
+
+Other commands:
+
+- `C-M-x` Evaluate the top-level form around the point
+- `C-c C-k` Load the current buffer
 
 #### Passing external files using `simple-httpd`
 
@@ -522,8 +555,45 @@ Move to previous form field
 access the help buffer
 :   `C-h m`
 
-
 ### Mail
+
+begin composing mail `compose-mail`
+:   `C-x m`
+
+attach file (mml-attach-file)
+:   `C-c C-a`
+
+send the message `message-send`
+:   `C-c C-s`
+
+send the message and bury the buffer `message-send-and-exit` 
+:   `C-c C-c`
+
+#### SMTP account configuration
+
+edit user mail address
+:   `(custom-set-variables '(user-mail-address "bo.werth@gmail.com") )`
+
+#### Edit modes
+
+- [github: gmail-mode](https://github.com/Malabarba/gmail-mode)
+- [github: ham-mode](https://github.com/Malabarba/ham-mode)
+- [gmail-mode browser integration](http://www.widecodes.com/CSVjeqVeVq/composing-gmail-messages-in-text-editor-complete-with-gmail-links.html)
+
+#### Thunderbird
+
+- [globs.org: External Editor](http://globs.org/articles.php?lng=en&pg=2)
+- [os.inf.tu-dresden.de: tbemail.el](http://os.inf.tu-dresden.de/~mp26/emacs.shtml)
+
+#### Google Chrome integration
+
+- [chrome extension: Edit with Emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?hl=en)
+
+edit Gmail message with Emacs (after installing Edit with Emacs and editing the Chrome shortcuts)
+:   `Ctrl + Shift + E`
+
+when done editing, export back to Gmail
+:   `C-x #`
 
 #### Wanderlust
 
@@ -581,24 +651,6 @@ Emacsen{
 # All MH folders are included in one folder group.
 + /
 ```
-
-#### SMTP account configuration
-
-edit user mail address
-:   `(custom-set-variables '(user-mail-address "bo.werth@gmail.com") )`
-
-#### Edit modes
-
-- [github: gmail-mode](https://github.com/Malabarba/gmail-mode)
-- [github: ham-mode](https://github.com/Malabarba/ham-mode)
-- [gmail-mode browser integration](http://www.widecodes.com/CSVjeqVeVq/composing-gmail-messages-in-text-editor-complete-with-gmail-links.html)
-- [chrome extension: Edit with Emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?hl=en)
-
-edit Gmail message with Emacs (after installing Edit with Emacs and editing the Chrome shortcuts)
-:   `Ctrl + Shift + E`
-
-when done editing, export back to Gmail
-:   `C-x #`
 
 #### Secure authentication
 

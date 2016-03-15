@@ -31,3 +31,8 @@ install German support for Babel
 ### `.sty` and `.cls` files
 
 can be added to `~/texmf/tex/latex/`
+
+### zip file from ctan.org
+
+- unpack zip file, navigate to directory
+- create `.sty` files by running `$ latex datetime2.ins` from terminal

@@ -23,7 +23,14 @@ Postanschrift
     Grunewaldstr. 66-67  
     10823 Berlin
 
-## Nachlassgericht / Notariat Stuttgart
+## Notariat Stuttgart
+
+Nachlassgericht / Notariat Stuttgart
+:   Eberhardstraße 35-37  
+    70173 Stuttgart  
+    Telefon: 0711/239000  
+    Fax: 0711/2390077  
+    E-Mail: poststelle@notstuttgarta.justiz.bwl.de
 
 Notarin Noz
 :   Tel.:  +49(0)711 23900-25

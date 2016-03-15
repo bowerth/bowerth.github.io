@@ -6,6 +6,18 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Install
+
+- [download](https://processing.org/download/?processing)
+- [github: processing: processing](https://github.com/processing/processing)
+
+# [p5.js](http://p5js.org)
+
+- [download p5.js](http://p5js.org/download/)
+- [github: processing: p5.js](https://github.com/processing/p5.js)
+- [p5.js: get started](http://p5js.org/get-started/)
+
+## Other Resources
 
 Learning Processing
 :   Homepage: [learningprocessing.com](http://www.learningprocessing.com/)

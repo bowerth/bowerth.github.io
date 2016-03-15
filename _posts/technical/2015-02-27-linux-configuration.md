@@ -6,6 +6,11 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Security
+
+disable Bash history
+:   `$ set +o history` and `$ set -o history` to enable again
+
 ## DNS
 
 check CNAME using `dig`
@@ -173,11 +178,20 @@ to import a private key
 
 - [getfedora.org: server](https://getfedora.org/server/)
 
+## CentOS 7
+
+adjust screen brightness
+:   `$ xrandr --output LVDS1 --brightness 0.7` e.g. for 70%
+
 ## Fedora
 
 ### Differences to Redhat and CentOS
 
 - [danielmiessler.com: The Difference Between Fedora, Redhat, and CentOS](https://danielmiessler.com/study/fedora_redhat_centos)
+
+### Install Workstation Live Image
+
+- [Fedora 23 Installation Guide](https://docs.fedoraproject.org/en-US/Fedora/23/html/Installation_Guide/)
 
 ### install or update Adobe Flash Player
 
@@ -245,6 +259,9 @@ download the updated packages
 trigger the upgrade process
 :   `$ sudo dnf system-upgrade reboot`
 
+install unsigned packages
+:   add `--nogpgcheck`
+
 ### update Fedora 21 to 22 using FedUp
 
 Using a network source is the easiest method of upgrading and will pull in updates while upgrading - eliminating the potential issue if your current system has a newer kernel version than the Fedora release to which you are upgrading.
@@ -267,6 +284,20 @@ Source: [FedUp](https://fedoraproject.org/wiki/FedUp)
 simplified chinese (non-Unicode)
 :   `sudo dnf groupinstall simplifided-chinese-support`
 
+## Wayland
+
+- [wayland.freedesktop.org](https://wayland.freedesktop.org/)
+
+Wayland is intended as a simpler replacement for X, easier to develop and maintain.
+
+## i3 A window tile manager
+
+- [i3wm.org: i3 Reference Card](https://i3wm.org/docs/refcard.html) 
+- [blog.hugochinchilla.net: Using Gnome 3 with i3 window manager](http://blog.hugochinchilla.net/2013/03/using-gnome-3-with-i3-window-manager/)
+
+kill GNOME desktop
+:   `$ xkill` and click GNOME desktop
+
 ## GNOME
 
 log out via the terminal
@@ -275,8 +306,9 @@ log out via the terminal
 - GNOME Tweak Tool: install via package manager
 - [makeuseof.com: Make Gnome Shell Usable With These 12 Extensions](http://www.makeuseof.com/tag/make-gnome-shell-usable-12-extensions)
 
-### Drop-down Terminal
+### Terminal
 
+- [GNOME Terminator](http://gnometerminator.blogspot.fr/p/introduction.html)
 - [github: zzrough: gs-extensions-drop-down-terminal](https://github.com/zzrough/gs-extensions-drop-down-terminal)
 
 ### CSS
@@ -325,6 +357,9 @@ open help
 :   `$ C-a ?`
 
 ## Disk usage
+
+with gui
+:   `$ sudo baobab`
 
 list directories by size
 :   `$ sudo du /|sort -gr|more`

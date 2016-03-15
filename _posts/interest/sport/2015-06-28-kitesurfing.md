@@ -18,3 +18,19 @@ draft    : true
 ### Spots
 
 - Leucate
+
+## Greece
+
+### Dodecanese Islands
+
+- [theriderexperience.com: dodecanese islands](http://www.theriderexperience.com/greece-)
+
+## Italy
+
+### Sardinia
+
+- [theriderexperience.com: sardinia](http://www.theriderexperience.com/sardinia-croatia)
+
+## Panama
+
+- [theriderexperience.com: panama](http://www.theriderexperience.com/panama-1)

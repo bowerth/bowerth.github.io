@@ -6,13 +6,21 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Zusammenfassung
+
+- durch Konsulat beglaubigte Kopie des Reisepasses
+- Antrag der internationalen Geburtsurkunde beim Standesamt mit beglaubigter Kopie des Reisepasses
+- Vorbeglaubigung der internationalen Geburtsurkunde durch Standesamtsaufsicht, Landrat des Wetteraukreises 
+- Beglaubigung durch Regierungspräsidium Darmstadt
+- Legalisierung durch konsularische Abteilung der bolivianischen Botschaft
+
 ## Deutsches Konsulat Paris (Beglaubigte Kopie Reisepass)
 
 Telefon: 01 53 64 76 70  
 Adresse: 28, rue Marbot  
 Oeffunungszeiten: 9h-11h45
 
-## Beglaubigte Geburtsurkunde (Eintrag aus dem Geburtenregister 556/1985)
+## Geburtsurkunde (Eintrag aus dem Geburtenregister 556/1985)
 
 Stadt Friedberg (Hessen) - Haupt- und Personalamt - Standesamt  
 Postanschrift: Mainzer-Tor-Anlage 6  
@@ -61,31 +69,49 @@ Der beglaubigte Ausdruck aus dem Geburtenregister ersetzt die frühere Abstammun
 - bei gleichzeitiger Beantragung weiterer Exemplare: je 5,00 Euro
 - Ausstellung für gesetzliche Rentenversicherung: gebührenfrei
 
-## Uebersetzung
+## Vorbeglaubigung durch Standesamtsaufsicht
 
-Christine Alonso Riebel
-:   64625 Bensheim  
-	Wilhelminenstraße 11  
-	Telefon: +49 6251 72355  
-	weitere Telefonnummer: +49 6251 304365  
-	E-Mail: alonsoriebel@hotmail.com
-	Bundesland: Hessen  
-	Gericht/Behörde: Landgericht Darmstadt  
-	Aktenzeichen: 316 E 3 6/00  
+Landrat des Wetteraukreises
+:   Standesamtsaufsicht  
+	Europaplatz Gebäude A  
+	61169 Friedberg / Hessen  
+	T: 06031 / 83 - 2505 (Hofmann)  
+	bernd.hofmann@wetteraukreis.de
 
-## Beglaubigung der Übersetzung 
+T: 06031/83-2523 (Beer)  
+T: 06031/83-2500 (Mogk)  
+T: 06031/83-2506 (Gajewski)  
+Mo - Mi 7.30 – 16.00 Uhr  
+Do 7.30 – 17.00 Uhr  
+Fr 7.30 – 12.30 Uhr
 
-- [Landgericht Darmstadt](https://lg-darmstadt-justiz.hessen.de/irj/LG_Darmstadt_Internet)
+## Beglaubigung Regierungspräsidium Darmstadt
 
-Alexandra Prowald
-:   Dolmetscher und Übersetzer  
-	Tel: +49 6151 992 2410  
-	E-Mail: alexandra.prowald@lg-darmstadt.justiz.hessen.de  
-	Sprechzeiten: Montag - Freitag 9:00 Uhr bis 12:00 Uhr  
-	Anschrift: Der Präsident, Mathildenplatz 13, 64283 Darmstadt  
-	Apostille / Legalisation für Land: Bolivien
+- [Verfahrensweise bei der Ausstellung von Apostillen und Beglaubigungen](https://verwaltung.hessen.de/irj/RPDA_Internet?cid=f80f363d3e859f07825cc6060cf9dc37)
+
+Regierungspräsidium Darmstadt
+:	Dezernat II 21 - Beglaubigungsstelle  
+	Wilhelminenstr. 1-3  
+	64278 Darmstadt  	
+	Tel.: +49 (0)6151 12 5302  
+	Fax.: +49 (0)6151 12 5926
+	E-Mail: internationaler-urkundenverkehr@rpda.hessen.de
 
 ## Bolivianische Botschaft Deutschland
+
+Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
+:   Tel: +49 30 26 39 15 0  
+	E-Mail: consulado-berlin@bolivia.de  
+    Montag bis Freitag 09:00 - 14:00 Uhr
+
+Ana Maria Tolaba  
+:   Tel: +49 (0)30 26 39 15 12
+
+Camilla Soria (ab 1. März)
+:   Tel: +49 (0)30 26 39 15 13
+
+Juan José Zenteno Pacheco
+:   Tel: +49 (0)30 26 39 15 11
 
 ### Legalisierung
 
@@ -147,6 +173,14 @@ Fax:    +49 (09) 6198 57736 108
 
 E-Mail: frankfurt@konsulat-bolivien.eu
 
+Bankverbindung:
+Kontoname: Honorar Konsulat der Rep. Bolivien-Hessen
+Kontonummer: 6634034
+BLZ: 500 400 00
+Bank: Commerzbank AG
+IBAN: DE12 5004 0000 0663 4034 00
+BIC: COBADEFFXXX
+
 Anruf 10. April 2015: 
 
 - Übersetzung von zertifiziertem Übersetzer (Liste bei Landgericht)
@@ -156,20 +190,6 @@ Anruf 10. April 2015:
 - Alternative: Frau Tolaba in der bolivianischen Botschaft in Berlin
 - Begründing: keine Verwandten in Bolivien um Gebühren zu bezahlen
 
-Konsularabteilung der Botschaft des Plurinationalen Staates Bolivien in Berlin
-:   Ana Maria Tolaba  
-    E-Mail: consulado-berlin@bolivia.de  
-    Tel.: +49 (0)30 26391512  
-    Montag bis Freitag 09:00 – 14:00 Uhr
-
-Bankverbindung:
-Kontoname: Honorar Konsulat der Rep. Bolivien-Hessen
-Kontonummer: 6634034
-BLZ: 500 400 00
-Bank: Commerzbank AG
-IBAN: DE12 5004 0000 0663 4034 00
-BIC: COBADEFFXXX
-
 ## Deutsche Botschaft La Paz
 
 Homepage [la-paz.diplo.de](http://www.la-paz.diplo.de)
@@ -177,10 +197,17 @@ Homepage [la-paz.diplo.de](http://www.la-paz.diplo.de)
 Estrada Paredes Edgar
 :   Email: [eestrada@orvana.com](mailto:eestrada@orvana.com)
 
-York Malta
+York u. Esther Malter
+:   E-Mail: [rk-1@lapa.diplo.de](mailto:rk-1@lapa.diplo.de)
+
+Esther Malter
+:   [ku-10@lapa.auswaertiges-amt.de](mailto:ku-10@lapa.auswaertiges-amt.de)  
+    Tel: +591 2 244 7503
+
+York Malter
 :   Email: [york.malter@gmail.com](mailto:york.malter@gmail.com)
 
-Ronald Golan
+Ronald Golan (Anwalt)
 :   Email: [ronald_golan@hotmail.com](mailto:ronald_golan@hotmail.com)
 
 #### Bolivianisches Recht
@@ -352,3 +379,29 @@ Artículo 458°.- (Garantía real) . Los coherederos que se creyeren perjudicado
 #### Angabe zu Geschwistern
 
 3.- Para el fin dispuesto por el art. 643 inc. 3) del Código de Procedimiento Civil, hago presente que de mis hermanas fallecidas, `___`_  y `___` existen descendientes que responden a los nombres de: `___` y `___`  domiciliados en esta ciudad en la calles `___` No `___` y `___` No `___` respectivamente; según los Arts. 1017 y 1089 del Código Civil pueden hacer uso de su derecho de representación.
+
+# Other
+
+## Uebersetzung der deutschen Geburtsurkunde (nicht erforderlich)
+
+Christine Alonso Riebel
+:   64625 Bensheim  
+	Wilhelminenstraße 11  
+	Telefon: +49 6251 72355  
+	weitere Telefonnummer: +49 6251 304365  
+	E-Mail: alonsoriebel@hotmail.com
+	Bundesland: Hessen  
+	Gericht/Behörde: Landgericht Darmstadt  
+	Aktenzeichen: 316 E 3 6/00  
+
+## Beglaubigung der Unterschrift (nicht erforderlich)
+
+- [Landgericht Darmstadt](https://lg-darmstadt-justiz.hessen.de/irj/LG_Darmstadt_Internet)
+
+Alexandra Prowald
+:   Dolmetscher und Übersetzer  
+	Tel: +49 6151 992 2410  
+	E-Mail: alexandra.prowald@lg-darmstadt.justiz.hessen.de  
+	Sprechzeiten: Montag - Freitag 9:00 Uhr bis 12:00 Uhr  
+	Anschrift: Der Präsident, Mathildenplatz 13, 64283 Darmstadt  
+	Apostille / Legalisation für Land: Bolivien

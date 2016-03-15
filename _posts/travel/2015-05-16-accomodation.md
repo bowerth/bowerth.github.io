@@ -73,14 +73,39 @@ Chateau de Versailles
 Disney Land
 :   [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
 
+### Parks
+
+- [Parc des Buttes Chaumont, 1-7 rue Botzaris, 2-6b rue Manin, 55 rue de Crimée, 42 avenue Simon-Bolivar, 75019 Paris](http://equipement.paris.fr/parc-des-buttes-chaumont-1757)
+
 ### Eat
 
+#### International
+
 - [Balls, 47 rue saint-maur 75011 paris, 27 rue de douai 75009 paris, Tuesday-Saturday](http://www.ballsrestaurant.com)
+
+#### Basque
+
+- [Chez Gladines, 30 Rue des cinq Diamants, 75013 Paris](http://www.gladines.com/)
+
+#### Italian
+
+- [East Mamma](http://www.bigmammagroup.com/east-mamma/)
+
+#### Menu
+
+- [Le Galopin, 34 Rue Sainte-Marthe, 75010 Paris, Phone: +33 1 42 06 05 03](http://www.le-galopin.com/#acceuil)
+- [Pierre Sang, 55 rue Oberkampf, 75011 Paris, Tel: +33 9 67 31 96 80](http://www.pierresangboyer.com/EN/)
+
+### Drink
+
+#### Tea
+
+- [La Mosquée Salon De Thé, 39 rue Geoffroy Saint Hilaire, 75013 Paris, Tel: +33 1 43 31 38 20](http://www.restaurantauxportesdelorient.com/)
 
 ### Services
 
 Lebara configuration Internet
-:   [lebara.fr: Configuration internet ](http://www.lebara.fr/view/content/pl_helparticle?portId=9&catId=70&articleId=2206)
+:   [lebara.fr: Configuration internet](http://www.lebara.fr/view/content/pl_helparticle?portId=9&catId=70&articleId=2206)
 
 Velib
 :   [parisavelo.net](http://www.parisavelo.net/)
