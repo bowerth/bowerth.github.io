@@ -12,13 +12,21 @@ ID
 :   2015-2206
 
 Location 
-:   London - United Kingdom
+:   20 Cabot Sq.  
+    London, E14 4QW  
+    United Kingdom
 
 Function 
 :   Editorial
 
 URL
 :   [careers-economist.icims.com/jobs/2206/economist%2c-economics-unit%2c-china-access](https://careers-economist.icims.com/jobs/2206/economist%2c-economics-unit%2c-china-access/job)
+
+Tel
+:   +44 (0) 20 7576 8181
+
+E-Mail
+:   london@eiu.com
 
 ### Introduction
 

@@ -69,6 +69,65 @@ create password
 start aMule and connect using `amulecmd`
 :   `$ amulecmd` (type password)
 
+## C* (cmus)
+
+- [github: cmus](https://github.com/cmus)
+
+### install dependencies
+
+- `libmad-devel`
+- `libcue  |   libcue-devel    |   OK`
+- `libpulse    |   pulseaudio-libs-devel   |   OK`
+- `pulseaudio  |   pulseaudio-devel    |   OK`
+- `samplerate  |   libsamplerate-devel |   OK`
+- `libavformat, libavcodec |   ffmpeg-devel    |   OK`
+- `opusfile    |   opusfile-devel  |   OK`
+
+### additional output plugins:
+
+- `alsa`
+- `jack`
+- `libroar`
+
+start
+:   `/home/xps13/cmus/bin/cmus`
+
+exit
+:   `:quit <Enter>`
+
+list installed output plugins
+:   `$ cmus --plugins`
+
+set output device ("no output plugin detected")
+:   `:set output_plugin=pulse`
+
+### add files
+
+open file browser
+:   `5`
+
+add file/folder
+:   `a`
+
+open library view
+:   `2`
+
+### create desktop entry
+
+create `~/.local/share/applications/cmus.desktop` with contents:
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Display=true
+Exec=cmus-remote -f %f
+Terminal=false
+Name=cmus-remote
+Comment=Music player cmus-remote control
+```
+
 ## Dropbox
 
 [ask.fedoraproject.org: dropbox failed synchronize cache for repo](https://ask.fedoraproject.org/en/question/78130/dropbox-failed-synchronize-cache-for-repo)
@@ -124,6 +183,21 @@ display of plain text messages
 
 edit `userChrome.css` in profile folder (create `chrome` folder if doesn't exist)
 :   `~/.thunderbird/[userprofile].default/chrome/userChrome.css`
+
+### ALSA
+
+- [wiki.archlinux.org: ALSA](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture)
+- [fedoraproject.org: wiki: how to debug sound problems](https://fedoraproject.org/wiki/How_to_debug_sound_problems)
+- [manpages.ubuntu.com: amixer](http://manpages.ubuntu.com/manpages/wily/man1/amixer.1.html)
+
+create report with detailed information about sound hardware
+:   `$ alsa-info.sh --no-upload`
+
+use GUI
+:   `$ alsamixer -c 1`
+
+get parameter of binary controls
+:   `$ amixer -c 0 get 'Headphone Jack'`
 
 ### Skype
 
@@ -362,7 +436,11 @@ with gui
 :   `$ sudo baobab`
 
 list directories by size
-:   `$ sudo du /|sort -gr|more`
+:   `$ sudo du /|sort -gr|more` for root folder  
+    `$ du .|sort -gr|more` for current folder
+
+list files by size
+:   `$ find . -type f -exec du --human {} + | sort --human --reverse | head`
 
 ## Cache
 
@@ -397,6 +475,11 @@ log files
 
 terminate a process
 :   `killall -9 firefox`
+
+#### `find`
+
+list all files recursively with specific extension
+:   `$ find . -type f -name "*.epub"`
 
 #### `ls`
 

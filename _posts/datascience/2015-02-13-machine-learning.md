@@ -6,6 +6,16 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+# R libraries
+
+## caret
+
+- [github: topepo: caret](https://github.com/topepo/caret)
+- [caret documentation](http://topepo.github.io/caret/index.html)
+- [companion page to Applied Predictive Modelin by Max Kuhn](http://appliedpredictivemodeling.com/)
+- [github APM exercises](https://github.com/topepo/APM_Exercises)
+- [webinar on caret](https://www.youtube.com/watch?v=7Jbb2ItbTC4)
+
 ##  Machine Learning for Hackers
 
 Machine Learning for Hackers by Drew Conway and John Myles White (O'Reilly). Copyright 2012 Drew Conway and John Myles White, 978-1-449-30371-6.

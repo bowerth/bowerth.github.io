@@ -53,25 +53,27 @@ n° compte internet
 
 ![Eiffel Tower](/assets/images/photographs/france_paris_eiffel_tower.png)
 
-Eiffel Tower
-:   In close proximity (5 minutes walking)
+#### Eiffel Tower
+
+- Directions: Metro line 6, station Bir Hakeim (5 minutes walking)
 
 ![Sacre Coeur](/assets/images/photographs/france_paris_sacre_coeur.jpg)
 
-La Basilique du Sacré Cœur de Montmartre
-:   Directions: take metro line 6 to Charles-de-Gaulle Étoile, change to metro line 2 until Blanche
+#### La Basilique du Sacré Cœur de Montmartre
 
-### Daytrips
+- Directions from Metro station Bir Hakeim: take metro line 6 to Charles-de-Gaulle Étoile, change to metro line 2 until Blanche
+
+### Half-Day Trips
 
 ![Versailles Chateau](/assets/images/photographs/france_versailles_chateau.jpg)
 
-Chateau de Versailles
-:   [FAQ and visitor tips](http://en.chateauversailles.fr/prepare-my-visit-/single/faq-en)
+- [Chateau de Versailles: FAQ and visitor tips](http://en.chateauversailles.fr/prepare-my-visit-/single/faq-en)
+
+Foret de Fontainebleu
 
 ![Disney Castle](/assets/images/photographs/france_disney_castle.jpg)
 
-Disney Land
-:   [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
+- [Disney Land: Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
 
 ### Parks
 
@@ -85,16 +87,16 @@ Disney Land
 
 #### Basque
 
-- [Chez Gladines, 30 Rue des cinq Diamants, 75013 Paris](http://www.gladines.com/)
+- [Chez Gladines, 30 Rue des cinq Diamants, 75013 Paris](http://www.gladines.com/): arrive between 7pm and 7.30pm, otherwise leave name inside once group is complete
 
 #### Italian
 
-- [East Mamma](http://www.bigmammagroup.com/east-mamma/)
+- [East Mamma](http://www.bigmammagroup.com/east-mamma/): arrive 7pm for dinner, preferably groups of an even number of people - good Pizza
 
-#### Menu
+#### Fixed Menu Restaurants
 
-- [Le Galopin, 34 Rue Sainte-Marthe, 75010 Paris, Phone: +33 1 42 06 05 03](http://www.le-galopin.com/#acceuil)
-- [Pierre Sang, 55 rue Oberkampf, 75011 Paris, Tel: +33 9 67 31 96 80](http://www.pierresangboyer.com/EN/)
+- [Le Galopin, 34 Rue Sainte-Marthe, 75010 Paris, Phone: +33 1 42 06 05 03](http://www.le-galopin.com/#acceuil): 7 courses
+- [Pierre Sang, 55 rue Oberkampf, 75011 Paris, Tel: +33 9 67 31 96 80](http://www.pierresangboyer.com/EN/): 5 courses
 
 ### Drink
 

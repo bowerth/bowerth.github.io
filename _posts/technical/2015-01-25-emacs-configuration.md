@@ -28,7 +28,7 @@ count words
 toggle auto-fill-mode
 :   `M-x auto-fill-mode`
 
-type latex characters such as `⇒` using`\Rightarrow`
+type latex characters such as `⇒` using `\Rightarrow`
 :   `M-x set-input-method RET tex` or use [latex-input](https://github.com/clarkgrubb/latex-input)
 
 ## About

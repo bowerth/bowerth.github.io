@@ -7,7 +7,8 @@ draft    : true
 ---
 {% include JB/setup %}
 
-[windy months](http://www.destinationkiteboarding.com/windy-kiteboarding-months.html)
+- [windy months](http://www.destinationkiteboarding.com/windy-kiteboarding-months.html)
+- [windguru: favorite spots](https://www.windguru.cz/int/nastaveni.php?cast=fspot)
 
 ## France
 
@@ -17,7 +18,8 @@ draft    : true
  
 ### Spots
 
-- Leucate
+- Leucate [windguru]()
+
 
 ## Greece
 
