@@ -49,6 +49,7 @@ n° client
 n° compte internet
 :   `718027300` 
 
+
 ### Sights
 
 ![Eiffel Tower](/assets/images/photographs/france_paris_eiffel_tower.png)
@@ -57,23 +58,35 @@ n° compte internet
 
 - Directions: Metro line 6, station Bir Hakeim (5 minutes walking)
 
+
 ![Sacre Coeur](/assets/images/photographs/france_paris_sacre_coeur.jpg)
 
 #### La Basilique du Sacré Cœur de Montmartre
 
 - Directions from Metro station Bir Hakeim: take metro line 6 to Charles-de-Gaulle Étoile, change to metro line 2 until Blanche
 
+
 ### Half-Day Trips
 
 ![Versailles Chateau](/assets/images/photographs/france_versailles_chateau.jpg)
 
-- [Chateau de Versailles: FAQ and visitor tips](http://en.chateauversailles.fr/prepare-my-visit-/single/faq-en)
+#### Chateau de Versailles
 
-Foret de Fontainebleu
+- [FAQ and visitor tips](http://en.chateauversailles.fr/prepare-my-visit-/single/faq-en)
+
+
+![Foret de Fontainebleau](/assets/images/photographs/france-fontainebleau-forest.jpg)
+
+#### Foret de Fontainebleau
+
+- [Access and Transport](http://www.fontainebleau-tourisme.com/index.php/en/useful-information/public-transportation-and-parking.html)
+
 
 ![Disney Castle](/assets/images/photographs/france_disney_castle.jpg)
 
-- [Disney Land: Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
+#### Disney Castle
+
+- [Frequently Asked Questions](https://disneyland.disney.go.com/faq/)
 
 ### Parks
 
