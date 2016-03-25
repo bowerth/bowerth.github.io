@@ -179,6 +179,15 @@ when to branch
 list remote branches
 :   `git branch -a`
 
+switch branches
+:   `git checkout [branch]` will automatically track remote branch `origin [branch]`
+
+fetch remote branch
+:   `git fetch`
+
+remove branch after changing to other branch
+:   `git branch -d [branch]`
+
 ## Merging
 
 open files with merge conflict in sublime

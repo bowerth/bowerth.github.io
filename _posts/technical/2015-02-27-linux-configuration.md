@@ -145,6 +145,37 @@ modify repo file
 
 ## Programs
 
+### [Feednix](http://feednix-jarkore.rhcloud.com/)
+
+Feednix is s simple ncurses-based console client for Feedly
+
+- [github: Jarkore: feednix](https://github.com/Jarkore/Feednix/)
+
+#### Fedora 23
+
+install dependencies
+:   `$ sudo dnf install -y dh-autoreconf ncurses-devel jsoncpp-devel libcurl-devel`
+
+configure, make, install
+:   `$ ./configure && make && sudo make install`
+
+copy configuration file
+:   `$ cp config.json ~/.config/feednix/`
+
+create symbolic link in `/etc/xdg` folder
+:   `$ sudo ln -s ~/.config/feednix /etc/xdg/feednix`
+
+enter developer token
+:   `...:feedlydev`
+
+start program
+:   `$ /usr/bin/feednix` or simply `$ feednix`
+
+#### commands
+
+add new feed
+:   `a`
+
 ### Google Chrome
 
 - [Edit with Emacs](https://addons.mozilla.org/en-US/firefox/addon/firemacs/)
@@ -557,13 +588,36 @@ remove all files with a specific pattern
 change theme for specific window
 :   `xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT dark`
 
-## PDF commands
+## PDF 
+
+### pdftotext
 
 convert pdf to text
 :   `pdftotext [file]`
 
 reduze PDF file size
 :   `convert -density 200x200 -quality 60 -compress jpeg input.pdf output.pdf`
+
+### qpdf
+
+decrypt
+:   `qpdf --password=[...] --decrypt [sourcefile] [destfile]`
+
+combine pages
+:   `qpdf --empty --pages "02_Main.pdf" 1-6 "03_Main.pdf" 1-8 -- "out.pdf"`
+
+### PDFMtEd
+
+- [github: Glutanimate:PDFMtEd](https://github.com/Glutanimate/PDFMtEd)
+
+install dependencies Fedora 23
+:   `$ sudo dnf install -y yad perl-Image-ExifTool qpdf`
+
+clone repository
+:   `$ git clone git@github.com:Glutanimate/PDFMtEd.git`
+
+edit file (*reports error on save and does not recognize existing metadata*)
+:   `$ ./pdfmted-editor "/home/xps13/Documents/Mendeley Desktop/Bergeron - 2003 - Essentials of XBRL, Financial Reporting in the 21st Century.pdf"`
 
 ### ToDo
 

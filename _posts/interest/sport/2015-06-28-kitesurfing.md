@@ -3,7 +3,6 @@ layout   : post
 category : interest
 tagline  : 
 tags     : 
-draft    : true
 ---
 {% include JB/setup %}
 
@@ -18,8 +17,8 @@ draft    : true
  
 ### Spots
 
-- Leucate [windguru]()
-
+- Leucate
+- Noirmoutier
 
 ## Greece
 

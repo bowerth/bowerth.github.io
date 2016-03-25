@@ -6,6 +6,203 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## About
+
+- [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
+
+install Fedora 22
+:   `$ sudo dnf install emacs emacs-ess`
+
+## [Spacemacs](http://spacemacs.org/)
+
+- [Spacemacs documentation](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org)
+- [github: syl20bnr: spacemacs](https://github.com/syl20bnr/spacemacs)
+
+maximize and center buffer
+:   `M-m  W M`
+
+hide modeline
+:   `M-m  t m t`
+
+show load path(s)
+:   `M-m h d v load-path`
+
+push to load path
+:   `(push "/some/path/" load-path)`
+
+remove links to `.emacs` and `.emacs.d`
+:   `$ git clone git@github.com:syl20bnr/spacemacs.git ~/Downloads/.emacs.d`
+    `$ rm ~/.emacs && rm ~/.emacs.d`  
+    `$ ln -s ~/Downloads/.emacs.d ~/`
+
+restore configuration
+:   `$ ln -s ~/Dropbox/Programming/emacs/.emacs ~/.emacs`
+    `$ ln -s ~/Dropbox/Programming/emacs/.emacs.d ~/`
+
+using `.spacemacs`
+:   `$ ln -s ~/Dropbox/Programming/emacs/.spacemacs ~/.spacemacs`
+
+[algernon's emacs configuration](https://github.com/algernon/emacs.d)
+:   `$ git clone git@github.com:algernon/emacs.d.git`
+
+### layers
+
+#### `packages.el`
+
+```
+(setq mylayer-packages
+      '(
+        ;; Get the package from MELPA, ELPA, etc.
+        some-package
+        (some-package :location elpa)
+
+        ;; A local package
+        (some-package :location local)
+
+        ;; A package recipe
+        (some-package :location (recipe
+                                 :fetcher github
+                                 :repo "some/repo"))
+
+        ;; An excluded package
+        (some-package :excluded t)
+        ))
+```
+
+- [Scala layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala)
+- [Spacemacs for the Scala developer](https://fedragon.github.io/spacemacs-as-scala-ide/)
+
+| Keybinding | Function                     |
+| ---------- | ---------------------------- |
+| SPC m g g  | go to definition             |
+| SPC m i i  | inspect type at point        |
+| SPC m r f  | format code                  |
+| SPC m r i  | organize imports             |
+| SPC m r r  | rename a symbol project wide |
+| SPC m s b  | send buffer to REPL          |
+| SPC m s r  | send region of code to REPL  |
+| SPC m t r  | run quick tests              |
+
+### fonts
+
+#### [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+
+install Fedora 23
+:   `sudo dnf install -y adobe-source-code-pro-fonts`
+
+### window modes
+
+- [eyebrowse layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bwindow-management/eyebrowse)
+
+## Commands
+
+- [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+
+## Major Modes
+
+list keybindings for a certain mode
+:   `C-h m` or `M-x describe-mode` (minor modes: `M-x describe-minor-mode`)
+
+check emacs version
+:   `M-x emacs-version`
+
+highlight phrase (`hi-black-hb` works well)
+:   `M-x highlight-phrase`
+
+### elfeed
+
+- [github: skeeto: elfeed](https://github.com/skeeto/elfeed)
+- [github: remyhonig: elfeed-org](https://github.com/remyhonig/elfeed-org)
+- [github: algernon: elfeed-goodies](https://github.com/algernon/elfeed-goodies)
+
+commands
+:   `C-x w` show feeds  
+    `g` or `G` update  
+    `n` next, `p` previous, `b` open in browser, `q` quit
+
+### Org Mode
+
+- [orgmode.org](http://orgmode.org/org.html)
+
+use css stylesheet
+:   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
+
+#### Org OPML
+
+- [github: edavis: org-opml](https://github.com/edavis/org-opml)
+
+install
+:   `$ cd ~/.emacs.d/lisp`  
+	`$ git clone git@github.com:edavis/org-opml.git`
+
+modify `~/.emacs`
+:   `(add-to-list 'load-path "~/.emacs.d/lisp/org-opml")`  
+    `(load-library "org-opml")`
+
+copy python script
+:   `$ ln -s ~/.emacs.d/lisp/org-opml/opml2org.py 
+
+#### Org Spreadsheet
+
+- [orgmode.org: Org as a spreadsheet system: a short introduction](http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
+- [orgmode.org: orgcard](http://orgmode.org/orgcard.txt)
+
+show grid
+:   `C-c }`
+
+activate formula debugging mode
+:   `C-c {`
+
+add column left
+:   `M-S <right>` (`M-S` = `Alt` + `Shift`)
+
+remove column
+:   `M-S <left>`
+
+add row above
+:   `M-S <down>`
+
+delete current row
+:   `M-S <up>`
+
+insert a horizontal line below current row
+:  `C-c -` or `org-table-insert-hline`
+
+permanently calculate column sum
+:   e.g. `:=vsum(@2..@-1)` where `@` is the last line or `:=vsum(@I..@II)` making use of horizontal lines
+
+re-apply all stored equations to entire table
+:   `C-u C-c *`
+
+#### HTML export commands
+
+org-html-export-to-html
+:   `C-c C-e h h`
+
+Export as an HTML file. For an Org file myfile.org, the HTML file will be myfile.html. The file will be overwritten without warning. C-c C-e h o Export as an HTML file and immediately open it with a browser.
+
+org-html-export-as-html
+:    `C-c C-e h H`
+
+Export to a temporary buffer. Do not create a file.
+
+#### ditaa
+
+- [orgmode.org: ditaa](http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ditaa.html)
+
+Activate evaluation of `ditaa` source code blocks by adding ditaa to org-babel-load-languages.
+
+```lisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((ditaa . t))) ; this line activates ditaa
+```
+
+#### Links
+
+- [orgmode manual: External Links](orgmode.org/manual/External-links.html)
+
 ## Emacs Server
 
 start daemon
@@ -30,76 +227,6 @@ toggle auto-fill-mode
 
 type latex characters such as `⇒` using `\Rightarrow`
 :   `M-x set-input-method RET tex` or use [latex-input](https://github.com/clarkgrubb/latex-input)
-
-## About
-
-- [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
-
-## helm
-
-- [tuhdo.github.io: helm-intro](http://tuhdo.github.io/helm-intro.html)
-- [github: emacs-helm: helm](https://github.com/emacs-helm/helm)
-- [github: emacs-helm: helm wiki](https://github.com/emacs-helm/helm/wiki)
-
-install
-:   `M-x list-packages` and select **helm** 
-
-### helm-ls-git
-
-- [github: emacs-helm: helm-ls-git](https://github.com/emacs-helm/helm-ls-git)
-
-## god-mode
-
-- [github: chrisdone: god-mode](https://github.com/chrisdone/god-mode)
-
-helm integration
-:   `M-x package-install RET helm-projectile`
-
-usage
-:   `M-x helm-projectile` or `C-c p h`
-
-helm-projectile is capable of opening multiple files by marking the files with `C-SPC` or mark all files with `M-a`. Then, press `RET`, all the selected files will be opened.
-
-## Run in terminal
-
-no window mode
-:   `emacs -nw` or `emacs --no-window-system`
-
-close
-:   `C-x C-c`
-
-start as daemon - 
-:   `emacs --daemon` and then using `emacsclient -t`
-
-try to connect to a runnning emacs daemon - if none is running, it will startup a new one, and then connect using the current terminal window
-:   `emacsclient -nw -c -a ""` or ``emacsclient -nw --create-frame --alternate-editor ""`
-
-## External IDE Integration
-
-### JetBrains
-
-- [confluence.jetbrains.com: Using Emacs as an external editor](https://confluence.jetbrains.com/display/PYH/Using+Emacs+as+an+external+editor)
-
-## Debug
-
-The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide variety of symbolic debuggers. It can run the GNU Debugger (GDB), as well as DBX, SDB, XDB, Perl’s debugging mode, the Python debugger PDB, and the Java Debugger JDB.
-
-- [gnu.org: Running Debuggers Under Emacs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
-
-`M-x gdb`
-:   Run GDB as a subprocess, and interact with it via an IDE-like Emacs interface
-
-`M-x jdb`
-:   Run the Java debugger
-
-## MELPA
-
-- [How to use Emacs package manager](http://tuhdo.github.io/emacs-tutor3.html)
-
-## Major Modes
-
-list keybindings for a certain mode
-:   `C-h m` or `M-x describe-mode` (minor modes: `M-x describe-minor-mode`)
 
 ### Yaml
 
@@ -312,73 +439,6 @@ send region from buffer to inf-ruby
 | C-c M-b | ruby-send-block-and-go     |
 | C-c M-r | ruby-send-region-and-go    |
 | C-c M-x | ruby-send-definition-and-go|
-
-### Org Mode
-
-- [orgmode.org](http://orgmode.org/org.html)
-
-use css stylesheet
-:   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
-
-#### Org Spreadsheet
-
-- [orgmode.org: Org as a spreadsheet system: a short introduction](http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
-- [orgmode.org: orgcard](http://orgmode.org/orgcard.txt)
-
-show grid
-:   `C-c }`
-
-activate formula debugging mode
-:   `C-c {`
-
-add column left
-:   `M-S <right>` (`M-S` = `Alt` + `Shift`)
-
-remove column
-:   `M-S <left>`
-
-add row above
-:   `M-S <down>`
-
-delete current row
-:   `M-S <up>`
-
-insert a horizontal line below current row
-:  `C-c -` or `org-table-insert-hline`
-
-permanently calculate column sum
-:   e.g. `:=vsum(@2..@-1)` where `@` is the last line or `:=vsum(@I..@II)` making use of horizontal lines
-
-re-apply all stored equations to entire table
-:   `C-u C-c *`
-
-#### HTML export commands
-
-org-html-export-to-html
-:   `C-c C-e h h`
-
-Export as an HTML file. For an Org file myfile.org, the HTML file will be myfile.html. The file will be overwritten without warning. C-c C-e h o Export as an HTML file and immediately open it with a browser.
-
-org-html-export-as-html
-:    `C-c C-e h H`
-
-Export to a temporary buffer. Do not create a file.
-
-#### ditaa
-
-- [orgmode.org: ditaa](http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ditaa.html)
-
-Activate evaluation of `ditaa` source code blocks by adding ditaa to org-babel-load-languages.
-
-```lisp
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((ditaa . t))) ; this line activates ditaa
-```
-
-#### Links
-
-- [orgmode manual: External Links](orgmode.org/manual/External-links.html)
 
 ### Android Mode
 
@@ -664,18 +724,63 @@ installation
 
 - [github: ptrv: processing2-emacs](https://github.com/ptrv/processing2-emacs)
 
-## Emacs installation
+## helm
 
-### Fedora 22
+- [tuhdo.github.io: helm-intro](http://tuhdo.github.io/helm-intro.html)
+- [github: emacs-helm: helm](https://github.com/emacs-helm/helm)
+- [github: emacs-helm: helm wiki](https://github.com/emacs-helm/helm/wiki)
 
-- `sudo dnf install emacs emacs-ess`
+install
+:   `M-x list-packages` and select **helm** 
 
-## Commands
+### helm-ls-git
 
-- [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
+- [github: emacs-helm: helm-ls-git](https://github.com/emacs-helm/helm-ls-git)
 
-check emacs version
-:   `M-x emacs-version`
+## god-mode
 
-highlight phrase (`hi-black-hb` works well)
-:   `M-x highlight-phrase`
+- [github: chrisdone: god-mode](https://github.com/chrisdone/god-mode)
+
+helm integration
+:   `M-x package-install RET helm-projectile`
+
+usage
+:   `M-x helm-projectile` or `C-c p h`
+
+helm-projectile is capable of opening multiple files by marking the files with `C-SPC` or mark all files with `M-a`. Then, press `RET`, all the selected files will be opened.
+
+## Run in terminal
+
+no window mode
+:   `emacs -nw` or `emacs --no-window-system`
+
+close
+:   `C-x C-c`
+
+start as daemon - 
+:   `emacs --daemon` and then using `emacsclient -t`
+
+try to connect to a runnning emacs daemon - if none is running, it will startup a new one, and then connect using the current terminal window
+:   `emacsclient -nw -c -a ""` or ``emacsclient -nw --create-frame --alternate-editor ""`
+
+## External IDE Integration
+
+### JetBrains
+
+- [confluence.jetbrains.com: Using Emacs as an external editor](https://confluence.jetbrains.com/display/PYH/Using+Emacs+as+an+external+editor)
+
+## Debug
+
+The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide variety of symbolic debuggers. It can run the GNU Debugger (GDB), as well as DBX, SDB, XDB, Perl’s debugging mode, the Python debugger PDB, and the Java Debugger JDB.
+
+- [gnu.org: Running Debuggers Under Emacs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
+
+`M-x gdb`
+:   Run GDB as a subprocess, and interact with it via an IDE-like Emacs interface
+
+`M-x jdb`
+:   Run the Java debugger
+
+## MELPA
+
+- [How to use Emacs package manager](http://tuhdo.github.io/emacs-tutor3.html)

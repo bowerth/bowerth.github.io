@@ -11,19 +11,25 @@ tags     :
 - [airbnb: 11619462](https://www.airbnb.com/rooms/11619462)
 - [facebook: House for rent in Santa Cruz de la Sierra](https://www.facebook.com/groups/Expatsinbolivia/permalink/1040880465968772/)
 
-![House](/assets/images/photographs/santacruz_house.jpg)
+![House](/assets/images/photographs/santacruz-house.jpg)
 
-![Dining Area](/assets/images/photographs/santacruz_dining.jpg)
+![Dining Area](/assets/images/photographs/santacruz-dining.jpg)
 
-![Salon1](/assets/images/photographs/santacruz_salon1.jpg)
+![Salon1](/assets/images/photographs/santacruz-salon-1.jpg)
 
-![Salon2](/assets/images/photographs/santacruz_salon2.jpg)
+![Salon2](/assets/images/photographs/santacruz-salon-2.jpg)
 
-![Kitchen](/assets/images/photographs/santacruz_kitchen1.jpg)
+![Kitchen](/assets/images/photographs/santacruz-kitchen-1.jpg)
 
-![Garden1](/assets/images/photographs/santacruz_garden.jpg)
+![Car](/assets/images/photographs/santacruz-car.jpg)
 
-![Garden2](/assets/images/photographs/santacruz_car.jpg)
+![Garden1](/assets/images/photographs/santacruz-garden-1.jpg)
+
+![Garden2](/assets/images/photographs/santacruz-garden-2.jpg)
+
+![Garden3](/assets/images/photographs/santacruz-garden-3.jpg)
+
+![Garden4](/assets/images/photographs/santacruz-garden-4.jpg)
 
 denominando lugar
 :   Clara Cuta
