@@ -38,6 +38,9 @@ Keyboard shortcuts
 
 ## Extensions
 
+[Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+:   The Web Developer extension adds a toolbar button to the browser with various web developer tools. This is the official port of the Web Developer extension for Firefox.
+
 ### Developer Tools UI themes
 
 - [chrome.google.com: webstore: DevTools Theme: Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo)

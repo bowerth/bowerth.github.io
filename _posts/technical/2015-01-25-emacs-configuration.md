@@ -70,19 +70,109 @@ using `.spacemacs`
         ))
 ```
 
-- [Scala layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala)
+#### [Latex layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/latex)
+
+create bibtex references
+:   `M-x tex-bibtex-file` will run `$ bibtex main` in project folder containing `main.aux` and `main.bib`
+
+#### [Scala layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala)
+
 - [Spacemacs for the Scala developer](https://fedragon.github.io/spacemacs-as-scala-ide/)
 
 | Keybinding | Function                     |
 | ---------- | ---------------------------- |
-| SPC m g g  | go to definition             |
-| SPC m i i  | inspect type at point        |
-| SPC m r f  | format code                  |
-| SPC m r i  | organize imports             |
-| SPC m r r  | rename a symbol project wide |
-| SPC m s b  | send buffer to REPL          |
-| SPC m s r  | send region of code to REPL  |
-| SPC m t r  | run quick tests              |
+| `M-m g g`  | go to definition             |
+| `M-m i i`  | inspect type at point        |
+| `M-m r f`  | format code                  |
+| `M-m r i`  | organize imports             |
+| `M-m r r`  | rename a symbol project wide |
+| `M-m s b`  | send buffer to REPL          |
+| `M-m s r`  | send region of code to REPL  |
+| `M-m t r`  | run quick tests              |
+
+- [Spacemacs clojure](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/clojure)
+- [Spacemacs go](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/go)
+
+#### [C/C++ layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/c-c%2B%2B)
+
+| Key Binding | Description                                                            |
+| ----------- | ---------------------------------------------------------------------- |
+| `M-m g a`   | open matching file (e.g. switch between .cpp and .h)                   |
+| `M-g A`     | open matching file in another window (e.g. switch between .cpp and .h) |
+| `M-m D`     | disaster: disassemble c/c++ code                                       |
+| `M-m r`     | srefactor: refactor thing at point.                                    |
+
+#### [Python layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/python)
+
+
+Send code to inferior process commands:
+
+| Key Binding | Description                                     |
+| ----------- | ------------------------------------------------|
+| `M-m s b`   | send buffer and keep code buffer focused        |
+| `M-m s B`   | send buffer and switch to REPL in insert mode   |
+| `M-m s f`   | send function and keep code buffer focused      |
+| `M-m s F`   | send function and switch to REPL in insert mode |
+| `M-m s i`   | start inferior REPL process                     |
+| `M-m s r`   | send region and keep code buffer focused        |
+| `M-m s R`   | send region and switch to REPL in insert mode   |
+| `CTRL+j`    | next item in REPL history                       |
+| `CTRL+k`    | previous item in REPL history                   |
+
+** Running Python Script in shell
+To run a Python script like you would in the shell press `M-m c c`
+to start the Python script in comint mode. This is useful when working with
+multiple Python files since the REPL does not reload changes made in other
+modules.
+
+| Key Binding | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| `M-m c c`   | Execute current file in a comint shell                                    |
+| `M-m c C`   | Execute current file in a comint shell and switch to it in =insert state= |
+
+*Note:* With the universal argument `SPC u` you can enter a new
+compilation command.
+
+** Testing
+Test commands start with `m t`:
+
+| No Debug  | Description                                              |
+| --------- | -------------------------------------------------------- |
+| `M-m t a` | launch all tests of the project                          |
+| `M-m t b` | launch all tests of the current buffer (same as module)  |
+| `M-m t m` | launch all tests of the current module                   |
+| `M-m t s` | launch all tests of the current suite (only with =nose=) |
+| `M-m t t` | launch the current test (function)                       |
+
+| Debug     | Description                                                            |
+| --------- | ---------------------------------------------------------------------- |
+| `M-m t A` | launch all tests of the project in debug mode                          |
+| `M-m t B` | launch all tests of the current buffer (module) in debug mode          |
+| `M-m t M` | launch all tests of the current module in debug mode                   |
+| `M-m t S` | launch all tests of the current suite in debug mode (only with =nose=) |
+| `M-m t T` | launch the current test (function) in debug mode                       |
+
+** Refactoring
+
+| Key Binding | Description                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| `M-m r i`   | remove unused imports with [[https://github.com/myint/autoflake][autoflake]] |
+
+** Other Python commands
+
+| Key Binding | Description                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| `M-m =`     | Reformat the buffer according to PEP8 using  [[https://github.com/google/yapf][YAPF]]     |
+| `M-m d b`   | toggle a breakpoint                                                                       |
+| `M-m g g`   | go to definition using =anaconda-mode-find-definitions= (`C-o` to jump back)              |
+| `M-m g a`   | go to assignment using =anaconda-mode-find-assignments= (`C-o` to jump back)              |
+| `M-m g u`   | navigate between usages with =anaconda-mode-find-references=                              |
+| `M-m h d`   | look for documentation using =helm-pydoc=                                                 |
+| `M-m h h`   | quick documentation using anaconda                                                        |
+| `M-m h H`   | open documentation in =firefox= using [[https://github.com/tsgates/pylookup][pylookup]]   |
+| `M-m v s`   | activate a virtual environment with [[https://github.com/yyuu/pyenv][pyenv]]              |
+| `M-m v u`   | deactivate a virtual environment with [[https://github.com/yyuu/pyenv][pyenv]]            |
+| `M-m V`     | activate a virtual environment with  [[https://github.com/jorgenschaefer/pyvenv][pyvenv]] |
 
 ### fonts
 

@@ -49,6 +49,14 @@ set root password
 :   log in as root `$ sudo -s`  
     set password `$ passwd`
 
+## [Nix](http://nixos.org/nix/) The Purely Functional Package Manager
+
+download and run install script
+:   `$ curl https://nixos.org/nix/install | sh`
+
+reload `~/.bash_profile`
+:   `$ source ~/.bash_profile`
+
 ## aMule
 
 ### aMule CMD
@@ -498,10 +506,6 @@ log files
 `/etc/bashrc`
 :   global functions and aliases
 
-### make files
-
-- [eecis.udel.edu: Example Makefile](http://www.eecis.udel.edu/~gibson/classes/181/make.html#make2)
-
 ### shell commands, bash files
 
 terminate a process
@@ -578,6 +582,9 @@ return all files with a specific extension
 
 return all occasions with "PATH"
 :   `grep -i "PATH" .*`
+
+search for term in subfolder
+:   `grep -i ".jParProperties" R/*`
 
 search files in path recursively, only print filename
 :   `grep -rl "gh-training-logo" [path]`

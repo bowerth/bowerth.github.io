@@ -21,7 +21,7 @@ relative_permalinks: false
 markdown: kramdown
 kramdown:
   # hard_wrap: true
-  extensions: [no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 #   extensions: ["fenced_code_blocks"]
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]

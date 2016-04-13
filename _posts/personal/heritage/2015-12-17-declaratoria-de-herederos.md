@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+Sendung Geburtsurkunde (Recommandé International)
+:   `RK006988905FR`  
+    [Recherche de courrier suivi](http://www.csuivi.courrier.laposte.fr/suivi/index?id=RK006988905FR)
+
 ## Zusammenfassung
 
 - durch Konsulat beglaubigte Kopie des Reisepasses

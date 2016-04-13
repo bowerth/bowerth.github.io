@@ -9,6 +9,14 @@ tags     :
 - [windy months](http://www.destinationkiteboarding.com/windy-kiteboarding-months.html)
 - [windguru: favorite spots](https://www.windguru.cz/int/nastaveni.php?cast=fspot)
 
+
+## Egypt
+
+### Spots
+
+- Hurghada
+- Ras Sudr
+
 ## France
 
 ### Events
