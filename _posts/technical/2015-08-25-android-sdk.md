@@ -6,6 +6,41 @@ tags     :
 ---
 {% include JB/setup %}
 
+## `android`
+
+update Android SDK
+:   `$ android sdk update`
+
+update project to create `local.properties`
+:   `$ android update project -p /path/to/project -t android-23`
+
+## `ant`
+
+- [Error, Reference Project.libraries.jar not found #2](https://github.com/michelou/android-examples/issues/2)
+
+debug
+:   `$ ant debug`
+
+release
+:   `$ ant release`
+
+## Connect device
+
+- got to "Settings" - "About" and tap build number 7 times
+- developer options appear in main settings
+- activate "debugging over USB"
+
+check connect status of device
+:   `$ cd $ANDROID_HOME/platform-tools/`  
+	`$ adb devices`
+
+if device unauthorized, restart `adb-server`
+:   `$ adb kill-server`  
+	`$ adb start-server`
+
+install without remove
+:   `$ adb install -r "bin/FileStorage-debug.apk"`
+
 ## Create from HTML, CSS, and JavaScript
 
 ### [Apache Cordova](https://cordova.apache.org/)
@@ -34,13 +69,68 @@ set SDK dir environment variable
 - [developer.android.com: Managing AVDs from the Command Line](http://developer.android.com/tools/devices/managing-avds-cmdline.html)
 
 to generate a list of system image targets, use this command
-:   `android list targets`
+:   `$ android list targets`
 
-creat AVD, supplying the target ID as the -t argument name "my_android6.0" and target ID (from `list targets`: 1 or "android-23")
-:   `android create avd -n my_android6.0 -t 1 --abi "default/armeabi-v7a"`
+create AVD, supplying the target ID as the -t argument name "my_android6.0" and target ID (from `list targets`: 1 or "android-23")
+:   `$ android create avd -n my_android6.0 -t 1 --abi "default/armeabi-v7a"`
+
+list avds
+:   `$ android list avd`
 
 start AVD (takes 100% of one of four cores)
-:   `emulator -avd my_android6.0`
+:   `$ emulator -avd my_android6.0`
+
+### Debug using real device and JDB
+
+list processes
+:   `$ cd $ANDROID_HOME/platform-tools/`
+	`$ adb jdwp`
+
+forward last process in list to tcp port
+:   `$ adb forward tcp:8700 jdwp:13358` 
+
+start debugging using jdb (e.g. in Emacs `M-x jdb`)
+:   `$ jdb -attach localhost:8700 -sourcepath /tmp/android`
+
+stop port forwarding
+:   `$ adb forward --remove tcp:8700` or `$ adb forward --remove-all`
+
+use bash script to connect
+:   `$ cd ~/Dropbox/Programming/Android/`  
+	`$ bash jdb-connect.sh`
+
+list and select threads
+:   `> threads`  
+    `> thread 0xc142056538`  
+    `> suspend 0xc142056538`
+    `> cont`
+
+list breakpoints
+:   `> stop`
+
+load class
+:   `> class com.example.macroid.starter.GreetingActivity`
+
+list methods in class
+:   `> methods com.example.macroid.starter.GreetingActivity`
+
+set breakpoint
+:   `> stop in com.example.macroid.starter.GreetingActivity.save_button()`
+
+clear breakpoint
+:   `> clear com.example.macroid.starter.GreetingActivity.save_button()`
+
+### ADB shell operations
+
+connect to interactive shell
+:   `adb shell`
+
+navigate and list files
+:   `shell@android:/ $ cd /storage/sdcard0/Download/`  
+	`shell@android:/ $ ls`
+
+batch command
+:   `$ adb shell "ls /storage/sdcard0/Download/"`
 
 ### Emulator
 
@@ -81,4 +171,3 @@ run if `build.xml` file missing (e.g. created from Eclipse) or `local.properties
 
 location
 :   `~/android-sdk-linux/samples/android-23/wearable/Flashlight`
-

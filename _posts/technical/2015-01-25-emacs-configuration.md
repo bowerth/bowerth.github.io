@@ -70,6 +70,10 @@ using `.spacemacs`
         ))
 ```
 
+#### Private
+
+- ESS, polymode, funk [github.com: fernandomayer: spacemacs](https://github.com/fernandomayer/spacemacs)
+
 #### [Latex layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/latex)
 
 create bibtex references
@@ -103,7 +107,6 @@ create bibtex references
 | `M-m r`     | srefactor: refactor thing at point.                                    |
 
 #### [Python layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/python)
-
 
 Send code to inferior process commands:
 
@@ -534,6 +537,7 @@ send region from buffer to inf-ruby
 
 - [github: remvee: android-mode](https://github.com/remvee/android-mode)
 - [Tips on Android Development Using Emacs](http://gregorygrubbs.com/development/tips-on-android-development-using-emacs/)
+- [android.googlesource.com: `android.el`](https://android.googlesource.com/platform/sdk/+/eclair-release/files/android.el)
 
 #### modify `~/.emacs`
 

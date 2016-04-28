@@ -6,6 +6,14 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Commit message code
+
+`[=|+|!] [core|viewable|akka|docs|all]: <Actual message>.`
+
+- `=`` means there are no API changes
+- `+` means added funtionality
+- `!` means breaking changes (source or binary)
+
 ## Platforms
 
 - [Gilab](https://about.gitlab.com)
