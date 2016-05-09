@@ -6,7 +6,6 @@ tags     :
 ---
 {% include JB/setup %}
 
-
 ## About
 
 - [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
@@ -391,6 +390,9 @@ send region from other buffer
 convert buffer format `DOS` / `UNIX`
 :   `C-x RET f` or `M-x set-buffer-file-coding-system`  
     format examples: `dos`, `unix`, `utf-8-unix`
+
+select whole buffer
+:   `C-x h`
 
 #### using giter8 templates
 
