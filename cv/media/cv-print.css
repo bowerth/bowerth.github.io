@@ -60,7 +60,8 @@ table {
 
 body {
 	font: normal normal 400;
-	font-size: 13.5pt;
+	/*font-size: 13.5pt;*/
+	font-size: 10.5pt;
 	line-height: 1.35em;
 	font-family: "Open sans", sans-serif;
 	/*margin-top: 1em;
@@ -69,10 +70,12 @@ body {
 
 p {
 	position: relative;
-	left: 28%;
+	/*left: 28%;*/
+	left: 10%;
 	/* margin-bottom: 0.2em; */
 	margin-right: 0;
-	width: 70%;
+	/*width: 70%;*/
+	width: 85%;
 }
 
 code {
@@ -91,7 +94,8 @@ p code {
 
 ul {
 	position: relative;
-	left: 28%;
+	/*left: 28%;*/
+	left: 10%;
 	width: 65%;
 	margin-bottom: 1em;
 	margin-top: 2em;
@@ -122,7 +126,8 @@ h1 {
 	font-size: 2.2em;
 	line-height: 1em;
 	position: relative;
-	left: 28%;
+	/*left: 28%;*/
+	left: 10%;
 }
 
 h1+p {
@@ -136,13 +141,17 @@ h1+p {
 
 h2 {
 	font-size: 1.1em;
-	color: #a00;
+	/*color: #a00;*/
 	/*color: #333333;*/
+	color: #006895;
 	margin-top: 1em;
 	position: relative;
-	top: 1.5em;
-	text-align: right;
-	width: 18%;
+	/*top: 1.5em;*/
+	top: 1em;
+	/*text-align: right;*/
+	text-align: left;
+	/*width: 18%;*/
+	width: 50%;
 }
 
 h2+p {
@@ -173,7 +182,8 @@ a:hover {
 #webaddress {
  	margin-top: 0em;
 	position: relative;
-	left: 28%;
+	/*left: 28%;*/
+	left: 10%;
 	/*color: #ccc;*/
 	color: #474747;
 	font-family: Menlo,monospace,sans-serif;
