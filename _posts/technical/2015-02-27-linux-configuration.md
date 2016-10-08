@@ -481,6 +481,12 @@ list directories by size
 list files by size
 :   `$ find . -type f -exec du --human {} + | sort --human --reverse | head`
 
+list files recursively by partial string
+:   `$ find -iname "*hsfclmap*"`
+
+check for incomplete files
+:   `$ find -iname "*.tmp"`
+
 ## Cache
 
 clean `/var/cache`

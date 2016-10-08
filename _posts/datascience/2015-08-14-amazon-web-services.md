@@ -6,12 +6,254 @@ tags     : [EMR, Hadoop]
 ---
 {% include JB/setup %}
 
+## Management Console
+
+- [AWS Management Console (Europe)](https://console.aws.amazon.com/s3/home?region=eu-central-1)
+
+## Create an Amazon EC2 Key Pair and PEM File
+
+Amazon EMR uses an Amazon Elastic Compute Cloud (Amazon EC2) key pair to ensure that you alone have access to the instances that you launch. The PEM file associated with this key pair is required to ssh directly to the master node of the cluster.
+
+To create an Amazon EC2 key pair:
+
+- Go to the [Amazon EC2 console](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#)
+- In the Navigation pane, click Key Pairs
+- On the Key Pairs page, click Create Key Pair
+- In the Create Key Pair dialog box, enter a name for your key pair, such as, mykeypair
+- Click Create
+- Save the resulting PEM file in a safe location
+
+### Modify Your PEM File
+
+Amazon Elastic MapReduce (Amazon EMR) enables you to work interactively with your cluster, allowing you to test cluster steps or troubleshoot your cluster environment. You use your PEM file to authenticate to the master node. The PEM file requires a modification based on the tool you use that supports your operating system.
+
+## AMI
+
+RStudio_AMI
+:   url: http://www.louisaslett.com/RStudio_AMI/  
+    EU Central, Frankfurt: ami-ca46b6a5
+    RStudio 0.99.903  
+    R 3.3.1  
+    Ubuntu 16.04  
+    Username: rstudio  
+    Password: rstudio
+
+After the instance has been started successfully, inbound `http` access must be enabled. Click on `Security groups
+launch-wizard-1` in the instance description
+
+![amazon-aws-rstudio](/assets/images/screenshots/amazon-aws-rstudio.png)
+
+Select the `Inbound` tab in the Security Group and edit the table.
+
+![amazon-aws-rstudio-security-group.png](/assets/images/screenshots/amazon-aws-rstudio-security-group.png)
+
+Add `HTTP` to the table and accept the default configuration.
+
+![amazon-aws-rstudio-security-group-inbound-rules.png](/assets/images/screenshots/amazon-aws-rstudio-security-group-inbound-rules.png)
+
+## AWS CLI
+
+install using `pip`
+:   `$ sudo pip install awscli`
+
+create ec2 skeleton and save to a file
+:   `$ aws ec2 run-instances --generate-cli-skeleton > ~/src/scala/sparkDemo/ec2runinst.json`
+
+run instance using JSON configuration
+:   `$ aws ec2 run-instances --cli-input-json file:///home/xps13/src/scala/sparkDemo/ec2runinst.json`
+
+```
+{
+    "DryRun": true,
+    "ImageId": "ami-dfc39aef",
+    "KeyName": "awscli-ec2key",
+    "SecurityGroups": [
+        "my-sg"
+    ],
+    "SecurityGroupIds": [
+        "sg-28c21351"
+    ],
+    "InstanceType": "t2.micro",
+    "Monitoring": {
+        "Enabled": true
+    }
+}
+```
+
+create key pair (EC2 Dashboard: Network & Security: Key Pairs)
+:   `$ aws ec2 create-key-pair --key-name awscli-ec2key --profile root`
+
+create security group (EC2 Dashboard: Network & Security: Security Groups)
+:   `$ aws ec2 create-security-group --group-name my-sg --description "My security group" --profile root`
+
+run instance
+:   `$ aws ec2 run-instances --cli-input-json file:///home/xps13/src/scala/sparkDemo/ec2runinst.json --profile root`
+
+create emr skeleton
+:   `$ aws emr create-cluster --generate-cli-skeleton`
+
+create spark cluster
+
+```
+$ aws emr create-cluster \ 
+    --name "Spark cluster" \
+    --release-label emr-5.0.0 \
+    --applications Name=Spark \
+    --ec2-attributes KeyName=awscli-ec2key \
+    --instance-type m3.xlarge \
+    --instance-count 3 \
+    --use-default-roles`
+```
+
+stop cluster
+:   `$ aws emr terminate-clusters --cluster-ids j-91BR4ANV6I1J`
+
+- [docs.aws.amazon.com: create-cluster](http://docs.aws.amazon.com/cli/latest/reference/emr/create-cluster.html)
+
+## s3a Storage
+
+- add to `libraryDepends` in `build.sbt` file [mvnrepository.com: org.apache.hadoop: hadoop-aws](https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws)
+- see also [github: Aloisius: hadoop-s3a](https://github.com/Aloisius/hadoop-s3a)
+
+```
+    val hadoopConf = sc.hadoopConfiguration
+    hadoopConf.set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+```
+
+Alternatively, one could set `spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem` in the `spark.properties` configuration file.
+
+- [Hadoop-AWS module: Integration with Amazon Web Services](https://hadoop.apache.org/docs/stable/hadoop-aws/tools/hadoop-aws/index.html)
+
+The hadoop-aws module provides support for AWS integration. The generated JAR file, hadoop-aws.jar also declares a transitive dependency on all external artifacts which are needed for this support —enabling downstream applications to easily use this support.
+
+Features:
+
+- The "classic" s3: filesystem for storing objects in Amazon S3 Storage
+- The second-generation, s3n: filesystem, making it easy to share data between hadoop and other applications via the S3 object store
+- The third generation, s3a: filesystem. Designed to be a switch in replacement for s3n:, this filesystem binding supports larger files and promises higher performance.
+
+### Manage S3 access using IAM Policy Variables
+
+- [IAM Policy Variables Overview](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html)
+- [IAM Policy Elements Reference](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+- [AWS IAM API Reference: Actions and Condition Context Keys for Amazon S3](http://docs.aws.amazon.com/IAM/latest/UserGuide/list_s3.html)
+
+Policy to access buckets and objects in buckets
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ListAllBuckets",
+            "Action": "s3:ListAllMyBuckets",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "TradeBucket",
+            "Action": [
+                "s3:*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::ir-comext-1",
+                "arn:aws:s3:::ir-comtrade-1",
+                "arn:aws:s3:::ir-faosws-1"
+            ]
+        },
+        {
+            "Sid": "TradeBucketObjects",
+            "Action": [
+                "s3:*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::ir-comext-1/*",
+                "arn:aws:s3:::ir-comtrade-1/*",
+                "arn:aws:s3:::ir-faosws-1/*"
+            ]
+        }
+    ]
+}
+```
+
+test access in databricks platform
+
+```
+val logFile = "s3n://[AWS_ACCESS_KEY_ID]:[AWS_SECRET_ACCESS_KEY]@ir-faosws-1/fcl_2_cpc.csv"
+val logData = sc.textFile(logFile.toString, 2).cache()
+logData.first()
+```
+
+### Upload data
+
+- choose location for data storage in the same region as the account, e.g. the Databricks Community Edition is being hosted in AWS in the US-West-2 (Oregon) region
+
+```
+|  `Clusters / My Cluster`
+|--  Spark Cluster UI - Master
+|----  Hostname: ec2-50-112-21-230.us-west-2.compute.amazonaws.com
+|----  Spark Version: 1.6.1-ubuntu15.10-hadoop1
+```
+
+#### AWS CLI
+
+- [AWS Command Line Interface](https://aws.amazon.com/cli/)
+- [Databricks: Data Import: How-To Guide](https://databricks.com/wp-content/uploads/2015/08/Databricks-how-to-data-import.pdf)
+
+#### S4cmd
+
+Super S3 command line tool
+
+- [github: bloomreach/s4cmd](https://github.com/bloomreach/s4cmd)
+
+move multiple files
+:   `$ s4cmd mv s3://us-west-2-databricks/ct_tariffline_unlogged_* s3://us-west-2-original/`
+
+sync remote folder contents with current dir
+:   `$ s4cmd dsync s3://us-west-2-databricks ./`
+
+#### S3cmd
+
+Upload, retrieve and manage data in Amazon S3
+
+- [github: s3tools: s3cmd](https://github.com/s3tools/s3cmd)
+
+list buckets
+:   `s3cmd ls`
+
+list bucket contents
+:   `s3cmd ls s3://us-west-2-databricks`
+
+retrieve file
+:   `s3cmd get s3://us-west-2-databricks/faosws/fcl_2_cpc.csv`
+
+continue downloading after timeout
+:   `s3cmd get --continue s3://us-west-2-databricks/ct_tariffline_unlogged_2008.csv`
+
+retrieve whole folder content
+:   `s3cmd get --recursive --skip-existing s3://us-west-2-databricks/faosws`
+
+remove everything under
+:   `s3cmd del --recursive s3://us-west-2-databricks/faosws/fcl_2_cpc.parquet`
+
+#### Manual upload
+
+download files from Eurostat
+:   [nc200852.7z](http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&downfile=comext%2F2016S2%2Fdata%2Fnc200852.7z)  
+    [nc200952.7z](http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&downfile=comext%2F2016S2%2Fdata%2Fnc200952.7z)  
+    [nc201052.7z](http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&downfile=comext%2F2016S2%2Fdata%2Fnc201052.7z)  
+
+- s3n://us-west-2-databricks/nc200852.dat
+- s3n://us-west-2-databricks/nc200952.dat
+- s3n://us-west-2-databricks/nc201052.dat
+
 ## Concepts
 
 ### Elastic Map Reduce (EMR)
 
 - [aws: EMR: Getting Started](https://aws.amazon.com/elasticmapreduce/getting-started/)
-
 
 #### [EMR Management Guide](https://docs.aws.amazon.com/ElasticMapReduce/latest/ManagementGuide/emr-gs.html)
 

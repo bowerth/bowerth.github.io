@@ -28,9 +28,16 @@ links to all HTML and PDF files for packages and guides contained in TeX Live
 install German support for Babel
 :   `sudo dnf install exlive-babel-german`
 
-### `.sty` and `.cls` files
+## `.sty` and `.cls` files
 
-can be added to `~/texmf/tex/latex/`
+- can be added to `~/texmf/tex/latex/`
+
+search for file
+:   `kpsewhich file.sty` or `kpsewhich file.cls`
+
+### Windows
+
+- `C:\Users\[username]\AppData\Roaming\MiKTeX\2.9`
 
 ### zip file from ctan.org
 

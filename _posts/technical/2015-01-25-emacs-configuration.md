@@ -6,12 +6,24 @@ tags     :
 ---
 {% include JB/setup %}
 
-## About
+## Install
 
 - [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
 
 install Fedora 22
 :   `$ sudo dnf install emacs emacs-ess`
+
+## Java
+
+### JDEE
+
+- [Java Development Environment for Emacs (JDEE)](http://emacswiki.org/emacs/JavaDevelopmentEnvironment)
+- [Installation](http://jdee.sourceforge.net/install.html#install-binary)
+- [JDEE user guide](http://jdee.sourceforge.net/jdedoc/html/jde-ug/jde-ug.html)
+
+### Malabar mode
+
+- [github: m0smith: malabar-mode](https://github.com/m0smith/malabar-mode)
 
 ## [Spacemacs](http://spacemacs.org/)
 
@@ -82,19 +94,29 @@ create bibtex references
 
 - [Spacemacs for the Scala developer](https://fedragon.github.io/spacemacs-as-scala-ide/)
 
-| Keybinding | Function                     |
-| ---------- | ---------------------------- |
-| `M-m g g`  | go to definition             |
-| `M-m i i`  | inspect type at point        |
-| `M-m r f`  | format code                  |
-| `M-m r i`  | organize imports             |
-| `M-m r r`  | rename a symbol project wide |
-| `M-m s b`  | send buffer to REPL          |
-| `M-m s r`  | send region of code to REPL  |
-| `M-m t r`  | run quick tests              |
+| Keybinding  | Function                     |
+| ----------- | ---------------------------- |
+| `M-m g g`   | go to definition             |
+| `M-m i i`   | inspect type at point        |
+| `M-m r f`   | format code                  |
+| `M-m r i`   | organize imports             |
+| `M-m r r`   | rename a symbol project wide |
+| `M-m s b`   | send buffer to REPL          |
+| `M-m s r`   | send region of code to REPL  |
+| `M-m t r`   | run quick tests              |
 
 - [Spacemacs clojure](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/clojure)
 - [Spacemacs go](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/go)
+
+`funcs.el`
+
+```
++;; https://github.com/bhauman/lein-figwheel/wiki/Running-figwheel-with-Emacs-Inferior-Clojure-Interaction-Mode
++(defun clojure/figwheel-repl ()
++  (interactive)
++  (run-clojure "lein figwheel"))
++;; (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode) 
+```
 
 #### [C/C++ layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/c-c%2B%2B)
 
@@ -226,7 +248,7 @@ use css stylesheet
 
 install
 :   `$ cd ~/.emacs.d/lisp`  
-	`$ git clone git@github.com:edavis/org-opml.git`
+  `$ git clone git@github.com:edavis/org-opml.git`
 
 modify `~/.emacs`
 :   `(add-to-list 'load-path "~/.emacs.d/lisp/org-opml")`  
@@ -324,15 +346,34 @@ type latex characters such as `⇒` using `\Rightarrow`
 
 - [github: yoshiki: yaml-mode](https://github.com/yoshiki/yaml-mode)
 
-### ENSIME
+## ENSIME
 
 - [ensime.github.io: emacs](http://ensime.github.io/editors/emacs/)
-- [github: ensime: ensime-emacs](https://github.com/ensime/ensime-emacs)
 - [troikatech.com: ENSIME and Emacs as a Scala IDE](http://www.troikatech.com/blog/2014/11/26/ensime-and-emacs-as-a-scala-ide)
 - [youtube: ENSIME debugger preview](https://youtu.be/v7-G6vD42z8)
 
+### ensime-emacs
+
+- [github: ensime: ensime-emacs](https://github.com/ensime/ensime-emacs)
+
+#### `ensime-startup`
+
+specifies `sbt.version`
+:   `(ensime-write-to-file buildpropsfile "sbt.version=0.13.11\n")`
+
+`ensime-update` in scala layer `error: eof expected but ';' found. scalaBinaryVersion := "2.11"`
+:   in `/.emacs.d/elpa/ensime-[version]/` remove `ensime-startup.elc` and enter empty line between
+`scalaVersion := \"_scala_version_\"` and `scalaBinaryVersion := \"_scala_binary_version_\"`
+
+### Windows
+
+run ENSIME under Windows
+:   [ensime/bin/server.bat](https://github.com/charlietanksley/dotfiles/blob/master/.emacs.d/packages/ensime/bin/server.bat)
+
 remove stored classpath snapshots after update of activator distribution (e.g. from 1.3.6 to 1.3.7)
 :   `$ ~/.emacs.d/ensime`
+
+### Usage
 
 - [Editing](http://ensime.github.io/editors/emacs/editing)
 - [Navigating](http://ensime.github.io/editors/emacs/navigating)
@@ -340,7 +381,7 @@ remove stored classpath snapshots after update of activator distribution (e.g. f
 cycle through code completion
 :   `M-/`
 
-check inferenced type
+check inferenced type (Ensime-Inspector)
 :   `C-c C-v i`  
     for symbols use `C-c C-v r`
 
@@ -349,6 +390,9 @@ move inside project
 
 launche `sbt` console
 :   `C-c C-v s`
+
+go to test file
+:   `C-c C-t t`
 
 run tests
 :   all tests `C-c C-b T`  
@@ -487,12 +531,6 @@ install js-comint
 :   `el-get-install js-comint`
 
 Source: [livecode nodejs apps on coderwall](https://coderwall.com/p/qvqhkg/livecode-node-js-apps)
-
-### Java Mode
-
-- [Java Development Environment for Emacs (JDEE)](http://emacswiki.org/emacs/JavaDevelopmentEnvironment)
-- [Installation](http://jdee.sourceforge.net/install.html#install-binary)
-- [JDEE user guide](http://jdee.sourceforge.net/jdedoc/html/jde-ug/jde-ug.html)
 
 ### Ruby REPL
 
@@ -751,6 +789,28 @@ edit Gmail message with Emacs (after installing Edit with Emacs and editing the 
 when done editing, export back to Gmail
 :   `C-x #`
 
+#### mu4e
+
+- [github.com: djcb: mu-releases](https://github.com/djcb/mu-releases)
+- [www.djcbsoftware.nl: Mu4e User Manual](http://www.djcbsoftware.nl/code/mu/mu4e/index.html)
+
+`config.el`
+
+```
+ (when mu4e-installation-path
+   (push mu4e-installation-path load-path))
++
++;; the exact path may differ -- check it
++(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/mu4e")
++
++(setq
++ mu4e-maildir  "~/Maildir" ;; top-level Maildir
++ mu4e-sent-folder  "/[Google Mail].Sent Mail"  ;; folder for sent messages
++ mu4e-drafts-folder  "/[Google Mail].Drafts" ;; unfinished messages
++ mu4e-trash-folder "/[Google Mail].Trash"  ;; trashed messages
++ mu4e-refile-folder  "/[Google Mail].Archive") ;; saved messages
+```
+
 #### Wanderlust
 
 - [wanderlust manual](http://www.gohome.org/wl/doc/wl_toc.html)
@@ -880,3 +940,13 @@ The GUD (Grand Unified Debugger) library provides an Emacs interface to a wide v
 ## MELPA
 
 - [How to use Emacs package manager](http://tuhdo.github.io/emacs-tutor3.html)
+
+## Resources
+
+### Books
+
+- [Mickey Petersen: Mastering Emacs - mastering the world's best text editor](https://www.masteringemacs.org/)
+
+### Links
+
+- [Endless Parentheses Concise ramblings on Emacs productivity.](http://endlessparentheses.com/)

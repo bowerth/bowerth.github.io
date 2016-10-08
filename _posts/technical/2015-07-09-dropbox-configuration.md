@@ -6,6 +6,22 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Command Line Interface
+
+- [dropboxwiki.com: Using the Official Dropbox Command Line Interface (CLI)](http://www.dropboxwiki.com/tips-and-tricks/using-the-official-dropbox-command-line-interface-cli)
+
+List excluded directories
+:   `dropbox.py exclude list`  
+	Example: `~/bin/dropbox.py exclude list`
+
+Add exclusion usage
+:   `dropbox.py exclude add DIRECTORY`  
+ 	Example: `~/bin/dropbox.py exclude add ~/Dropbox/MyExcludedFolder`
+
+Remove exclusion usage
+:   `dropbox.py exclude remove DIRECTORY`  
+	Example: `~/bin/dropbox.py exclude remove ~/Dropbox/MyReincludedFolder`
+
 ## exclude
 
 exclude specific directories

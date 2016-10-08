@@ -110,6 +110,12 @@ push repo to remote, e.g. github
     `git remote add origin git@github.com:bowerth/sdmxBrowser.git`  
     `git push -u origin master`
     
+undo push
+:   `git reset cc4b63b`  
+    `git stash`  
+    `git push -f origin alpha-0.3.0`  
+    `git stash pop`
+
 change remote URI
 :   `git remote set-url origin https://github.com/bowerth/stanApi.git`
 

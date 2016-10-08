@@ -6,6 +6,121 @@ tags     :
 ---
 {% include JB/setup %}
 
+## JSON
+
+### flattening
+
+- [xinhstechblog: Reading JSON Nested Array in Spark DataFrames](http://xinhstechblog.blogspot.it/2016/05/reading-json-nested-array-in-spark.html)
+
+## Connectivity
+
+### Flintrock
+
+A command-line tool for launching Apache Spark clusters
+
+- [github: nchammas: flintrock](https://github.com/nchammas/flintrock)
+
+### Livy
+
+An Open Source REST Service for Apache Spark
+
+- [livy.io](http://livy.io/)
+
+## Sparkling Water
+
+- use Spark 1.6; will be coming out for Spark 2.0
+- use spark-shell or sparkling-shell, start with `--class water.SparklingWaterDriver`
+
+```
+import org.apache.spark.h2o._
+val hc = H2OContext.getOrCreate(sc)
+```
+
+## Building Spark
+
+- [spark.apache.org: Building Spark](http://spark.apache.org/docs/latest/building-spark.html)
+
+### SBT
+
+launch included sbt and package
+:   `$ ./build/sbt`  (wait for sbt to load)
+    `> package`  
+    Note: Maven profiles and variables can be set to control the SBT build, e.g. `./build/sbt -Pyarn -Phadoop-2.3 package`
+
+### Maven
+
+configure Maven
+:   `export MAVEN_OPTS="-Xmx2g -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=512m"`  
+    Note: For Java 8 and above this step is not required. If using build/mvn with no MAVEN_OPTS set, the script will automate this for you
+
+make runnable distribution
+:   `./dev/make-distribution.sh` in the project root directory
+
+## Cluster
+
+### EMR and EC2 for Spark and Zeppelin
+
+- [Amazon EMR Developer Guide: Apache Spark](http://docs.aws.amazon.com/ElasticMapReduce/latest/ReleaseGuide/emr-spark.html)
+- outdated: [github: amplab: spark-ec2](https://github.com/amplab/spark-ec2)
+
+- [Amazon EMR Release Guide: Create a Cluster With Spark](http://docs.aws.amazon.com/ElasticMapReduce/latest/ReleaseGuide/emr-spark-launch.html)
+
+#### Configuration
+
+- [Create Cluster - Quick Options](https://eu-central-1.console.aws.amazon.com/elasticmapreduce/home?region=eu-central-1#quick-create:)
+
+##### General Configuration
+
+Cluster name
+:   `spark-cluster-1`
+
+Launch mode
+:   `Cluster`
+
+##### Software configuration
+
+Vendor
+:   `Amazon`
+
+Log URI
+:   `s3://aws-logs-058644585154-eu-central-1/elasticmapreduce/`
+
+Release
+:   `emr-5.0.0`
+
+Applications
+:   `Spark: Spark 2.0.0 on Hadoop 2.7.2 YARN with Ganglia 3.7.2 and Zeppelin 0.6.1`
+
+##### Hardware configuration
+
+Instance type
+:   `m3.xlarge`
+
+Number of instances
+:   `3` (1 master and 2 core nodes)
+
+##### Security and access
+
+EC2 key pair
+:   `ec2-eu-central-1`
+
+Permissions
+:   `Default`
+
+EMR role
+:   `EMR_DefaultRole`
+
+EC2 instance profile
+:   `EMR_EC2_DefaultRole`
+
+#### Cluster Information
+
+Subnet ID
+:   `subnet-eb9e5783`
+
+After successful start, log in to cluster
+:   `ssh -i [path-to-keypair-file]/ec2-eu-central-1.pem hadoop@ec2-52-59-141-166.eu-central-1.compute.amazonaws.com`
+
 ## Database Technology
 
 ### Kafka
@@ -15,6 +130,20 @@ tags     :
 ### Cassandra
 
 - [cassandra.apache.org](http://cassandra.apache.org)
+
+### Amazon S3
+
+- [databricks.gitbooks.io: Section 2: Importing Data](https://databricks.gitbooks.io/databricks-spark-reference-applications/content/logs_analyzer/chapter2/index.html)
+
+- [databricks.gitbooks.io: Section 3: Exporting Data](https://databricks.gitbooks.io/databricks-spark-reference-applications/content/logs_analyzer/chapter3/index.html)
+
+![databricks-s3-load-comext-comtrade.png](/assets/images/screenshots/databricks-s3-load-comext-comtrade.png)
+
+### Amazon Redshift
+
+- [github: databricks: spark-redshift](https://github.com/databricks/spark-redshift)
+- [github: databricks: spark-redshift: tutorial](https://github.com/databricks/spark-redshift/tree/master/tutorial)
+- [databricks.com: Introducing Redshift Data Source for Spark](https://databricks.com/blog/2015/10/19/introducing-redshift-data-source-for-spark.html)
 
 ## Search Technology
 
@@ -458,7 +587,8 @@ val pairs = lines.map(x => (x.split(" ")(0), x))
 ### Apache
 
 - [github: apache: Spark SQL](https://github.com/apache/spark/tree/master/sql)
-
+- [spark.apache.org: Spark SQL, DataFrames and Datasets Guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+- 
 ## Java 8
 
 - [databricks: spark-with-java-8](https://databricks.com/blog/2014/04/14/spark-with-java-8.html)
@@ -560,7 +690,16 @@ Spark R Meetup
 
 ## Hadoop Installation
 
+- download from [apache.org: hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/common/)
+
 `NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
+
+```
+[xps13@xps13 sparkDemo]$ hadoop
+bash: hadoop: command not found...
+Install package 'hadoop-common' to provide command 'hadoop'? [N/y] y
+...
+```
 
 ## Documentation
 
@@ -568,12 +707,19 @@ Spark R Meetup
 
 ## Tutorials
 
+### Local
+
 - [dattamsha.com: Apache Spark cluster on a single machine](http://www.dattamsha.com/2014/12/apache-spark-cluster-on-a-single-machine)
+
+### Amazon AWS
+
+
 
 ## Links
 
 - [cloudera: Why Apache Spark is a Crossover Hit for Data Scientists](http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists)
 - [databricks.com: ML Pipelines: A New High-Level API for MLlib](https://databricks.com/blog/2015/01/07/ml-pipelines-a-new-high-level-api-for-mllib.html)
+- [gitbook.com: Databricks Spark Reference Applications](https://www.gitbook.com/book/databricks/databricks-spark-reference-applications/details)
 
 ## edX
 

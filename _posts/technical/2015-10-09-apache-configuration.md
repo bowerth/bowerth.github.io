@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Committing
+
+- [Guide for new committers](http://www.apache.org/dev/new-committers-guide)
+
 ## Apache httpd2
 
 ### Configure

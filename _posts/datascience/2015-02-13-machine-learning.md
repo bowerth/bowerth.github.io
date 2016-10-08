@@ -6,9 +6,13 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
-# R libraries
+## Tools
 
-## caret
+- [H2O](http://h2o.ai)
+
+## R libraries
+
+### caret
 
 - [github: topepo: caret](https://github.com/topepo/caret)
 - [caret documentation](http://topepo.github.io/caret/index.html)

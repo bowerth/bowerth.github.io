@@ -10,6 +10,11 @@ tags     :
 
 ## Add-ons
 
+### Poster
+
+open window
+:   `Ctrl + Alt + P`
+
 ### EPUB Reader
 
 Keyboard shortcuts

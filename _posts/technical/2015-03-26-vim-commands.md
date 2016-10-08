@@ -22,6 +22,9 @@ left
 right
 :   `l`
 
+page-up, down
+:   ``
+
 ### Edit
 
 start edit mode
