@@ -39,3 +39,4 @@ update nightly apps
 
 run app
 :   `$ flatpak run org.gnome.gedit`
+
