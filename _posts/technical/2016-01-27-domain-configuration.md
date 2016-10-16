@@ -27,3 +27,5 @@ create `CNAME` file in user page repository root directory (`master` branch of `
 create `CNAME` file in project page repository root directory (`gh-pages` branch of `dki` repo)
 :   `$ touch CNAME`  
     `$ echo "dki.rdata.work" > CNAME`
+
+different from shown in the screenshot, *do not* set an A record for a subdomain - instead select `CNAME` and point to `bowerth.github.io`
