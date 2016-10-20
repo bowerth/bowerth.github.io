@@ -277,6 +277,10 @@ $SPARK_HOME/bin/spark-submit \
 target/scala-2.10/simple-project_2.10-1.0.jar
 ```
 
+## Databricks
+
+- Databricks documentation [docs.databricks.com](http://docs.databricks.com/spark/latest/)
+
 ## Learning Spark: Lightning-Fast Big Data Analysis
 	
 - [github: databricks: learning-spark](https://github.com/databricks/learning-spark)
