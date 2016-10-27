@@ -794,21 +794,84 @@ when done editing, export back to Gmail
 - [github.com: djcb: mu-releases](https://github.com/djcb/mu-releases)
 - [www.djcbsoftware.nl: Mu4e User Manual](http://www.djcbsoftware.nl/code/mu/mu4e/index.html)
 
+start mu4e
+:   `M-m a M`
+
+synchronize emails and index mu4e
+:   `U`
+
+go to inbox
+:   `j INBOX`
+
+reply message
+:   `R`
+
+delete message
+:   `D x y`
+
+close header view
+:   `q` or `z`
+
 `config.el`
 
 ```
- (when mu4e-installation-path
-   (push mu4e-installation-path load-path))
-+
-+;; the exact path may differ -- check it
-+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/mu4e")
-+
-+(setq
-+ mu4e-maildir  "~/Maildir" ;; top-level Maildir
-+ mu4e-sent-folder  "/[Google Mail].Sent Mail"  ;; folder for sent messages
-+ mu4e-drafts-folder  "/[Google Mail].Drafts" ;; unfinished messages
-+ mu4e-trash-folder "/[Google Mail].Trash"  ;; trashed messages
-+ mu4e-refile-folder  "/[Google Mail].Archive") ;; saved messages
+(setq mu4e-headers-skip-duplicates t)
+
+(setq mu4e-get-mail-command "offlineimap")
+
+(setq mu4e-maildir "~/Maildir")
+
+(setq mu4e-drafts-folder
+      (lambda (msg)
+        ;; the 'and msg' is to handle the case where msg is nil
+        (if (and msg
+                 (mu4e-message-contact-field-matches msg :from "bo.werth@gmail.com"))
+            "/Personal/[Google Mail].Drafts"
+          "/Personal/[Google Mail].Drafts")))
+
+(setq mu4e-sent-folder
+      (lambda (msg)
+        ;; the 'and msg' is to handle the case where msg is nil
+        (if (and msg
+                 (mu4e-message-contact-field-matches msg :from "bo.werth@gmail.com"))
+            "/Personal/[Google Mail].Sent Mail"
+          "/Personal/[Google Mail].Sent Mail")))
+
+
+(setq mu4e-trash-folder
+      (lambda (msg)
+        ;; the 'and msg' is to handle the case where msg is nil
+        (if (and msg
+                 (mu4e-message-contact-field-matches msg :to "bo.werth@gmail.com"))
+            "/Personal/[Google Mail].Trash"
+          "/Personal/[Google Mail].Trash")))
+```
+
+`.offlineimaprc`
+
+```
+[general]
+accounts = Gmail
+maxsyncaccounts = 3
+
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Maildir/Personal
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = bo.werth@gmail.com
+remotepass = ********
+ssl = yes
+maxconnections = 1
+realdelete = no
+sslcacertfile = /etc/ssl/certs/ca-bundle.crt
+folderfilter = lambda folder: folder in ['INBOX', 'INBOX/Starred', '[Google Mail]/Sent Mail']
 ```
 
 #### Wanderlust
