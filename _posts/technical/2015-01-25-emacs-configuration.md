@@ -1,4 +1,4 @@
----
+e---
 layout   : post
 category : technical
 tagline  : 
@@ -12,6 +12,26 @@ tags     :
 
 install Fedora 22
 :   `$ sudo dnf install emacs emacs-ess`
+
+## Keyboard Macros
+
+`F3`
+:   Start defining a keyboard macro (kmacro-start-macro-or-insert-counter). 
+
+`F4`
+:   If a keyboard macro is being defined, end the definition; otherwise, execute the most recent keyboard macro (kmacro-end-or-call-macro). 
+
+`C-x C-k n`
+:   Give a command name (for the duration of the Emacs session) to the most recently defined keyboard macro (kmacro-name-last-macro). 
+
+`C-x C-k b`
+:   Bind the most recently defined keyboard macro to a key sequence (for the duration of the session) (kmacro-bind-to-key). 
+
+M-x insert-kbd-macro
+:   Insert in the buffer a keyboard macro’s definition, as Lisp code. 
+
+add keybinding
+:   `(global-set-key (kbd "C-x C-\\") 'next-line)`
 
 ## Java
 
@@ -845,6 +865,10 @@ close header view
                  (mu4e-message-contact-field-matches msg :to "bo.werth@gmail.com"))
             "/Personal/[Google Mail].Trash"
           "/Personal/[Google Mail].Trash")))
+
+(setq mu4e-maildir-shortcuts
+    '( ("/Personal/INBOX"                     . ?i)
+       ("/Personal/[Google Mail].Sent Mail"   . ?s)))
 ```
 
 `.offlineimaprc`

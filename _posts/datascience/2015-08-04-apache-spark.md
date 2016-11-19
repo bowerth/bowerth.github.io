@@ -6,36 +6,6 @@ tags     :
 ---
 {% include JB/setup %}
 
-## JSON
-
-### flattening
-
-- [xinhstechblog: Reading JSON Nested Array in Spark DataFrames](http://xinhstechblog.blogspot.it/2016/05/reading-json-nested-array-in-spark.html)
-
-## Connectivity
-
-### Flintrock
-
-A command-line tool for launching Apache Spark clusters
-
-- [github: nchammas: flintrock](https://github.com/nchammas/flintrock)
-
-### Livy
-
-An Open Source REST Service for Apache Spark
-
-- [livy.io](http://livy.io/)
-
-## Sparkling Water
-
-- use Spark 1.6; will be coming out for Spark 2.0
-- use spark-shell or sparkling-shell, start with `--class water.SparklingWaterDriver`
-
-```
-import org.apache.spark.h2o._
-val hc = H2OContext.getOrCreate(sc)
-```
-
 ## Building Spark
 
 - [spark.apache.org: Building Spark](http://spark.apache.org/docs/latest/building-spark.html)
@@ -56,9 +26,19 @@ configure Maven
 make runnable distribution
 :   `./dev/make-distribution.sh` in the project root directory
 
-## Cluster
 
-### EMR and EC2 for Spark and Zeppelin
+
+## Deploy Environments
+
+### Apache Mesos
+
+- [Running Spark on Mesos](https://spark.apache.org/docs/2.0.0-preview/running-on-mesos.html)
+
+### Hadoop NextGen (YARN)
+
+- [Running Spark on YARN](https://spark.apache.org/docs/2.0.0-preview/running-on-yarn.html)
+
+### Amazon AWS EMR and EC2 for Spark and Zeppelin
 
 - [Amazon EMR Developer Guide: Apache Spark](http://docs.aws.amazon.com/ElasticMapReduce/latest/ReleaseGuide/emr-spark.html)
 - outdated: [github: amplab: spark-ec2](https://github.com/amplab/spark-ec2)
@@ -121,7 +101,14 @@ Subnet ID
 After successful start, log in to cluster
 :   `ssh -i [path-to-keypair-file]/ec2-eu-central-1.pem hadoop@ec2-52-59-141-166.eu-central-1.compute.amazonaws.com`
 
-## Database Technology
+
+## Data Sources
+
+### JSON
+
+#### flattening
+
+- [xinhstechblog: Reading JSON Nested Array in Spark DataFrames](http://xinhstechblog.blogspot.it/2016/05/reading-json-nested-array-in-spark.html)
 
 ### Kafka
 
@@ -145,7 +132,30 @@ After successful start, log in to cluster
 - [github: databricks: spark-redshift: tutorial](https://github.com/databricks/spark-redshift/tree/master/tutorial)
 - [databricks.com: Introducing Redshift Data Source for Spark](https://databricks.com/blog/2015/10/19/introducing-redshift-data-source-for-spark.html)
 
-## Search Technology
+
+## Applications
+
+### Flintrock
+
+A command-line tool for launching Apache Spark clusters
+
+- [github: nchammas: flintrock](https://github.com/nchammas/flintrock)
+
+### Livy
+
+An Open Source REST Service for Apache Spark
+
+- [livy.io](http://livy.io/)
+
+### Sparkling Water
+
+- use Spark 1.6; will be coming out for Spark 2.0
+- use spark-shell or sparkling-shell, start with `--class water.SparklingWaterDriver`
+
+```
+import org.apache.spark.h2o._
+val hc = H2OContext.getOrCreate(sc)
+```
 
 ### Elasticsearch
 
@@ -155,24 +165,22 @@ Apache Lucene is a high performance, full-featured Information Retrieval library
 
 - [Apache Lucene](https://lucene.apache.org)
 
-## SparkR
+
+## APIs
+
+### SparkR
 
 R interface to Apache Spark
 
 - [Hossein Falaki: Unifying Data Sources and Data Processing with Apache Spark](https://vimeo.com/143883002)
 
-### Examples
+#### Examples
 
 - [spark.apache.org: SparkR (R on Spark)](https://spark.apache.org/docs/1.5.2/sparkr.html)
 - [rpubs.com: tcosta: SparkR 1.5 MLlib Logistic Regression Example](https://rpubs.com/tcosta/sparkr-glm)
 - [zeppelinhub: SparkR, MLlib and SparkSQL for predictions over the NYC flight data](https://www.zeppelinhub.com/viewer/notebooks/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2ZlbGl4Y2hldW5nL3NwYXJrLW5vdGVib29rLWV4YW1wbGVzL21hc3Rlci9aZXBwZWxpbl9ub3RlYm9vay8yQVo5NTg0R0Uvbm90ZS5qc29u)
 
-## IBM
-
-- [spark.tc](http://www.spark.tc)
-- [BigInsights](http://www-03.ibm.com/software/products/en/infosphere-biginsights-standard-ed)
-
-### Many data scientists love R
+#### Many data scientists love R
 
 - Open source 
 - highly dynamic
@@ -182,17 +190,17 @@ R interface to Apache Spark
 - data frames make data manipulation convenient
 - taught by many schools to stats and computing students
 
-### Performance Limitations of R
+#### Performance Limitations of R
 
 - R language: R's dynamic design imposes restriction on optimization
 - R runtime: single threaded, everything has to fit in memory
 
-### What is SparkR?
+#### What is SparkR?
 
 - convenient interoperability betwen R and Spark DataFrames
 - Spark: distributed robust processing
 
-### SQL Context
+#### SQL Context
 
 interface to Spark functionality in R
 - sparkR DataFrames are implemented on top of SparkSQL tables
@@ -205,7 +213,7 @@ sqlContext <- sparkRSQL.init(sc)
 
 - from now on, no "Spark Context (sc)" needed any more
 
-### IO
+#### IO
 
 Reading and writing to storage (JVM <> Storage)
 
@@ -221,7 +229,7 @@ moving data betweeen R and JVM
 - `collect()`: transports data
 - `createDataFrame()`: ships to all the drivers, ending up with distributed object
 
-### Caching
+#### Caching
 
 - `persist(sparkDF, storageLevel)`
 - `cache(sparkDF)` equivalent to `persist(sparkDF, "MEMORY_ONLY")`
@@ -229,7 +237,7 @@ moving data betweeen R and JVM
 
 subsequent actions will be executed on the representation of data in memory
 
-### DataFrame API
+#### DataFrame API
 
 similar behaviour of SparkR DataFrames and R data.frames
 
@@ -240,6 +248,15 @@ similar behaviour of SparkR DataFrames and R data.frames
 - names(subsetDF) <- c("Date", "Type")
 - dim(recentData)
 - head(collect(count(group_by(subsetDF, "Date"))))
+
+
+## Community
+
+### IBM
+
+- [spark.tc](http://www.spark.tc)
+- [BigInsights](http://www-03.ibm.com/software/products/en/infosphere-biginsights-standard-ed)
+
 
 ## Configuration
 
@@ -261,7 +278,16 @@ examples
 :   Contains some helpful Spark standalone jobs that you can look at and run to learn about the Spark API.
 
 
-## [quick-start](http://spark.apache.org/docs/latest/quick-start.html)
+## Databricks
+
+- Databricks documentation [docs.databricks.com](http://docs.databricks.com/spark/latest/)
+
+## Learning Resources
+
+### Quick Start
+
+- [Mastering Apache Spark 2.0](https://www.gitbook.com/book/jaceklaskowski/mastering-apache-spark/details)
+- [quick-start](http://spark.apache.org/docs/latest/quick-start.html)
 
 navigate to folder
 :   `$ cd /home/xps13/Dropbox/Programming/Scala/Spark/quick-start`
@@ -277,9 +303,6 @@ $SPARK_HOME/bin/spark-submit \
 target/scala-2.10/simple-project_2.10-1.0.jar
 ```
 
-## Databricks
-
-- Databricks documentation [docs.databricks.com](http://docs.databricks.com/spark/latest/)
 
 ## Learning Spark: Lightning-Fast Big Data Analysis
 	

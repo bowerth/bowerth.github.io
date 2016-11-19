@@ -202,6 +202,12 @@ fetch remote branch
 remove branch after changing to other branch
 :   `git branch -d [branch]`
 
+integrate pulled changes
+:   `git rebase`
+
+update local remote-tracking branches
+:   `git remote prune origin`
+
 ## Merging
 
 open files with merge conflict in sublime
