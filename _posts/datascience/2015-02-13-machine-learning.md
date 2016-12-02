@@ -9,6 +9,7 @@ tags     : [R, python]
 ## Tools
 
 - [H2O](http://h2o.ai)
+- [h2o GBM Booklet (pdf)](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf)
 
 ## R libraries
 
