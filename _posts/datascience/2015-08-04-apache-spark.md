@@ -104,6 +104,20 @@ After successful start, log in to cluster
 
 ## Data Sources
 
+- [Apache Avro](https://avro.apache.org/)  is a data serialization system
+
+### Apache Hive
+
+- [Apache Hive](https://hive.apache.org/)
+
+The Apache Hive data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided to connect users to Hive.
+
+### Apache HBase
+
+- [Apache HBase](http://hbase.apache.org/)
+
+Use Apache HBase™ when you need random, realtime read/write access to your Big Data. This project's goal is the hosting of very large tables -- billions of rows X millions of columns -- atop clusters of commodity hardware. Apache HBase is an open-source, distributed, versioned, non-relational database modeled after Google's Bigtable: A Distributed Storage System for Structured Data by Chang et al. Just as Bigtable leverages the distributed data storage provided by the Google File System, Apache HBase provides Bigtable-like capabilities on top of Hadoop and HDFS. 
+
 ### JSON
 
 #### flattening
@@ -118,6 +132,8 @@ After successful start, log in to cluster
 
 - [cassandra.apache.org](http://cassandra.apache.org)
 
+The Apache Cassandra database is the right choice when you need scalability and high availability without compromising performance. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure make it the perfect platform for mission-critical data.Cassandra's support for replicating across multiple datacenters is best-in-class, providing lower latency for your users and the peace of mind of knowing that you can survive regional outages. 
+
 ### Amazon S3
 
 - [databricks.gitbooks.io: Section 2: Importing Data](https://databricks.gitbooks.io/databricks-spark-reference-applications/content/logs_analyzer/chapter2/index.html)
@@ -131,6 +147,12 @@ After successful start, log in to cluster
 - [github: databricks: spark-redshift](https://github.com/databricks/spark-redshift)
 - [github: databricks: spark-redshift: tutorial](https://github.com/databricks/spark-redshift/tree/master/tutorial)
 - [databricks.com: Introducing Redshift Data Source for Spark](https://databricks.com/blog/2015/10/19/introducing-redshift-data-source-for-spark.html)
+
+### Tachyon
+
+Tachyon is a memory-centric distributed storage system enabling reliable data sharing at memory-speed across cluster frameworks. 
+
+- [tachyon-project.org: Running Spark on Tachyon](http://tachyon-project.org/Running-Spark-on-Tachyon.html)
 
 
 ## Applications
@@ -482,7 +504,7 @@ getRDD.collect()
 // Array[String] = Array(66.249.69.97 - - [24/Sep/2014:22:25:44 +0000] "GET /071300/242153 HTTP/1.1" 404 514 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", 71.19.157.174 - - [24/Sep/2014:22:26:12 +0000] "GET /error HTTP/1.1" 404 505 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22:26:12 +0000] "GET /favicon.ico HTTP/1.1" 200 1713 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22:26:37 +0000] "GET / HTTP/1.1" 200 18785 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22...
 ```
 
-> Although transformations are lazy, you can force Spark to execute them at any time by running an action, such as count() . This is an easy way to test out just part of your program.
+> Although transformations are lazy, you can force Spark to execute them at any time by running an action, such as count(). This is an easy way to test out just part of your program.
 
 #### Example 3-21. Scala function passing
 
@@ -501,6 +523,10 @@ class SearchFunctions(val query: String) {
   }
 }
 // defined class SearchFunctions
+// val test1 = new SearchFunctions("a test").isMatch("a test")
+// val lines = sc.parallelize(List("pandas", "i like pandas"))
+// val test2 = new SearchFunctions("pandas").getMatchesNoReference(lines)
+// test2.collect()
 ```
 
 #### Example 3-27. Scala squaring the values in an RDD
@@ -585,12 +611,6 @@ println(result.collect().mkString(","))
 
 - `unpersist()` manually remove RDD from the cache
 
-#### Tachyon
-
-Tachyon is a memory-centric distributed storage system enabling reliable data sharing at memory-speed across cluster frameworks. 
-
-- [tachyon-project.org: Running Spark on Tachyon](http://tachyon-project.org/Running-Spark-on-Tachyon.html)
-
 ### Key/value RDDs
 
 #### Example 4-2. Creating a pair RDD using the first word as the key in Scala
@@ -600,6 +620,7 @@ val lines = sc.textFile("README.md")
 val pairs = lines.map(x => (x.split(" ")(0), x))
 // val rdd = sc.parallelize(List((1, 2), (3, 4), (5, 6)))
 ```
+
 
 ## Spark Packages
 

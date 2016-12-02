@@ -20,6 +20,16 @@ tags     : [R, python]
 - [github APM exercises](https://github.com/topepo/APM_Exercises)
 - [webinar on caret](https://www.youtube.com/watch?v=7Jbb2ItbTC4)
 
+## Links
+
+- [KDNuggets: The 10 Algorithms Machine Learning Engineers Need to Know](http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html/)
+- [Machine Learning: An In-Depth, Non-Technical Guide](http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide/?utm_source=kdnuggets&utm_medium=post&utm_content=originallink&utm_campaign=guest)
+- [Deep Learning Book](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville
+
+## Papers
+
+- [Hal R. Varian, Big Data: New Tricks for Econometrics (April 14, 2014)](http://people.ischool.berkeley.edu/~hal/Papers/2013/ml.pdf)
+
 ##  Machine Learning for Hackers
 
 Machine Learning for Hackers by Drew Conway and John Myles White (O'Reilly). Copyright 2012 Drew Conway and John Myles White, 978-1-449-30371-6.

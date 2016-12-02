@@ -1,6 +1,11 @@
 _site/*
 _theme_packages/*
 _drafts/*
+_posts/interest/*
+_posts/personal/*
+_posts/professional/*
+_posts/travel/*
+_posts/vehicle/*
 
 Thumbs.db
 .DS_Store
@@ -10,5 +15,8 @@ Gemfile.lock
 
 .rbenv-version
 .rvmrc
+.jekyll-metadata
+jekyll-serve.sh
 
 *.*~
+

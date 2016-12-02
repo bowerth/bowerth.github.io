@@ -2,6 +2,7 @@
 source "https://rubygems.org"
 # gem 'github-pages'
 gem "github-pages", github: "github/pages-gem", branch: "jekyll-3" # jekyll 3 version
+# gem "github-pages", github: "github/pages-gem", branch: "master" # jekyll 3 version
 # gem "pygments.rb"
 
 # Jekyll 3
@@ -10,6 +11,7 @@ gem "github-pages", github: "github/pages-gem", branch: "jekyll-3" # jekyll 3 ve
 # # gemspec :name => "jekyll"
 
 gem "wdm"
+# gem "org-ruby"
 
 # # gem 'github-pages'
 # # gem 'classifier-reborn'
