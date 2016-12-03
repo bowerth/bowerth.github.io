@@ -1,3 +1,3 @@
 [submodule "gh"]
 	path = gh
-	url = git@github.com:bowerth/tile-github
+	url = https://github.com/bowerth/tile-github.git
