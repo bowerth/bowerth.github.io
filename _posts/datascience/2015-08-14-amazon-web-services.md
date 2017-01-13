@@ -6,6 +6,61 @@ tags     : [EMR, Hadoop]
 ---
 {% include JB/setup %}
 
+## Docker
+
+- [docs.aws.amazon.com: Docker Basics](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+
+### Rocker Rstudio: Initial Setup and Connect
+
+- [Using-the-RStudio-image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
+
+- launch new instance using existing keypair
+- navigate to folder containing keypair: `$ cd ~/Dropbox/Logins/Amazon/EC2`
+- connect to instance using `$ ssh -i "ami-ca46b6a5-rstudio.pem" ubuntu@ec2-35-156-206-85.eu-central-1.compute.amazonaws.com`
+- install docker `$ curl -sSL https://get.docker.com/ | sudo sh`
+- add TCP port 8787 using 'Security groups', 'launch-wizard-2'
+
+edit `Inbound`
+:   Type: `Custom TCP Rule`  
+    Protocol: `TCP`  
+    Port Range: `8787  
+    Source: `anywhere` -> `0.0.0.0/0`
+
+- navigate to URL http://<Public IP>:8787/auth-sign-in
+- 2017-01-12: `35.157.52.11`
+- 2017-01-13: `35.157.51.205`
+- user: `rstudio`, password: `rstudio`
+
+log in to docker container
+
+- get container id: `sudo docker ps`
+- `sudo docker exec -it <container-id> bash`
+
+install missing packages
+
+```
+cd /tmp
+wget https://dl.dropboxusercontent.com/u/1807228/install-packages.R?dl=1 -O install-packages.R
+R CMD BATCH install-packages.R
+```
+
+download `bootcamp.zip` to `/tmp` folder
+
+```
+cd /tmp &&\
+wget https://dl.dropboxusercontent.com/u/1807228/bootcamp.zip?dl=1 -O bootcamp.zip && \
+unzip bootcamp.zip -d ../home/rstudio/ && \
+chown -R rstudio: /home/rstudio
+```
+
+create user accounts, unzip course material to /home/$USER folders and allow users writing to location `bash createusers.sh`, e.g. `chown -R training01:training01 /home/training01`
+
+```
+cd /tmp && \
+wget https://dl.dropboxusercontent.com/u/1807228/createuser.sh -O createuser.sh && \
+bash createuser.sh
+```
+
 ## Management Console
 
 - [AWS Management Console (Europe)](https://console.aws.amazon.com/s3/home?region=eu-central-1)
