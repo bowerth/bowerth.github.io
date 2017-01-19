@@ -14,25 +14,23 @@ tags     : [EMR, Hadoop]
 
 - [Using-the-RStudio-image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
 
+#### Server
+
 - launch new instance using existing keypair
+- add TCP port `8787` using 'Security groups', 'launch-wizard-[x]'
+    + edit `Inbound`
+    :   Type: `Custom TCP Rule`  
+        Protocol: `TCP`  
+        Port Range: `8787  
+        Source: `anywhere` -> `0.0.0.0/0`
+- go to 'Elastic IP', associate IP `35.157.60.165` with new cloud instance
+
+#### Client Terminal
+
 - navigate to folder containing keypair: `$ cd ~/Dropbox/Logins/Amazon/EC2`
 - connect to instance using `$ ssh -i "ami-ca46b6a5-rstudio.pem" ubuntu@ec2-35-156-206-85.eu-central-1.compute.amazonaws.com`
 - install docker `$ curl -sSL https://get.docker.com/ | sudo sh`
-- add TCP port 8787 using 'Security groups', 'launch-wizard-2'
-
-edit `Inbound`
-:   Type: `Custom TCP Rule`  
-    Protocol: `TCP`  
-    Port Range: `8787  
-    Source: `anywhere` -> `0.0.0.0/0`
-
-- navigate to URL http://<Public IP>:8787/auth-sign-in
-- 2017-01-12: `35.157.52.11`
-- 2017-01-13: `35.157.51.205`
-- user: `rstudio`, password: `rstudio`
-
-log in to docker container
-
+- install docker image `$ sudo docker run -d -p 8787:8787 rocker/hadleyverse`
 - get container id: `sudo docker ps`
 - `sudo docker exec -it <container-id> bash`
 
@@ -53,13 +51,19 @@ unzip bootcamp.zip -d ../home/rstudio/ && \
 chown -R rstudio: /home/rstudio
 ```
 
-create user accounts, unzip course material to /home/$USER folders and allow users writing to location `bash createusers.sh`, e.g. `chown -R training01:training01 /home/training01`
+create user accounts, unzip course material to /home/$USER folders and allow users writing to location `bash createuser.sh`, e.g. `chown -R training01:training01 /home/training01`
 
 ```
 cd /tmp && \
 wget https://dl.dropboxusercontent.com/u/1807228/createuser.sh -O createuser.sh && \
 bash createuser.sh
 ```
+
+#### Client Browser
+
+- navigate to URL http://<Public IP>:8787/auth-sign-in
+- main user: `rstudio`, password: `rstudio`
+- training user: `training01`, password: `train01`
 
 ## Management Console
 
