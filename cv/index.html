@@ -1,248 +1,498 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
-  <meta charset=utf-8 />
-  <title> Bo Werth's CV</title>
-  <link href="media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/cv-print.css" type="text/css" rel="stylesheet" media="print">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bo Werth's CV</title>
+  <meta name="author" content="" />
+  <meta name="description" content="'s CV" />
+  <link rel="shortcut icon" href="/favicon.png">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/cv.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="all" />
 
-  <!-- imports -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Passion+One:400,700:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 </head>
+
 <body>
-  <div id="main">
-    <div id="content">
-    <h1 id="bo-werth">Bo Werth</h1>
-<p>Economist, East Asia; Statistical Programmer</p>
-
-<div id="webaddress">
-<a href="mailto:bo.werth@gmail.com">bo.werth@gmail.com</a>
-|
-<i class="fa fa-github"></i> <a href="http://github.com/bowerth">bowerth</a>
-<!-- |
-<i class="fa fa-twitter"></i> <a href="http://twitter.com/benjaminlmoore">benjaminlmoore</a> -->
-|
-27 October 1985
-|
-<a href="http://bowerth.github.io/assets/images/photographs/portrait_application.jpg">photo</a>
-</div>
-
-<h2 id="education">Education</h2>
-
-<p><code class="highlighter-rouge">2015-16</code>
-<strong><a href="https://www.coursera.org">Coursera</a></strong></p>
-
-<p>Functional Programming Principles in Scala, École Polytechnique Fédérale de Lausanne, enhanced by Odersky, et. al. (2008) Programming in Scala</p>
-
-<p><code class="highlighter-rouge">2012-13</code>
-<strong><a href="https://www.coursera.org">Coursera</a></strong></p>
-
-<p>Introduction to Systematic Program Design, University of British Columbia; Introduction to Data Science, University of Washington; Data Analysis, Johns Hopkins University; Computing for Data Analysis, Johns Hopkins University;</p>
-
-<p><code class="highlighter-rouge">2009</code>
-<strong><a href="http://www.uni-tuebingen.de">Eberhard Karls University Tuebingen</a></strong> (DE)</p>
-
-<p>International Economics, East Asia (1.7 Diploma, MA honours equivalent)</p>
-
-<!-- 
-- Corporate Finance
-- Options and Futures
-- Continuous Time Finance
-- Diploma Thesis on Swing-Options
-- Economic Theory
-- Task Content of International Trade
-- Japan's  Innovation Processes
-- Computer Science: C++, JAVA
-- Chinese Studies
-- Mandarin Chinese
-- Productivity and Capitalism
-- Environmental Challenges
- -->
-
-<p>Visiting researcher at the Faculty of Economics and Agrobusiness / University of São Paulo / Brazil; Language, Culture and German Manufacturing Industry Programme / Chung Hsing National University / Taiwan</p>
-
-<p><code class="highlighter-rouge">2005</code>
-<strong>Albert Einstein Gymnasium, Boeblingen</strong></p>
-
-<p>University Admission Degree (Abitur); Physics, Mathematics, History, Latin (1.7, GCE equivalent ‘A’)</p>
-
-<p><code class="highlighter-rouge">2002</code>
-<strong>Gottlieb Daimler Gymnasium, Sindelfingen</strong></p>
-
-<p>Engineering, Computing Technology and Industrial Design</p>
-
-<h2 id="work-experience">Work Experience</h2>
-<p><code class="highlighter-rouge">May 2016</code>
-<strong>Food and Agriculture Organization of the United Nations</strong> (IT)</p>
-
-<p>IT Architect and Team Leader, Economic and Social Statistics Directorate. Move prototype R scripts for estimation of Food Balance Sheets to production stage. The FBS are an essential building block in estimating the prevelance of undernourishment.</p>
-
-<p>Migrate information from PostgreSQL data warehouse to Amazon S3 storage; use Databricks Community Edition to transform 40GB text files to parquet format on US-West-2 Amazon server; start re-implementing business logic from R in Scala, Spark and Spark SQL.</p>
-
-<p><code class="highlighter-rouge">April 2016</code>
-<strong>Foodora Paris</strong> (FR)</p>
-
-<p>Foodora is a German start-up company for food delivery. Operational and communication tasks supported by latest ICT including <a href="https://shyftplan.com/">shyftplan</a> and <a href="https://slack.com/">slack</a>.</p>
-
-<p><code class="highlighter-rouge">Q1 2016</code>
-<strong>Freelance Development: Scala</strong> (FR)</p>
-
-<p>Create use Scala Play framework for SDMX browser on heroku: <a href="http://sdmx.rdata.work/">sdmx.rdata.work</a></p>
-
-<p><code class="highlighter-rouge">2011-15</code>
-<strong>Statistician / Analyst at the OECD Directorate for Science, Technology and Innovation</strong> (FR)</p>
-
-<p>MarkLogic system architecture for scientometrics with Elsevier SCOPUS <a href="http://blog.scopus.com/about">blog.scopus.com/about</a>; R Shiny application development for interactive data analysis and reporting; ETL from Open Data sources for <a href="http://www.oecd.org/sti/stan">Structural Analysis</a>; Sectoral specialisation, mark-up calculation and <a href="http://dx.doi.org/10.1787/pdtvy-2013-en">productivity indicators</a>; <a href="http://www.oecd.org/trade/valueadded">Trade in Value-added Project</a></p>
-
-<p><code class="highlighter-rouge">2010</code>
-<strong>Consultant to the OECD Directorate for Science, Technology and Industry</strong> (FR)</p>
-
-<p>Extending the OECD Structural Analysis database in SAS; Drafting indicators for STI/EAS biannual publication <a href="http://dx.doi.org/10.1787/sti_scoreboard-2013-en">Scoreboard</a>; Streamlining <a href="http://www.oecd.org/sti/stan/indicators">STAN Indicator</a> calculations in SQL and SAS</p>
-
-<p><code class="highlighter-rouge">2010</code>
-<strong>Trainee at the OECD Statistics Directorate</strong> (FR)</p>
-
-<p>Data acquisition from Brazil for the TEC database, partly at the University of São Paulo; SQL Data mining and harmonization of European and North American labour force surveys</p>
-
-<p><code class="highlighter-rouge">2008</code>
-<strong><a href="http://www.josef-meyer.ch">JOSEF MAYER Transport Technologies AG</a></strong> (CH)</p>
-
-<p>Internship in the engineering department of a waggon and boogey construction firm; Wagon-specific compilation of construction blueprints for replacement of break systems; Evaluation of loading case calculations with an algorithm in FAMOS</p>
-
-<p><code class="highlighter-rouge">2007</code>
-<strong><a href="http://www.infoman.de/en">Infoman AG</a></strong> Stuttgart (DE)</p>
-
-<p>Working student, IT solutions “Customer Relationship Management” for engineering companies; Analyzing the regional CRM market structures for engineering in the P.R. China</p>
-
-<h2 id="teaching">Teaching</h2>
-
-<p><code class="highlighter-rouge">2014</code>
-<strong>OECD Analytical and Statistical Seminars</strong></p>
-
-<p>R Graphics: base graphics and grid/lattice graphics with <a href="http://ggplot2.org/">ggplot</a>; Reporting systems: <a href="http://yihui.name/knitr/">knitr</a>; Web application framework: <a href="http://shiny.rstudio.com/">Shiny by RStudio</a></p>
-
-<p><code class="highlighter-rouge">2013</code>
-<strong><a href="http://www.ensae.fr/">ENSAE</a></strong> Applied Statistics Research Project</p>
-
-<p>Instruct and supervise master students in the calculation of mark-up ratios by industry; Relate regression results to indicators for product market regulation and network industries</p>
-
-<h2 id="research">Research</h2>
-
-<p><code class="highlighter-rouge">2014</code>
-<strong>Interactive Analysis of Economic Data by Industry</strong></p>
-
-<p>adopt <a href="http://vnijs.github.io/radiant/">radiant</a> framework for business data and decisions; extend with <a href="http://d3js.org/">d3.js</a> JavaScript visualization templates</p>
-
-<p><code class="highlighter-rouge">2013</code>
-<strong>Batch Estimations and Data Screening Reports</strong></p>
-
-<p>design a set of high-level R functions to transform legacy SAS system; vectorized creation of estimation programs for batch routines; set up reporting procedure for checks on both input and output data</p>
-
-<p><code class="highlighter-rouge">2013</code>
-<strong>Optimization Algorithms for Data Estimation</strong></p>
-
-<p>exploit IBM CPLEX libraries for quadratic constraint optimization of sparse matrices</p>
-
-<h2 id="conference-participation">Conference Participation</h2>
-
-<p><code class="highlighter-rouge">2016</code>
-<strong>satRday #1 Budapest (HU)</strong></p>
-
-<p>Presenting the nsoApi R package</p>
-
-<p><code class="highlighter-rouge">2015</code>
-<strong>Spark Summit Europe, Amsterdam (NL)</strong></p>
-
-<p><code class="highlighter-rouge">2014</code>
-<strong>useR! 2014 Los Angeles (US)</strong></p>
-
-<p><strong>Budapest BI Forum (HU)</strong></p>
-
-<p>Presenting the use of R at OECD</p>
-
-<h2 id="skills">Skills</h2>
-<!-- __Language__ -->
-
-<!-- - German: Mother tongue -->
-<!-- - English: Business fluent -->
-<!-- - French: Fluent -->
-<!-- - Mandarin Chinese: Intermediate -->
-<!-- - Portuguese: Basic -->
-<!-- - Latin: Translation -->
-
-<p><strong>Software Tools</strong></p>
-
-<p>R, R Shiny, Scala, Scala Play, Spark, JavaScript, SAS, Microsoft T-SQL</p>
-
-<p><strong>GitHub Profile</strong></p>
-
-<p><a href="http://github.com/bowerth">http://github.com/bowerth</a></p>
-
-<p><strong>Technology Blog</strong></p>
-
-<p><a href="http://rdata.work">http://rdata.work</a></p>
-
-<p><strong>HTML version of this document</strong></p>
-
-<p><a href="http://rdata.work/cv">http://rdata.work/cv</a></p>
-
-<!-- ## Personal Interests -->
-
-<!-- 
-__Traveling__
-
-- India
-- Costa Rica
-
-
-- Panama
-- Columbia
-- New Zealand
-- South Africa
-- Namibia
-- Malaysia
-- Thailand
-- Brazil
-- Morocco
-- Indonesia
-- Taiwan
-- China
-- USA 
--->
-
-<!-- 
-__Sports__
-
-- Cycling
-- Tennis
-- Running
-- Kite Surfing
-- Hang Gliding
- -->
-
-<!-- 
-__Arts__
-
-- HDR Photography
-- Video Editing
-- [Processing](https://processing.org/)
- -->
-
-<!-- 
-## References
-
-Available on request.
- -->
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
-
+  <div class="container">
+      <div class="row header">
+          <div class="col-xs-4">
+              <h1 class="name">Bo Werth</h1>
+              <span class="profession">Statistician, Data Engineer</span>
+          </div>
+
+          <div class="col-md-5 text-center">
+              <!-- <img src="mikey.png" height="130px" width="130px"> -->
+              <img src="http://rdata.work/assets/images/photographs/portrait_application.jpg" height="150px">
+          </div>
+
+          <div class="col-xs-3">
+              <ul class="list-unstyled">
+                  
+                      <li><i class="fa fa-map-marker"></i> Located in Paris, France</li>
+                  
+                  
+                      <li><i class="fa fa-flag-o"></i> German National</li>
+                  
+                  
+                      <li><i class="fa fa-envelope-o"></i>
+                          <a href="mailto: bo.werth@gmail.com">bo.werth@gmail.com</a></li>
+                  
+                  
+                      <li><i class="fa fa-laptop"></i>
+                          <a href="http://rdata.work">rdata.work</a></li>
+                  
+                  
+                      <li><i class="fa fa-phone"></i> +33 6 95 34 65 36</li>
+                  
+                  
+                      <li><i class="fa fa-github"></i>
+                          <a href="https://github.com/bowerth">/bowerth</a>
+                      </li>
+                  
+                  
+                      <li><i class="fa fa-stack-overflow"></i> <a
+                              href="http://stackoverflow.com/users/5223591/bo-werth">/bo-werth</a>
+                      </li>
+                  
+              </ul>
+          </div>
+      </div>
+
+
+    <div class="row  section">
+      <div class="col-xs-3">
+        <h2>Career</h2>
+              </div>
+
+      <div class="col-xs-9">
+        
+         <div class="jd">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>
+                <b>Data Engineer</b>
+                <!--  -->
+                <!-- <i class="fa fa-globe"></i> -->
+                <!-- <a href="http://fbs.rdata.work/">http://fbs.rdata.work/</a> -->
+                <!--  -->
+              </h4>
+            </div>
+            <div class="col-xs-6 pull-right">
+              <h5 class="pull-right">May - December 2016<br/>
+              Food and Agriculture Organization (FAO) <i>(Rome, Italy)</i></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Identify and integrate heterogeneous data sources from international Organizations and national institutions into complex estimation model for global food security.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+
+           
+            <b>Selected accomplishments:</b>
+           
+            <ul>
+            
+              <li>Technical project leader, complete the integration of lose R scripts into an estimation system for the Food Balance Sheets (FBS), an essential building block in estimating the prevelance of undernourishment.</li>
+            
+              <li>Migrate information from PostgreSQL data warehouse to Amazon S3 storage; use Databricks Community Edition to transform 40GB text files to parquet format on US-West-2 Amazon server; start re-implementing business logic from R in Scala, Spark and Spark SQL.</li>
+            
+            </ul>
+          </div>
+           </div>
+        </div>
+        
+         <div class="jd">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>
+                <b>Statistical Programmer and Analyst</b>
+                <!--  -->
+                <!-- <i class="fa fa-globe"></i> -->
+                <!-- <a href=""></a> -->
+                <!--  -->
+              </h4>
+            </div>
+            <div class="col-xs-6 pull-right">
+              <h5 class="pull-right">May 2010 - December 2015<br/>
+              OECD Directorate for Science, Technology and Innovation <i>(Paris, France)</i></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>After a traineeship in the Statistics Directorate, started working as consultant on the OECD Structural Analysis Database in SAS. Discovered the strength of R for efficient creation of insights from data. Official instructor for internal training seminars since 2014.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+
+           
+            <b>Selected accomplishments:</b>
+           
+            <ul>
+            
+              <li>Extending the OECD Structural Analysis database in SAS; Drafting indicators for STI/EAS biannual publication Scoreboard; Streamlining STAN Indicator calculations in SQL and SAS</li>
+            
+              <li>Full-stack web application engineering to allow public users replicate expert calculations from Trade in Value-added project</li>
+            
+              <li>MarkLogic system architecture for scientometrics with Elsevier SCOPUS blog.scopus.com/about; R Shiny application development for interactive data analysis and reporting; ETL from Open Data sources for Structural Analysis; Sectoral specialisation, mark-up calculation and productivity indicators</li>
+            
+            </ul>
+          </div>
+           </div>
+        </div>
+        
+         <div class="jd">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>
+                <b>Intern, Engineering Department</b>
+                <!--  -->
+                <!-- <i class="fa fa-globe"></i> -->
+                <!-- <a href=""></a> -->
+                <!--  -->
+              </h4>
+            </div>
+            <div class="col-xs-6 pull-right">
+              <h5 class="pull-right">August - September 2008<br/>
+              JOSEF MAYER Transport Technologies AG <i>(Möhlin, Switzerland)</i></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Internship in the engineering department of a waggon and boogey construction firm.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+
+           
+            <b>Selected accomplishments:</b>
+           
+            <ul>
+            
+              <li>Wagon-specific compilation of construction blueprints for replacement of break systems</li>
+            
+              <li>Evaluation of loading case calculations with an algorithm in FAMOS.</li>
+            
+            </ul>
+          </div>
+           </div>
+        </div>
+        
+         <div class="jd">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>
+                <b>Working Student</b>
+                <!--  -->
+                <!-- <i class="fa fa-globe"></i> -->
+                <!-- <a href=""></a> -->
+                <!--  -->
+              </h4>
+            </div>
+            <div class="col-xs-6 pull-right">
+              <h5 class="pull-right">June - October 2007<br/>
+              Infoman AG <i>(Stuttgart, Germany)</i></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Working student, IT solutions “Customer Relationship Management” for engineering companies</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+
+           
+            <b>Selected accomplishments:</b>
+           
+            <ul>
+            
+              <li>Analyzing the regional CRM market structures for engineering in the P.R. China</li>
+            
+              <li>Develop recommendation model for business branch location in China</li>
+            
+            </ul>
+          </div>
+           </div>
+        </div>
+        
+      </div>
     </div>
-  </div>
 
-  <div class="footer"></div>
+
+    <div class="row section pagebreakishere">
+      <div class="col-xs-3">
+        <h2>Technical skills</h2>
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+         <div class="col-xs-4">
+
+           <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Script</h4>
+             R
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+          </div>
+           Scala
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+          </div>
+          
+        </div>
+        <div class="col-xs-4">
+          <h4 class="techSkillHeader"><i class="fa fa-code"></i> Database</h4>  Relational
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+          </div>
+           NoSQL
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+          </div>
+          
+        </div>
+        <div class="col-xs-4">
+          <h4 class="techSkillHeader"><i class="fa fa-cogs"></i> Big Data</h4>  Spark
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+           Flink
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+          </div>
+          
+        </div>
+        </div>
+        <div>
+          <h4><i class="fa fa-male"></i> Key competencies:</h4>
+        <ul>
+          
+            <li>Automating integration of heterogeneous data sources</li>
+          
+            <li>Developing microservices for data engineering</li>
+          
+            <li>Leverage existing open source tools</li>
+          
+            <li>Cost-benefit awareness</li>
+          
+        </ul>
+
+            </div>
+      </div>
+    </div>
+
+
+    <div class="row  section">
+      <div class="col-xs-3"><h2>Side Projects</h2></div>
+      <div class="col-xs-9">
+        
+        
+        <div class="row side-project">
+          <div class="col-xs-5">
+            <h4>
+            
+                <i class="fa fa-globe"></i>
+              
+              <a href="http://fbs.rdata.work/">FAO FBS</a>
+            </h4>
+
+            <h5>R/JavaScript/Scala/Ruby</h5>
+          </div>
+          <div class="col-xs-7">Methodology UN Food Balance Sheets</div>
+        </div>
+        
+        
+        
+        <div class="row side-project">
+          <div class="col-xs-5">
+            <h4>
+            
+                <i class="fa fa-globe"></i>
+              
+              <a href="http://sti.rdata.work/">OECD STI</a>
+            </h4>
+
+            <h5>R/Shiny/SQL/JavaScript</h5>
+          </div>
+          <div class="col-xs-7">Industry Analysis and Global Value Chains</div>
+        </div>
+        
+        
+        
+        <div class="row side-project">
+          <div class="col-xs-5">
+            <h4>
+            
+                <i class="fa fa-globe"></i>
+              
+              <a href="http://www.icio.oecd.org/">OECD TiVA</a>
+            </h4>
+
+            <h5>R/Shiny/Ruby</h5>
+          </div>
+          <div class="col-xs-7">Trade in Value-Added Shiny App</div>
+        </div>
+        
+        
+        
+        <div class="row side-project">
+          <div class="col-xs-5">
+            <h4>
+            
+                <i class="fa fa-globe"></i>
+              
+              <a href="http://sdmx.rdata.work/">sdmxPlay</a>
+            </h4>
+
+            <h5>Scala/JavaScript</h5>
+          </div>
+          <div class="col-xs-7">Scala Play front-end to SDMX Java functions</div>
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+
+
+    <div class="row section">
+      <div class="col-xs-3"><h2>Education</h2></div>
+      <div class="col-xs-9">
+
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Coursera</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Functional Programming in Scala (2015 - 2016)</div>
+          <div class="col-xs-12"><a href="https://www.coursera.org/specializations/scala">https://www.coursera.org/specializations/scala</a>, École Polytechnique Fédérale de Lausanne</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Coursera</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Data Science at Scale (2014 - 2015)</div>
+          <div class="col-xs-12"><a href="https://www.coursera.org/specializations/data-science">https://www.coursera.org/specializations/data-science</a>, University of Washington</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Coursera</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Data Science (2012 - 2013)</div>
+          <div class="col-xs-12"><a href="https://www.coursera.org/specializations/jhu-data-science">https://www.coursera.org/specializations/jhu-data-science</a>, John Hopkins University</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Eberhard Karls University</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Diploma International Economics, East Asia (2005 - 2009)</div>
+          <div class="col-xs-12"><a href="http://www.uni-tuebingen.de/">http://www.uni-tuebingen.de/</a>, Tuebingen, Germany</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Albert Einstein Gymnasium</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Abitur (2003 - 2005)</div>
+          <div class="col-xs-12"><a href="http://www.aeg-boeblingen.de/">http://www.aeg-boeblingen.de/</a>, Boeblingen</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12"><h4><b>Gottlieb Daimler Gymnasium</b></h4></div>
+          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> Engineering, Computing Technology and Industrial Design (2002)</div>
+          <div class="col-xs-12"><a href="http://tgsindelfingen.de/">http://tgsindelfingen.de/</a>, Sindelfingen</div>
+        </div>
+        
+        </div>
+    </div>
+
+
+    <div class="row section pagebreakishere">
+      <div class="col-xs-3">
+        <h2>Language skills</h2>
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+         <div class="col-xs-4">
+
+           <h4 class="techSkillHeader"><i class="fa fa-gbp"></i> English</h4>
+             Technical
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+          </div>
+           Conversation
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          </div>
+          
+        </div>
+        <div class="col-xs-4">
+          <h4 class="techSkillHeader"><i class="fa fa-euro"></i> French</h4>  Technical
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+          </div>
+           Conversation
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+          
+        </div>
+        <div class="col-xs-4">
+          <h4 class="techSkillHeader"><i class="fa fa-rmb"></i> Chinese</h4>  Technical
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+          </div>
+           Conversation
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+          
+        </div>
+        </div>
+        <div>
+          <h4><i class="fa fa-male"></i> Personal Interest:</h4>
+        <ul>
+          
+            <li>Data Visualization</li>
+          
+            <li>E-Bikes</li>
+          
+            <li>Long-distance Travel</li>
+          
+            <li>Video and Photography</li>
+          
+            <li>Water & Air Sports</li>
+          
+        </ul>
+
+            </div>
+      </div>
+    </div>
 
 </body>
+
 </html>
