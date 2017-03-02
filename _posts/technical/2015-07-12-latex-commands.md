@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Online LaTex
+
+- [sharelatex.com: templates](https://www.sharelatex.com/templates/)
+
 ## Documentation
 
 links to all HTML and PDF files for packages and guides contained in TeX Live
@@ -34,6 +38,17 @@ install German support for Babel
 
 search for file
 :   `kpsewhich file.sty` or `kpsewhich file.cls`
+
+### install packages
+
+- [multirow](https://www.ctan.org/tex-archive/macros/latex/contrib/multirow) package
+
+- download package as [zip](http://mirrors.ctan.org/macros/latex/contrib/multirow.zip)
+- extract to `/multirow` and open terminal
+- `latex multirow.ins` will generate `multirow.sty`
+- move `/multirow` to `/texmf/tex/latex`
+- open terminal in another location
+- test if can be found `kpsewhich multirow.sty` should return `/texmf/tex/latex/multirow/multirow.sty`
 
 ### Windows
 

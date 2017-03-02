@@ -8,6 +8,7 @@ tags     :
 
 ## Reusable Charts
 
+- [google spreadsheet listing various developments](https://docs.google.com/spreadsheets/d/18zB8uzA54nkcHoV-1cPwRwzOgqFixtC6Ee38-ugZeng/htmlview)
 - [bost.ocks.org: Towards Reusable Charts](http://bost.ocks.org/mike/chart)
 - [C3.js: D3-based reusable chart library](http://c3js.org)
 

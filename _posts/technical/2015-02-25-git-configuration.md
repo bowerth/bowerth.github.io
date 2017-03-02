@@ -202,6 +202,9 @@ fetch remote branch
 remove branch after changing to other branch
 :   `git branch -d [branch]`
 
+remove remote branch
+:   `git push origin --delete [branch]`
+
 integrate pulled changes
 :   `git rebase`
 
@@ -235,6 +238,8 @@ In addition to unstaging changes, the --hard flag tells Git to overwrite all cha
 
 add submodule
 :   `git submodule add https://github.com/bowerth/nsoApiBrowser.git inst/nsoApiBrowser`
+
+- to change submodule remote URL, modify `.gitmodules` file and run `git submodule sync`
 
 ## Maintenance
 

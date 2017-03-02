@@ -6,6 +6,10 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Apache Bittop
+
+- [bigtop.apache.org](http://bigtop.apache.org/) Bigtop is an Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components.
+
 ## Building Spark
 
 - [spark.apache.org: Building Spark](http://spark.apache.org/docs/latest/building-spark.html)
@@ -105,6 +109,10 @@ After successful start, log in to cluster
 ## Data Sources
 
 - [Apache Avro](https://avro.apache.org/)  is a data serialization system
+
+### XML
+
+- [hadoopist.wordpress.com: Parsing a Basic XML using Hadoop and Spark Core APIs](https://hadoopist.wordpress.com/2016/01/08/parsing-a-basic-xml-using-hadoop-and-spark-core-apis/)
 
 ### Apache Hive
 
@@ -310,6 +318,8 @@ examples
 
 - [Mastering Apache Spark 2.0](https://www.gitbook.com/book/jaceklaskowski/mastering-apache-spark/details)
 - [quick-start](http://spark.apache.org/docs/latest/quick-start.html)
+- [Mastering Apache Spark 2.0](http://go.databricks.com/mastering-apache-spark-2.0)
+- [Mastering Apache Spark 2.0: Ebook](https://cdn2.hubspot.net/hubfs/438089/Landing_pages/blog-books/Mastering-Apache-Spark-2.0.pdf)
 
 navigate to folder
 :   `$ cd /home/xps13/Dropbox/Programming/Scala/Spark/quick-start`
@@ -765,6 +775,7 @@ Install package 'hadoop-common' to provide command 'hadoop'? [N/y] y
 
 ## Links
 
+- [Spark Notebook](http://spark-notebook.io/)
 - [cloudera: Why Apache Spark is a Crossover Hit for Data Scientists](http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists)
 - [databricks.com: ML Pipelines: A New High-Level API for MLlib](https://databricks.com/blog/2015/01/07/ml-pipelines-a-new-high-level-api-for-mllib.html)
 - [gitbook.com: Databricks Spark Reference Applications](https://www.gitbook.com/book/databricks/databricks-spark-reference-applications/details)
