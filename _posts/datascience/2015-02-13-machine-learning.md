@@ -6,6 +6,11 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+## Tools
+
+- [H2O](http://h2o.ai)
+- [h2o GBM Booklet (pdf)](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf)
+
 ## R libraries
 
 ### caret
@@ -15,14 +20,9 @@ tags     : [R, python]
 - [companion page to Applied Predictive Modelin by Max Kuhn](http://appliedpredictivemodeling.com/)
 - [github APM exercises](https://github.com/topepo/APM_Exercises)
 - [webinar on caret](https://www.youtube.com/watch?v=7Jbb2ItbTC4)
-- [Article in JSS](https://www.jstatsoft.org/article/view/v028i05)
-- [github: topepo: useR2016](https://github.com/topepo/useR2016) Slides and code for the 2016 useR! tutorial "Never Tell Me the Odds! Machine Learning with Class Imbalances" 
-- [Applied Predictive Modeling: useR! 2014 morning tutorial](http://appliedpredictivemodeling.com/user2014/)
 
 ## Links
 
-- [kaggle in class: Academic Machine Learning Competitions](https://inclass.kaggle.com/)
-- [UC Irvine Machine Learning Repository](archive.ics.uci.edu/ml/index.html) available from `mlbench` R package
 - [KDNuggets: The 10 Algorithms Machine Learning Engineers Need to Know](http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html/)
 - [Machine Learning: An In-Depth, Non-Technical Guide](http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide/?utm_source=kdnuggets&utm_medium=post&utm_content=originallink&utm_campaign=guest)
 - [Deep Learning Book](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville
@@ -42,8 +42,6 @@ Machine Learning for Hackers by Drew Conway and John Myles White (O'Reilly). Cop
 - p.37 01_heights_weights_genders.csv
 
 ### Models
-
-- [github: rushter: MLAlgorithms](https://github.com/rushter/MLAlgorithms) Minimal and clean examples of machine learning algorithms
 
 - Classification (Spam Filtering)
 - Ranking (Priority Inbox)
@@ -94,10 +92,6 @@ Torsten Hothorm (UZH) on [Big Data Science](http://user.math.uzh.ch/hothorn/talk
 
 Source: [daoudclarke.github.io/machine-learning-libraries](http://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/)
 
-- CNTK
-- Torch
-- Caffe
-
 ### Python
 
 [Tensorflow](http://www.tensorflow.org)
@@ -122,9 +116,6 @@ MDP (Modular toolkit for Data Processing)
 :   a framework that is useful when setting up workflows.
 
 ### Java
-
-- [H2O](http://h2o.ai)
-- [h2o GBM Booklet (pdf)](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf)
 
 [SystemML](https://github.com/sparktc/systemml)
 :   SystemML is a flexible, scalable machine learning (ML) language written in Java. SystemML's distinguishing characteristics are: (1) algorithm customizability, (2) multiple execution modes, including Standalone, Hadoop Batch, and Spark Batch, and (3) automatic optimization.
@@ -168,23 +159,10 @@ LibSVM and LibLinear
 
 ## Books
 
-The Elements of Statistical Learning
+    The Elements of Statistical Learning
 :   Author: Hastie, Tibshirani, and Friedman  
 	Content: formal specifications of basic machine learning techniques (mathematics, statistics, computer science)
 	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
-
-Machine Learning
-:   Author: Mitchell, T.M.
-    Publisher: McGraw-Hill, NY
-    Year: 1997
-    URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html
-    Course: http://www.cs.cmu.edu/~tom/10701_sp11/
-
-Data Mining: Practical Machine Learning Tools and Techniques
-:   Author: Witten, I., Frank, E. and Hall, M.
-    Edition: 3rd
-    Publisher: Morgan Kaufmann, San Mateo, CA, 
-    Year: 2011
 
 ## Articles
 
@@ -206,15 +184,6 @@ Statistics Training: A Big Role in Big Data?
 :   2014-05  
     [statview-big-data](http://magazine.amstat.org/blog/2014/05/01/statview-big-data/)
 
-Leo Breiman, Statistical Modelling: The Two Cultures, Statistical Science 16(3), 2001
-:   [breiman.pdf](http://www.stat.uchicago.edu/~lekheng/courses/191f09/breiman.pdf)
-
-Pedro Domingos, A Few Useful Things to Know about Machine Learning
-:   Communications of the ACM, Vol. 55 No. 10, Pages 78-87, 2012  
-    [cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
-    [ml-intro-domingos2012.pdf](http://pages.cs.wisc.edu/~dyer/cs540/handouts/ml-intro-domingos2012.pdf)
-
-- [github: shagunsodhani: papers-i-read](https://github.com/shagunsodhani/papers-I-read)
 - [Why becoming a data scientist is NOT actually easier than you think](https://medium.com/cs-math/why-becoming-a-data-scientist-is-not-actually-easier-than-you-think-5b65b548069b)
 
 ## Data Sources
@@ -222,7 +191,3 @@ Pedro Domingos, A Few Useful Things to Know about Machine Learning
 FLUENTD
 :   data collector for unified logging layer  
 	http://www.fluentd.org/
-
-## Data Sets
-
-- [1001 Datasets and Data repositories (List of lists of lists](https://dreamtolearn.com/ryan/1001_datasets)

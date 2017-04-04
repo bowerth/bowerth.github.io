@@ -6,10 +6,6 @@ tags     :
 ---
 {% include JB/setup %}
 
-## R Box
-
-- [github: randy3k: R-Box](https://github.com/randy3k/R-Box)
-
 ## Vertical Selection
 
 Right Mouse Button + Shift

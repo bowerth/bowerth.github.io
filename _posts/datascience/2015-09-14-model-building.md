@@ -7,11 +7,6 @@ draft    : true
 ---
 {% include JB/setup %}
 
-## Google Optimization Tools
-
-- [Google Optimization Tools](https://developers.google.com/optimization/)
-- [github: google: or-tools](https://github.com/google/or-tools)
-
 ## IBM CPLEX
 
 location

@@ -233,11 +233,6 @@ install Fedora 23
 
 - [github: mastering emacs in one year guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide)
 
-### Environment Variables
-
-display
-:   `(getenv "SPARK_HOME")`
-
 ## Major Modes
 
 list keybindings for a certain mode
@@ -266,26 +261,6 @@ commands
 
 use css stylesheet
 :   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
-
-#### org-scrum
-
-this adds [emacs-scrum](https://github.com/ianxm/emacs-scrum) to spacemacs
-
-- add repo [org-scrum](https://github.com/myspacemacs/org-scrum) to `/.emacs.d/layers/+emacs/org-scrum`
-- copy [scrum-template.org](https://github.com/myspacemacs/org-scrum/blob/master/scrum-template.org)
-- make modifications
-- update all: `M-m o r`
-
-#### org-reveal
-
-- change value `org-enable-reveal-js-support` in `/.emacs.d/layers/+emacs/org/config.el` from `nil` to `t`
-- create folder for presentations, e.g. `mkdir slides`
-- clone repo [reveal.js](https://github.com/hakimel/reveal.js/) into `/slides/reveal.js`
-- save [Readme.org](https://raw.githubusercontent.com/yjwen/org-reveal/master/Readme.org) in new file, e.g. `/slides/Readme.org`
-- open `/slides/Readme.org` in spacemacs
-- `M-x load-library [Ret] ox-reveal [Ret]`
-- `C-c C-e R R` to render `/slides/Readme.html`
-- open in browser (preview with `s` only currently only working in Chrome)
 
 #### Org OPML
 

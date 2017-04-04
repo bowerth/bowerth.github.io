@@ -14,11 +14,6 @@ tags     : [EMR, Hadoop]
 
 - [Using-the-RStudio-image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
 
-#### DNS
-
-- set DNS configuration for `rstudio.rdata.work` to A record IPv4 address with assigned EC2 Elastic IP
-- set back to CNAME after terminating the EC2 instance
-
 #### Server
 
 - launch new instance using existing keypair
@@ -33,7 +28,6 @@ tags     : [EMR, Hadoop]
 #### Client Terminal
 
 - navigate to folder containing keypair: `$ cd ~/Dropbox/Logins/Amazon/EC2`
-- remove connection from `/home/xps13/.ssh/known_hosts`
 - connect to instance using `$ ssh -i "ami-ca46b6a5-rstudio.pem" ubuntu@ec2-35-156-206-85.eu-central-1.compute.amazonaws.com`
 - install docker `$ curl -sSL https://get.docker.com/ | sudo sh`
 - install docker image `$ sudo docker run -d -p 8787:8787 rocker/hadleyverse`
@@ -67,7 +61,7 @@ bash createuser.sh
 
 #### Client Browser
 
-- navigate to URL http://<Public IP>:8787/auth-sign-in, e.g. http://35.157.60.165:8787/
+- navigate to URL http://<Public IP>:8787/auth-sign-in
 - main user: `rstudio`, password: `rstudio`
 - training user: `training01`, password: `train01`
 

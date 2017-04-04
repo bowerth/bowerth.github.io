@@ -47,14 +47,7 @@ output:
 5. create a new blog post using layout specified in [2]
 6. include html fragment in body of blog post using `{{ {% include html_fragment.html }}%}`
 
-## CV
-
-- [github: biomadeira: vitae](https://github.com/biomadeira/vitae)
-- [github: ellekasai: resumecards](https://github.com/ellekasai/resumecards)
-- [github: spitimage: jekyll-cv-generator](https://github.com/spitimage/jekyll-cv-generator)
-- [github: streetturtle: jekyll-cv-crafter](https://github.com/streetturtle/jekyll-cv-crafter)
-
-### markdown-cv
+## markdown-cv
 
 - [github: elipapa: markdown-cv](https://github.com/elipapa/markdown-cv)
 - [github: blmoore: markdown cv / résumé built with jekyll](https://github.com/blmoore/md-cv)
