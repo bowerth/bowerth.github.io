@@ -6,6 +6,47 @@ tags     :
 ---
 {% include JB/setup %}
 
+## flatpak
+
+list installed runtimes and applications do
+:   `flatpak list`
+
+```
+org.gnome.Games/x86_64/master           system,current
+org.gnome.Games.Locale/x86_64/master    system,runtime
+org.gnome.Platform.Locale/x86_64/3.20   system,runtime
+org.gnome.Platform.Locale/x86_64/master system,runtime
+org.gnome.Platform/x86_64/3.20          system,runtime
+org.gnome.Platform/x86_64/master        system,runtime
+```
+
+uninstall a runtime or application named `name`
+:   `flatpak uninstall name`
+
+```
+$ flatpak uninstall Games
+$ flatpak uninstall org.gnome.Platform//3.20
+$ flatpak uninstall org.gnome.Platform//master
+```
+
+## Screencast
+
+### Vokoscreen
+
+- [kohaupt-online.de/hp/](http://www.kohaupt-online.de/hp/)
+- [github.com: vkohaupt: vokoscreen](https://github.com/vkohaupt/vokoscreen)
+
+### OpenShot
+
+- [openshotvideo.com](http://www.openshotvideo.com/)
+- [appimage.org](http://appimage.org/)
+
+install
+:   `$ mkdir ~/AppImage`  
+    `$ cd ~/AppImage`  
+    `$ chmod +x OpenShot-v2.2.0-x86_64.AppImage`  
+    `$ ./OpenShot-v2.2.0-x86_64.AppImage`
+
 ## Security
 
 disable Bash history
@@ -147,11 +188,12 @@ modify repo file
 
 - [Download Fedora 23 Cloud: Docker Image](https://getfedora.org/en/cloud/download/docker.html)
 
-## IDEs
-
-- [PyCharm](https://www.jetbrains.com/pycharm)
-
 ## Programs
+
+### uchardet
+
+identify the encoding of a file
+:   `$ uchardet [textfile]`
 
 ### [Feednix](http://feednix-jarkore.rhcloud.com/)
 
@@ -301,6 +343,11 @@ adjust screen brightness
 ### Differences to Redhat and CentOS
 
 - [danielmiessler.com: The Difference Between Fedora, Redhat, and CentOS](https://danielmiessler.com/study/fedora_redhat_centos)
+
+### User management
+
+add an existing user to existing group
+:   `$ sudo usermod -a -G hadoop xps13`
 
 ### Install Workstation Live Image
 
@@ -489,8 +536,14 @@ check for incomplete files
 
 ## Cache
 
-clean `/var/cache`
+start as root
+:   `sudo baobab`
+
+clean `/var/cache` (large PackageKit folder)
 :   `sudo dnf clean all`
+
+using PackageKit console client
+:   `sudo pkcon refresh force -c -1`
 
 old releases
 :   `yum clean all --releasever=19`
@@ -583,6 +636,9 @@ create simple http server
 
 ## grep
 
+[Limit grep context to N characters on line](http://unix.stackexchange.com/questions/163726/limit-grep-context-to-n-characters-on-line)
+:   N=10; grep -roP ".{0,$N}time.{0,$N}" TariffLineSdmx.xml
+
 return all files with a specific extension
 :   `ls -al | grep .git`
 
@@ -601,7 +657,14 @@ remove all files with a specific pattern
 change theme for specific window
 :   `xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT dark`
 
-## PDF 
+## PDF
+
+- [Tools for PDF modification on Fedora, by Ryan Lerch](https://fedoramagazine.org/pdf-modification-tools-fedora/)
+
+### pdftk
+
+separate into pages
+:   `pdftk document.pdf burst`
 
 ### pdftotext
 
@@ -635,3 +698,20 @@ edit file (*reports error on save and does not recognize existing metadata*)
 ### ToDo
 
 - create ruby module to pick up page source md file, generate pdf and trigger file download with default location and file name
+
+## Maintenance
+
+large `/var/cache/PackageKit`: modify `/etc/PackageKit/PackageKit.conf`
+:   `# Keep the packages after they have been downloaded`  
+    `#KeepCache=false`  
+    run `pkcon refresh force -c -1`
+
+large `/var/log/journal`: modify `/etc/systemd/journald.conf`
+:   set `SystemMaxUse=1M`  
+    `sudo systemctl restart systemd-journald`  
+    set `SystemMaxUse=200M`  
+    `sudo systemctl restart systemd-journald`  
+
+## Links
+
+- [The Linux Command Line - William E. Shotts, Jr.](https://courseweb.pitt.edu/bbcswebdav/institution/Pitt%20Online/MLIS_Pitt_Online/LIS%202600/Intro%20Module/LIS_2600_%20M1_Shotts%202009.pdf)
