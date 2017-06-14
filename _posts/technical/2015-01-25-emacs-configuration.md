@@ -6,6 +6,7 @@ tags     :
 ---
 {% include JB/setup %}
 
+
 ## Install
 
 - [nicolas-petton.fr: GNU Emacs](http://nicolas-petton.fr/ressources/emacs-website)
@@ -50,6 +51,21 @@ add keybinding
 - [Spacemacs documentation](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org)
 - [github: syl20bnr: spacemacs](https://github.com/syl20bnr/spacemacs)
 
+### Update
+
+create new branch from `develop`
+:   `git checkout develop`  
+    `git branch -b trial_merge`
+
+pull upstream in rebase mode
+:   `git pull upstream develop --rebase`
+
+- see if merge conflicts can be solved, then perform same procedure on `develop` branch
+- if necessary, install ensime manually (search at [stable.melpa.org](https://stable.melpa.org/#/) and extract to `~/emacs/spacemacs/.emacs.d/elpa`)
+- update packages again
+
+### Commands
+
 maximize and center buffer
 :   `M-m  W M`
 
@@ -81,7 +97,7 @@ using `.spacemacs`
 
 #### `packages.el`
 
-```
+~~~
 (setq mylayer-packages
       '(
         ;; Get the package from MELPA, ELPA, etc.
@@ -99,7 +115,7 @@ using `.spacemacs`
         ;; An excluded package
         (some-package :excluded t)
         ))
-```
+~~~
 
 #### Private
 
@@ -130,13 +146,13 @@ create bibtex references
 
 `funcs.el`
 
-```
+~~~
 +;; https://github.com/bhauman/lein-figwheel/wiki/Running-figwheel-with-Emacs-Inferior-Clojure-Interaction-Mode
 +(defun clojure/figwheel-repl ()
 +  (interactive)
 +  (run-clojure "lein figwheel"))
 +;; (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode) 
-```
+~~~
 
 #### [C/C++ layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/c-c%2B%2B)
 
@@ -264,6 +280,9 @@ commands
 
 - [orgmode.org](http://orgmode.org/org.html)
 
+no TOC
+:   `#+OPTIONS: toc:nil`
+
 use css stylesheet
 :   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
 
@@ -300,7 +319,7 @@ modify `~/.emacs`
     `(load-library "org-opml")`
 
 copy python script
-:   `$ ln -s ~/.emacs.d/lisp/org-opml/opml2org.py 
+:   `$ ln -s ~/.emacs.d/lisp/org-opml/opml2org.py`
 
 #### Org Spreadsheet
 
@@ -352,14 +371,15 @@ Export to a temporary buffer. Do not create a file.
 
 Activate evaluation of `ditaa` source code blocks by adding ditaa to org-babel-load-languages.
 
-```lisp
+~~~lisp
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((ditaa . t))) ; this line activates ditaa
-```
+~~~
 
 #### Links
 
+- [nickjudd.com: Notes on an Emacs workflow for academic documents](http://nickjudd.com/blog/2016/02/13/emacs-notes/)
 - [orgmode manual: External Links](orgmode.org/manual/External-links.html)
 
 ## Emacs Server
@@ -409,6 +429,11 @@ specifies `sbt.version`
 `ensime-update` in scala layer `error: eof expected but ';' found. scalaBinaryVersion := "2.11"`
 :   in `/.emacs.d/elpa/ensime-[version]/` remove `ensime-startup.elc` and enter empty line between
 `scalaVersion := \"_scala_version_\"` and `scalaBinaryVersion := \"_scala_binary_version_\"`
+
+#### `ensime-server-update`
+
+to be executed in case ensime cannot be started with the message `Could not find or load main class org.ensime.server.Server`
+
 
 ### Windows
 
@@ -562,13 +587,13 @@ Other commands:
 install el-get
 :   copy/paste this code into your `scratch` buffer and evaluate using `M-x eval-print-last-exp`
 
-```
+~~~
 (url-retrieve  
  "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el"  
  (lambda (s)  
    (goto-char (point-max))  
    (eval-print-last-sexp)))
-```
+~~~
 
 Source: [github.com:dimitri/el-get.git](https://github.com/dimitri/el-get/)
 
@@ -819,11 +844,6 @@ edit user mail address
 - [github: ham-mode](https://github.com/Malabarba/ham-mode)
 - [gmail-mode browser integration](http://www.widecodes.com/CSVjeqVeVq/composing-gmail-messages-in-text-editor-complete-with-gmail-links.html)
 
-#### Thunderbird
-
-- [globs.org: External Editor](http://globs.org/articles.php?lng=en&pg=2)
-- [os.inf.tu-dresden.de: tbemail.el](http://os.inf.tu-dresden.de/~mp26/emacs.shtml)
-
 #### Google Chrome integration
 
 - [chrome extension: Edit with Emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?hl=en)
@@ -834,7 +854,7 @@ edit Gmail message with Emacs (after installing Edit with Emacs and editing the 
 when done editing, export back to Gmail
 :   `C-x #`
 
-#### mu4e
+## mu4e
 
 - [github.com: djcb: mu-releases](https://github.com/djcb/mu-releases)
 - [www.djcbsoftware.nl: Mu4e User Manual](http://www.djcbsoftware.nl/code/mu/mu4e/index.html)
@@ -857,9 +877,62 @@ delete message
 close header view
 :   `q` or `z`
 
-`config.el`
+- [mu4e Keybindings](http://www.djcbsoftware.nl/code/mu/mu4e/Keybindings.html#Keybindings)
 
-```
+show keybindings in mu4e
+:   `M-m ?`
+
+| Topic       |       Key       | Description                                     |
+|:------------|:---------------:|:------------------------------------------------|
+| General     |                 |                                                 |
+|             |      n, p       | view the next, previous message                 |
+|             |      ], [       | move to the next, previous unread message       |
+|             |        y        | select the message view (if it's visible)       |
+|             |       RET       | open the message at point in the message view   |
+| Searching   |                 |                                                 |
+|             |        s        | search                                          |
+|             |        S        | edit last query                                 |
+|             |        /        | narrow the search                               |
+|             |        b        | search bookmark                                 |
+|             |        B        | edit bookmark before search                     |
+|             |        j        | jump to maildir                                 |
+|             | M-left, M-right | previous query, next query                      |
+|             |        O        | change sort order                               |
+|             |        P        | toggle threading                                |
+|             |        Q        | toggle full-search                              |
+|             |        V        | toggle skip-duplicates                          |
+|             |        W        | toggle include-related                          |
+| Marking     |                 |                                                 |
+|             |        d        | mark for moving to the trash folder             |
+|             |        =        | mark for removing trash flag ('untrash')        |
+|             |     DEL, D      | mark for complete deletion                      |
+|             |        m        | mark for moving to another maildir folder       |
+|             |        r        | mark for refiling                               |
+|             |      +, -       | mark for flagging/unflagging                    |
+|             |      ?, !       | mark message as unread, read                    |
+|             |        u        | unmark message at point                         |
+|             |        U        | unmark *all* messages                           |
+|             |        %        | mark based on a regular expression              |
+|             |      T, t       | mark whole thread, subthread                    |
+|             |   [insert], *   | mark for 'something' (decide later)             |
+|             |        #        | resolve deferred 'something' marks              |
+|             |        x        | execute actions for the marked messages         |
+| Composition |                 |                                                 |
+|             |     R, F, C     | reply/forward/compose                           |
+|             |        E        | edit (only allowed for draft messages)          |
+| Misc        |                 |                                                 |
+|             |        ;        | switch focus                                    |
+|             |        a        | execute some custom action on a header          |
+|             |     &#124;      | pipe message through shell command              |
+|             |    C-+, C--     | increase / decrease the number of headers shown |
+|             |        H        | get help                                        |
+|             |      C-S-u      | update mail & reindex                           |
+|             |        q        | leave the headers buffer                        |
+
+
+### `config.el`
+
+~~~
 (setq mu4e-headers-skip-duplicates t)
 
 (setq mu4e-get-mail-command "offlineimap")
@@ -894,11 +967,11 @@ close header view
 (setq mu4e-maildir-shortcuts
     '( ("/Personal/INBOX"                     . ?i)
        ("/Personal/[Google Mail].Sent Mail"   . ?s)))
-```
+~~~
 
-`.offlineimaprc`
+### `.offlineimaprc`
 
-```
+~~~
 [general]
 accounts = Gmail
 maxsyncaccounts = 3
@@ -921,9 +994,30 @@ maxconnections = 1
 realdelete = no
 sslcacertfile = /etc/ssl/certs/ca-bundle.crt
 folderfilter = lambda folder: folder in ['INBOX', 'INBOX/Starred', '[Google Mail]/Sent Mail']
-```
+~~~
 
-#### Wanderlust
+### mbsync vs offlineimap
+
+- [Bloerg: Syncing mails with mbsync (instead of OfflineIMAP)](https://bloerg.net/2013/10/09/syncing-mails-with-mbsync-instead-of-offlineimap.html)
+- [Migrating from offlineimap to mbsync for mu4e](http://pragmaticemacs.com/emacs/migrating-from-offlineimap-to-mbsync-for-mu4e/)
+
+start isync
+:   `isync -w`
+
+show mbsync manual
+:   `man mbsync`
+
+perform sync
+:   `mbsync -V gmail`
+
+create symbolic link
+:   `ln -s ~/mbsync/.mbsyncrc ~/`
+
+delete mu index and re-index
+:   `rm -rf ~/.mu`  
+    `mu index`
+
+## Wanderlust
 
 - [wanderlust manual](http://www.gohome.org/wl/doc/wl_toc.html)
 - [github: wanderlust: wanderlust install](https://github.com/wanderlust/wanderlust/blob/master/INSTALL)
@@ -950,7 +1044,7 @@ Format
 
 format for `~/.folders`
 
-```lisp
+~~~lisp
 #
 # Lines begin with ‘#’ are comment.
 # Empty lines are ignored
@@ -978,7 +1072,7 @@ Emacsen{
 %#mh/expire@localhost /
 # All MH folders are included in one folder group.
 + /
-```
+~~~
 
 #### Secure authentication
 
