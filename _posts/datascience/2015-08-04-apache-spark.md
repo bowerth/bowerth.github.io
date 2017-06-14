@@ -6,9 +6,20 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Logs
+
+Spark produces a lot of logs by default. Often, this makes it impossible to read the whole grader feedback. Consequently, we suggest you to tune the log level of Spark like so:
+
+~~~
+import org.apache.log4j.{Level, Logger}
+Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
+~~~
+
+
 ## Apache Bittop
 
 - [bigtop.apache.org](http://bigtop.apache.org/) Bigtop is an Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components.
+
 
 ## Building Spark
 
@@ -182,10 +193,10 @@ An Open Source REST Service for Apache Spark
 - use Spark 1.6; will be coming out for Spark 2.0
 - use spark-shell or sparkling-shell, start with `--class water.SparklingWaterDriver`
 
-```
+~~~
 import org.apache.spark.h2o._
 val hc = H2OContext.getOrCreate(sc)
-```
+~~~
 
 ### Elasticsearch
 
@@ -236,10 +247,10 @@ interface to Spark functionality in R
 - sparkR DataFrames are implemented on top of SparkSQL tables
 - all DataFrame operations go through a SQL optimizer (catalyst)
 
-```
+~~~
 sc <- sparkR.init()
 sqlContext <- sparkRSQL.init(sc)
-```
+~~~
 
 - from now on, no "Spark Context (sc)" needed any more
 
@@ -247,10 +258,10 @@ sqlContext <- sparkRSQL.init(sc)
 
 Reading and writing to storage (JVM <> Storage)
 
-```
+~~~
 sparkDF <- read.df(sqlContext, path = "...", source = "csv") # json, parquet
 write.df(sparkDF, source = "json") # parquet
-```
+~~~
 
 - no operation between R and the JVM (materialization)
 
@@ -326,14 +337,14 @@ navigate to folder
 
 use spark-submit to run your application
 
-```
+~~~
 sbt clean package
 
 $SPARK_HOME/bin/spark-submit \
 --class "SimpleApp" \
 --master local[4] \
 target/scala-2.10/simple-project_2.10-1.0.jar
-```
+~~~
 
 
 ## Learning Spark: Lightning-Fast Big Data Analysis
@@ -354,7 +365,7 @@ start scala shell
 
 ### Example 2-2. Scala line count
 
-```
+~~~
 val lines = sc.textFile("README.md") // Create an RDD called lines
 // lines: spark.RDD[String] = MappedRDD[...]
 
@@ -363,11 +374,11 @@ lines.count() // Count the number of items in this RDD
 
 lines.first() // First item in this RDD, i.e. first line of README.md
 // String = # Apache Spark
-```
+~~~
 
 ### Example 2-5. Scala filtering example
 
-```
+~~~
 val lines = sc.textFile("README.md") // textFile() method creates an RDD called lines
 // lines: spark.RDD[String] = MappedRDD[...]
 
@@ -376,24 +387,24 @@ val pythonLines = lines.filter(line => line.contains("Python"))
 
 pythonLines.first()
 //  String = ## Interactive Python Shell
-```
+~~~
 
 ### Example 2-8. Initializing Spark in Scala
 
-```
+~~~
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 
 val conf = new SparkConf().setMaster("local").setAppName("My App")
 val sc = new SparkContext(conf)
-```
+~~~
 
 ### 2-11 to 2-14. Building Stand-alone applications
 
 #### 2-11. Word count Scala application
 
-```
+~~~
 // Create a Scala Spark Context.
 val conf = new SparkConf().setAppName("wordCount")
 val sc = new SparkContext(conf)
@@ -409,11 +420,11 @@ val counts = words.map(word => (word, 1)).reduceByKey{case (x, y) => x + y}
 
 // Save the word count back out to a text file, causing evaluation.
 counts.saveAsTextFile(outputFile)
-```
+~~~
 
 #### 2-12. sbt build file
 
-```
+~~~
 name := "learning-spark-mini-example"
 
 version := "0.0.1"
@@ -424,7 +435,7 @@ scalaVersion := "2.10.4"
 libraryDependencies ++= Seq(
 "org.apache.spark" %% "spark-core" % "1.2.0" % "provided"
 )
-```
+~~~
 
 #### 2-14. Scala build and run
 
@@ -446,13 +457,13 @@ copy [WordCount.scala](https://github.com/databricks/learning-spark/blob/master/
 :   `wget https://raw.githubusercontent.com/databricks/learning-spark/master/mini-complete-example/src/main/scala/com/oreilly/learningsparkexamples/mini/scala/WordCount.scala`
  -->
 
-```
+~~~
 sbt clean package
 $SPARK_HOME/bin/spark-submit \
 --class com.oreilly.learningsparkexamples.mini.scala.WordCount \
 ./target/scala-2.10/learning-spark-mini-example_2.10-0.0.1.jar \
 ./README.md ./wordcounts
-```
+~~~
 
 ### RDDs
 
@@ -460,16 +471,16 @@ transformed RDDs are computed lazily, i.e. only when used in an action
 
 #### Example 3-4. Persisting an RDD in memory
 
-```
+~~~
 // copied from example 2-5.
 val lines = sc.textFile("README.md") // textFile() method creates an RDD called lines
 // lines: spark.RDD[String] = MappedRDD[...]
 
 val pythonLines = lines.filter(line => line.contains("Python"))
 // pythonLines: spark.RDD[String] = FilteredRDD[...]
-```
+~~~
 
-```
+~~~
 pythonLines.persist
 // pythonLines.type = MapPartitionsRDD[2] at filter at <console>:23
 
@@ -478,7 +489,7 @@ pythonLines.count()
 
 pythonLines.first()
 // String = high-level APIs in Scala, Java, and Python, and an optimized engine that
-```
+~~~
 
 #### Example 3-6. `parallelize()` method in Scala
 
@@ -486,39 +497,39 @@ pythonLines.first()
 
 #### Example 3-14. `union()` transformation
 
-```
+~~~
 // val inputRDD = sc.textFile("log.txt")
 val inputRDD = sc.textFile("/home/xps13/Dropbox/Programming/Scala/Spark/learning-spark/files/fake_logs/log1.log")
 val errorsRDD = inputRDD.filter(line => line.contains("error"))
 val warningsRDD = inputRDD.filter(line => line.contains("warning"))
 val badLinesRDD = errorsRDD.union(warningsRDD)
 //  badLinesRDD: org.apache.spark.rdd.RDD[String] = UnionRDD[8] at union at <console>:27
-```
+~~~
 
 #### Example 3-16. Scala error count using actions
 
-```
+~~~
 println("Input had " + badLinesRDD.count() + " concerning lines")
 //  Input had 1 concerning lines
 
 println("Here are 10 examples:")
 badLinesRDD.take(10).foreach(println)
 //  71.19.157.174 - - [24/Sep/2014:22:26:12 +0000] "GET /error HTTP/1.1" 404 505 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
-```
+~~~
 
 #### Example Scala `collect()` to retrieve the entire RDD
 
-```
+~~~
 val getRDD = inputRDD.filter(line => line.contains("GET"))
 getRDD.collect()
 // Array[String] = Array(66.249.69.97 - - [24/Sep/2014:22:25:44 +0000] "GET /071300/242153 HTTP/1.1" 404 514 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", 71.19.157.174 - - [24/Sep/2014:22:26:12 +0000] "GET /error HTTP/1.1" 404 505 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22:26:12 +0000] "GET /favicon.ico HTTP/1.1" 200 1713 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22:26:37 +0000] "GET / HTTP/1.1" 200 18785 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36", 71.19.157.174 - - [24/Sep/2014:22...
-```
+~~~
 
 > Although transformations are lazy, you can force Spark to execute them at any time by running an action, such as count(). This is an easy way to test out just part of your program.
 
 #### Example 3-21. Scala function passing
 
-```
+~~~
 // As the RDD class is not automatically imported therefore we have to import it explicitly
 import org.apache.spark.rdd.RDD 
 
@@ -537,23 +548,23 @@ class SearchFunctions(val query: String) {
 // val lines = sc.parallelize(List("pandas", "i like pandas"))
 // val test2 = new SearchFunctions("pandas").getMatchesNoReference(lines)
 // test2.collect()
-```
+~~~
 
 #### Example 3-27. Scala squaring the values in an RDD
 
-```
+~~~
 val input = sc.parallelize(List(1, 2, 3, 4))
 val result = input.map(x => x * x)
 println(result.collect().mkString(","))
-```
+~~~
 
 #### Example 3-30. flatMap() in Scala, splitting lines into multiple words
 
-```
+~~~
 val lines = sc.parallelize(List("hello world", "hi"))
 val words = lines.flatMap(line => line.split(" "))
 words.first() // returns "hello"
-```
+~~~
 
 #### Basic RDD transformations (see table p41f.)
 
@@ -581,22 +592,22 @@ words.first() // returns "hello"
 
 #### Example 3-33. `reduce()` in Scala
 
-```
+~~~
 val rdd = sc.parallelize(List(1, 2, 3, 3))
 val sum = rdd.reduce((x, y) => x + y)
 // println(sum)
 // sum: Int = 9
-```
+~~~
 
 #### Example 3-36. aggregate() in Scala
 
-```
+~~~
 val input = sc.parallelize(List(1, 2, 3, 4))
 val result = input.aggregate((0, 0))( // set sum and counter to zero
   (acc, value) => (acc._1 + value, acc._2 + 1), // add value to sum, add one to counter
   (acc1, acc2) => (acc1._1 + acc2._1, acc1._2 + acc2._2)) // combine results (sum, counter) from two processes (?)
 val avg = result._1 / result._2.toDouble // calculate average as sum over numeric count
-```
+~~~
 
 ### Implicit Conversions
 
@@ -610,14 +621,14 @@ functions such as mean() and variance().
 
 #### Example 3-39. Double execution in Scala
 
-```
+~~~
 import org.apache.spark.storage.StorageLevel
 val input = sc.parallelize(List(1, 2, 3, 4))
 val result = input.map(x => x*x)
 result.persist(StorageLevel.DISK_ONLY)
 println(result.count())
 println(result.collect().mkString(","))
-```
+~~~
 
 - `unpersist()` manually remove RDD from the cache
 
@@ -625,11 +636,11 @@ println(result.collect().mkString(","))
 
 #### Example 4-2. Creating a pair RDD using the first word as the key in Scala
 
-```
+~~~
 val lines = sc.textFile("README.md")
 val pairs = lines.map(x => (x.split(" ")(0), x))
 // val rdd = sc.parallelize(List((1, 2), (3, 4), (5, 6)))
-```
+~~~
 
 
 ## Spark Packages
@@ -752,12 +763,12 @@ Spark R Meetup
 
 `NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
 
-```
+~~~
 [xps13@xps13 sparkDemo]$ hadoop
 bash: hadoop: command not found...
 Install package 'hadoop-common' to provide command 'hadoop'? [N/y] y
 ...
-```
+~~~
 
 ## Documentation
 
@@ -775,6 +786,7 @@ Install package 'hadoop-common' to provide command 'hadoop'? [N/y] y
 
 ## Links
 
+- [Awesome List: Spark](https://github.com/awesome-spark/awesome-spark)
 - [Spark Notebook](http://spark-notebook.io/)
 - [cloudera: Why Apache Spark is a Crossover Hit for Data Scientists](http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists)
 - [databricks.com: ML Pipelines: A New High-Level API for MLlib](https://databricks.com/blog/2015/01/07/ml-pipelines-a-new-high-level-api-for-mllib.html)
