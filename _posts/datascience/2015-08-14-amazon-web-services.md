@@ -6,6 +6,23 @@ tags     : [EMR, Hadoop]
 ---
 {% include JB/setup %}
 
+## Amazon Linux
+
+- [hub.docker.com: Amazon Linux](https://hub.docker.com/_/amazonlinux/)
+
+
+## EC2 Spot Instance
+
+Example prices 2017-04-17
+
+| Instance type | vCPUs | Memory (GiB) | Storage (GB) | Network    | Spot price | Spot savings |
+|:--------------|:------|:-------------|:-------------|:-----------|:-----------|:-------------|
+| c3.large      | 2     | 3.75         | 2 x 16       | Moderate   | $0.0222    | 83%          |
+| c3.xlarge     | 4     | 7.5          | 2 x 40       | Moderate   | $0.0431    | 83%          |
+| c3.2xlarge    | 8     | 15           | 2 x 80       | High       | $0.1164    | 77%          |
+| c3.4xlarge    | 16    | 30           | 2 x 160      | High       | $0.2436    | 76%          |
+| c3.8xlarge    | 32    | 60           | 2 x 320      | 10 Gigabit | $0.3842    | 81%          |
+
 ## Docker
 
 - [docs.aws.amazon.com: Docker Basics](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
@@ -42,28 +59,28 @@ tags     : [EMR, Hadoop]
 
 install missing packages
 
-```
+~~~
 cd /tmp
 wget https://dl.dropboxusercontent.com/u/1807228/install-packages.R?dl=1 -O install-packages.R
 R CMD BATCH install-packages.R
-```
+~~~
 
 download `bootcamp.zip` to `/tmp` folder
 
-```
+~~~
 cd /tmp &&\
 wget https://dl.dropboxusercontent.com/u/1807228/bootcamp.zip?dl=1 -O bootcamp.zip && \
 unzip bootcamp.zip -d ../home/rstudio/ && \
 chown -R rstudio: /home/rstudio
-```
+~~~
 
 create user accounts, unzip course material to /home/$USER folders and allow users writing to location `bash createuser.sh`, e.g. `chown -R training01:training01 /home/training01`
 
-```
+~~~
 cd /tmp && \
 wget https://dl.dropboxusercontent.com/u/1807228/createuser.sh -O createuser.sh && \
 bash createuser.sh
-```
+~~~
 
 #### Client Browser
 
@@ -127,7 +144,7 @@ create ec2 skeleton and save to a file
 run instance using JSON configuration
 :   `$ aws ec2 run-instances --cli-input-json file:///home/xps13/src/scala/sparkDemo/ec2runinst.json`
 
-```
+~~~
 {
     "DryRun": true,
     "ImageId": "ami-dfc39aef",
@@ -143,7 +160,7 @@ run instance using JSON configuration
         "Enabled": true
     }
 }
-```
+~~~
 
 create key pair (EC2 Dashboard: Network & Security: Key Pairs)
 :   `$ aws ec2 create-key-pair --key-name awscli-ec2key --profile root`
@@ -159,7 +176,7 @@ create emr skeleton
 
 create spark cluster
 
-```
+~~~
 $ aws emr create-cluster \ 
     --name "Spark cluster" \
     --release-label emr-5.0.0 \
@@ -168,22 +185,49 @@ $ aws emr create-cluster \
     --instance-type m3.xlarge \
     --instance-count 3 \
     --use-default-roles`
-```
+~~~
 
 stop cluster
 :   `$ aws emr terminate-clusters --cluster-ids j-91BR4ANV6I1J`
 
 - [docs.aws.amazon.com: create-cluster](http://docs.aws.amazon.com/cli/latest/reference/emr/create-cluster.html)
 
-## s3a Storage
+## S3
+
+### Static Websites
+
+- [Hosting a Static Website on Amazon S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+- [How Do I Configure an S3 Bucket for Static Website Hosting? ](http://docs.aws.amazon.com/AmazonS3/latest/user-guide/static-website-hosting.html)
+
+To host your static website, you configure an Amazon S3 bucket for website hosting and then upload your website content to the bucket. The website is then available at the region-specific website endpoint of the bucket:
+
+~~~
+<bucket-name>.s3-website-<AWS-region>.amazonaws.com
+~~~
+
+For a list of region specific website endpoints for Amazon S3, see Website Endpoints. For example, suppose you create a bucket called examplebucket in the US East (N. Virginia) Region and configure it as a website. The following example URLs provide access to your website content:
+
+This URL returns a default index document that you configured for the website
+
+~~~
+http://examplebucket.s3-website-us-east-1.amazonaws.com/
+~~~
+
+Example: `epfl-observatory`
+
+~~~
+http://epfl-observatory.s3-website.eu-central-1.amazonaws.com
+~~~
+
+### s3a Storage
 
 - add to `libraryDepends` in `build.sbt` file [mvnrepository.com: org.apache.hadoop: hadoop-aws](https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws)
 - see also [github: Aloisius: hadoop-s3a](https://github.com/Aloisius/hadoop-s3a)
 
-```
+~~~
     val hadoopConf = sc.hadoopConfiguration
     hadoopConf.set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
-```
+~~~
 
 Alternatively, one could set `spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem` in the `spark.properties` configuration file.
 
@@ -205,7 +249,7 @@ Features:
 
 Policy to access buckets and objects in buckets
 
-```
+~~~
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -241,26 +285,26 @@ Policy to access buckets and objects in buckets
         }
     ]
 }
-```
+~~~
 
 test access in databricks platform
 
-```
+~~~
 val logFile = "s3n://[AWS_ACCESS_KEY_ID]:[AWS_SECRET_ACCESS_KEY]@ir-faosws-1/fcl_2_cpc.csv"
 val logData = sc.textFile(logFile.toString, 2).cache()
 logData.first()
-```
+~~~
 
 ### Upload data
 
 - choose location for data storage in the same region as the account, e.g. the Databricks Community Edition is being hosted in AWS in the US-West-2 (Oregon) region
 
-```
+~~~
 |  `Clusters / My Cluster`
 |--  Spark Cluster UI - Master
 |----  Hostname: ec2-50-112-21-230.us-west-2.compute.amazonaws.com
 |----  Spark Version: 1.6.1-ubuntu15.10-hadoop1
-```
+~~~
 
 #### AWS CLI
 

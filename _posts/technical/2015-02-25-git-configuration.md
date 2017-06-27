@@ -6,6 +6,47 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Other VC
+
+### Mercurial
+
+- [mercurial-scm.org](https://www.mercurial-scm.org)
+
+Clone a project and push changes
+
+~~~
+$ hg clone https://www.mercurial-scm.org/repo/hello
+$ cd hello
+$ (edit files)
+$ hg add (new files)
+$ hg commit -m 'My changes'
+$ hg push
+~~~
+
+Create a project and commit
+
+~~~
+$ hg init (project-directory)
+$ cd (project-directory)
+$ (add some files)
+$ hg add
+$ hg commit -m 'Initial commit'
+~~~
+
+To modify remote URLs, edit file `.hg/hgrc`
+
+~~~
+[paths]
+default = ssh://hg@bitbucket.org/bowerth/michel-orgmode
+default:pushurl = ssh://hg@bitbucket.org/bowerth/michel-orgmode
+upstream = ssh://hg@bitbucket.org/edgimar/michel-orgmode
+~~~
+
+Get help on setting paths
+:   `$ hg help config.paths"`
+
+
+
 ## Commit message code
 
 `[=|+|!] [core|viewable|akka|docs|all]: <Actual message>.`

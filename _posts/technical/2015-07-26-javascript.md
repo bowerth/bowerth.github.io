@@ -184,9 +184,13 @@ install `node`
 install `grunt`
 :   `npm install -g grunt` (sudo not necessary with nvm)
 
-install mapbox-gl-js
+install latest `npm`
+:   `npm install npm@latest -g`
+
+the following steps were required with npm version < 5.0.3
 
 ~~~
+## install mapbox-gl-js
 git clone https://github.com/plotly/mapbox-gl-js
 cd mapbox-gl-js
 git checkout v0.22.1-branch
@@ -195,17 +199,19 @@ npm install deps/mapbox-gl-shaders
 npm install deps/mapbox-gl-style-spec
 ~~~
 
-- modify `plotly.js/package.json`
-
 ~~~
+## modify `plotly.js/package.json`
 -    "mapbox-gl": "^0.22.0",
  +    "@plotly/mapbox-gl": "0.22.1",
+## modify `/src/plots/mapbox/index.js and `/src/plots/mapbox/mapbox.js`
+## replace `mapbox-gl` with `@plotly/mapbox-gl`
 ~~~
 
-- modify `/src/plots/mapbox/index.js and `/src/plots/mapbox/mapbox.js`: replace `mapbox-gl` with `@plotly/mapbox-gl`
+continue here
 
 ~~~
 cd /home/xps13/src/javascript/plotly.js
+npm install
 rm node_modules
 npm run build -- dev
 ~~~
@@ -259,6 +265,7 @@ fontello `globe`
 
 Plotly's open source javascript graphing library, plotly.js, includes multiple different trace types (e.g. pie, scatter, bar, choropleth etc.) and as we add more types - especially with the inclusion of WebGL types - our bundle size grows ever more daunting. For a while, we've received requests to implement a module system, and have recently published our first modular release, allowing users to bundle only the specific trace modules they need.
 
+- plot export: in order to save as a static image in a vector image format, the plotly API is connected. This requires an online connection and slows down the generation of images.
 
 
 ## timeline.js

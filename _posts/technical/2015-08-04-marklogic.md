@@ -24,41 +24,41 @@ The basic steps needed to write a document are:
 
 If you have not already done so, connect to the database, storing the connection in a `com.marklogic.client.DatabaseClient` object.
 
-```
+~~~
 DatabaseClient client = DatabaseClientFactory.newClient(
   host, port, user, password, authType);
-```
+~~~
 
 If you have not already done so, use the `DatabaseClient` object to create a `com.marklogic.client.document.DocumentManager` object of the appropriate subclass for the document content you want to access (XML, text, JSON, binary, generic). In this example code, an `XMLDocumentManager`.
 
-```
+~~~
 XMLDocumentManager docMgr = client.newXMLDocumentManager();
-```
+~~~
 
 Get the document's content. For example, by using an `InputStream`.
 
-```
+~~~
 FileInputStream docStream = new FileInputStream(
                                 "data"+File.separator+filename);
-```
+~~~
 
 Create a handle associated with the input stream to receive the document's content. How you get content determines which handle you use. Use the handle's set() method to associate it with the desired stream.
 
-```
+~~~
 InputStreamHandle handle = new InputStreamHandle(docStream);
-```
+~~~
 
 Write the document's content by calling a write() method on the `DocumentManager`, with arguments of the document's URI and the handle.
 
-```
+~~~
 docMgr.write(docId, handle);
-```
+~~~
 
 When finished with the database, release the connection resources by calling the `DatabaseClient` object's `release()` method.
 
-```
+~~~
 client.release();
-```
+~~~
 
 ## ml-gradle
 
@@ -194,14 +194,14 @@ navigate to folder
 show list of possible tasks
 :   `./gradlew tasks`
 
-```
+~~~
 Application tasks
 -----------------
 bootRun - Run the project with support for auto-detecting main class and reloading static resources
 installApp - Installs the project as a JVM application along with libs and OS specific scripts.
 run - Runs this project as a JVM application
 ...
-```
+~~~
 
 ### Installation
 

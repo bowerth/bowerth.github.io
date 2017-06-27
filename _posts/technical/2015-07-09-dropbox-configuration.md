@@ -6,6 +6,13 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Find conflicted files
+
+~~~
+find ~/Dropbox/ -path "*(*'s conflicted copy [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*" -print
+~~~
+
+
 ## Command Line Interface
 
 - [dropboxwiki.com: Using the Official Dropbox Command Line Interface (CLI)](http://www.dropboxwiki.com/tips-and-tricks/using-the-official-dropbox-command-line-interface-cli)
@@ -34,7 +41,7 @@ undo excluding
 list excluded files
 :   `$ dropbox exclude list`
 
-```
+~~~
 [xps13@xps13 icioapp2015]$ cd data 
 [xps13@xps13 data]$ dropbox filestatus
 .Rhistory:                       up to date
@@ -56,7 +63,7 @@ DATA.ICIOeconFDTTLdisc.Rdata:    up to date
 DATA.ICIOeconFDTTLexINVNT.Rdata: up to date
 DATA.ICIOeconGRTR.Rdata:         up to date
 ...
-```
+~~~
 
 # Google Drive
 

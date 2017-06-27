@@ -6,6 +6,9 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Themes
+
+- [match with intellij: solarized dark](https://github.com/daraliu/intellij-solarized-dark-emacs)
 
 ## Install
 
@@ -464,12 +467,16 @@ launche `sbt` console
 go to test file
 :   `C-c C-t t`
 
+if ensime opens / creates a "Spec" test file (and doesn't find existing "Test" files in src/test location), modify `ensime-goto-test-config-defaults`: swap `Spec` with `Test` in `:test-class-suffixes` (in `ensime-vars.el`)
+
 run tests
-:   all tests `C-c C-b T`  
+:   all tests `C-c C-b T` (if in a test file, only this test will be run)  
+    only one unit test `C-c C-b o`, see [sbt Testing](http://www.scala-sbt.org/0.13/docs/Testing.html)  
     testQuick `C-c C-b t`
 
 interrupting `~compile`
 :   `M-x send-invisible RET C-q j RET`
+
 
 ### scala-mode2
 

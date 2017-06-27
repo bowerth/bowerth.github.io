@@ -6,28 +6,38 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Fonts
+
+### Font Manager
+
+GUI to import and manage user fonts
+
+install
+:   `dnf install -y font-manager`
+
+
 ## flatpak
 
 list installed runtimes and applications do
 :   `flatpak list`
 
-```
+~~~
 org.gnome.Games/x86_64/master           system,current
 org.gnome.Games.Locale/x86_64/master    system,runtime
 org.gnome.Platform.Locale/x86_64/3.20   system,runtime
 org.gnome.Platform.Locale/x86_64/master system,runtime
 org.gnome.Platform/x86_64/3.20          system,runtime
 org.gnome.Platform/x86_64/master        system,runtime
-```
+~~~
 
 uninstall a runtime or application named `name`
 :   `flatpak uninstall name`
 
-```
+~~~
 $ flatpak uninstall Games
 $ flatpak uninstall org.gnome.Platform//3.20
 $ flatpak uninstall org.gnome.Platform//master
-```
+~~~
 
 ## Screencast
 
@@ -72,13 +82,13 @@ display location of `upower`
 check status
 :   `$ upower -i /org/freedesktop/UPower/devices/battery_BAT0`
 
-```
+~~~
 energy: 46.5964 Wh  
 energy-full: 52.2423 Wh  
 energy-rate: 16.5406 W  
 time to full: 20.5 minutes  
 percentage: 89%  
-```
+~~~
 
 using `acpi`
 :   `$ acpi -V`  
@@ -106,11 +116,11 @@ reload `~/.bash_profile`
 
 modify parameters in `~/.aMule/amule.conf`
 
-```
+~~~
 [ExternalConnect]
 AcceptExternalConnections=1
 ECPassword=
-```
+~~~
 
 create password
 :   `$ echo -n yourpasswordhere | md5sum | cut -d ' ' -f 1`
@@ -165,7 +175,7 @@ open library view
 
 create `~/.local/share/applications/cmus.desktop` with contents:
 
-```
+~~~
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
@@ -175,7 +185,7 @@ Exec=cmus-remote -f %f
 Terminal=false
 Name=cmus-remote
 Comment=Music player cmus-remote control
-```
+~~~
 
 ## Dropbox
 
@@ -320,6 +330,10 @@ to export a private key
 to import a private key
 :   `gpg --allow-secret-key-import --import private.key`
 
+to encrypt a single file, use command gpg as follows
+:   `gpg -c filename`
+
+
 ## Ubuntu
 
 ### Flash player
@@ -386,7 +400,7 @@ check contents of new `grub.cfg` in editor without root permission
 
 #### place the quoted 99toshiba script (below) in `/etc/pm/sleep.d/` where the content of the script for /etc/pm/sleep.d/99toshiba is:
 
-```
+~~~
 #!/usr/bin/env sh
 # /etc/pm/sleep.d/99toshiba
 
@@ -398,7 +412,7 @@ then
 echo 3 > /sys/class/backlight/toshiba/brightness
 cat /var/run/brightness > /sys/class/backlight/intel_backlight/brightness
 fi
-```
+~~~
 
 Also remember to make it runnable to root
 :   `chmod 744 /etc/pm/sleep.d/99toshiba`
@@ -478,7 +492,7 @@ log out via the terminal
 
 Create `~/.config/gtk-3.0/gtk.css` with the following content and restart the shell.
 
-```css
+~~~css
 /* .header-bar.default-decoration { */
 /*     padding-top: 3px; */
 /*     padding-bottom: 3px; */
@@ -505,7 +519,7 @@ Create `~/.config/gtk-3.0/gtk.css` with the following content and restart the sh
     padding-top: 2px;
     padding-bottom: 2px;
 }
-```
+~~~
 
 ## GNU
 
@@ -637,7 +651,7 @@ create simple http server
 ## grep
 
 [Limit grep context to N characters on line](http://unix.stackexchange.com/questions/163726/limit-grep-context-to-n-characters-on-line)
-:   N=10; grep -roP ".{0,$N}time.{0,$N}" TariffLineSdmx.xml
+:   `N=10; grep -roP ".{0,$N}time.{0,$N}" TariffLineSdmx.xml`
 
 return all files with a specific extension
 :   `ls -al | grep .git`
@@ -661,6 +675,19 @@ change theme for specific window
 
 - [Tools for PDF modification on Fedora, by Ryan Lerch](https://fedoramagazine.org/pdf-modification-tools-fedora/)
 
+### jpdftweak
+
+- [jpdftweak.sourceforge.net](http://jpdftweak.sourceforge.net)
+
+Can be used to modify bookmarks (i.e. "Outline" in Evince). The format of a bookmark file in csv format is as follows:
+
+~~~
+1;O;1 Scala Language Basics;32 FitH 758
+1;O;2 Basics of Object-Orientation and Software Development;82 FitH 758
+1;O;3 Details of Object-Orientation in Scala;112 FitH 758
+...
+~~~
+
 ### pdftk
 
 separate into pages
@@ -670,6 +697,9 @@ separate into pages
 
 convert pdf to text
 :   `pdftotext [file]`
+
+search resulting file for RegExp
+:   `grep '^[0-9][ ][A-Z].*' scala-toc.txt`
 
 reduze PDF file size
 :   `convert -density 200x200 -quality 60 -compress jpeg input.pdf output.pdf`

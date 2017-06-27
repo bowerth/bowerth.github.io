@@ -1,10 +1,27 @@
 ---
-layout   : post
+layout   : post_mathjax
 category : technical
 tagline  :
 tags     :
 ---
 {% include JB/setup %}
+
+## MathJax
+
+### Linebreaks
+
+linebreak in multi-line formula
+:   `~\\\`
+
+example:
+
+\\[
+{\begin{aligned}
+x&={\frac {128}{\pi }}2^{\text{zoom level}}(\lambda +\pi ){\text{ pixels}} ~\\\
+y&={\frac {128}{\pi }}2^{\text{zoom level}}\left(\pi -\ln \left[\tan \left({\frac {\pi }{4}}+{\frac {\varphi }{2}}\right)\right]\right){\text{ pixels}}
+\end{aligned}
+}
+\\]
 
 ## Github Pages
 
@@ -31,14 +48,14 @@ install theme
 - [stackoverflow: 31988717](https://stackoverflow.com/questions/30175567/include-dygraphs-in-jekyll-run-site-from-r/31988717)
 
 - generate with YAML: 
-```
+~~~
 output:
   rmarkdown::html_fragment:
     self_contained: false
     lib_dir: lib
     fig.width: ..
     fig.height: ..
-```
+~~~
 
 1. render with `rmarkdown::html_output`, copy dygraph dependencies from header
 2. create a new jekyll layout in `_layouts/` with the dygraphs dependencies (changing `libs` to `/libs` as mentioned before)

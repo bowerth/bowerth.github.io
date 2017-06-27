@@ -42,3 +42,9 @@ Key                     | Action
 `Ctrl+Comma, Space`     | Justify columns
 `Ctrl+Comma, Comma`     | Collapse columns
 `Ctrl+Comma, Equals`    | Evaluate cells
+
+## Markdwown Tables
+
+- [Markdown Table Formatter](https://packagecontrol.io/packages/Markdown%20Table%20Formatter)
+
+select what you want to format and hit `Ctrl+Alt+Shift+T`

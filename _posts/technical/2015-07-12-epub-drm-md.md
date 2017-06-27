@@ -30,11 +30,11 @@ check winetricks version (>= 20141125)
 :   `winetricks -V`
 
 install winetricks if required
-:   ```
+:   ~~~
     wget winetricks.googlecode.com/svn/trunk/src/winetricks
     sudo cp -f winetricks /usr/bin
     sudo chmod 555 /usr/bin/winetricks
-    ```
+    ~~~
 
 install WINEPREFIX + 32bit-environment
 :   `export WINEPREFIX=~/.wine32a` or similar, e.g. ~/.wine32b
@@ -104,11 +104,11 @@ install pycrypto
 
 download and copy script
 
-```
+~~~
 wget https://raw.githubusercontent.com/psyrendust/dedrm-ebook-tools/master/Other_Tools/DRM_Key_Scripts/Adobe_Digital_Editions/adobekey.pyw
 cp adobekey.pyw "/home/z930/.wine32a/drive_c/Program Files/Adobe/adobekey.pyw"
 wine python "/home/z930/.wine32a/drive_c/Program Files/Adobe/adobekey.pyw" 
 cp "/home/z930/.wine32a/drive_c/Program Files/Adobe/adobekey_1.der" adobekey_1.der
-```
+~~~
 
 - [Gregory Summer: DRM](http://gregsumner.blogspot.fr/2009/12/decrypting-epub-drm.html)

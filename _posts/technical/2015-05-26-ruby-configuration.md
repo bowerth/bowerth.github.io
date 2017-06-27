@@ -32,11 +32,11 @@ install Jekyll gem
 - install wkhtmltopdf: `sudo dnf install wkhtmltopdf`
 - install `pdfkit` gem
 
-```ruby
+~~~ruby
 require 'pdfkit'
 kit = PDFKit.new('http://google.com')
 file = kit.to_file('google.pdf')
-```
+~~~
 
 ## Windows
 

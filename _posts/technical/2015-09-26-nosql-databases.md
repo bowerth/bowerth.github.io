@@ -14,8 +14,17 @@ tags     :
 installation on Fedora 22
 :   `sudo dnf install mongodb mongodb-server`
 
+create data directory
+:   `sudo mkdir -p /data/db`
+
+change ownership of data directory
+:   `sudo chown xps13 /data/db`
+
 start service
 :   `service mongod start`
+
+start instance
+:   `mongod --dbpath /data/db`
 
 ### time series
 
@@ -25,6 +34,7 @@ start service
 ## Apache CouchDB
 
 - [couchdb.apache.org](http://couchdb.apache.org)
+- [smileupps CouchDB Hosting 1.6.0](https://www.smileupps.com/store/apps/couchdb)
 
 ## Apache Cassandra
 

@@ -48,7 +48,7 @@ Known as the GPL, the GNU GPL, and GPL-3, the General Public License was origina
 
 The MIT license is a more permissive license compared to the GPL. MIT licensed software can be modified or incorporated into software that is not open source. The MIT license protects the copyright holder from legal liability that might be incurred from using the software. When using the MIT license in a R package you should specify License: MIT + file LICENSE in the DESCRIPTION file. You should then add a file called LICENSE to your package which uses the following template exactly:
 
-```
+~~~
 YEAR: [The current year]
 COPYRIGHT HOLDER: [Your name or your organization's name]
-```
+~~~

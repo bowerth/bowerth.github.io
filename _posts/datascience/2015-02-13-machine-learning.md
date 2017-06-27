@@ -6,6 +6,10 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+## Data Version Control
+
+- [dataversioncontrol.com](https://dataversioncontrol.com): Make your data science projects reproducible and shareable
+
 ## R libraries
 
 ### caret
@@ -21,6 +25,7 @@ tags     : [R, python]
 
 ## Links
 
+- [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com)
 - [A Super Harsh Guide to Machine Learning](https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/)
 - [DataTau](http://www.datatau.com/)
 - [kaggle in class: Academic Machine Learning Competitions](https://inclass.kaggle.com/)
@@ -70,9 +75,13 @@ Logistic regression is, deep down, essentially a form of regression in which one
 
 - [KDnuggets: SVR Support Vector Regression](http://www.kdnuggets.com/2017/03/building-regression-models-support-vector-regression.html)
 
+### Deep Learning / Neural Networks
+
+- [youtube: Tensorflow and deep learning](https://www.youtube.com/watch?time_continue=90&v=vq2nnJ4g6N0)
+- [Codelabs: TensorFlow and deep learning](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
+
 ### Other Models
 
-- (Deep) neural networks
 - Markov models
 - Generalized Linear Models (GLM)
 - Probabilistic Graphical Models
@@ -169,6 +178,15 @@ Shogun
 
 LibSVM and LibLinear
 :   these are C libraries for support vector machines; there are also bindings or implementations for many other languages. These are the libraries used for support vector machine learning in Scikit-learn.
+
+
+## Coursera
+
+### [Machine Learning by Stanford University](https://www.coursera.org/learn/machine-learning/)
+
+- [github: Borye/machine-learning-coursera-1](https://github.com/Borye/machine-learning-coursera-1)
+- [github: JWarmenhoven/Coursera-Machine-Learning](https://github.com/JWarmenhoven/Coursera-Machine-Learning)
+
 
 ## Books
 

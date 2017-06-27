@@ -158,12 +158,12 @@ run if `build.xml` file missing (e.g. created from Eclipse) or `local.properties
 
 #### `main.xml`
 
-```java
+~~~java
 <LinearLayout ...>  
   <TextView ... android:text="Hello World, HelloAndroid"  
   />  
 </LinearLayout>
-```
+~~~
 
 ### Example applications
 

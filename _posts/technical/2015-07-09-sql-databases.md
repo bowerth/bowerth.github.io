@@ -6,6 +6,71 @@ tags     :
 ---
 {% include JB/setup %}
 
+## mariadb 10.2 RC
+
+configure repo for MariaDB `/etc/yum.repos.d/MariaDB.repo`
+
+~~~
+# MariaDB 10.2 Fedora repository list - created 2017-04-27 11:45 UTC
+# http://downloads.mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/10.2/fedora25-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+~~~
+
+update
+
+~~~
+sudo dnf update -y --best --allowerasing
+sudo dnf install -y MariaDB-server
+systemctl start mariadb.service
+mysql_secure_installation
+# start on boot:
+# systemctl enable mariadb
+~~~
+
+load data
+
+~~~
+mysql -u root -p
+~~~
+
+~~~
+CREATE DATABASE dalia;
+~~~
+
+exit the MySQL shell promt `CTRL+D`
+
+import the dump file
+
+~~~
+mysql -u root -p dalia < mysql_dump
+~~~
+
+check if data has been loaded correctly
+
+~~~
+mysql -u root -p dalia
+SHOW TABLES;
+~~~
+
+| Tables in dalia |
+|:----------------|
+| clicks          |
+| publishers      |
+| users           |
+
+
+create a "root" user that can connect from anywhere
+
+~~~
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-password' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY 'jQy2ZB' WITH GRANT OPTION;
+~~~
+
+
 ## SQL Server in Linux
 
 Bulk copying SQL Server Data from Linux and UNIX

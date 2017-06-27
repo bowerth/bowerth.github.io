@@ -71,7 +71,7 @@ Spreadsheet > Charts
 - data range: `$A$43:$B$44`
   - update dimension of `xl/worksheets/sheet1.xml`: `<dimension ref="A1:B44"/>` and add to `<sheetData>...</sheetData>`
 
-```xml
+~~~xml
   <sheetData>
     [...]
     <row r="43" customFormat="false" ht="12.8" hidden="false" customHeight="false" outlineLevel="0" collapsed="false">
@@ -91,12 +91,12 @@ Spreadsheet > Charts
       </c>
     </row>
   </sheetData>
-```
+~~~
 
 - add to drawing1.xml: `rId2`
   - 
 
-```xml
+~~~xml
 
 <xdr:wsDr ...>
   <xdr:twoCellAnchor editAs="oneCell">
@@ -130,7 +130,7 @@ Spreadsheet > Charts
     <xdr:clientData/>
   </xdr:twoCellAnchor>
 </xdr:wsDr>
-```
+~~~
 
 
 - `<a:off ...>`: Bounding Box Location and Size: http://officeopenxml.com/drwSp-size.php

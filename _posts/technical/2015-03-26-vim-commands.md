@@ -132,18 +132,18 @@ Manage plugins for vim in `~/.vimrc/bundle` directory
 
 - [github: tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
 
-```bash
+~~~bash
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-```
+~~~
 
 if new `~/.vimrc`: `$ vim ~/.vimrc` and paste in the following super-minimal example:
 
-```vim
+~~~vim
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-```
+~~~
 
 add `vim-addon-manager`
 :   `cd ~/.vim/bundle && \`  
