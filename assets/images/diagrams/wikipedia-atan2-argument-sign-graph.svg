@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-240 -130 500 600">
+ <title>atan2 argument sign graph</title>
+ <desc>Comparison of the signs of the arguments of the atan2 function with a graph of the tangent function by CMG Lee. The green arrows show two results of the atan2 function depending on the sign of the arguments.</desc>
+ <defs>
+  <path id="curve"     d="M 0,0 Q 64,-64 73,-121" stroke-width="2"/>
+  <path id="arrowhead" d="M -3,10 L 0,0 L 3,10"/>
+  <g id="arrow" stroke="#666666">
+   <path d="M 0,-100 V 98"/>
+   <use xlink:href="#arrowhead" transform="translate(0,-98)"/>
+  </g>
+  <g id="point" stroke-width="2">
+   <circle cx="160" cy="-120" r="1.5" stroke-dasharray="1,0"/>
+   <path d="M 160,-120 L 0,0"/>
+  </g>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g font-family="Times,Times New Roman,serif" font-size="32" text-anchor="middle" stroke="none" fill="none">
+  <g transform="translate(0,-50)">
+   <g fill="#000000">
+   </g>
+ </g>
+  <g transform="translate(0,0)">
+   <use xlink:href="#curve"                                                  stroke="#ff0000"/>
+   <use xlink:href="#curve"      transform="                      scale(-1)" stroke="#9900ff" stroke-dasharray="4,4"/>
+   <use xlink:href="#curve"      transform="translate( 220,   0)  scale(-1)" stroke="#ff00ff" stroke-dasharray="20,4"/>
+   <use xlink:href="#curve"      transform="translate(-220,   0)           " stroke="#0000ff" stroke-dasharray="20,4,4,4"/>
+   <g stroke="#000000">
+    <use xlink:href="#arrowhead" transform="translate(   0,-121)           "/>
+    <use xlink:href="#arrowhead" transform="translate( 250,   0) rotate(90)"/>
+    <path d="M    0,-121 V 200 M -230,   0 H 250"/>
+    <path d="M -110,-121 V   5 M  110,-121 V   5 M -110,200 V 60 M 110,200 V 60" stroke-dasharray="8,4"/>
+   </g>
+   <g stroke="#009900">
+    <path d="M -165,   0 V -70 H   55      V   0"/>
+    <use xlink:href="#arrowhead" transform="translate(-165,0) rotate(180)"/>
+    <use xlink:href="#arrowhead" transform="translate(  55,0) rotate(180)"/>
+   </g>
+   <g fill="#009900">
+    <text transform="translate(-165, 15)" x="0" y="0.6ex"><tspan>&#8722;3&#960;</tspan><tspan x="0">___</tspan><tspan x="0" dy="1em">4</tspan></text>
+    <text transform="translate(  55, 15)" x="0" y="0.6ex"><tspan>&#960;</tspan><tspan x="0">_</tspan><tspan x="0" dy="1em">4</tspan></text>
+    <text transform="translate( -10,-55)" x="0" y="0.6ex"><tspan>1</tspan></text>
+   </g>
+   <g fill="#000000">
+    <text transform="translate(-220,  15)" x="0" y="0.6ex"><tspan>&#8722;&#960;</tspan></text>
+    <text transform="translate(-110,  15)" x="0" y="0.6ex"><tspan>&#8722;&#960;</tspan><tspan x="0">__</tspan><tspan x="0" dy="1em">2</tspan></text>
+    <text transform="translate( 110,  15)" x="0" y="0.6ex"><tspan>&#960;</tspan><tspan x="0">_</tspan><tspan x="0" dy="1em">2</tspan></text>
+    <text transform="translate( 220,  15)" x="0" y="0.6ex"><tspan>&#960;</tspan></text>
+    <text transform="translate(  15,  20)" x="0" y="0.6ex"><tspan>0</tspan></text>
+    <text transform="translate( 245,  20)" x="0" y="0.6ex"><tspan font-style="italic">&#952;</tspan></text>
+    <text transform="translate( -50,-110)" x="0" y="0.6ex"><tspan>tan</tspan><tspan font-style="italic">&#160;&#952;</tspan></text>
+   </g>
+   <g font-size="48">
+    <g transform="translate(0,140)">
+     <text transform="translate(-165,0)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">y</tspan></text>
+     <text transform="translate( -55,0)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">y</tspan></text>
+     <text transform="translate(  55,0)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">y</tspan></text>
+     <text transform="translate( 165,0)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">y</tspan></text>
+    </g>
+    <g transform="translate(0,185)">
+     <text transform="translate(-165,0)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">x</tspan></text>
+     <text transform="translate( -55,0)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">x</tspan></text>
+     <text transform="translate(  55,0)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">x</tspan></text>
+     <text transform="translate( 165,0)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">x</tspan></text>
+    </g>
+   </g>
+   <g transform="translate(0,340)">
+    <use xlink:href="#point"                          stroke="#ff0000"/>
+    <use xlink:href="#point" transform="scale( 1,-1)" stroke="#9900ff" stroke-dasharray="4,4"/>
+    <use xlink:href="#point" transform="scale(-1, 1)" stroke="#ff00ff" stroke-dasharray="20,4"/>
+    <use xlink:href="#point" transform="scale(-1,-1)" stroke="#0000ff" stroke-dasharray="20,4,4,4"/>
+    <use xlink:href="#arrow" transform="translate( 160,-60) scale(0.6)"/>
+    <use xlink:href="#arrow" transform="translate( 160, 60) scale(0.6) rotate(180)"/>
+    <use xlink:href="#arrow" transform="translate(-160,-60) scale(0.6)"/>
+    <use xlink:href="#arrow" transform="translate(-160, 60) scale(0.6) rotate(180)"/>
+    <use xlink:href="#arrow" transform="translate( -80,  0) scale(0.8) rotate(-90)"/>
+    <use xlink:href="#arrow" transform="translate(  80,  0) scale(0.8) rotate(90)"/>
+    <text transform="translate(-100, 15)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">x</tspan></text>
+    <text transform="translate( 100, 15)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">x</tspan></text>
+    <text transform="translate(-190,-60)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">y</tspan></text>
+    <text transform="translate(-190, 60)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">y</tspan></text>
+    <text transform="translate( 190,-60)" x="0" y="0.6ex" fill="#ff0000"><tspan>+</tspan      ><tspan font-style="italic">y</tspan></text>
+    <text transform="translate( 190, 60)" x="0" y="0.6ex" fill="#0000ff"><tspan>&#8722;</tspan><tspan font-style="italic">y</tspan></text>
+    <text transform="translate(  60,-20)" x="0" y="0.6ex" fill="#000000"><tspan font-style="italic">&#952;</tspan></text>
+    <path d="M 50,0 A 50,50 0 0 0 40,-30" stroke="#999999"/>
+   </g>
+  </g>
+ </g>
+</svg>
