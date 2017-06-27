@@ -40,4 +40,52 @@ start instance
 
 - [learn.datastax.com: DataStax DBAs Guide to NoSQL](http://learn.datastax.com/rs/datastax/images/DataStax-DBAs-Guide-to-NoSQL.pdf)
 
-## Kafka
+### Dependencies
+
+`ant-junit`
+
+~~~
+sudo dnf install -y ant-junit
+~~~
+
+### Building
+
+~~~
+git clone http://git-wip-us.apache.org/repos/asf/cassandra.git
+or
+git@github.com:apache/cassandra.git
+~~~
+
+follow instructions at `./redhat/README.md`
+
+~~~
+ant
+# optional: run the unit tests:
+ant test
+~~~
+
+### Usage
+
+start cassandra
+
+~~~
+bin/cassandra -f
+~~~
+
+connect to single node
+
+~~~
+$ bin/cqlsh localhost
+Connected to Test Cluster at localhost:9042.
+[cqlsh 5.0.1 | Cassandra 4.0-SNAPSHOT | CQL spec 3.4.5 | Native protocol v4]
+Use HELP for help.
+cqlsh> SELECT cluster_name, listen_address FROM system.local;
+
+ cluster_name | listen_address
+--------------|----------------
+ Test Cluster |      127.0.0.1
+
+(1 rows)
+cqlsh> quit;
+$ 
+~~~
