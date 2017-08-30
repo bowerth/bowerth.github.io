@@ -6,6 +6,58 @@ tags     :
 ---
 {% include JB/setup %}
 
+## npm
+
+list packages
+:   `npm list -g >> ~/Downlads/npm-packages.txt`
+
+use registry
+:   `npm install --registry=https://registry.npmjs.org/`
+
+set registry
+:   `npm config set registry https://registry.npmjs.org/`
+
+
+### local registry
+
+- [sinopia npm package](https://www.npmjs.com/package/sinopia)
+- [sinopia docker](https://hub.docker.com/r/keyvanfatehi/sinopia/)
+
+~~~
+docker stop sinopia
+~~~
+
+- [verdaccio](https://github.com/verdaccio/verdaccio) fork of sinopia that works with `@` packages (e.g. `@types`)
+
+start server
+:   `verdaccio`
+
+use local registry
+:   `npm install --registry=http://localhost:4873/`
+
+authenticate
+:   `npm adduser --registry http://localhost:4873/`
+
+- add to `package.json`
+
+~~~
+{
+  "...": {
+
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/",
+    "always-auth": false,
+    "_auth": "...",
+    "email": "...@gmail.com"
+  }
+}
+~~~
+
+- publish to registry using `npm publish`
+- add `registry": "http://localhost:4873/` to `.npmrc` in project root
+
+
 ## Editors
 
 ### Brackets
@@ -339,6 +391,7 @@ mean > MEAN
 mean-4.0.0 > MEAN
 :   v4.0.0, CRUD, no chat
 
+
 ## AngularJS
 
 - [angularjs.org](https://angularjs.org/)
@@ -347,20 +400,29 @@ mean-4.0.0 > MEAN
 
 - [angular 2](https://angular.io)
 
+
 ## Knockout.js
 
 - [knockoutjs.com](http://knockoutjs.com)
+
 
 ## React.js
 
 - [facebook.github.io: react](https://facebook.github.io/react)
 - [github: reactjs](https://github.com/reactjs)
 
+
+## Preact
+
+- [preactjs.com](https://preactjs.com) Fast 3kB alternative to React with the same ES6 API.
+
+
 ## reveal.js
 
 - [github: hakimel: reveal.js](https://github.com/hakimel/reveal.js)
 - [example presentation](http://lab.hakim.se/reveal-js/#)
 - [example source code](https://raw.githubusercontent.com/hakimel/reveal.js/master/index.html)
+
 
 ## [Grunt.js](http://gruntjs.com/)
 

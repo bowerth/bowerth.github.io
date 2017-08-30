@@ -6,6 +6,81 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## PostgreSQL
+
+- [Linux downloads (Red Hat family)](https://www.postgresql.org/download/linux/redhat/)
+
+install F26
+:   `sudo dnf install https://download.postgresql.org/pub/repos/yum/9.6/fedora/fedora-26-x86_64/pgdg-fedora96-9.6-3.noarch.rpm`
+
+install the client packages
+:   `sudo dnf install postgresql96`
+
+install the server packages
+:   `dnf install postgresql96-server`
+
+initialize database
+:   `/usr/pgsql-9.6/bin/postgresql96-setup initdb`
+
+set password for user `postgres`
+
+~~~
+sudo -u postgres psql postgres
+\password postgres
+~~~
+
+modify `pg_hba.conf`, change `peer` and `ident` to `md5`
+:   `sudo nano /var/lib/pgsql/9.6/data/pg_hba.conf`
+
+start database server
+:   `systemctl start postgresql-9.6`
+
+stop database server
+:   `systemctl stop postgresql-9.6`
+
+check if running
+:   `ps axf | grep postgres`
+
+database server status
+:   `systemctl status postgresql-9.6`
+
+active connections
+:   `netstat -na | grep 5432`
+
+restart database server
+:   `systemctl restart postgresql-9.6`
+
+quit console
+:   `\q`
+
+
+### scala-exercises: app
+
+create a user called `scalaexercises_dev_user`
+:   `sudo -u postgres psql -c "CREATE USER scalaexercises_dev_user WITH PASSWORD '[PASS]';"`
+
+create a db called `scalaexercises_dev` and grant all privileges on it to `scalaexercises_dev_user`
+
+~~~
+sudo -u postgres createdb scalaexercises_dev
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE scalaexercises_dev TO scalaexercises_dev_user;"
+~~~
+
+### scala-exercises: tests
+
+create a user called `scalaexercises_user`
+:   `sudo -u postgres psql -c "CREATE USER scalaexercises_user WITH PASSWORD '[PASS]';"`
+
+create a db called `scalaexercises_test` and grant all privileges on it to `scalaexercises_user`
+
+~~~
+psql -c "create database scalaexercises_test;" -U postgres
+sudo -u postgres createdb scalaexercises_test
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE scalaexercises_test TO scalaexercises_user;"
+~~~
+
+
 ## mariadb 10.2 RC
 
 configure repo for MariaDB `/etc/yum.repos.d/MariaDB.repo`
@@ -15,7 +90,7 @@ configure repo for MariaDB `/etc/yum.repos.d/MariaDB.repo`
 # http://downloads.mariadb.org/mariadb/repositories/
 [mariadb]
 name = MariaDB
-baseurl = http://yum.mariadb.org/10.2/fedora25-amd64
+baseurl = http://yum.mariadb.org/10.2/fedora/26/x86_64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 ~~~
@@ -29,6 +104,25 @@ systemctl start mariadb.service
 mysql_secure_installation
 # start on boot:
 # systemctl enable mariadb
+~~~
+
+compile Connector/C
+
+~~~
+cd ~/src/unix
+git clone git@github.com:MariaDB/mariadb-connector-c.git
+cd mariadb-connector-c
+cmake ../mariadb-connector-c -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+make
+sudo make install
+~~~
+
+remove MariaDB
+
+~~~
+sudo rm -r /usr/local/include/mariadb
+sudo rm -r /usr/local/lib/mariadb
+sudo rm /usr/local/bin/mariadb_config
 ~~~
 
 load data
@@ -68,6 +162,135 @@ create a "root" user that can connect from anywhere
 ~~~
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-password' WITH GRANT OPTION;
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY 'jQy2ZB' WITH GRANT OPTION;
+~~~
+
+
+delete database
+
+~~~
+DROP DATABASE dalia;
+~~~
+
+define connection groups in `~/.my.cnf`
+
+~~~
+[boerseduesseldorf]
+database=boerseduesseldorf
+user=root
+password=PASS
+~~~
+
+
+
+### Connect from Java / Scala
+
+~~~
+import java.sql.Connection
+import java.sql.DriverManager
+import org.mariadb.jdbc.{Driver, MariaDbDataSource}
+
+val connection =
+      DriverManager.getConnection("jdbc:mariadb://localhost:3306/boerseduesseldorf?user=root&password=Password")
+
+// create table
+val stmt = connection.createStatement
+stmt.executeUpdate("CREATE TABLE test (date date not null primary key, value float not null)")
+~~~
+
+run in console: get column types
+
+~~~
+DESCRIBE test;
+
++-------+-------+------+-----+---------+-------+
+| Field | Type  | Null | Key | Default | Extra |
++-------+-------+------+-----+---------+-------+
+| date  | date  | NO   | PRI | NULL    |       |
+| value | float | NO   |     | NULL    |       |
++-------+-------+------+-----+---------+-------+
+~~~
+
+contents of `file.sql`
+
+~~~
+2016-03-01	32.4
+2016-03-02	33.5
+~~~
+
+- `	` corresponds to `\t`
+
+~~~
+LOAD DATA LOCAL INFILE 'file.sql' INTO TABLE test FIELDS TERMINATED BY '\t';
+
+Query OK, 2 rows affected (0.01 sec)                 
+Records: 2  Deleted: 0  Skipped: 0  Warnings: 0
+~~~
+
+show result
+
+~~~
+SELECT * FROM test;
+
++------------+-------+
+| date       | value |
++------------+-------+
+| 2016-03-01 |  32.4 |
+| 2016-03-02 |  33.5 |
++------------+-------+
+~~~
+
+`WHERE` clause on `date` column
+
+~~~
+SELECT * FROM fonds WHERE date > '2017-01-01';
+
++--------+------------+-------+
+| wkn    | date       | value |
++--------+------------+-------+
+| 940637 | 2017-02-10 | 49.83 |
+| 940637 | 2017-02-09 |  49.9 |
+| 940637 | 2017-02-08 | 49.82 |
+| 940637 | 2017-02-07 | 49.84 |
+| 940637 | 2017-02-06 | 49.72 |
+| ...    | ...        | ...   |
++--------+------------+-------+
+~~~
+
+other useful commands
+
+~~~
+SELECT DISTINCT(wkn) FROM fonds;
+SELECT * FROM fonds LIMIT 10;
+SELECT * FROM fonds WHERE wkn = "603364" ORDER BY -date LIMIT 10;
+DELETE FROM fonds;
+SELECT COUNT(*) FROM fonds;
+~~~
+
+count after loading all values
+
+~~~
+SELECT COUNT(*) FROM (SELECT DISTINCT(wkn) FROM fonds) AS t;
+
++----------+
+| COUNT(*) |
++----------+
+|     2033 |
++----------+
+1 row in set (2.56 sec)
+~~~
+
+create index for faster querying (time reduced from 2.56 sec to 0.00 sec)
+
+~~~
+CREATE INDEX wknidx ON fonds (wkn);
+SELECT COUNT(*) FROM (SELECT DISTINCT(wkn) FROM fonds) AS t;
+
++----------+
+| COUNT(*) |
++----------+
+|     2033 |
++----------+
+1 row in set (0.00 sec)
 ~~~
 
 

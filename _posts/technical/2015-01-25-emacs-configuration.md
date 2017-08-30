@@ -6,6 +6,16 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## Wrapping text
+
+wrap paragraph to column width
+:   `M-q`
+
+unfill paragraph: set fill-columnn to a really large number, and fill
+:   `C-u 10000 C-x f M-x fill-individual-paragraphs`
+
+
 ## Themes
 
 - [match with intellij: solarized dark](https://github.com/daraliu/intellij-solarized-dark-emacs)
@@ -861,9 +871,20 @@ edit Gmail message with Emacs (after installing Edit with Emacs and editing the 
 when done editing, export back to Gmail
 :   `C-x #`
 
+
 ## mu4e
 
 - [github.com: djcb: mu-releases](https://github.com/djcb/mu-releases)
+
+### Install Fedora 26
+
+- [djcbsoftware: Installation](http://www.djcbsoftware.nl/code/mu/mu4e/Installation.html)
+
+rebuild index
+:   `mu index --rebuild`
+
+### Usage
+
 - [www.djcbsoftware.nl: Mu4e User Manual](http://www.djcbsoftware.nl/code/mu/mu4e/index.html)
 
 start mu4e
@@ -873,7 +894,7 @@ synchronize emails and index mu4e
 :   `U`
 
 go to inbox
-:   `j INBOX`
+:   `j INBOX` or `j-i`
 
 reply message
 :   `R`

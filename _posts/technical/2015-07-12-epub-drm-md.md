@@ -6,6 +6,11 @@ tags     :
 ---
 {% include JB/setup %}
 
+## Convert EPUB to PDF
+
+- [www.epubconverter.com](https://www.epubconverter.com)
+
+
 ## Markdown and Epub
 
 - [GitHub: mdepub](https://github.com/bkidwell/mdepub)

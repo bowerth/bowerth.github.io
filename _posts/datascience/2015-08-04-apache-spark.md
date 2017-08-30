@@ -6,6 +6,12 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## SQL DBs
+
+- [databricks: Connecting to SQL Databases using JDBC](https://docs.databricks.com/spark/latest/data-sources/sql-databases.html)
+
+
 ## Logs
 
 Spark produces a lot of logs by default. Often, this makes it impossible to read the whole grader feedback. Consequently, we suggest you to tune the log level of Spark like so:

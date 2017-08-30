@@ -6,6 +6,12 @@ tags     : [EMR, Hadoop]
 ---
 {% include JB/setup %}
 
+
+## Private Cloud
+
+- [Apache CloudStack](http://cloudstack.apache.org)
+
+
 ## Amazon Linux
 
 - [hub.docker.com: Amazon Linux](https://hub.docker.com/_/amazonlinux/)
@@ -310,6 +316,8 @@ logData.first()
 
 - [AWS Command Line Interface](https://aws.amazon.com/cli/)
 - [Databricks: Data Import: How-To Guide](https://databricks.com/wp-content/uploads/2015/08/Databricks-how-to-data-import.pdf)
+
+- configure user and profiles at `~/.s3cfg` and `~/.aws/config`
 
 #### S4cmd
 

@@ -6,6 +6,55 @@ tags     : [R, python]
 ---
 {% include JB/setup %}
 
+
+## Tools
+
+- [Running an R Workshop on Azure with the Ubuntu Data Science Virtual Machine](https://togaware.com/running-an-r-workshop-on-azure-linux-data-science-virtual-machine/)
+
+### rattle
+
+- [rattle: A Graphical User Interface for Data Mining using R](https://rattle.togaware.com)
+
+~~~r
+library(rattle)
+rattle()
+~~~
+
+1. Click Execute
+2. Click Yes (load the sample weather dataset)
+3. Click the Model tab
+4. Click Execute (to build a decision tree)
+5. Click Draw to display the decision tree (loads other packages as required)
+6. Click the Forest radio button
+7. Click Execute (to build a random forest - loads packages as required)
+8. Click the Evaluate tab
+9. Click the Risk radio button (installs packages as required)
+10. Click Execute to display two Risk (Cummulative) performance plots
+11. Click the Log tab
+12. Click the Export button to save script to file weather script.R to home folder
+
+
+
+## Supervised Learning
+
+### Random Forests
+
+#### R
+
+- rpart: Recursive Partitioning Using the RPART Routines
+- [party: A Laboratory for Recursive Partytioning](https://cran.r-project.org/web/packages/party/index.html)
+- [partykit: A Toolkit for Recursive Partytioning](https://cran.r-project.org/web/packages/partykit/index.html)
+
+- [Coursera: Predictive Analysis](https://www.coursera.org/learn/predictive-analysis)
+- [Coursera: Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
+- [wikipedia: Decision Tree Learning](http://en.wikipedia.org/wiki/Decision_tree_learning)
+
+
+#### Random Forest Exercises
+
+- [R Assignment: Classification of Ocean Microbes](https://www.coursera.org/learn/predictive-analytics/supplement/ROLOs/r-assignment-classification-of-ocean-microbes)
+
+
 ## Data Version Control
 
 - [dataversioncontrol.com](https://dataversioncontrol.com): Make your data science projects reproducible and shareable
@@ -14,14 +63,27 @@ tags     : [R, python]
 
 ### caret
 
-- [github: topepo: caret](https://github.com/topepo/caret)
 - [caret documentation](http://topepo.github.io/caret/index.html)
+- [github: topepo: caret](https://github.com/topepo/caret)
 - [companion page to Applied Predictive Modelin by Max Kuhn](http://appliedpredictivemodeling.com/)
 - [github APM exercises](https://github.com/topepo/APM_Exercises)
 - [webinar on caret](https://www.youtube.com/watch?v=7Jbb2ItbTC4)
 - [Article in JSS](https://www.jstatsoft.org/article/view/v028i05)
 - [github: topepo: useR2016](https://github.com/topepo/useR2016) Slides and code for the 2016 useR! tutorial "Never Tell Me the Odds! Machine Learning with Class Imbalances" 
 - [Applied Predictive Modeling: useR! 2014 morning tutorial](http://appliedpredictivemodeling.com/user2014/)
+
+### Methods
+
+#### Bagging
+
+Some models perform bagging, in `train` function consider `methods` options
+
+- `bagEarth`
+- `treebag`
+- `bagFDA`
+
+Alternatively, bag any model using the `bag` function
+
 
 ## Links
 
@@ -61,6 +123,8 @@ Machine Learning for Hackers by Drew Conway and John Myles White (O'Reilly). Cop
 - MDS (visual exploration / distance metrics)
 - knn (Recommendation Systems)
 - Social Graph Analysis
+- tree-based models
+- gradient boosting: [LightGBM](https://github.com/Microsoft/LightGBM)
 
 ### logistic regression (classification algorithm)
 
@@ -79,6 +143,7 @@ Logistic regression is, deep down, essentially a form of regression in which one
 
 - [youtube: Tensorflow and deep learning](https://www.youtube.com/watch?time_continue=90&v=vq2nnJ4g6N0)
 - [Codelabs: TensorFlow and deep learning](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
+- [github: Lasagne/Lasagne](https://github.com/Lasagne/Lasagne)
 
 ### Other Models
 
@@ -182,18 +247,28 @@ LibSVM and LibLinear
 
 ## Coursera
 
-### [Machine Learning by Stanford University](https://www.coursera.org/learn/machine-learning/)
-
+- [Machine Learning by Andrew NG, Stanford University](https://www.coursera.org/learn/machine-learning/)
+- [github: faridcher/machine-learning-course](https://github.com/faridcher/machine-learning-course) R version assignments of Stanford machine learning course
 - [github: Borye/machine-learning-coursera-1](https://github.com/Borye/machine-learning-coursera-1)
 - [github: JWarmenhoven/Coursera-Machine-Learning](https://github.com/JWarmenhoven/Coursera-Machine-Learning)
 
 
+## People
+
+- Graham Williams: [togaware.com](https://togaware.com)
+
+
 ## Books
+
+From linear models to machine learning
+:   Author: Norman Matloff  
+    Publisher: CRC Press
 
 The Elements of Statistical Learning
 :   Author: Hastie, Tibshirani, and Friedman  
 	Content: formal specifications of basic machine learning techniques (mathematics, statistics, computer science)
-	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+	URL: [www-stat.stanford.edu/~tibs/ElemStatLearn](http://statweb.stanford.edu/~tibs/ElemStatLearn/)  
+    MOOC: [r-bloggers: In-depth introduction to machine learning in 15 hours of expert videos](https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/)
 
 Machine Learning
 :   Author: Mitchell, T.M.

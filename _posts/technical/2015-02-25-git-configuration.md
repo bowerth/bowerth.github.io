@@ -6,6 +6,16 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## submodules
+
+Fedora 26: install `git-all`
+
+~~~
+git submodule update --init
+~~~
+
+
 ## Other VC
 
 ### Mercurial

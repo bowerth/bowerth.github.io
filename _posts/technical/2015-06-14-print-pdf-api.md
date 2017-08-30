@@ -6,15 +6,17 @@ tags     : ruby
 ---
 {% include JB/setup %}
 
-### Mozilla Gecko
+
+## Mozilla Gecko
 
 - [developer.mozilla.org: Gecko](https://developer.mozilla.org/en-US/docs/Mozilla/Gecko)
 
-### PDFKit
+
+## PDFKit
 
 - [pdfkit.org](http://pdfkit.org/)
 
-#### Usage
+### Usage
 
 ~~~ruby
 require 'pdfkit'

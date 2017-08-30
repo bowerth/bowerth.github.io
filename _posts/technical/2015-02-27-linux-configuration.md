@@ -6,6 +6,70 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## RPM files
+
+extract example
+
+~~~
+cd ~/Downloads
+mkdir mariadb
+mkdir mariadb/10.2
+cd mariadb/10.2
+rpm2cpio ../../MariaDB-devel-10.2.8-1.fc26.x86_64.rpm | cpio -idmv
+~~~
+
+
+## GNU parallel
+
+- [GNU parallel project page](http://savannah.gnu.org/projects/parallel/)
+
+## USB
+
+display list of devices
+:   `lsusb`
+
+
+## clean dnf database
+
+- [Auto Remove Command](http://dnf.readthedocs.io/en/latest/command_ref.html?highlight=autoremove#auto-remove-command)
+
+`@@commandline` packages can be removed using `dnf autoremove` command
+
+list packages
+:   `sudo dnf list autoremove`
+
+remove listed packages
+:   `sudo dnf autoremove`
+
+if script is preventing package from removal
+:   `sudo dnf --setopt=tsflags=noscripts remove gnome-tweak-tool`
+
+
+## Mendeley Desktop
+
+- [mendeley-rpm](https://github.com/hmaarrfk/mendeley-rpm/releases)
+
+
+### Dependencies
+
+- `qt5-qtwebengine`
+
+### Installation
+
+- download latest version from releases
+- run `sudo rpm -ivh mendeleydesktop-*.rpm`
+
+
+## File manager
+
+### nemo
+
+add shortcut to open terminal
+
+- search for "terminal" in `~/.gnome2/accels/nemo`
+- insert e.g. `F4` as shortcut
+
 ## Fonts
 
 ### Font Manager
@@ -417,6 +481,17 @@ fi
 Also remember to make it runnable to root
 :   `chmod 744 /etc/pm/sleep.d/99toshiba`
 
+### update Fedora 25 to 26  using DNF system upgrade
+
+- needed to install `gnome-tweak-tool` from [GNOME/gnome-tweak-tool](https://github.com/GNOME/gnome-tweak-tool)
+
+~~~
+sudo dnf system-upgrade download -y --releasever=26 --allowerasing
+dnf system-upgrade reboot
+dnf clean packages
+~~~
+
+
 ### update Fedora 22 to 23 using DNF system upgrade
 
 - [fedoraproject.org: DNF system upgrade](https://fedoraproject.org/wiki/DNF_system_upgrade)
@@ -558,6 +633,14 @@ clean `/var/cache` (large PackageKit folder)
 
 using PackageKit console client
 :   `sudo pkcon refresh force -c -1`
+
+large `/var/cache/PackageKit`: modify `/etc/PackageKit/PackageKit.conf`
+:   `# Keep the packages after they have been downloaded`  
+    `#KeepCache=false`  
+    run `pkcon refresh force -c -1`
+
+delete PackageKit metadata manually
+:   `sudo rm -r /var/cache/PackageKit/25/*`
 
 old releases
 :   `yum clean all --releasever=19`
@@ -730,11 +813,6 @@ edit file (*reports error on save and does not recognize existing metadata*)
 - create ruby module to pick up page source md file, generate pdf and trigger file download with default location and file name
 
 ## Maintenance
-
-large `/var/cache/PackageKit`: modify `/etc/PackageKit/PackageKit.conf`
-:   `# Keep the packages after they have been downloaded`  
-    `#KeepCache=false`  
-    run `pkcon refresh force -c -1`
 
 large `/var/log/journal`: modify `/etc/systemd/journald.conf`
 :   set `SystemMaxUse=1M`  
