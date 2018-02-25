@@ -6,9 +6,19 @@ tags     :
 ---
 {% include JB/setup %}
 
+## full page images
+
+use mogrify from imagemagick
+
+~~~
+mogrify -format pdf input.jpg
+~~~
+
+
 ## Online LaTex
 
 - [sharelatex.com: templates](https://www.sharelatex.com/templates/)
+
 
 ## Documentation
 
@@ -31,6 +41,7 @@ links to all HTML and PDF files for packages and guides contained in TeX Live
 
 install German support for Babel
 :   `sudo dnf install exlive-babel-german`
+
 
 ## `.sty` and `.cls` files
 

@@ -251,6 +251,9 @@ Name=cmus-remote
 Comment=Music player cmus-remote control
 ~~~
 
+in order to add to gnome favorites, the `.desktop` file must be named exactly the same as the started application
+
+
 ## Dropbox
 
 [ask.fedoraproject.org: dropbox failed synchronize cache for repo](https://ask.fedoraproject.org/en/question/78130/dropbox-failed-synchronize-cache-for-repo)
@@ -439,7 +442,7 @@ add an existing user to existing group
 
 #### Fedora 22
 
-- download .rpm version from https://get.adobe.com/flashplayer/
+- download .rpm version (PPAPI) from https://get.adobe.com/flashplayer/
 - `$ sudo dnf remove flash-plugin`
 - `$ sudo rpm -i ~/Downloads/flash-plugin-[version]-release.x86_64.rpm`
 
@@ -538,6 +541,12 @@ simplified chinese (non-Unicode)
 - [wayland.freedesktop.org](https://wayland.freedesktop.org/)
 
 Wayland is intended as a simpler replacement for X, easier to develop and maintain.
+
+
+## GNOME Shell Extensions
+
+- [gTile](https://extensions.gnome.org/extension/28/gtile/)
+
 
 ## i3 A window tile manager
 
@@ -751,7 +760,7 @@ search files in path recursively, only print filename
 remove all files with a specific pattern
 :   `rm sample*.log`
 
-change theme for specific window
+change theme for specific window (firefox, thunderbird etc.)
 :   `xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT dark`
 
 ## PDF

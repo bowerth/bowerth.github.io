@@ -9,7 +9,12 @@ tags     :
 
 ## PostgreSQL
 
+### Software Resources
+
 - [Linux downloads (Red Hat family)](https://www.postgresql.org/download/linux/redhat/)
+- [PostGIS Downloads](http://postgis.net/source/)
+- [Git PostGIS](https://git.osgeo.org/gogs/postgis/)
+
 
 install F26
 :   `sudo dnf install https://download.postgresql.org/pub/repos/yum/9.6/fedora/fedora-26-x86_64/pgdg-fedora96-9.6-3.noarch.rpm`
@@ -294,7 +299,126 @@ SELECT COUNT(*) FROM (SELECT DISTINCT(wkn) FROM fonds) AS t;
 ~~~
 
 
-## SQL Server in Linux
+## Microsoft SQL Server in Linux
+
+### Docker
+
+- [](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker)
+
+~~~
+docker pull microsoft/mssql-server-linux
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>' -e 'MSSQL_PID=Developer' -p 1401:1433 --name sqlcontainer1 -d microsoft/mssql-server-linux
+# view Docker containers
+docker ps -a
+# stop
+docker stop [CONTAIER]
+# remove
+docker rm [CONTAINER]
+~~~
+
+change password
+
+~~~
+docker exec -it sqlcontainer1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>' -Q 'ALTER LOGIN SA WITH PASSWORD="<YourNewStrong!Passw0rd>"'
+~~~
+
+connect
+
+~~~
+docker exec -it sqlcontainer1 "bash"
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourPassword>'
+~~~
+
+create and query data
+
+~~~
+CREATE DATABASE TestDB
+SELECT Name from sys.Databases
+GO
+~~~
+
+create new table and insert rows
+
+~~~
+CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT)
+INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);
+GO
+~~~
+
+select data
+
+~~~
+SELECT * FROM Inventory WHERE quantity > 152;
+GO
+~~~
+
+exit
+
+~~~
+QUIT
+~~~
+
+connect to container from outside
+
+- requires `sqlcmd`
+
+add RHEL 7 repo
+
+~~~
+sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+sudo dnf update
+sudo dnf install -y mssql-tools
+sudo dnf install -y unixODBC-devel
+~~~
+
+update `mssql-tools`
+
+~~~
+sudo dnf check-update
+sudo dnf update mssql-tools
+~~~
+
+modify `PATH` in `~/.profile`
+
+~~~
+export PATH="$PATH:/opt/mssql-tools/bin"
+~~~
+
+cennect using `sqlcmd` specifying host and port
+
+~~~
+sqlcmd -S localhost,1401 -U SA -P '<YourPassword>'
+~~~
+
+
+### Local Install
+
+- [Install SQL Server and create a database on Red Hat](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat)
+- openssl problematic Fedora 27
+
+add RHEL 7 repo
+
+~~~
+sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server.repo
+sudo dnf update
+# sudo dnf install -y compat-openssl10
+~~~
+
+local install
+
+~~~
+cd ~/Downloads
+mkdir mssql
+cd mssql
+wget https://packages.microsoft.com/rhel/7/mssql-server/mssql-server-14.0.900.75-1.x86_64.rpm
+~~~
+
+check for missing dependencies
+
+~~~
+rpm -qpR mssql-server-14.0.900.75-1.x86_64.rpm
+~~~
+
 
 Bulk copying SQL Server Data from Linux and UNIX
 

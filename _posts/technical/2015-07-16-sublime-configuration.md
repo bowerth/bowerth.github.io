@@ -6,9 +6,19 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## Updating Sublime
+
+- download 64bit repo from (www.sublimetext.com)[https://www.sublimetext.com/3]
+- extract to `~/sublime/sublime_text_3`
+- copy package archive to `~/sublime/sublime_packages`
+- add `/home/xps13/sublime/sublime_text_3` to `PATH`
+
+
 ## R Box
 
 - [github: randy3k: R-Box](https://github.com/randy3k/R-Box)
+
 
 ## Vertical Selection
 
@@ -16,10 +26,12 @@ Right Mouse Button + Shift
 :   add to selection: `Ctrl`  
     subtract from selection: `Alt`
 
+
 ## Alternatives
 
 - [limetext.org](http://limetext.org/)
 - [brackets.io](http://brackets.io/)
+
 
 ## Themes
 
@@ -42,6 +54,7 @@ Key                     | Action
 `Ctrl+Comma, Space`     | Justify columns
 `Ctrl+Comma, Comma`     | Collapse columns
 `Ctrl+Comma, Equals`    | Evaluate cells
+
 
 ## Markdwown Tables
 

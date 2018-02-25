@@ -7,6 +7,26 @@ tags     : [R, python]
 {% include JB/setup %}
 
 
+## Outlier detection
+
+### Thesis J. Janssens
+
+- [github: jeroenjanssens/phd-thesis](https://github.com/jeroenjanssens/phd-thesis)
+- [sos.jeroenjanssens.com](http://sos.jeroenjanssens.com) Stochastic Outlier Selection
+- [slideshare: Outlier Selection and One Class Classification](https://fr.slideshare.net/g33ktalk/jeroen-janssensoutlierselectionandone-class-classification-by-jeroen-janssens)
+- [github: jeroenjanssens/scikit-sos](https://github.com/jeroenjanssens/scikit-sos)
+
+#### Stochastic Outlier Selection
+
+- Unsupervised outlier selection algorithm
+- Employs concept of affinity
+- Computes outlier probabilities
+- One parameter: perplexity
+- Inspired by t-SNE
+
+![Euler Diagrams](/assets/images/diagrams/janssens-outlier-euler.svg)
+
+
 ## Tools
 
 - [Running an R Workshop on Azure with the Ubuntu Data Science Virtual Machine](https://togaware.com/running-an-r-workshop-on-azure-linux-data-science-virtual-machine/)
@@ -41,6 +61,7 @@ rattle()
 
 #### R
 
+- [awesome-machine-learning: R](https://github.com/josephmisiti/awesome-machine-learning#r)
 - rpart: Recursive Partitioning Using the RPART Routines
 - [party: A Laboratory for Recursive Partytioning](https://cran.r-project.org/web/packages/party/index.html)
 - [partykit: A Toolkit for Recursive Partytioning](https://cran.r-project.org/web/packages/partykit/index.html)
@@ -176,13 +197,25 @@ Source: [daoudclarke.github.io/machine-learning-libraries](http://daoudclarke.gi
 - Torch
 - Caffe
 
+### sckikit-learn
+
+ comprehensive and easy to use, I wrote a whole article on why I like this library.
+
+- [2.7. Novelty and Outlier Detection](http://scikit-learn.org/stable/modules/outlier_detection.html)
+- [1.14. Semi-Supervised](http://scikit-learn.org/stable/modules/label_propagation.html)
+- [One-class SVM with non-linear kernel (RBF)](http://scikit-learn.org/stable/auto_examples/svm/plot_oneclass.html)
+
+install
+
+~~~
+pip install git+https://github.com/scikit-learn/scikit-learn.git --user
+~~~
+
+
 ### Python
 
 [Tensorflow](http://www.tensorflow.org)
 :   open source software library for numerical computation using data flow graphs
-
-Scikit-learn
-:   comprehensive and easy to use, I wrote a whole article on why I like this library.
 
 PyBrain
 :   Neural networks are one thing that are missing from SciKit-learn, but this module makes up for it.

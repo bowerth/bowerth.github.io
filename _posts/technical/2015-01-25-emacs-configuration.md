@@ -289,7 +289,8 @@ commands
     `g` or `G` update  
     `n` next, `p` previous, `b` open in browser, `q` quit
 
-### Org Mode
+
+## Org Mode
 
 - [orgmode.org](http://orgmode.org/org.html)
 
@@ -299,7 +300,22 @@ no TOC
 use css stylesheet
 :   `#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./static/style.css" />`
 
-#### org-scrum
+C-c C-l (with cursor on existing link)
+:   When the cursor is on an existing link, `C-c C-l` allows you to edit the link and description parts of the link.
+
+
+### org koma letter
+
+see examples at `~/Dropbox/Latex_Files/Application/org`
+
+produce PDF
+
+~~~
+M-x org-koma-letter-export-to-pdf
+~~~
+
+
+### org-scrum
 
 this adds [emacs-scrum](https://github.com/ianxm/emacs-scrum) to spacemacs
 
@@ -308,7 +324,7 @@ this adds [emacs-scrum](https://github.com/ianxm/emacs-scrum) to spacemacs
 - make modifications
 - update all: `M-m o r`
 
-#### org-reveal
+### org-reveal
 
 - change value `org-enable-reveal-js-support` in `/.emacs.d/layers/+emacs/org/config.el` from `nil` to `t`
 - create folder for presentations, e.g. `mkdir slides`
@@ -319,7 +335,7 @@ this adds [emacs-scrum](https://github.com/ianxm/emacs-scrum) to spacemacs
 - `C-c C-e R R` to render `/slides/Readme.html`
 - open in browser (preview with `s` only currently only working in Chrome)
 
-#### Org OPML
+### Org OPML
 
 - [github: edavis: org-opml](https://github.com/edavis/org-opml)
 
@@ -334,7 +350,7 @@ modify `~/.emacs`
 copy python script
 :   `$ ln -s ~/.emacs.d/lisp/org-opml/opml2org.py`
 
-#### Org Spreadsheet
+### Org Spreadsheet
 
 - [orgmode.org: Org as a spreadsheet system: a short introduction](http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [orgmode.org: orgcard](http://orgmode.org/orgcard.txt)
@@ -570,6 +586,13 @@ file conversion with iconv
 
 extend column width of R-process [link stat.ethz.ch](https://stat.ethz.ch/pipermail/ess-help/2009-July/005455.html)
 :   `ess-execute-screen-options` or `C-c w`
+
+render rmarkdown
+:   `M-n e` or `M-x polymode-export`
+
+render sweave
+:   `M-n r` or `M-x ess-swv-knit`
+
 
 ## `.emacs` configuration
 

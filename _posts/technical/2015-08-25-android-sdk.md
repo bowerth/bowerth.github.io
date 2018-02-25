@@ -6,6 +6,82 @@ tags     :
 ---
 {% include JB/setup %}
 
+
+## LineageOS
+
+- [Install LineageOS on Z00D](https://wiki.lineageos.org/devices/Z00D/install)
+- [Setup ADB and Fastboot](https://wiki.lineageos.org/adb_fastboot_guide.html#installing-adb-and-fastboot)
+
+### Download 14.1 ROM
+
+- [Builds for Z00D](https://download.lineageos.org/Z00D)
+- eg. lineage-14.1-20171013-nightly-Z00D-signed.zip
+
+### Download GApps
+
+- [opengapps.org](http://opengapps.org)
+- [Zenfone 2 (ZE500CL) ZOOD](https://wiki.lineageos.org/devices/Z00D)
+- Platform: x86
+- Android: 7.1
+- Variant: nano
+- Date: 22 October 2017
+- Size: 122.12 MiB
+
+### Download su add-on
+
+- [LineageOS Downloads - Extras](https://download.lineageos.org/extras)
+- Name: su (x86)
+- Version: 14.1
+- File: addonsu-14.1-x86-signed.zip
+- Date: 2017-06-21
+
+### enable USB debugging
+
+- Settings > About > Firmware > tap "Version" 7 times
+- go back to settings, scroll to "Developer Options"
+- enable "USB Debugging"
+- connect USB cable
+- allow connections on phone from PC
+- test access using `adb devices`
+- copy lineage, open_gapps and addonsu to phone internal memory
+
+```
+adb push lineage-14.1-20171013-nightly-Z00D-signed.zip /sdcard/
+adb push open_gapps-x86-7.1-nano-20171022.zip /sdcard/
+adb push addonsu-14.1-x86-signed.zip /sdcard/
+```
+
+### Unlock Device App
+
+- [Driver & Tools: ZenFone_2_ZE500CL](https://www.asus.com/Phone/ZenFone_2_ZE500CL/HelpDesk_Download/)
+- Utilities
+- Unlock Device App: Unlock boot loader
+- Version: V1.0
+- Date: 2016/02/25
+- Size: 747.17 KBytes
+- direct link [ZE500CL_UnlockTool_0909.apk](http://dlcdnet.asus.com/pub/ASUS/ZenFone/ZE500CL/ZE500CL_UnlockTool_0909.apk)
+
+```
+adb install ZE500CL_UnlockTool_0909.apk
+```
+
+### Download TWRP Zenfone 2 Z00D
+
+- [Download LP BOOTLOADER/FIRMWARE](http://theflamingskull.com/zenfone2.html)
+- [TWRP for Z00D 3.0.2-2 Download](http://theflamingskull.com/downloads/z00d/TRWP-recovery-Z00D-3.0.2-2.img)
+
+```
+adb devices
+adb reboot bootloader
+fastboot devices
+fastboot flash recovery TRWP-recovery-Z00D-3.0.2-2.img
+adb reboot bootloader
+```
+
+- follow [TWRP instructions](https://wiki.lineageos.org/devices/Z00D/install#installing-lineageos-from-recovery)
+
+
+
 ## `android`
 
 update Android SDK
@@ -40,6 +116,10 @@ if device unauthorized, restart `adb-server`
 
 install without remove
 :   `$ adb install -r "bin/FileStorage-debug.apk"`
+
+copy a file to SD card
+:   `$ adb push lineage-14.1-20171013-nightly-Z00D-signed.zip /sdcard/`
+
 
 ## Create from HTML, CSS, and JavaScript
 
